@@ -1,0 +1,41 @@
+21
+2. Z. Zeng, W. Zheng, Multistability of two kinds of recurrent neural networks with activation func-
+tions symmetrical about the origin on the phase plane, IEEE Trans. Neural Netw. Learn. Syst., 24
+(2013), 1749-1762. https://doi.org/10.1109/TNNLS.2013.2262638
+3. M. A. Cohen, S. Grossberg, Absolute stability of global pattern formation and parallel memory
+storage by competitive neural networks, IEEE Trans. Syst. Man Cybern., 13 (1983), 815-826.
+https://doi.org/10.1109/TSMC.1983.6313075
+4. L. Chua, L. Yang, Cellular neural networks: Applications, IEEE Trans. Circuits Syst., 35 (1988),
+1273-1290. https://doi.org/10.1109/31.7601
+5. Q. Song, J. Cao, Stability analysis of impulsive Cohen-Grossberg neural network with
+unbounded discrete time-varying delays, Int. J. Neural Syst., 17 (2007), 407-417.
+https://doi.org/10.1142/S012906570700124X
+6. B. Kosko, Bidirectional associative memories, IEEE Trans. Syst. Man Cybern., 18 (1988), 49-60.
+https://doi.org/10.1109/21.87054
+7. K. Gopalsamy, X. Z. He, Delay-independent stability in bi-directional associative memory net-
+works, IEEE Trans. Neural Netw., 5 (1994), 998-1002. https://doi.org/10.1109/72.329700
+8. J. H. Park, C. H. Park, O. M. Kwon, S. M. Lee, A new stability criterion for bidirectional as-
+sociative memory neural networks of neutral-type, Appl. Math. Comput., 199 (2008), 716-722.
+https://doi.org/10.1016/j.amc.2007.10.032
+9. J. H. Park, O. M. Kwon, Delay-dependent stabilility criterion for bidirectional associative mem-
+ory neural networks with interval time-varying delays, Modern Phys. Lett. B, 23 (2009), 35-46.
+https://doi.org/10.1142/S0217984909017807
+10. J. Li, W. Zhou, Z. Yang, State estimation and input-to-state stability of impulsive
+stochastic BAM neural networks with mixed delays, Neurocomputing, 227 (2017), 37-45.
+https://doi.org/10.1016/j.neucom.2016.08.101
+11. Z. Wang, L. Huang, Global stability analysis for delayed complex-valued BAM neural networks,
+Neurocomputing, 173 (2016), 2083-2089. https://doi.org/10.1016/j.neucom.2015.09.086
+12. R. Guo, Z. Zhang, X. Liu, C. Lin, Existence, uniqueness, and exponential stability analysis for
+complex-valued memristor-based BAM neural networks with time delays, Appl. Math. Comput.,
+311 (2017), 100-117. https://doi.org/10.1016/j.amc.2017.05.021
+13. J. Liu, J. Jian, Global dissipativity of a class of quaternion-valued BAM neural networks with time
+delay, Neurocomputing, 349 (2019), 123-132. https://doi.org/10.1016/j.neucom.2019.03.026
+14. R. Zhao, B. Wang, J. Jian, Lagrange stability of BAM quaternion-valued inertial neural networks
+via auxiliary function-based integral inequalities, Neural Process. Lett., 54 (2022), 1351-1369.
+https://doi.org/10.1007/s11063-021-10685-6
+15. Z. Zhang, Z. Quan, Global exponential stability via inequality technique for iner-
+tial BAM neural networks with time delays, Neurocomputing, 151 (2015), 1316-1326.
+https://doi.org/10.1016/j.neucom.2014.10.072
+16. R. Sriraman, P. Vignesh, V . C. Amritha, G. Rachakit, P. Balaji, Direct quaternion method-based
+stability criteria for quaternion-valued Takagi-Sugeno fuzzy BAM delayed neural networks us-
+AIMS Mathematics V olume x, Issue x, xxx–xxx

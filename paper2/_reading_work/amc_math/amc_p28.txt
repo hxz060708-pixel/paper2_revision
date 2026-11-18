@@ -1,0 +1,114 @@
+ 
+ 
+26 
+Table 6. The comparison results of upper bound 
+Md  with 
+0 30md. = , 
+0 62. =  and different 
+  by employing the methods in 
+[51], [52] and Theorem 2.  
+Method 
+   
+     
+2.0 2.5 3.0 3.5 4.0 4.5 5.0 
+]51[  2.8010 3.1598 3.4258 3.5000 3.7299 3.9918 4.3239 
+]52[  3.2677 3.4112 3.6259 3.7010 4.0360 4.3958 4.6227 
+Theorem 2 3.5793 3.7010 3.9598 4.1257 4.3100 4.5166 4.8093 
+38 39 40 41 42 43 44 45 46 47 48
+20
+22
+24
+26
+28
+30
+32
+ 
+ 
+21
+23
+25
+27
+29
+31
+a
+b
+ 
+Figure 9. The comparison results of stability region by employing the methods in [51] (‘ 
+×  ’) and Theorem 2 (‘ O ’). 
+38 39 40 41 42 43 44 45 46 47 48
+20
+22
+24
+26
+28
+30
+32
+ 
+ 
+21
+23
+25
+27
+29
+31
+a
+b
+ 
+Figure 10. The comparison results of stability region by employing the methods in [52] (‘ 
+×  ’) and Theorem 2 (‘ O ’). 
+The initial values of state variables are given as 
+( )  0 6 2 5 3
+T
+x. = − −  and 
+( )  0 7 4 5
+T
+x = − −  in Figure 7  and Figure 8 , 
+respectively. The state variables trajectory of 
+( )1xk , 
+( )2xk  and 
+( )3xk  for the closed -loop system with 
+( )  0 6 2 5 3
+T
+x. = − −  is 
+shown in Figure 7. The state variables trajectory of 
+( )1xk , 
+( )2xk  and 
+( )3xk  for the closed-loop system with 
+( )  0 7 4 5
+T
+x = − −  
+is shown in Figure 8. From Figure 7 and Figure 8, it can be seen that the state variables trajectories of 
+( )1xk , 
+( )2xk  and 
+( )3xk  
+are convergent to zero under initial conditions 
+( )  0 6 2 5 3
+T
+x. = − −  and 
+( )  0 7 4 5
+T
+x = − − .  
+For comparison purpose , the comparison results of 
+iY  (
+1, 2, 3i = ) with 
+2 12Md. = , 
+0 62. =  and different 
+  by employing 
+Theorem 2 are shown in Table 1. The comparison results of 
+iZ  (
+1, 2, 3i = ) with 
+2 12Md. = , 
+0 62. =  and different 
+  by employing 
+Theorem 2 are shown in Table 2. The comparison results of 
+iY  (
+1, 2, 3i = ) with 
+1 60. = , 
+0 62. =  and different 
+Md  by employing 
+Theorem 2 are shown in Table 3. The comparison results of 
+iZ  (
+1, 2, 3i = ) with 
+1 60. = , 
+0 62. =  and different 
+Md  by employing 

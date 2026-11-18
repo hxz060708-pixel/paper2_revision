@@ -1,0 +1,71 @@
+===== PDF PAGE 1 OF 2 =====
+Comment on FSS-D-21-00117 
+ 
+By incorporating with the skills of fuzzy modeling method and fuzzy switching control 
+technique, the nonfragile sampled-data controller synthesis problem for the ship electric 
+propulsion systems (SEPSs) with lag signal and stochastic actuator failures (SAFs) has 
+been addressed  in this article. To delineate the SAFs, the control input model is 
+incorporated with semi-Markovian jump fault coefficients for depicting various faulty 
+models, which has stronger modeling ability. By fully capturing the information of the 
+sampling intervals as well as the available information of fuzzy membership functions 
+(FMFs) simultaneously, a refined dual -sided looped FMFs -dependent Lyapunov 
+functional is raised. Several sufficient conditions are established in the shape of multi-
+parameterized linear matrix inequalities (M -PLMIs) such that the underlying fuzzy 
+systems can achieve the asymptotically stable . The organization of this paper is well 
+structured. This work is interesting and the innovation is sound. However, the following 
+aspects should be considered to improve the quality of the paper. 
+ 
+1. It is very complex and comprehensive problem to consider fuzzy membership 
+functions-dependent looped Lyapunov functional and  semi-Markovian faulty 
+model along with fuzzy switched control strategy, the developed multi-
+parameterized linear matrix inequalities (M-PLMIs) seem to be quite complex and 
+only feasibility problem are considered herein. And the readers may want to know 
+how much conservatism is introduced. 
+ 
+2. The introduction part should be re -improved to concentrate on your research and 
+main contributions, such as s ome irrelevant language descriptions and references 
+should be replaced.  Furthermore, t hroughout my reading, there are some 
+grammatical and typographical errors. The authors should check  the whole 
+manuscript carefully and significantly improve the language presentation including 
+typography in the revised draft for readability. 
+ 
+3. There are a few typos in the theorems and the proof of theorems  which should be 
+corrected. Such as the inequality (31) , which is not match the corresponding matrix 
+elements in Theorem 1. Please make some corrections in Theorems 1-2. Part of the 
+language description of  Remark 2 should be located after Theorem 2 , please 
+confirm. Dual-sided looped fuzzy Lyapunov functional  and two-sided looped 
+Lyapunov functional  are the same meaning? p lease make a unified statement . 
+Furthermore, please add a Remark to explain why the fuzzy Lyapunov functional 
+(19) can be called it as dual-sided looped fuzzy Lyapunov functional. 
+ 
+4. To display the contributions and innovations of this study more clearly, you should 
+add some remarks. For example, in the abstract, you said that a novel faulty model 
+related to semi-Markovian process is innovatively presented to depict the stochastic 
+actuator failures (SAFs), which is capable of covering various faulty modes and has 
+
+===== PDF PAGE 2 OF 2 =====
+stronger modeling ability. Although you have cited some literature to support your 
+view in Table 2, you should explain it and add one remark in the revised paper.  
+ 
+5. Why should we study the problem of the ship electric propulsion systems with 
+random actuator failures  based on fuzzy modeling method ? What is the actual 
+motivation for this articl e and the research background of this paper is not clear.  
+Additionally, in the background of this article, the authors suggested to refer to 
+related references. More recent literature may be updated to en hance the research 
+motivation of this article.  
+ 
+6. There are many other debatable things such as  the dual-sided looped fuzzy 
+Lyapunov-functional (19) using a 8 sum if Lyapunov func tional… I mean the 
+complexity of the solution compared to the problem to solve is unsupported. 
+ 
+7. Some of the listed references are not in our style  and t he information of some 
+references are incomplete. The author should check them carefully throughout this 
+paper. Before submitting a revision be sure that the material is properly prepared 
+and formatted. 
+ 
+8. The major problem is the theorems and the concerned part of the Appendix. 
+Consider just one of the derivative, for example 𝑃̇𝑁𝑚ℎ that involves ℎ̇ ( (𝑡)). This 
+is, of course, just impossible. Consider that, first you do not know  (𝑡) otherwise 
+use in the control, second ℎ̇ ( (𝑡)) contains ̇(𝑡), which is in practice incalculable. 
+ 
+Overall, this paper can be accepted after some minor modifications. 

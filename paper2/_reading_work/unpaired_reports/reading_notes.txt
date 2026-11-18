@@ -1,0 +1,108 @@
+未配对审稿报告完整阅读记录
+
+阅读范围与限制
+已完成 OPENMATH 三份报告（3页、1页、2页）、FSS 两页报告、六篇短评合集全部六篇、原始《注意要点》全文阅读。
+对 OPENMATH 两份报告第2页和 FSS 第2页进行了图片核对。未修改原文件，未生成最终 Word，未联网。
+这些报告在本工作区没有明确配套论文，只能确认意见写了什么，不能验证批评在原稿中是否成立，也不能据此推定审稿人身份、版本先后或实际录用状态。
+
+一 OPENMATH 三份报告
+共同论文题目：Entire solutions of two certain Fermat-type ordinary differential equations。
+
+1 Referee report of  OPENMATH-D-22-00217 by BINBIN HU and LIU YANG ..pdf
+共3页，全部阅读。
+结构：文献背景和方程概述—正面评价—小修建议—7条参考文献。
+全部六条意见：
+（1）引言开头补充 Nevanlinna 理论标准符号、例外集合、特征函数及小量记号说明。
+（2）以 |a1|+|a2|≠0 替换“不同时为零”的英文表达。
+（3）全文将普通 C 统一为复数域符号 ℂ。图片核对确认是字体差异，文本提取会丢失。
+（4）重写 Baker/Gross 相关工作介绍句，调整语序、研究对象和引文位置。
+（5）检查论文第12—13页参考文献详细信息。
+（6）全文再次检查。
+可借鉴：补足符号定义、准确表达数学条件、改写文献综述句、检查书目信息。
+限制：报告自身英文和参考文献排版也有缺陷，不能把其全文当作语言范本。其正面结论未获对应论文核验。
+
+2 Report-OPENMATH-D-22-00217.pdf
+共1页，全部阅读。
+结构：研究问题概述—肯定结果和实例—推荐发表—三条表达修改。
+全部三条意见：
+（1）第2页第6行 such as 改为 For example。
+（2）第2页第8行 prove 改为 proposed。
+（3）重写第3页倒数第11行以 Inspired by the above results, especially the results of Li [12,13]. 开始的句子。
+可借鉴：简短温和、定位具体。
+限制：词语替换依赖原文上下文，不能直接搬到 paper2。
+
+3 The report on the paper with reference OPENMATH-D-22-00217.pdf
+共2页，全部阅读。结构按标题摘要、引言、ODE(1)、ODE(2)分部分点评，末尾明确拒稿。
+全部意见内容：
+标题与摘要：标题和摘要总体合适；摘要第6、8行 a1 和 also 后补逗号。
+引言：增加近期相关研究，特别讨论与 On Entire Solutions of Two Certain Fermat-Type Differential–Difference Equations 的联系；减少大段引用定理，增加简明解释；避免连续两句重复 after that。
+第2页：attentions→attention；the certain→a certain；furthermore 后加逗号；which satisfies→that satisfies；a2 后若干位置补逗号；that the→the。
+第3页：where g,p→where g and p；φ1 后若干位置补逗号；polynomial→polynomials；避免五次重复 not equal to zero at the same time。
+ODE(1)第4页：a1,a2、a,b 这类列举中加入 and。
+ODE(2)第5页：furthermore 后补逗号；Fermat type→Fermat-type。
+第6页：改写 which is the form of that in Theorem 3.2 对应句；避免重复 In fact（第6、7、11页）。
+第7页：meromeorphic→meromorphic；式(4.13)检查多余括号。
+第8页：ia→is；with the assumption p is→with the assumption that p is；form (4.3) and (4.4)→from (4.3) and (4.4)。
+第10页：Similar to the arguments as in the proof…→Similar to the arguments in the proof…（并检查同页其他位置及第11页）；From the equation 后补逗号；cosh,sinh 之间加入 and；reerite→rewrite；exist→exists。
+第11页：Next 后若干位置补逗号；b,d 之间加入 and。
+第12页：cosh 后若干位置补逗号；helpful suggestions→their helpful suggestions。
+组织：建议先给定理证明，再给实例。
+实质质疑1：认为对一般非恒定多项式 p，不能总有多项式 φ 满足 φ²=p/2；给出 p=z^(2n−1) 的反例。已图片核对。
+实质质疑2：认为式(2.2)和(2.3)可以改写为同一类方程，要求解释二者区别；原报告列出一个以 α、β 及 z1,z2 为变量的等价式，不能在未核对论文时判断其推导正确性。
+报告结论：明确建议拒稿。
+
+OPENMATH 总体说明
+三份报告分别为“小修推荐、推荐发表、拒稿”，评价明显不同。不能推定它们一定对应同一版本或三个不同审稿人，不能用其中正面结论代表论文已验证质量。
+
+二 FSS
+文件：1_Comment On FSS-D-21-00117.pdf，共2页，全部阅读。
+研究概述涉及船舶电力推进系统、模糊切换采样控制、半 Markov 执行器故障，以及双边隶属函数相关 looped functional。
+全部八条意见：
+（1）方法和 M-PLMI 较复杂，只给可行性结果，要求说明保守性。
+（2）引言聚焦研究与主要贡献，替换无关描述及文献；改进语言、语法和排版。
+（3）核对式(31)与定理矩阵项，修订定理1—2；调整 Remark 2 位置；统一 dual-sided 与 two-sided；增加说明，解释式(19)为什么称为双边 looped fuzzy Lyapunov functional。
+（4）增加 Remark，具体说明半 Markov 故障模型为什么覆盖更多模式、建模能力更强，不能仅列比较表和引文。
+（5）解释研究船舶系统随机执行器故障的实际动机和背景，更新近期文献。
+（6）解释八项泛函带来的解法复杂度是否合理。
+（7）检查参考文献格式和缺失信息，按期刊要求规范材料。
+（8）质疑相关矩阵导数中的 ḣ(ζ(t)) 可获得性：ζ(t) 未知，且其导数实际难以计算，要求核查定理和附录。已图片核对该内容。
+末尾虽写 minor modifications，但第1、3、6、8条可能涉及实质问题，不因结尾措辞就自动属于小修。
+可借鉴到 paper2：解释设计理由、统一术语、用 Remark 讲清方法作用、加强实际背景和近期文献。
+不能照搬：船舶、半 Markov、八项泛函，以及没有原稿依据的可实现性质疑。
+
+三 六篇论文短评合集
+文件：六篇论文短评合集_原Distributed H.docx。全部六篇完整读取，含正文中的数学文本。
+每篇主要结构均为一段研究概述加2—3条意见。
+
+1 Distributed H−/H∞ Attack Detection Based on FDI for Multi-Area Load Frequency Control Systems
+全部意见：解释 distributed 在检测器和模型中的具体含义；说明为什么选模拟退火优化 γ/β 及其优势；检查错字。
+
+2 A Voronoi-based Potential Field Algorithm for UAV Coverage Path Planning in Arbitrary Polygonal Areas
+全部意见：区分覆盖路径规划与一般路径规划；增加近期 UAV 覆盖路径规划文献。
+
+3 High-Resolution Class Activation Mapping for Weakly Supervised Object Localization
+全部意见：改进语言、语法和句式；解释为何用加法和乘法融合低、中、高层特征，以及相较其他融合方法的优势。
+
+4 Innovation-Sequence-Based Adaptive Kalman Filtering and Fault Detection for Integrated Navigation
+全部意见：在引言结尾突出创新；结论增加未来工作和挑战。
+
+5 Frequency-Domain Augmented Re-parameterized YOLO for Medical Object Detection
+全部意见：改进语言、语法和句式；解释 Fourier Re-parameterized Convolution 如何提升对肿瘤边界和纹理的敏感性，特别是不规则形状情形。
+
+6 VSFNet: A Multi-Scale Feature Enhancement Network Based on Spatial State Modeling and Frequency-Domain Filtering
+全部意见：改进语言、语法和句式；解释 Two-Level Multi-Scale Fusion Pyramid 的两级架构设计原则和优势。
+
+可借鉴：概述准确、问题不多，在语言润色或近期文献之外提出一个针对关键模块的解释性问题。
+限制：原句 the language, grammar, and sentence structure are still need… 自身有语法问题，应重写。paper2 已有引言贡献和未来工作，不应套写成这些内容完全缺失。只能结合现有内容提出更清楚、更聚焦的说明建议。
+
+四 原始经验笔记
+文件：04_原有经验笔记/注意要点.txt。全文只有三类：
+（1）格式：缩进、逗号句号及间距。
+（2）逻辑：不同模型结合的过渡和顺序、证明中的符号使用。
+（3）摘要：问题与对象—模型方法—证明和条件—实验的组织顺序。
+
+整体结论
+用户明确要求的英文表达改进与近年参考文献更新，在原始材料中反复出现。
+其余温和意见可借鉴六篇短评以及 FSS 第3—5条的解释设计选择、突出贡献、说明实际背景等思路，但必须对照 paper2 已有内容。
+不能机械认定文献过时或缺失，不能照搬不同学科术语、特定错误、对作者能力的评价或录用结论。
+所有未配对报告的技术质疑均只作为“报告提出的质疑”记录，未核查其对应论文真伪或正确性。

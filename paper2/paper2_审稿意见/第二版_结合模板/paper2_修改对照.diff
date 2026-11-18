@@ -1,0 +1,281 @@
+--- original/paper2.tex
++++ paper2_修改副本/paper2.tex
+@@ -93,7 +93,7 @@
+ 		
+ 		%% Abstract
+ \begin{abstract}
+-This article addresses adaptive event-triggered control for interval type-2 (IT-2) fuzzy cyber-physical systems (CPSs) affected by stochastic deception attacks and Markov-type actuator failures. Since nonlinear CPSs face cyber-layer attacks as well as physical-layer component failures, while their communication resources are often limited, an adaptive event-triggered mechanism (AETM) is employed to reduce redundant network transmissions through dynamic adjustment of the triggering threshold based on real-time state-error information. Specifically, stochastic deception attacks are characterized by a Bernoulli process, and actuator failures are modeled by Markov switching fault matrices. Accordingly, a unified closed-loop model is established. Then, a looped functional dependent on fuzzy membership functions (FMFs) is constructed to exploit membership-function information and sampled-data dynamics. Based on this functional, stability criteria are obtained to guarantee asymptotic stability of the closed-loop system while achieving a prescribed $\mathrm{H}_\infty$ disturbance attenuation level. Moreover, joint design of the controller gains and adaptive triggering parameters is formulated through tractable linear matrix inequalities (LMIs). Validation is finally carried out with an engineering-motivated permanent magnet synchronous motor example and a numerical IT-2 fuzzy system to demonstrate the effectiveness and feasibility of the developed method.
++This article addresses adaptive event-triggered control for interval type-2 (IT-2) fuzzy cyber-physical systems (CPSs) subject to stochastic deception attacks and Markov-type actuator failures. An adaptive event-triggered mechanism (AETM) adjusts the transmission threshold using state-error information to reduce redundant communication. Deception attacks are described by a Bernoulli process, and actuator failures are represented by Markov switching fault matrices. These components are incorporated into a unified closed-loop model. The signs of the membership-function derivatives define operational regions for a region-dependent fuzzy controller. Within this framework, the controller gains and event-triggering weight matrices are jointly designed. A two-sided looped functional dependent on fuzzy membership functions (FMFs) incorporates membership information and sampled-data dynamics. Sufficient conditions for asymptotic stability with a prescribed $\mathrm{H}_\infty$ disturbance attenuation level are formulated as linear matrix inequalities (LMIs). A permanent magnet synchronous motor example and a numerical IT-2 fuzzy example illustrate the control responses and the reduction in data transmissions.
+ 
+ \end{abstract}
+ 
+@@ -105,7 +105,7 @@
+ \end{frontmatter}
+ 	
+ \section{Introduction}%\cite{huangReliableControlCyberphysical2019}
+-Driven by advances in communication, sensing, and computing, cyber-physical systems (CPSs) have attracted growing attention in modern control research. Applications of CPSs span intelligent transportation, smart grids, and advanced aviation
++Driven by advances in communication, sensing, and computing, cyber-physical systems (CPSs) have attracted growing attention in modern control research. Applications of CPSs include intelligent transportation, smart grids, and aviation
+ \cite{wangMixedVehicleGroup2024,liuFalseDataInjectionAttack2023,dingSurveyModelBasedDistributed2019}.
+ By integrating cyber and physical components, CPSs enable real-time monitoring and coordinated control. However, practical physical plants usually involve nonlinear dynamics, parameter perturbations, and external disturbances
+ \cite{chenRobustAdaptiveControl2024,yuanAdaptiveControlNonlinear2024}.
+@@ -123,18 +123,16 @@
+ vehicular communication \cite{zhangNovelApproachVehicular2025}, and multi-agent
+ $\mathrm{H}_\infty$ consensus \cite{duIntervalType2Fuzzy2025}. These results confirm
+ the usefulness of IT-2 fuzzy models, but secure and reliable control of IT-2 fuzzy
+-CPSs under coupled cyber and physical anomalies remains insufficiently developed.
+-
+-When IT-2 fuzzy systems are implemented over communication networks, their
+-flexibility is improved, but several network-induced constraints are also
+-introduced. Transmission delays, packet dropouts, and bandwidth limitations may
++CPSs under concurrent cyber and physical anomalies warrants further investigation.
++
++When IT-2 fuzzy systems are implemented over communication networks, they gain communication flexibility but also face network-induced constraints. Transmission delays, packet dropouts, and bandwidth limitations may
+ degrade the closed-loop performance \cite{zhangNetworkedControlSystems2020,pangNetworkedPredictiveControl2026}.
+ Moreover, the openness of network channels exposes CPSs to malicious cyberattacks.
+ Deception attacks
+ \cite{yaoSecureControlMarkovian2023c,lianSwitchingLikeEventTriggeredControl2021}
+ and denial-of-service (DoS) attacks
+ \cite{zhaDynamicEventTriggeredOutput2022, buEventTriggeredDataDrivenControl2023}
+-are two common cyber threats to CPSs.. Unlike DoS attacks, which block communication
++are two common cyber threats to CPSs. Unlike DoS attacks, which block communication
+ channels and cause packet losses, deception attacks inject falsified data into
+ transmitted signals. This stealthy modification can seriously degrade closed-loop
+ performance. Several secure control methods have been
+@@ -148,9 +146,7 @@
+ Event-triggered mechanisms (ETMs)
+ \cite{postoyanFrameworkEventTriggeredStabilization2015,chenFinitetimeStabilityNonlinear2026}
+ determine data transmission according to a predefined triggering criterion, thereby reducing redundant communication and bandwidth consumption.
+-However, conventional static ETMs use fixed
+-thresholds and cannot adapt well to state fluctuations caused by attacks,
+-disturbances, or actuator anomalies. Adaptive event-triggered mechanisms (AETMs)
++However, conventional static ETMs use fixed thresholds, which do not adjust online to state fluctuations caused by attacks, disturbances, or actuator anomalies. Adaptive event-triggered mechanisms (AETMs)
+ \cite{xingSwitchedFuzzyControl2024,duFaultTolerantHInfinityStabilization2025}
+ and dynamic triggering strategies \cite{tanDynamicMemoryEventTriggeredSlidingMode2025}
+ adjust triggering parameters according to real-time or historical state
+@@ -173,6 +169,8 @@
+ cyber-layer data falsification, physical-layer actuator uncertainty, and limited
+ communication resources.
+ 
++The PMSM example in Section~\ref{sec4} provides an engineering illustration of these coupled requirements. In this model, deception attacks affect the transmitted current and angular-velocity measurements, actuator degradation reduces the effective control input, and the event-triggering mechanism limits data transmissions. Considering these effects together connects the controller design to the simultaneous requirements of data integrity, actuator reliability, and communication efficiency in a networked motor drive.
++
+ Lyapunov--Krasovskii functional (LKF) techniques provide an effective framework for stability and $\mathrm{H}_\infty$ performance analysis in networked and sampled-data systems. To reduce conservatism, advanced LKF and looped-functional techniques
+ have been developed to exploit sampling intervals and state information. For
+ instance, a state-dependent looped Lyapunov functional was designed in
+@@ -183,13 +181,15 @@
+ Lyapunov functional combined with integral inequalities was developed in
+ \cite{ganesanSynchronizationStochasticNeural2024} to address sampled-data synchronization of uncertain stochastic neural networks. Despite these advances, adaptive event-triggered $\mathrm{H}_\infty$ control for IT-2 fuzzy CPSs affected by stochastic deception attacks and Markov-type actuator failures remains insufficiently explored.
+ 
++Recent work has further developed event-triggered security control for IT-2 fuzzy systems. Liu et al.\ \cite{liuTorusEventBased2025} combined a two-threshold torus-event-triggering protocol with sliding-mode control for discrete-time IT-2 fuzzy systems under deception attacks. Chandrasekar et al.\ \cite{chandrasekarAdaptiveEvent2026} investigated adaptive event-triggered asynchronous control of uncertain IT-2 fuzzy Markov jump systems, using a hidden Markov model to describe the mismatch between plant and controller modes. These studies provide relevant developments in communication scheduling and attack-resilient fuzzy control. The present study focuses on continuous-time IT-2 fuzzy CPSs with Bernoulli deception attacks and Markov-type actuator failures, and organizes the controller and triggering design around the signs of the membership-function derivatives.
++
+ Building on the above discussion, this study addresses adaptive event-triggered
+ $\mathrm{H}_\infty$ control for IT-2 fuzzy CPSs affected by stochastic deception
+ attacks and Markov-type actuator failures. The principal contributions are fourfold:
+ 
+ \begin{itemize}
+ 	\item[1)] A unified adaptive event‑triggered closed‑loop model is established for IT‑2 fuzzy CPSs under concurrent cyber attacks and actuator failures.
+-	\item[2)] An adaptive triggering scheme is proposed, with its threshold updated according to the state error. By adjusting the threshold online according to real-time state-error information, the proposed mechanism reduces redundant transmissions while maintaining the desired control performance.
++	\item[2)] An adaptive triggering scheme is proposed, with its threshold updated according to the state error. This online adjustment reduces redundant transmissions while supporting the prescribed control objective.
+ 	\item[3)] A region-dependent fuzzy control scheme is developed by exploiting the sign information of the membership-function derivatives. The resulting region partition enables the control and triggering parameters to be jointly designed for each operational region.
+ 	\item[4)] A two-sided FMF-dependent looped functional is formulated to incorporate state information from both subintervals of each sampling period. This construction reduces conservatism and yields tractable LMI-based $\mathrm{H}_\infty$ stability and synthesis conditions.
+ \end{itemize}
+@@ -285,7 +285,7 @@
+ \end{figure}
+ 
+ \subsection{Adaptive Event-Triggered Mechanism}\label{sec2.2}
+-In networked control systems (NCSs), continuous data transmission often leads to network congestion and unnecessary waste of limited communication bandwidth. To alleviate the communication burden while preserving the desired control performance and avoiding unnecessary transmissions, an AETM is deployed along the sensor-to-controller communication path.
++In networked control systems (NCSs), frequent data transmission can cause network congestion and consume limited communication bandwidth. An AETM is therefore introduced in the sensor-to-controller channel to reduce unnecessary transmissions while supporting the desired control performance.
+ 
+ Specifically, the sensor periodically samples the system state with a sampling period $h>0$. Let $t_kh$ ($k \in \mathbb{N}$, $t_0 = 0$) denote the $k$-th successful transmission instant. Under a zero-order hold (ZOH) scheme, the transmitted state $x(t_k h)$ remains unchanged before the subsequent triggering instant $t_{k+1}h$, which is specified as follows:
+ \begin{equation} \label{eq:Event_TR_1}
+@@ -309,7 +309,7 @@
+ \subsection{Characterization of Deception Attacks}\label{sec2.3}
+ In NCSs, transmitted signals may be corrupted due to malicious interference in communication channels. In particular, deception attacks can inject falsified data into the transmission process, which may distort the original information and severely degrade system performance.
+ 
+-To characterize the occurrence of deception attacks, let $\theta(t)$ denote a Bernoulli random variable taking values in $\{0,1\}$, where $\theta(t)=1$ indicates that the transmitted data is compromised by the attacker, and $\theta(t) = 0$ otherwise. Such a Bernoulli process is commonly employed to describe randomly occurring deception attacks in networked control systems. It is assumed that $\theta(t)$ satisfies the following statistical property:
++To characterize the occurrence of deception attacks, let $\theta(t)$ denote a Bernoulli random variable taking values in $\{0,1\}$, where $\theta(t)=1$ indicates that the transmitted data are compromised by the attacker, and $\theta(t) = 0$ otherwise. Such a Bernoulli process is commonly employed to describe randomly occurring deception attacks in networked control systems. It is assumed that $\theta(t)$ satisfies the following statistical property:
+ \begin{equation}
+ 	\mathbb{E}\{\theta(t)\} = \bar{\theta} 
+ \end{equation}
+@@ -330,7 +330,7 @@
+ where $L_k > 0$ denotes a positive constant representing the attack intensity on the $k$-th state component.
+ \end{asptn}
+ \begin{rem}
+-	Different from Denial-of-Service attacks that aim to block communication channels
++	Unlike denial-of-service attacks, which block communication channels
+ 	and cause packet dropouts, deception attacks maliciously tamper with the transmitted data packets to
+ 	degrade system performance or even destabilize the system. The expression \eqref{eq:deception_attacks} unifies normal data transmission ($\theta(t) = 0$) and successful deception attacks ($\theta(t) = 1$) into
+ 	a single framework. Moreover, the norm-bounded condition in Assumption \ref{assump:attack_bound} is broadly adopted to
+@@ -346,7 +346,7 @@
+ \begin{equation} 
+ 	u(t) = K_{n} x_c(t_{k} h), \quad n = 1, 2, \ldots, r
+ \end{equation}
+-where $K_n$ denote the controller gains to be designed. Through fuzzy blending, the resulting control law takes the form
++where $K_n$ denotes the controller gain for rule $n$. Through fuzzy blending, the resulting control law takes the form
+ \begin{equation} 
+ 	u(t) = \sum_{n=1}^{r} h_n(x(t)) K_{n} x_c(t_k h).
+ \end{equation}
+@@ -363,6 +363,7 @@
+ 	F_{i}= F_{i0}+F_{i1} V_{i}
+ \end{equation}
+ where $F_{i0} = \operatorname{diag}\{\bar{f}_{i}^{1}, \bar{f}_{i}^{2}, \ldots, \bar{f}_{i}^{n_u}\}$, $F_{i1} = \operatorname{diag}\{\underline{f}_{i}^{1}, \underline{f}_{i}^{2}, \ldots, \underline{f}_{i}^{n_u}\}$, $V_i = \operatorname{diag}\{v_{i}^{1}, v_{i}^{2}, \ldots, v_{i}^{n_u}\}$ for $v_i^k \in [-1,1]$. Then, $V_i^\mathrm{T}V_i \le I$ holds.
++Here, each diagonal entry of $F_i$ represents the fraction of the commanded input delivered by the corresponding actuator in mode $i$: a value of one denotes full effectiveness, a value between zero and one denotes partial loss of effectiveness, and zero denotes complete loss. The matrices $F_{i0}$ and $F_{i1}$ contain the midpoints and half-widths of the admissible effectiveness intervals, respectively; $V_i$ describes the normalized deviations within these intervals.
+ 
+ The stochastic parameter $r(t)$ evolves as a right-continuous Markov chain over the finite state set $\mathbb{J} \triangleq \{1,2,\dots,J\}$. The corresponding transition-rate matrix $\Pi \triangleq [\lambda_{ij}] \in \mathbb{R}^{J \times J}$ is characterized by
+ \begin{equation} \label{eq:markov_jump}
+@@ -457,7 +458,7 @@
+ \section{Main Results}\label{sec3}
+ This section presents the main results. On the basis of the established system model, an appropriate Lyapunov functional is constructed to obtain sufficient criteria guaranteeing the asymptotic stability and prescribed $\mathrm{H}_\infty$ performance of the closed-loop system.
+ 
+-Recall that $t_k^j=t_k h+jh$ denotes the current sampling instant. For compact representation, the following notations are introduced:
++Recall that $t_k^j=t_k h+jh$ denotes the current sampling instant. For compactness, the following notation is introduced:
+ \begin{equation*}
+ 	d_1(t) = t - t^j_k, \quad  
+ 	d_2(t) = t^{j+1}_{k} - t.
+@@ -540,7 +541,7 @@
+ \end{equation}
+ with free matrices $X_{\ell qm}$ $(q=1,\ldots,5)$ of appropriate dimensions.
+ \begin{thm}\label{thm1}
+-For given scalars $h>0$, $\bar{\theta}\in[0,1]$, $\sigma>0$, and $\gamma>0$, the closed-loop IT-2 fuzzy CPSs \eqref{eq:closed_loop} is asymptotically stable with a prescribed $\mathrm{H}_\infty$ performance level $\gamma$ if there exist symmetric positive definite matrices
++For given scalars $h>0$, $\bar{\theta}\in[0,1]$, $\sigma>0$, and $\gamma>0$, the closed-loop IT-2 fuzzy system \eqref{eq:closed_loop} is asymptotically stable with a prescribed $\mathrm{H}_\infty$ performance level $\gamma$ if there exist symmetric positive definite matrices
+ $P_{im}$, $M_m$, $R_{1m}$, $R_{2m}$, $S$, a diagonal positive definite matrix $\Lambda$,
+ structured symmetric matrices $H_{1m}$ and $H_{2m}$ in the form of \eqref{eq:H_structure},
+ and free-weighting matrices
+@@ -870,7 +871,7 @@
+ 	\end{align}
+ \end{comment}
+ 
+-Based on the Schur complement, condition \eqref{shucr1} guarantee the negativity of the corresponding fuzzy-weighted double-sum terms. By exploiting the convex combination property of the membership functions, i.e., $h_m \ge 0$ and $\sum_{m=1}^{r} h_m = 1$, one can obtain
++Based on the Schur complement, condition \eqref{shucr1} guarantees the negativity of the corresponding fuzzy-weighted double-sum terms. By exploiting the convex combination property of the membership functions, i.e., $h_m \ge 0$ and $\sum_{m=1}^{r} h_m = 1$, one can obtain
+ \begin{equation}
+ 	\mathbb{E}\{\mathcal{L}V(t)\}
+ 	\leq
+@@ -888,7 +889,7 @@
+ 	\leq 0.
+ \end{equation}
+ 
+-Thus, the closed-loop IT-2 fuzzy CPSs \eqref{eq:closed_loop} is asymptotically stable.
++Thus, the closed-loop IT-2 fuzzy system \eqref{eq:closed_loop} is asymptotically stable.
+ 
+ \textbf{Case \uppercase\expandafter{\romannumeral2}:} When $w(t)\neq0$, integrating both sides over $[0,+\infty)$ yields
+ \begin{equation}
+@@ -927,7 +928,7 @@
+ Theorem \ref{thm1} provides stability and prescribed $\mathrm{H}_{\infty}$ performance criteria for the closed-loop system.
+ However, due to the presence of coupled decision variables, the controller gain matrices cannot be explicitly obtained. Therefore, Theorem \ref{thm2} provides a numerically tractable LMI framework for controller synthesis.
+ \begin{thm}\label{thm2}
+- For given scalars $h > 0$, $\bar{\theta} \in [0,1]$, $\sigma > 0$, $\gamma > 0$, $\xi_1$ and $\xi_2$, the closed-loop IT-2 fuzzy CPSs \eqref{eq:closed_loop} is asymptotically stable with a prescribed $\mathrm{H}_\infty$ performance level $\gamma$ if there exist symmetric positive definite matrices $\tilde{P}_{im}$, $\tilde{M}_{m}$, $\tilde{R}_{1m}$, $\tilde{R}_{2m}$, $\tilde{S}$, $\tilde{\Lambda}$, structured symmetric matrices $\tilde{H}_{1m}$ and $\tilde{H}_{2m}$, a nonsingular matrix $\tilde{N}$, and matrices $\tilde{Y}_{11}$, $\tilde{Y}_{12}$, $\tilde{Y}_{21}$, $\tilde{Y}_{22}$, and $\widetilde{K}_n$ with appropriate dimensions, such that for each Markov state $i \in \mathbb{J}$, fuzzy rules $m,n = 1,2,\ldots,r$, and switching condition $\mathcal{C}_l$ ($l = 1,2,\ldots,2^{r-1}$), the following LMIs are feasible:
++ For given scalars $h > 0$, $\bar{\theta} \in [0,1]$, $\sigma > 0$, $\gamma > 0$, $\xi_1$ and $\xi_2$, the closed-loop IT-2 fuzzy system \eqref{eq:closed_loop} is asymptotically stable with a prescribed $\mathrm{H}_\infty$ performance level $\gamma$ if there exist symmetric positive definite matrices $\tilde{P}_{im}$, $\tilde{M}_{m}$, $\tilde{R}_{1m}$, $\tilde{R}_{2m}$, $\tilde{S}$, $\tilde{\Lambda}$, structured symmetric matrices $\tilde{H}_{1m}$ and $\tilde{H}_{2m}$, a nonsingular matrix $\tilde{N}$, and matrices $\tilde{Y}_{11}$, $\tilde{Y}_{12}$, $\tilde{Y}_{21}$, $\tilde{Y}_{22}$, and $\widetilde{K}_n$ with appropriate dimensions, such that for each Markov state $i \in \mathbb{J}$, fuzzy rules $m,n = 1,2,\ldots,r$, and switching condition $\mathcal{C}_l$ ($l = 1,2,\ldots,2^{r-1}$), the following LMIs are feasible:
+ 	\begin{equation}\label{shucr1_not}
+ 		\begin{cases}
+ 			\widetilde{\Psi}_{gmn} < 0 	,\quad  m=n  \\
+@@ -1536,7 +1537,8 @@
+ 
+ The lower and upper FMFs are selected as $\underline{h}_1(x_3(t)) = 0.5 \left( 1 - \frac{5 - x_3(t)}{d_1} \right)$, $\overline{h}_1(x_3(t)) = 0.5 \left( 1 - \frac{0 - x_3(t)}{d_1} \right)$, $\underline{h}_2(x_3(t)) = 1 - \overline{h}_1(x_3(t))$, and $\overline{h}_2(x_3(t)) = 1 - \underline{h}_1(x_3(t))$. The weighting coefficient functions are chosen as $\underline{l}_1(x_3(t))=\overline{l}_2(x_3(t))=\cos^{2}(x_3(t))$ and $\overline{l}_1(x_3(t))=\underline{l}_2(x_3(t))=\sin^{2}(x_3(t))$.
+ 
+-Additionally, the transition rate matrix of the Markov process describing actuator failures is chosen as $\Pi = [\lambda_{ij}]_{2 \times 2} = \begin{bmatrix} -0.6 & 0.6 \\ 1.2 & -1.2 \end{bmatrix}$. The actuator-failure parameters are set to $F_{10} = 0.9$, $F_{11} = 0.1$ for mode 1, and $F_{20} = 0.8$, $F_{21} = 0.2$ for mode 2. In addition, the external disturbance is specified by
++Additionally, the transition rate matrix of the Markov process describing actuator failures is chosen as $\Pi = [\lambda_{ij}]_{2 \times 2} = \begin{bmatrix} -0.6 & 0.6 \\ 1.2 & -1.2 \end{bmatrix}$. The actuator-failure parameters are set to $F_{10} = 0.9$, $F_{11} = 0.1$ for mode 1, and $F_{20} = 0.8$, $F_{21} = 0.2$ for mode 2. For this single-input example, these values give $F_1\in[0.8,1.0]$ and $F_2\in[0.6,1.0]$. Thus, modes 1 and 2 allow up to $20\%$ and $40\%$ loss of actuator effectiveness, respectively; neither interval includes complete actuator loss.
++In addition, the external disturbance is specified by
+ $w(t)=0.5\sin(t)$, while the deception attack signal is defined as
+ $f(x(t))=[0.2\tanh(x_1(t)),\,0.3\tanh(x_2(t)),\,0.25\tanh(x_3(t))]^{\mathrm{T}}$,
+ which satisfies Assumption~\ref{assump:attack_bound} with $\bar{L}=0.3$.
+@@ -1548,7 +1550,7 @@
+ 		\includegraphics[width=0.9\textwidth]{figs/x(t)_not_u(t).pdf}
+ 		\caption{State responses $x(t)$ without control input.}
+ 		\label{fig2}
+-	\end{minipage}
++	\end{minipage}\hfill
+ 	\begin{minipage}{0.45\linewidth}
+ 		\centering 
+ 		\includegraphics[width=0.9\textwidth]{figs/x(t).pdf}
+@@ -1628,7 +1630,7 @@
+ 		\includegraphics[width=0.9\textwidth]{figs/h_1_dot.pdf}
+ 		\caption{Evolution of $\dot{h}_1(t)$.}
+ 		\label{fig4}
+-	\end{minipage}
++	\end{minipage}\hfill
+ 	\begin{minipage}{0.45\linewidth}
+ 		\centering 
+ 		\includegraphics[width=0.9\textwidth]{figs/u(t).pdf}
+@@ -1644,11 +1646,11 @@
+ 	\includegraphics[width=0.9\textwidth]{figs/actuator_fault.pdf}
+ 	\caption{Evolution of the actuator fault mode $r(t)$.}
+ 		\label{fig6}
+-	\end{minipage}
++	\end{minipage}\hfill
+ 	\begin{minipage}{0.45\linewidth}
+ 	\centering 
+ 	\includegraphics[width=0.9\textwidth]{figs/AETM_law.pdf}
+-	\caption{Adaptive threshold $\delta(t)$.}
++	\caption{Adaptive threshold $\delta(t)$ for $\sigma=4$ and sampling period $h=0.05$~s. The equilibrium threshold is $1/\sigma=0.25$.}
+ 	\label{fig7}
+ 	\end{minipage}
+ \end{figure}
+@@ -1658,7 +1660,7 @@
+ 	\begin{minipage}{0.48\linewidth}
+ 		\centering 
+ 		\includegraphics[width=0.9\textwidth]{figs/event_tri_time.pdf}
+-		\caption{Release instants and release intervals.}
++		\caption{Release instants and inter-event intervals for $\sigma=4$ and sampling period $h=0.05$~s.}
+ 		\label{fig8}
+ 	\end{minipage}
+ \end{figure}
+@@ -1677,7 +1679,8 @@
+ To further demonstrate how effectively the proposed AETM reduces communication,
+ Table~\ref{tab:sigma_effect} compares the transmitted packet counts for the proposed AETM and the time-triggered mechanism under different values of $\sigma$.
+ Under the time-triggered mechanism, all 400 sampled data packets are transmitted, whereas under the proposed AETM, only the data packets satisfying the triggering condition are released.
+-These results confirm that the proposed AETM significantly reduces the number of data transmissions.
++In the reported simulations, increasing $\sigma$ from 4 to 20 increases the transmitted packet count from 85 to 164. This trend is consistent with the role of $\sigma$ in \eqref{eq:adaptive_law}: its equilibrium threshold $1/\sigma$ decreases from 0.25 to 0.05. For fixed sampled state, error, and weighting matrix, a smaller $\delta(t)$ lowers the right-hand threshold in the triggering comparison \eqref{eq:Event_TR_1}, making transmission easier to trigger. This explains the direction of the observed trend; the actual transmission count also depends on the closed-loop trajectory and the evolution of the threshold.
++The saving rate is calculated as $(1-N_{\mathrm{ET}}/N_{\mathrm{TT}})\times100\%$, where $N_{\mathrm{ET}}$ and $N_{\mathrm{TT}}$ are the reported AETM and time-triggered transmission counts over the same simulation interval. The four settings in Table~\ref{tab:sigma_effect} therefore give saving rates of $78.75\%$, $71.75\%$, $66.00\%$, and $59.00\%$, respectively.
+ \begin{table}[htbp]
+ 	\centering
+ 	\caption{Comparison of communication burden under different values of $\sigma$}
+@@ -1751,7 +1754,7 @@
+ 		\includegraphics[width=0.9\textwidth]{figs/2_x(t)_not_u(t).pdf}
+ 		\caption{State responses $x(t)$ without control input.}
+ 		\label{fig10}
+-	\end{minipage}
++	\end{minipage}\hfill
+ 	\begin{minipage}{0.45\linewidth}
+ 		\centering 
+ 		\includegraphics[width=0.9\textwidth]{figs/2_x(t).pdf}
+@@ -1823,7 +1826,7 @@
+ 		\includegraphics[width=0.9\textwidth]{figs/2_h1_dot_and_ut.pdf}
+ 		\caption{Evolution of $\dot{h}_1(t)$ and control input $u(t)$.}
+ 		\label{fig12}
+-	\end{minipage}
++	\end{minipage}\hfill
+ 	\begin{minipage}{0.45\linewidth}
+ 		\centering 
+ 		\includegraphics[width=0.9\textwidth]{figs/2_actuator_fault.pdf}
+@@ -1836,26 +1839,26 @@
+ 	\begin{minipage}{0.45\linewidth}
+ 		\centering 
+ 		\includegraphics[width=0.9\textwidth]{figs/2_AETM_law.pdf}
+-		\caption{Adaptive threshold $\delta(t)$.}
++		\caption{Adaptive threshold $\delta(t)$ for $\sigma=10$ and sampling period $h=0.05$~s. The equilibrium threshold is $1/\sigma=0.1$.}
+ 		\label{fig14}
+-	\end{minipage}
++	\end{minipage}\hfill
+ 	\begin{minipage}{0.45\linewidth}
+ 		\centering 
+ 		\includegraphics[width=0.9\textwidth]{figs/2_event_tri_time.pdf}
+-		\caption{Release instants and release intervals.}
++		\caption{Release instants and inter-event intervals for $\sigma=10$ and sampling period $h=0.05$~s.}
+ 		\label{fig15}
+ 	\end{minipage}
+ \end{figure}
+ 
+-For the same initial state $x(0) = \begin{bmatrix} -3, 0.5, -2 \end{bmatrix}^{\mathrm{T}}$, Figs.~\ref{fig10} and \ref{fig11} compare the responses under open-loop and closed-loop conditions. The open-loop system exhibits a clear divergent behavior, whereas the proposed controller maintains system stability despite deception attacks and Markov-type actuator failures.
++For the same initial state $x(0) = \begin{bmatrix} -3, 0.5, -2 \end{bmatrix}^{\mathrm{T}}$, Figs.~\ref{fig10} and \ref{fig11} compare the responses under open-loop and closed-loop conditions. The open-loop system exhibits divergent behavior, whereas the proposed controller maintains system stability despite deception attacks and Markov-type actuator failures.
+ 
+ Figs.~\ref{fig12} and \ref{fig13} further show the control input, the derivative $\dot{h}_1(t)$, and the stochastic switching of the actuator-failure mode. The control signal remains bounded, and $\dot{h}_1(t)$ approaches zero as the state trajectories converge, which is consistent with the stabilization objective.
+-Fig.~\ref{fig14} shows that the adaptive threshold $\delta(t)$ again converges to the equilibrium value $1/\sigma = 0.1$, and Fig.~\ref{fig15} records the release instants and inter-event intervals. Under this fixed setting, only 65 transmissions are triggered out of 400 candidate sampling instants, yielding a communication saving rate of $83.79\%$. These results demonstrate that the proposed co-design remains effective for a different IT-2 fuzzy model and offers the same communication-efficiency advantage.
++Fig.~\ref{fig14} shows that the adaptive threshold $\delta(t)$ again converges to the equilibrium value $1/\sigma = 0.1$, and Fig.~\ref{fig15} records the release instants and inter-event intervals. Under this fixed setting, 65 transmissions are triggered out of the reported 400 candidate sampling instants, yielding a communication saving rate of $(1-65/400)\times100\%=83.75\%$. These results demonstrate that the proposed co-design remains effective for a different IT-2 fuzzy model and reduces transmissions relative to sending every candidate sample.
+ 
+ \end{example}
+ 
+ \section{Conclusion} \label{sec5}
+-This study has addressed adaptive event-triggered $\mathrm{H}_{\infty}$ control of IT-2 fuzzy CPSs affected simultaneously by stochastic deception attacks and Markov-type actuator failures. An AETM has been employed to limit unnecessary data transmissions by updating the triggering threshold online using real-time state-error information. In addition, a region-dependent piecewise fuzzy control strategy has been developed by incorporating derivative information from the membership functions. Based on an FMF-dependent and time-dependent looped functional, stability criteria have been obtained to guarantee closed-loop asymptotic stability while achieving a prescribed $\mathrm{H}_{\infty}$ disturbance attenuation level. The controller gains and adaptive event-triggering weight matrices have been jointly determined through tractable LMIs, while a bounding technique has been employed to address the norm-bounded uncertainty induced by Markov-type actuator failures.
++This study has considered adaptive event-triggered $\mathrm{H}_{\infty}$ control of IT-2 fuzzy CPSs subject to stochastic deception attacks and Markov-type actuator failures. The AETM updates its threshold using state-error information to reduce redundant transmissions. Membership-function derivative information defines operational regions for the fuzzy control design. An FMF-dependent looped functional is used to formulate sufficient stability and performance conditions. The controller gains and event-triggering weight matrices are jointly determined through LMIs, with a bounding technique used to handle actuator-failure uncertainty.
+ 
+ An engineering-motivated PMSM example and a numerical IT-2 fuzzy example have demonstrated the effectiveness and applicability of the developed method. Further research will extend the current IT-2 fuzzy control methodology to observer-based output feedback control, since not all system states are measurable in practical industrial applications. Secure control under more sophisticated cyberattack scenarios, such as DoS attacks, and practical network constraints, such as partially unknown Markov transition probabilities, also deserve further investigation.
+ 

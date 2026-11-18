@@ -1,0 +1,70 @@
+Time	(s)
+0 2 4 6 8 10 12 14 16 18 20
+Theadaptivelaw/(t)
+0.04
+0.06
+0.08
+0.1
+0.12
+0.14
+0.16
+0.18
+0.2
+0.22
+0.24
+/(t)
+Fig. 14.Adaptive thresholdδ(t).
+Event-based	release	instants	and	intervals
+0
+0.05
+0.1
+0.15
+0.2
+0.25
+0.3
+0.35
+0.4
+0.45
+0.5
+Time	(s)
+0 2 4 6 8 10 12 14 16 18 20 Fig. 15.Release instants and release intervals.
+For the same initial statex(0) =
+h
+−3,0.5,−2
+iT
+, Figs. 10 and 11 compare the responses under open-loop and closed-loop
+conditions. The open-loop system exhibits a clear divergent behavior, whereas the proposed controller maintains system
+stability despite deception attacks and Markov-type actuator failures.
+Figs. 12 and 13 further show the control input, the derivative˙h1(t), and the stochastic switching of the actuator-failure
+mode. The control signal remains bounded, and˙h1(t)approaches zero as the state trajectories converge, which is consistent
+with the stabilization objective. Fig. 14 shows that the adaptive thresholdδ(t)again converges to the equilibrium value
+1/σ= 0.1, and Fig. 15 records the release instants and inter-event intervals. Under this fixed setting, only 65 transmissions are
+triggered out of 400 candidate sampling instants, yielding a communication saving rate of83.79%. These results demonstrate
+that the proposed co-design remains effective for a different IT-2 fuzzy model and offers the same communication-efficiency
+advantage.
+5. Conclusion
+This study has addressed adaptive event-triggeredH∞ control of IT-2 fuzzy CPSs affected simultaneously by stochastic
+deception attacks and Markov-type actuator failures. An AETM has been employed to limit unnecessary data transmissions
+by updating the triggering threshold online using real-time state-error information. In addition, a region-dependent piecewise
+fuzzy control strategy has been developed by incorporating derivative information from the membership functions. Based
+on an FMF-dependent and time-dependent looped functional, stability criteria have been obtained to guarantee closed-loop
+asymptotic stability while achieving a prescribedH ∞ disturbance attenuation level. The controller gains and adaptive
+event-triggering weight matrices have been jointly determined through tractable LMIs, while a bounding technique has been
+employed to address the norm-bounded uncertainty induced by Markov-type actuator failures.
+An engineering-motivated PMSM example and a numerical IT-2 fuzzy example have demonstrated the effectiveness and
+applicability of the developed method. Further research will extend the current IT-2 fuzzy control methodology to observer-
+based output feedback control, since not all system states are measurable in practical industrial applications. Secure control
+under more sophisticated cyberattack scenarios, such as DoS attacks, and practical network constraints, such as partially
+unknown Markov transition probabilities, also deserve further investigation.
+CRediT authorship contribution statement
+Xiaoqing Li: Conceptualization, Methodology, Writing–original draft, Writing–review & editing.Haoxiang Zhao:
+Methodology, Writing–review & editing.Liang Han: Conceptualization, Visualization, Writing–review & editing.Jun
+Cheng: Conceptualization, Visualization, Writing–review & editing.Kaibo Shi: Project administration, English checking
+and editing.
+Declaration of competing interests
+The authors report no known conflicts of interest, and no substantial financial support was received that might have
+affected the integrity or outcome of the research.
+Acknowledgments
+This research was jointly supported by the National Natural Science Foundation of China under Grant (Nos. 62203147,
+62203148 and 62376083).
+17

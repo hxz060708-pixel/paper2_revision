@@ -1,0 +1,207 @@
+ 
+ 
+12 
+( )
+( )( )
+( )
+( )( )
+11
+11
+0
+T
+ff
+f
+ˆ ˆx k x k UU
+ˆ ˆf x k f x k UU
+−+
++
+    −       −        
+                                                                (59) 
+( )
+( )( )
+( )
+( )( )
+22
+22
+0
+T
+ff
+f
+x k x k UU
+f x k f x k UU
+−+
++
+    −       −        
+                                                                (60) 
+From (39), one knows that the augmented state vectors 
+( )xk
+  and 
+( )( )f x k
+  are defined as follows 
+( ) ( )
+( ) ( )( ) ( )( )
+( )( )
+,
+ˆf x kˆxkx k f x k xk f x k
+== 
+ 
+                                                                    (61) 
+Combining (59)-(61), one has  
+( )
+( )( )
+( )
+( )( )
+0
+T
+ff
+f
+x k x k UU
+f x k f x k UU
+−+
++
+    −       −        
+                                                                (62) 
+where  
+ 12U diag U U=
+                                                                                  (63) 
+According to Assumption 1, it can be verified that  
+( )( )
+( )( )( )
+( )( )
+( )( )( )
+11
+11
+0
+T
+gg
+g
+ˆ ˆx k d k x k d k VV
+VVˆ ˆg x k d k g x k d k
+−+
++
+    −− −      −    −−    
+                                                      (64) 
+( )( )
+( )( )( )
+( )( )
+( )( )( )
+22
+22
+0
+T
+gg
+g
+x k d k x k d k VV
+VVg x k d k g x k d k
+−+
++
+    −− −      −    −−    
+                                                     (65) 
+From (40), one knows that the augmented state vectors 
+( )xk
+  and 
+( )( )( )g x k d k−
+  are defined as follows 
+( ) ( )
+( ) ( )( )( )
+( )( )( )
+( )( )( )
+,
+ˆg x k d kˆxkx k g x k d kxk g x k d k
+ − = − =  − 
+                                                        (66) 
+Combining (64)-(66), one has  
+( )( )
+( )( )( )
+( )( )
+( )( )( )
+0
+T
+gg
+g
+x k d k x k d k VV
+VVg x k d k g x k d k
+−+
++
+    −− −      −    −−    
+                                                      (67) 
+where  
+ 12V diag V V=
+                                                                                  (68) 
+According to Assumption 1, it can be verified that 
+( )( )
+( )( )( )
+( )( )
+( )( )( )
+11
+11
+0
+T
+hh
+h
+ˆ ˆx k k x k k WW
+WWˆ ˆx k k x k k
+
+
+−+
++
+    −− −          −−−    
+                                                   (69) 
+( )( )
+( )( )( )
+( )( )
+( )( )( )
+22
+22
+0
+T
+hh
+h
+x k k x k k WW
+WWx k k x k k
+
+
+−+
++
+    −− −          −−−    
+                                                  (70) 
+From (39), one knows that the augmented state vectors 
+( )xk
+  and 
+( )( )( )x k k  −
+  are defined as follows 
+( ) ( )
+( ) ( )( )( )
+( )( )( )
+( )( )( )
+,
+ˆx k kˆxkx k x k k xk x k k
+
+
+
+
+
+
+ − = − =  − 
+                                                       (71) 
+Combining (69)-(71), one has  
+( )( )
+( )( )( )
+( )( )
+( )( )( )
+0
+T
+hh
+h
+x k k x k k WW
+WWx k k x k k
+
+
+−+
++
+    −− −          −−−    
+                                                    (72) 
+where  
+ 12W diag W W=
+                                                                                (73) 
+According to Assumption 2, it can be verified that  

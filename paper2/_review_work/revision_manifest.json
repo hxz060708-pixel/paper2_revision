@@ -1,0 +1,238 @@
+{
+  "source_hashes": {
+    "paper2.tex": "8a522f32c30446ee2b15531778fe5cb6490806c5f2cf4657febc4ae80fc07a64",
+    "ref2.bib": "dd90ce310324950a33fa5687e5cb2ad9b7db0661fdeb3540309b2b1f0e448b17",
+    "paper2.pdf": "3d78df9eab87bddbc2bf3bca8cbcaf37268dddd5c48cfa05039ada13503a547a"
+  },
+  "changes": [
+    {
+      "id": "R1.1/R1.3",
+      "location": "Abstract",
+      "old": "This article addresses adaptive event-triggered control for interval type-2 (IT-2) fuzzy cyber-physical systems (CPSs) affected by stochastic deception attacks and Markov-type actuator failures. Since nonlinear CPSs face cyber-layer attacks as well as physical-layer component failures, while their communication resources are often limited, an adaptive event-triggered mechanism (AETM) is employed to reduce redundant network transmissions through dynamic adjustment of the triggering threshold based on real-time state-error information. Specifically, stochastic deception attacks are characterized by a Bernoulli process, and actuator failures are modeled by Markov switching fault matrices. Accordingly, a unified closed-loop model is established. Then, a looped functional dependent on fuzzy membership functions (FMFs) is constructed to exploit membership-function information and sampled-data dynamics. Based on this functional, stability criteria are obtained to guarantee asymptotic stability of the closed-loop system while achieving a prescribed $\\mathrm{H}_\\infty$ disturbance attenuation level. Moreover, joint design of the controller gains and adaptive triggering parameters is formulated through tractable linear matrix inequalities (LMIs). Validation is finally carried out with an engineering-motivated permanent magnet synchronous motor example and a numerical IT-2 fuzzy system to demonstrate the effectiveness and feasibility of the developed method.",
+      "new": "This article addresses adaptive event-triggered control for interval type-2 (IT-2) fuzzy cyber-physical systems (CPSs) subject to stochastic deception attacks and Markov-type actuator failures. An adaptive event-triggered mechanism (AETM) adjusts the transmission threshold using state-error information to reduce redundant communication. Deception attacks are described by a Bernoulli process, and actuator failures are represented by Markov switching fault matrices. These components are incorporated into a unified closed-loop model. The signs of the membership-function derivatives define operational regions for a region-dependent fuzzy controller. Within this framework, the controller gains and event-triggering weight matrices are jointly designed. A two-sided looped functional dependent on fuzzy membership functions (FMFs) incorporates membership information and sampled-data dynamics. Sufficient conditions for asymptotic stability with a prescribed $\\mathrm{H}_\\infty$ disturbance attenuation level are formulated as linear matrix inequalities (LMIs). A permanent magnet synchronous motor example and a numerical IT-2 fuzzy example illustrate the control responses and the reduction in data transmissions.",
+      "count": 1,
+      "revised_lines": [
+        96
+      ]
+    },
+    {
+      "id": "R1.1",
+      "location": "Introduction paragraph 1",
+      "old": "Applications of CPSs span intelligent transportation, smart grids, and advanced aviation",
+      "new": "Applications of CPSs include intelligent transportation, smart grids, and aviation",
+      "count": 1,
+      "revised_lines": [
+        108
+      ]
+    },
+    {
+      "id": "R1.1",
+      "location": "Introduction paragraph 3",
+      "old": "are two common cyber threats to CPSs..",
+      "new": "are two common cyber threats to CPSs.",
+      "count": 1,
+      "revised_lines": [
+        135
+      ]
+    },
+    {
+      "id": "R1.1",
+      "location": "Introduction paragraph 3",
+      "old": "their\nflexibility is improved, but several network-induced constraints are also\nintroduced.",
+      "new": "they gain communication flexibility but also face network-induced constraints.",
+      "count": 1,
+      "revised_lines": [
+        128
+      ]
+    },
+    {
+      "id": "R1.1",
+      "location": "Introduction paragraph 2",
+      "old": "IT-2 fuzzy\nCPSs under coupled cyber and physical anomalies remains insufficiently developed.",
+      "new": "IT-2 fuzzy\nCPSs under concurrent cyber and physical anomalies warrants further investigation.",
+      "count": 1,
+      "revised_lines": [
+        125
+      ]
+    },
+    {
+      "id": "R1.1",
+      "location": "Introduction paragraph 4",
+      "old": "However, conventional static ETMs use fixed\nthresholds and cannot adapt well to state fluctuations caused by attacks,\ndisturbances, or actuator anomalies.",
+      "new": "However, conventional static ETMs use fixed thresholds, which do not adjust online to state fluctuations caused by attacks, disturbances, or actuator anomalies.",
+      "count": 1,
+      "revised_lines": [
+        149
+      ]
+    },
+    {
+      "id": "R1.1",
+      "location": "Introduction contribution 2",
+      "old": "By adjusting the threshold online according to real-time state-error information, the proposed mechanism reduces redundant transmissions while maintaining the desired control performance.",
+      "new": "This online adjustment reduces redundant transmissions while supporting the prescribed control objective.",
+      "count": 1,
+      "revised_lines": [
+        190
+      ]
+    },
+    {
+      "id": "R1.1",
+      "location": "Section 2.2 opening",
+      "old": "In networked control systems (NCSs), continuous data transmission often leads to network congestion and unnecessary waste of limited communication bandwidth. To alleviate the communication burden while preserving the desired control performance and avoiding unnecessary transmissions, an AETM is deployed along the sensor-to-controller communication path.",
+      "new": "In networked control systems (NCSs), frequent data transmission can cause network congestion and consume limited communication bandwidth. An AETM is therefore introduced in the sensor-to-controller channel to reduce unnecessary transmissions while supporting the desired control performance.",
+      "count": 1,
+      "revised_lines": [
+        286
+      ]
+    },
+    {
+      "id": "R1.1",
+      "location": "Section 2.3 Bernoulli description",
+      "old": "the transmitted data is compromised by the attacker",
+      "new": "the transmitted data are compromised by the attacker",
+      "count": 1,
+      "revised_lines": [
+        310
+      ]
+    },
+    {
+      "id": "R1.1",
+      "location": "Section 2.3 Remark 2.3",
+      "old": "Different from Denial-of-Service attacks that aim to block communication channels",
+      "new": "Unlike denial-of-service attacks, which block communication channels",
+      "count": 1,
+      "revised_lines": [
+        331
+      ]
+    },
+    {
+      "id": "R1.1",
+      "location": "Section 3 notation",
+      "old": "For compact representation, the following notations are introduced:",
+      "new": "For compactness, the following notation is introduced:",
+      "count": 1,
+      "revised_lines": [
+        458
+      ]
+    },
+    {
+      "id": "R1.1",
+      "location": "Section 3 system terminology",
+      "old": "closed-loop IT-2 fuzzy CPSs \\eqref{eq:closed_loop} is",
+      "new": "closed-loop IT-2 fuzzy system \\eqref{eq:closed_loop} is",
+      "count": 3,
+      "revised_lines": [
+        541,
+        889,
+        928,
+        1036
+      ]
+    },
+    {
+      "id": "R1.1",
+      "location": "Proof of Theorem 3.1",
+      "old": "condition \\eqref{shucr1} guarantee",
+      "new": "condition \\eqref{shucr1} guarantees",
+      "count": 1,
+      "revised_lines": [
+        871
+      ]
+    },
+    {
+      "id": "R1.1",
+      "location": "Example 2 discussion",
+      "old": "The open-loop system exhibits a clear divergent behavior",
+      "new": "The open-loop system exhibits divergent behavior",
+      "count": 1,
+      "revised_lines": [
+        1848
+      ]
+    },
+    {
+      "id": "R1.1",
+      "location": "Example 2 closing discussion",
+      "old": "offers the same communication-efficiency advantage.",
+      "new": "reduces transmissions relative to sending every candidate sample.",
+      "count": 1,
+      "revised_lines": [
+        1851
+      ]
+    },
+    {
+      "id": "R1.2",
+      "location": "Introduction paragraph immediately before the contributions",
+      "old": "Building on the above discussion, this study addresses adaptive event-triggered",
+      "new": "Recent work has further developed event-triggered security control for IT-2 fuzzy systems. Liu et al.\\ \\cite{liuTorusEventBased2025} combined a two-threshold torus-event-triggering protocol with sliding-mode control for discrete-time IT-2 fuzzy systems under deception attacks. Chandrasekar et al.\\ \\cite{chandrasekarAdaptiveEvent2026} investigated adaptive event-triggered asynchronous control of uncertain IT-2 fuzzy Markov jump systems, using a hidden Markov model to describe the mismatch between plant and controller modes. These studies provide relevant developments in communication scheduling and attack-resilient fuzzy control. The present study focuses on continuous-time IT-2 fuzzy CPSs with Bernoulli deception attacks and Markov-type actuator failures, and organizes the controller and triggering design around the signs of the membership-function derivatives.\n\nBuilding on the above discussion, this study addresses adaptive event-triggered",
+      "count": 1,
+      "revised_lines": [
+        182
+      ]
+    },
+    {
+      "id": "R1.4",
+      "location": "Section 3 opening paragraph",
+      "old": "This section presents the main results. On the basis of the established system model, an appropriate Lyapunov functional is constructed to obtain sufficient criteria guaranteeing the asymptotic stability and prescribed $\\mathrm{H}_\\infty$ performance of the closed-loop system.",
+      "new": "This section develops the analysis and synthesis conditions in three stages. Theorem~\\ref{thm1} gives sufficient stability and $\\mathrm{H}_\\infty$ performance conditions for the closed-loop model. Theorem~\\ref{thm2} introduces transformed decision variables to express the joint design of the controller gains and event-triggering weight matrix. Theorem~\\ref{thm3} then bounds the actuator-failure uncertainty and yields deterministic LMIs for numerical synthesis. This sequence connects the performance analysis to the gain and triggering-matrix calculations used in the examples.",
+      "count": 1,
+      "revised_lines": [
+        456
+      ]
+    },
+    {
+      "id": "R1.5",
+      "location": "Section 4 opening paragraph",
+      "old": "This section considers an engineering-motivated example and a numerical simulation study to assess the effectiveness and applicability of the developed control scheme.",
+      "new": "Two examples illustrate complementary aspects of the proposed scheme. Example~\\ref{exm1} uses a permanent magnet synchronous motor (PMSM) model to provide an engineering context and reports transmission counts for several values of $\\sigma$. Example~\\ref{exm2} considers a different IT-2 fuzzy model under a fixed parameter setting. In both examples, the state responses, control inputs, actuator-failure modes, adaptive thresholds, and transmission intervals illustrate the closed-loop behavior and communication activity.",
+      "count": 1,
+      "revised_lines": [
+        1504
+      ]
+    },
+    {
+      "id": "R1.6",
+      "location": "Example 1 paragraph before Table 1",
+      "old": "These results confirm that the proposed AETM significantly reduces the number of data transmissions.",
+      "new": "For the communication comparison, let $N_{\\mathrm{TT}}$ denote the number of candidate packets transmitted by the time-triggered baseline and $N_{\\mathrm{ET}}$ the number transmitted by the AETM over the same reported interval. The saving rate is calculated as $(1-N_{\\mathrm{ET}}/N_{\\mathrm{TT}})\\times100\\%$. For example, the first row of Table~\\ref{tab:sigma_effect} gives $(1-85/400)\\times100\\%=78.75\\%$. The reported counts therefore quantify the fraction of transmissions avoided relative to sending every candidate sample.",
+      "count": 1,
+      "revised_lines": [
+        1678
+      ]
+    },
+    {
+      "id": "R1.6",
+      "location": "Example 2 final paragraph",
+      "old": "only 65 transmissions are triggered out of 400 candidate sampling instants, yielding a communication saving rate of $83.79\\%$.",
+      "new": "65 transmissions are triggered out of the reported 400 candidate sampling instants. Using the same definition as in Example~\\ref{exm1}, the saving rate is $(1-65/400)\\times100\\%=83.75\\%$.",
+      "count": 1,
+      "revised_lines": [
+        1851
+      ]
+    },
+    {
+      "id": "R1.1",
+      "location": "Conclusion paragraph 1",
+      "old": "This study has addressed adaptive event-triggered $\\mathrm{H}_{\\infty}$ control of IT-2 fuzzy CPSs affected simultaneously by stochastic deception attacks and Markov-type actuator failures. An AETM has been employed to limit unnecessary data transmissions by updating the triggering threshold online using real-time state-error information. In addition, a region-dependent piecewise fuzzy control strategy has been developed by incorporating derivative information from the membership functions. Based on an FMF-dependent and time-dependent looped functional, stability criteria have been obtained to guarantee closed-loop asymptotic stability while achieving a prescribed $\\mathrm{H}_{\\infty}$ disturbance attenuation level. The controller gains and adaptive event-triggering weight matrices have been jointly determined through tractable LMIs, while a bounding technique has been employed to address the norm-bounded uncertainty induced by Markov-type actuator failures.",
+      "new": "This study has considered adaptive event-triggered $\\mathrm{H}_{\\infty}$ control of IT-2 fuzzy CPSs subject to stochastic deception attacks and Markov-type actuator failures. The AETM updates its threshold using state-error information to reduce redundant transmissions. Membership-function derivative information defines operational regions for the fuzzy control design. An FMF-dependent looped functional is used to formulate sufficient stability and performance conditions. The controller gains and event-triggering weight matrices are jointly determined through LMIs, with a bounding technique used to handle actuator-failure uncertainty.",
+      "count": 1,
+      "revised_lines": [
+        1856
+      ]
+    }
+  ],
+  "new_references": [
+    {
+      "key": "liuTorusEventBased2025",
+      "url": "https://www.sciltp.com/journals/ijndi/articles/2504000064",
+      "doi": "10.53941/ijndi.2025.100003"
+    },
+    {
+      "key": "chandrasekarAdaptiveEvent2026",
+      "url": "https://link.springer.com/article/10.1007/s40747-025-02172-5",
+      "doi": "10.1007/s40747-025-02172-5"
+    }
+  ],
+  "layout_adjustments": [
+    "Reference list inter-entry spacing set to 0 pt to avoid a final page containing only one entry; reference font size unchanged.",
+    "Capitalization of both newly added article titles preserved in BibTeX."
+  ]
+}

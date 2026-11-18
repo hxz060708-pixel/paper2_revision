@@ -1,0 +1,22 @@
+{
+  "local_path": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\paper2_审稿意见\\paper2_第一份审稿与修改包_第二版.zip",
+  "operation": "create_library_file",
+  "status": "succeeded",
+  "path": "/paper2/paper2_第一份审稿与修改包_第二版.zip",
+  "file_id": "file_00000000161881fab8ea549c66833571",
+  "library_file_id": "libfile_f96703266ebc8191a6ba2b0c7927a692",
+  "file_name": "paper2_第一份审稿与修改包_第二版.zip",
+  "current_version_number": 0,
+  "restored_from_version_number": null,
+  "xattrs": [
+    {
+      "name": "user.library-file-version",
+      "value": "0"
+    }
+  ],
+  "directory_id": "6ad8aec7ea088191b4fb8df7483a6bc7",
+  "mime_type": "application/zip",
+  "library_artifact_type": "other",
+  "file_size_bytes": 1503854,
+  "external_connectors_accessed": false
+}

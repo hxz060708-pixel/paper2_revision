@@ -1,0 +1,682 @@
+=== PDF PAGE 1 ===
+Tire Force Estimation Using Model-Based and
+Machine Learning Approaches for Distributed Drive
+Electric Vehicle
+Liangyin Lu
+School of Automotive Studies
+Tongji University
+Shanghai,China
+luliangyin@tongji.edu.cn
+Gaoxiang Xu
+School of Automotive Studies
+Tongji University
+Shanghai,China
+xugaoxiang@tongji.edu.cn
+Xinbo Chen
+School of Automotive Studies
+Tongji University
+Shanghai,China
+austin 1@163.com
+Abstract—Distributed drive electric vehicles are one of the
+key focuses in the contemporary automotive industry, providing
+greater flexibility for active safety control. The realization of
+vehicle control relies on accurate vehicle driving state infor-
+mation. Precise estimation of tire forces is essential, since tire
+forces directly influence vehicle dynamics. This paper focuses on
+distributed drive electric vehicles and proposes two estimation
+methods: model-based method and machine learning method.
+The model-based estimation method employs PID observers and
+Unscented Kalman Filters to estimate longitudinal and lateral
+tire forces respectively. The machine learning estimation method
+utilizes Long Short-Term Memory networks for tire forces
+estimation. The effectiveness and performance of two methods
+are verified by MATLAB/CarSim. The results demonstrate that
+the machine learning method provides more accurate tire force
+estimation and exhibits robustness against measurement noise.
+Index Terms —Distributed drive, State estimation, Machine
+learning, LSTM
+I. I NTRODUCTION
+Distributed drive electric vehicles can fully take advantage
+of independently driven motors, providing more flexibility for
+vehicle dynamics control. Active safety technology, as part of
+the development of intelligent automobiles, refers to safety
+devices that prevent accidents, including steering systems,
+well-performing chassis, power systems matched with the
+chassis, and effective braking systems [1]. Both distributed
+drive electric vehicles and active safety technology require
+real-time and accurate control commands for the vehicle. How
+to obtain vehicle state information during driving has attracted
+much attention from researchers.
+Some scholars [2] have tried to use special sensors, such
+as optical sensors for detecting road surface, high-precision
+Global Positioning System (GPS)/Inertial Measurement Unit
+(IMU) combination modules, to achieve direct measurement
+of vehicle driving state information (such as tire-road friction
+coefficient TRFC, center of mass sideslip-angle, tire forces).
+However, such sensors are costly and have demanding oper-
+ating requirements, making them prone to large calibration
+errors and temperature drift errors in complex driving sce-
+narios. So they are only suitable for development and testing
+stage, but currently cannot be applied to production vehicles.
+Most vehicle driving states cannot be directly measured by on-
+board sensors [3]. Automotive industry tends to use configured
+sensors to obtain accessible driving information, estimate other
+critical states, and then carry out subsequent control work.
+II. R ELATED WORK
+Model-based estimation methods can be broadly categorized
+into two primary groups: Kalman filter algorithm, and estima-
+tion algorithm based on observer design. Estimation algorithm
+based on Kalman filter includes Kalman filter (KF), extended
+Kalman filter (EKF) and unscented Kalman filter (UKF) [4],
+[5], etc. KF is most commonly used algorithm, while EKF
+and UKF are derived to solve nonlinear problems, providing
+closer approximations to vehicle driving states. Estimation
+algorithm based on observer can design nonlinear observer
+through fuzzy, sliding mode or other methods, which introduce
+feedback in observer to ensure algorithm convergence.
+Laura [6]–[8] conducted some research on nonlinear state
+estimation. Utilizing a nonlinear EKF algorithm, he estimated
+tire forces without prior knowledge of tire characteristics or
+external motion factors, which was applied to vehicle real-time
+control. Ma [9] proposed a modular observer optimized by
+genetic algorithm. He utilized a sliding mode observer and a
+nonlinear full-dimensional observer separately to estimate tire
+forces and vehicle states. Doumiati [10] et al. proposed an EKF
+algorithm based on three different dynamic models to estimate
+lateral load transfer and tire normal force. Real-vehicle tests
+showed this method can reduce costs and provide real-time
+state estimation. Jin [11] et al. proposed a new method
+to estimate lateral tire forces using real-time measurement
+information, which is based on an interacting multiple model
+filter that integrates estimates from different models to improve
+estimation accuracy.
+Model-free state estimation utilizes machine learning (e.g.,
+neural network NN, random forest RF) without relying on
+physical models but requiring sufficient data. Pasterkamph and
+Pacejka [12] used NNs to describe dynamic characteristics of
+
+=== PDF PAGE 2 ===
+tires and suspensions, so as to estimate TRFC and sideslip-
+angle. The optimal network was selected using a genetic
+optimization algorithm from general network architecture.
+Barbosa et al. [13] developed a tire lateral force predictor
+using Gaussian process regression (GPR), which served as
+a basis for tire dynamics analysis at large slip angles (up
+to 8°). Xu et al. [14] predicted real-time tire force with an
+intelligent tire system, incorporating three different machine
+learning techniques. The sensor on the tire inner liner gener-
+ated acceleration signals for training NNs to predict tire force.
+Salari et al. [15] combined NNs and fuzzy logic to predict tire
+normal force. NN blocks with different dynamics estimated
+mass distribution, then the fuzzy classification logic deter-
+mined which block to activated to further estimate dynamic
+normal force. Wang et al. [16] introduced an adaptive tire
+force calculation method based on an improved Levenberg-
+Marquarelt multi-module self-organizing feedforward neural
+network, which reduced the system computational complexity
+and storage space. Additionally, it employed EKF and moving
+average further improved estimation accuracy.
+Model-based estimation methods typically rely on inter-
+pretable mathematical models. In contrast, machine learning
+estimation methods do not need to use complex model in-
+formation in estimator, and avoid errors induced by model
+mismatch and parameter uncertainty. By training NNs with
+time series data, the temporal structure hidden in data can be
+accurately captured. Consequently, machine learning methods
+have obvious advantages when dealing with nonlinear tire
+dynamics problems.
+This paper designs two methods, model-based and machine
+learning approach, to estimate tire force, and compares both
+methods using MATLAB/CarSim simulation platform. The
+rest of this article is organized as follows: Section III in-
+troduces specific models used for tire force estimation and
+a model-based method. Section IV introduces and designs a
+machine learning method. Section V gives results and data
+analysis of simulation. Finally, Section VI gives conclusions.
+III. M ODEL -BASED ESTIMATION METHOD
+A. Tire Longitudinal F orce Estimation
+The longitudinal dynamics equation of a single wheel is
+shown in (1).
+Fxij = 1
+Re
+(Tij − Iω ˙ωij) + Ωx (1)
+where Fxij is tire longitudinal force, Re is effective rolling
+radius, Tij is total torque acting on wheel, Iω is wheel moment
+of inertia, ˙ωij is wheel angular acceleration, Ωx is additional
+perturbations to model, ij = f l, f r, rl, rr represent left front
+wheel, right front wheel, left rear wheel and right rear wheel
+respectively.
+Distributed drive electric vehicle can directly measure wheel
+rotation angular velocity ωij from sensors to calculate tire lon-
+gitudinal force. However, due to the existence of measurement
+noise Ωx, directly differentiating ωij can reduce accuracy of
+tire force estimation. So a PID observer is designed to avoid
+the differential error caused by ωij measurement value [17]:
+ˆFxij = Tij − Iω ˙ωij
+Re
+− k1˜ωij + k3
+Z
+˜Fxijdt (2)
+where k1 and k3 are PID observer gains for tire longitudinal
+force, ˜ωij and ˜Fxij are estimation errors of wheel angular
+velocity and tire longitudinal force respectively.
+The estimated angular acceleration of a single wheel ˙ˆωij is
+defined as:
+˙ˆωij = 1
+Iω
+
+Tij − Re ˆFxij + k2
+Z
+˜ωijdt + Rek3
+Z
+˜Fxijdt
+
+(3)
+where k2 is PID observer gain for angular acceleration.
+B. Tire Lateral F orce Estimation
+xrrF
+yrrF
+yrlF
+xrlF
+xflF
+yflF
+xfrF
+yfrF
+xV
+yV
+V
+r
+CoG
+rb
+fb
+rl
+fl
+
+
+Fig. 1. Three-degree-of-freedom vehicle model.
+The four-wheel 3-DoF model of vehicle is shown in Fig. 1.
+Vehicle dynamics are described by yaw, lateral and longitudi-
+nal motions. The double-track vehicle model is simplified to
+single-track vehicle model:
+max =Fxf cos δ − Fyf sin δ + Fxr (4)
+may =Fxf sin δ + Fyf cos δ + Fyr (5)
+Iz ˙r =lf Fxf sin δ + lf Fyf cos δ − lrFyr
+− bf
+2 Fxf cos δ + bf
+2
+¯Fyf sin δ − br
+2
+¯Fxr (6)
+where m is vehicle mass, ax and ay are longitudinal and
+lateral acceleration respectively, Iz is vehicle’s moment of
+inertia about z-axis, ˙r is yaw acceleration. δ is front wheel
+steering angle, lf is distance from center of mass to the center
+of front axle, lr is distance from center of mass to the center
+of rear axle, bf is front track width, br is rear track width.
+Fxf and Fxr are longitudinal forces of front and rear axles
+respectively, ¯Fxf and ¯Fxr are differences in longitudinal forces
+between left and right wheels on front and rear axles of vehicle
+respectively. Similarly, lateral forces Fyf , Fyr, ¯Fyf , and ¯Fyr
+are defined.
+The lateral forces of the four wheels can be determined
+based on the proportion of vertical forces:
+Fyij = Fzij
+Fzij + Fzij
+Fij (7)
+
+=== PDF PAGE 3 ===
+Fzf l,r = m (lrg − hax)
+2 (lf + lr) ∓ mhay (lrg − hax)
+(lf + lr) bf g (8)
+Fzrl,r = m (lf g + hax)
+2 (lf + lr) ∓ mhay (lf g + hax)
+(lf + lr) brg (9)
+Tire lateral force estimation faces challenges in direct mea-
+surement due to sensor limitations and costs. Instead, indirect
+methods based on vehicle dynamics models are employed.
+Estimation method combined with UKF algorithm will be
+introduced below.
+Based on the vehicle dynamics model (4), (5) and (6), take
+state variable X as
+X =
+
+Fyf , Fyr, F yf
+T
+(10)
+In the linear and saturation regions, the tire forces exhibit
+different trends of variation. Therefore, a random walk model
+[18] is used to enhance estimation robustness, which can be
+expressed as:
+˙X (t) = I3×3w (t) (11)
+where I3×3 is third-order identity matrix, w (t) is process
+noise vector.
+The measurement equation can be written as [19]:
+y =
+
+
+ax
+ay
+˙r
+
+ =
+
+
+
+ˆFxf cos δ − Fyf sin δ + ˆFxr
+
+/m
+ˆFxf sin δ + Fyf cos δ + Fyr
+
+/m
+lf ˆFxf sin δ + lf Fyf cos δ − lrFyr
+
+/Iz
+
++v (t)
+(12)
+where v (t) is measurement noise vector.
+Both w (t) and v (t) follow zero-mean Gaussian distribu-
+tions, with variance matrices Q and R, respectively.
+The system state equation and measurement equation used
+in UKF estimation algorithm can be written as:
+X (k + 1) = X (k) + I3x3w (k) (13)
+y (k) = H (X (k) , U (k)) + v (k) (14)
+UKF leverages unscented transform (UT) in Kalman filters
+to address nonlinear estimation by approximating probability
+distributions. It performs UT near estimates, ensuring Sigma
+points’ mean and covariance align with original data, then
+nonlinearly maps these points to obtain an approximate state
+probability density function. According to UKF’s basic steps,
+and combined with system’s equation, tire lateral force can be
+estimated.
+IV. M ACHINE LEARNING ESTIMATION METHOD
+A. Long Short-Term Memory(LSTM)
+LSTM is a type of recurrent neural network (RNN). It is
+suitable for processing and predicting time series. Compared
+with traditional RNN structure, LSTM can avoid gradient
+vanishing or exploding problem.
+As shown in Fig. 2, LSTM unit consists of a memory unit
+and three gate structures, namely input gate, output gate, and
+forget gate. The three different gate structures depend on the
+state of previous moment and the input of current moment.
+
+
+
+tanh
+tanh
+tanh
++
+
+
+
+LSTM
+Unite
+LSTM
+Unite
+1tx −
+tx
+1tx +
+1th −
+1tc −
+th
+tc
+tf
+tc
+ti
+to
+th
+1th +
+1th −Memory cell Input gateForget gate Output gate
+Fig. 2. LSTM unit structure.
+The forget gate is composed of a Sigmoid function σg,
+which determines the degree of forgetting at previous moment.
+0 means all information is forgotten, and 1 means all infor-
+mation is remembered. The output state at previous moment
+ht−1 and the input at current moment xt pass through the
+forget gate to obtain ft.
+ft = σg (Wf xt + Uf ht−1 + bf) (15)
+The memory unit also uses Sigmoid function to determine
+the degree of memory at previous moment. The output state
+of previous moment ht−1 and the input at current moment xt
+pass through the memory unit to obtain it.
+it = σg (Wixt + Uiht−1 + bi) (16)
+At the same time, the input gate composed of hyperbolic
+tangent function extracts current valid information and obtains
+˜ct.
+˜ct = tanh (Wcxt + Ucht−1 + bc) (17)
+Then the transmission belt information at current moment
+ct can be updated by previous moment information ct−1, the
+forget gate output ft, the memory unit output it and the input
+gate output ˜ct.
+ct = ft ◦ ct−1 + it ◦ ˜ct (18)
+The activation function of the output gate is Sigmoid
+function, which is used to extract effective information of the
+output state of previous moment ht−1 and the input of current
+moment xt to obtain ot.
+ot = σg (Woxt + Uoht−1 + bo) (19)
+Finally, the output of LSTM unit ht is calculated through
+the updated transmission belt information ct and the output
+gate output ot. It serves as both the output of current moment
+and the input of next moment. All information before this
+moment is accumulated in it.
+ht = ot ◦ tanh (ct) (20)
+where W , U and b are determined through neural network
+training. Basic training rules are back propagation and gradient
+descent optimization method.
+LSTM can effectively learn long-term dependencies through
+its unique gate structures. This is particularly important in tire
+force estimation, because tire force is a time series, and its
+
+=== PDF PAGE 4 ===
+changing characteristics are affected by multiple factors in
+long term. LSTM can process complex sequence data under
+multi-variable input and capture nonlinear dynamic character-
+istics. On the other hand, LSTM can avoid gradient vanishing
+problem by the transmission belt c, and the maintenance of
+gradient flow is conducive to establishing stable long-term
+dependencies.
+B. LSTM Modeling
+SequenceInputLayer LSTM Layer DropoutLayer FullyConnectedLayer
+
+
+
+tanh
+tanh
+tanh
++
+
+
+
+tx
+1th −
+1tc −
+th
+tc
+tf
+tc
+ti
+to
+th
+
+
+
+tanh
+tanh
++
+
+
+
+tx
+1th −
+1tc −
+th
+tc
+tf
+tc
+ti
+to
+th
+
+
+
+tanh
+tanh
++
+
+
+
+tx
+1th −
+1tc −
+th
+tc
+tf
+tc
+ti
+to
+th RegressionLayer
+Fig. 3. LSTM network structure.
+LSTM model needs to adjust hyperparameters, mainly in-
+cluding network structure parameters and training parameters.
+Main structure of LSTM network is shown in Fig. 3. LSTM
+layer needs to adjust the number of LSTM units to avoid
+model being too simplistic or increasing workload. Dropout
+layer needs to adjust the probability of randomly discarding
+input elements, which ensures model has good generalization
+ability. Fully connected layer needs to adjust the number of
+layers and the number of neurons in each layer.
+This paper uses two different multi-input multi-output
+LSTM structures to estimate Fxij and Fyij in turn. First, Fxij
+are estimated based on Tij, ωij, ax, ay, r, δ, and then Fyij are
+estimated based on ax, ay, r, δ, ˆFxij.
+The training parameters of LSTM network include but are
+not limited to the following: The gradient estimation correction
+method employs Adaptive Moment Estimation Algorithm. As
+the most commonly used adjustment method, it combines
+the advantages of RMSprop method and momentum method,
+enabling simultaneous adjustment of the learning rate and
+gradient. The mini-batch size refers to dividing total samples
+into several batches, performing an iteration every time a batch
+is encountered, and calculating average loss function from
+batch level, to improve calculation efficiency. Max epochs
+should be set to the number of epochs when the network loss
+function converges to the minimum value to avoid overfitting
+caused by too many epochs. The gradient threshold is to
+prevent gradient explosion. If the initial learning rate is too
+large, it may fail to find the global optimal value and diverge;
+if too small, it may settle into a local optimum. The strategy
+for adjusting the learning rate involves starting with a larger
+learning rate to speed up convergence, and then gradually
+reducing it as the training process deepens to complete detailed
+learning. This adjustment process requires determining the
+number of epochs at which learning rate begins to decrease
+and the proportional factor for each decrease. Reference [20]
+here uses random grid search method to divide parameters
+into several groups within a certain range, which randomly
+select different groups of parameters for training. Parameters
+corresponding to the best training effect are chosen. According
+to training results and computing power of hardware, Table I
+is the hyperparameters used for training network.
+TABLE I
+LSTM NETWORK TRAINING PARAMETERS
+Hyperparameter Parameter range Fx LSTM Fy LSTM
+Max epochs 100:100:1000 800 300
+Mini-batch size [16 32 64 128] 32 16
+Gradient threshold / 1 1
+Initial learning rate 0.001:0.001:0.005 0.003 0.005
+Learning rate
+adjustment
+100:50:300
+0:0.1:1
+100
+0.3
+150
+0.1
+After the NN model is established in the MATLAB 2023
+Deep Learning Toolbox, it is necessary to use a diverse
+dataset for training, including as many driving conditions as
+possible. This paper utilizes CarSim simulation software to
+collect training data. Here, training set is obtained on the
+Handling Course track, with a total distance of approximately
+2.27km. It includes straight roads and various combined curve
+conditions, and incorporates operations such as constant speed,
+acceleration and braking. The track is comprehensive and
+complex, mirroring actual road conditions, and has abundant
+vehicle dynamic state information.
+V. S IMULATION AND RESULTS
+A. Simulation Setup
+In CarSim, the vehicle model is set as a Class A hatchback
+car with hub motors distributed drive. The specific parameters
+of the vehicle are shown in Table II.
+TABLE II
+SIMULATED VEHICLE PARAMETER
+Physical quantity Numeric Unit
+Vehicle mass 833 kg
+Gravity acceleration 9.8 m/s2
+Center of mass height 0.54 m
+Tire moment of inertia 0.5 kg · m2
+Vehicle’s moment of inertia around z-axis 750 kg · m2
+Distance from center of mass to front axle 1.1 m
+Distance from center of mass to rear axle 1.25 m
+Front track width 1.415 m
+Rear track width 1.375 m
+Tire effective rolling radius 0.284 m
+Sampling time 0.001 s
+Here, we select double lane change(DLC) condition with
+TRFC of 0.85 and 0.5, speed from 0 to 80 km/h. Sine wave
+steering input (SWI) condition with TRFC of 0.85 and speed
+from 0 to 60 km/h is also verified. The simulation data from
+CarSim is exported to MATLAB/Simulink, and two algorithms
+are implemented separately. Gaussian random white noise is
+added to acceleration signal and yaw rate signal to evaluate
+the estimation performance under noise disturbance.
+
+=== PDF PAGE 5 ===
+B. Results
+1) Tire longitudinal force estimation : Fig. 4 to Fig. 6
+show the tire longitudinal force estimation results of model-
+based estimation method (BM) and machine learning method
+(LSTM). In order to compare the estimation performance of
+two methods, normalized root mean square error (NRMSE) is
+selected as the evaluation indicator. NRMSE in tire longitudi-
+nal force estimation is shown in Table III.
+BM and LSTM methods perform well overall and can
+accurately estimate the trends of tire longitudinal force. LSTM
+method performs better in the acceleration period. A fluctua-
+tion appears at the moment of switching between acceleration
+period and constant speed period, which is one of the main
+error sources of LSTM method. LSTM method is more robust
+to noise than BM method. The LSTM model extracts dynamic
+features from data through learning, filters out unnecessary
+noise, and focuses on the relevant information in the input time
+series data. The estimation results of BM method still contain
+unfiltered noise. With the decrease of TRFC, estimation errors
+of two methods have increased to a certain extent.
+Fig. 4. Tire longitudinal forces under high TRFC and DLC condition.
+Fig. 5. Tire longitudinal forces under medium TRFC and DLC condition.
+2) Tire lateral force estimation : Fig. 7 and Fig. 9 show
+tire lateral force estimation results of BM and LSTM methods.
+NRMSE in tire lateral force estimation is shown in Table IV.
+Both methods match the reference data with good accuracy.
+However, BM method is more susceptible to disturbance and
+Fig. 6. Tire longitudinal forces under high TRFC and SWI condition.
+TABLE III
+TIRE LONGITUDINAL FORCE ESTIMATION ERRORS
+Condition Method Fxf l Fxf r Fxrl Fxrr
+High TRFC & DLC BM 0.0407 0.0438 0.0376 0.0378
+LSTM 0.0324 0.0366 0.0334 0.0326
+Medium TRFC & DLC BM 0.0472 0.0590 0.0518 0.0531
+LSTM 0.0412 0.0502 0.0374 0.0425
+High TRFC & SWI BM 0.0337 0.0370 0.0317 0.0310
+LSTM 0.0329 0.0372 0.0318 0.0355
+Fig. 7. Tire lateral forces under high TRFC and DLC condition.
+Fig. 8. Tire lateral forces under medium TRFC and DLC condition.
+
+=== PDF PAGE 6 ===
+Fig. 9. Tire lateral forces under high TRFC and DLC condition.
+the estimated forces exhibit more fluctuation when signals
+are subject to considerable noise. LSTM method shows more
+stable estimation results. LSTM method performs significantly
+better than BM method, which has a certain error in straight
+section because the model does not consider wheel alignment
+parameters influence. Estimation of rear axle is more accurate
+than that of front axle. This is because front axle wheels as
+steering wheels are subject to greater lateral excitation, and
+more likely to reach nonlinear region.
+TABLE IV
+TIRE LATERAL FORCE ESTIMATION ERRORS
+Condition Method Fyf l Fyf r Fyrl Fyrr
+High TRFC & DLC BM 0.1004 0.0826 0.0928 0.0988
+LSTM 0.0362 0.0311 0.0310 0.0227
+Medium TRFC & DLC BM 0.1034 0.0800 0.0920 0.0981
+LSTM 0.0405 0.0333 0.0332 0.0327
+High TRFC & SWI BM 0.0987 0.1074 0.1100 0.1157
+LSTM 0.0590 0.0664 0.0647 0.0727
+The estimation error of BM method does not exceed 12 %,
+and the max error occurs in the tire lateral force estimation. In
+contrast, tire longitudinal force estimation is relatively more
+accurate. The estimation error of LSTM method falls below
+8%. In terms of tire lateral force estimation error, the average
+NRMSE of LSTM method is less than half of that of BM
+method. Using LSTM method to estimate tire lateral force can
+improve estimation performance by more than 50 % compared
+with model-based method.
+VI. C ONCLUSION
+In this paper, two methods are proposed: model-based and
+LSTM. The performance of these two methods in tire force
+estimation is compared using MATLAB and CarSim. Both
+methods can successfully estimate the tire longitudinal and
+lateral forces in a distributed drive electric vehicle. LSTM
+method can provide better estimates of tire forces. When
+adding Gaussian white noise of same intensity, the estimation
+results of LSTM method are more noise robust than those of
+the other method. This study shows that LSTM method based
+on machine learning is feasible for tire force estimation. Future
+research will focus on reducing estimation error and improving
+adaptability of method in extreme conditions.
+ACKNOWLEDGMENT
+This work was supported by the National Natural Science
+Foundation of China (Grant nos. 52275123)
+REFERENCES
+[1] J. Yao, “A review of the research on automobile active safety system,”
+China Southern Agricultural Machinery, vol. 49, no. 12, pp. 97-98, 2018.
+[2] B. Breuer, U. Eichhorn, and J. Roth, “Measurement of tyre/road-friction
+ahead of the car and inside the tyre,” 1992.
+[3] H. Guo, H. Chen, H. Zhao, and S. Yang, “State and parameter estimation
+for running vehicle: recent developments and perspective,” Control
+Theory and Technology, vol. 30, no. 6, pp. 661-672, 2013.
+[4] X. Liu, Y . Zha, F. Wu, X. Zheng, M. Yu, N. Hou, and et al., “Overview
+of Driving State Estimation Algorithms Based on Distributed Electric
+Vehicle Automatic Driving,” Automotive Digest, no. 1, pp. 1-6, 2021.
+[5] Z. Yu and X. Gao, “Review of Vehicle State Estimation Problem under
+Driving Situation,” Journal of Mechanical Engineering, vol. 45, no. 5,
+pp. 20-33, 2009.
+[6] L. R. Ray, “Nonlinear state and tire force estimation for advanced vehicle
+control,” in IEEE Transactions on Control Systems Technology, vol. 3,
+no. 1, pp. 117-124, March 1995.
+[7] L. R. Ray, “Nonlinear Tire Force Estimation and Road Friction Identi-
+fication: Simulation and Experiments,” Automatica, vol. 33, no. 10, pp.
+1819-1833, 1997.
+[8] L. R. Ray, “Experimental determination of tire forces and road friction,”
+Proceedings of the 1998 American Control Conference. ACC, Philadel-
+phia, PA, USA, vol. 3, pp. 1843-1847, 1998.
+[9] Y . Ma, “Study on Modular Vehicle State Estimation,” Jilin University,
+2018.
+[10] M. Doumiati, A. Victorino, A. Charara, and D. Lechner, “Lateral load
+transfer and normal forces estimation for vehicle safety: experimental
+test,” Vehicle System Dynamics, vol. 47, no. 12, pp. 1511–1533, 2009.
+[11] X. Jin and G. Yin, “Estimation of lateral tire–road forces and sideslip
+angle for electric vehicles using interacting multiple model filter ap-
+proach,” Journal of the Franklin Institute, vol. 352, no. 2, pp. 686-707,
+2015.
+[12] W. R. Pasterkamp and H. B.Pacejka, “Optimal design of neural networks
+for estimation of tyre/road friction,” Vehicle System Dynamics, vol. 29,
+no. sup1, pp. 312-321, 1998.
+[13] B. H. G. Barbosa, N. Xu, H. Askari, and A. Khajepour, “Lateral
+Force Prediction Using Gaussian Process Regression for Intelligent Tire
+Systems,” in IEEE Transactions on Systems, Man, and Cybernetics:
+Systems, vol. 52, no. 8, pp. 5332-5343, Aug. 2022.
+[14] N. Xu, H. Askari, Y . Huang, J. Zhou, and A. Khajepour, “Tire Force
+Estimation in Intelligent Tires Using Machine Learning,” in IEEE
+Transactions on Intelligent Transportation Systems, vol. 23, no. 4, pp.
+3565-3574, April 2022.
+[15] A. H. Salari, H. Mirzaeinejad, and M. F.Mahani, “Tire normal force
+estimation using artificial neural networks and fuzzy classifiers: Experi-
+mental validation,” Applied Soft Computing, vol. 132, p. 109835, 2023.
+[16] G. Wang, S. Li, and G. Feng, “Online Estimation of Three-Directional
+Tire Forces Based on a Self-Organizing Neural Network,” Machines,
+vol. 11, no. 3, p. 344, 2023.
+[17] Y . Choi, “PID state observer for robotic systems,” 2006 American
+Control Conference, Minneapolis, MN, 2006, pp. 6.
+[18] K. Huh, C. Seo, J. Kim, and D. Hong, “Active steering control based on
+the estimated tire forces,” Proceedings of the 1999 American Control
+Conference (Cat. No. 99CH36251), San Diego, CA, USA, 1999, pp.
+729-733 vol.1.
+[19] A. Rezaeian, R. Zarringhalam, S. Fallah, W. Melek, A. Khajepour, S.-
+Ken Chen and et al., “Novel Tire Force Estimation Strategy for Real-
+Time Implementation on Vehicle Applications,” in IEEE Transactions
+on Vehicular Technology, vol. 64, no. 6, pp. 2231-2241, June 2015.
+[20] S. J. Im, J. S. Oh, and G. -W. Kim, “Simultaneous Estimation of
+Unknown Road Roughness Input and Tire Normal Forces Based on a
+Long Short-Term Memory Model,” in IEEE Access, vol. 10, pp. 16655-
+16669, 2022.

@@ -1,0 +1,12 @@
+{
+  "overview": "This paper investigates adaptive event-triggered control for interval type-2 fuzzy cyber-physical systems subject to deception attacks and actuator failures. A switching design based on membership-function-derivative information is developed, and a two-sided FMF-dependent looped functional is employed to derive LMI-based control conditions. The proposed approach is illustrated through a PMSM example and a numerical example. The topic is relevant to secure networked control. However, the following points should be addressed to improve the presentation of the manuscript.",
+  "comments": [
+    "The manuscript requires careful editing to improve English grammar and sentence structure. Some sentences are overly complex or awkwardly phrased, which may hinder comprehension for international readers. Professional language polishing is recommended.",
+    "The Introduction should better explain the practical significance of considering deception attacks and actuator failures simultaneously under limited communication resources. The authors are encouraged to connect this combined setting more closely with the engineering application considered in the paper.",
+    "The problem formulation involves several components, including IT-2 fuzzy modeling, adaptive triggering, deception attacks, and actuator failures. Please add an explanatory remark to clarify how these components are connected in the closed-loop model, so that the modeling framework is easier to follow.",
+    "Why is a two-sided FMF-dependent looped functional adopted in this work? In addition to the brief discussion in Remark 3.1, please provide a more intuitive explanation of the roles of membership-function dependence and the two-sided sampling-interval structure.",
+    "The discussion of the numerical examples could be strengthened. Please explain more clearly how the state responses, adaptive-threshold evolution, and communication savings together illustrate the effects of the proposed controller and triggering mechanism.",
+    "It is suggested that the authors include more recent studies closely related to secure event-triggered control and fault-tolerant control of IT-2 fuzzy systems. The distinctions and connections between these studies and the proposed method should also be discussed."
+  ],
+  "file": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\paper2_审稿意见\\第三版_意见正文\\01_审稿意见_Reviewer1_第三版.docx"
+}

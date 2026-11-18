@@ -1,0 +1,19 @@
+Comment on ESWA-D-22-07284
+The networked interval type-2 fuzzy systems (IT-2FSs) which suffering with the actuator faults and imperfectly matched membership functions (IMMFs) has been addressed in this work. Compared to the results that have been achieved, the reconstruction of majority stochastically occurring faulty models, the introduced intrinsic lag of signal and a novelty looped semi-Markovian Lyapunov functional for IT-2FSs are integrated in this manuscript, the M-PLMIs and examples are displayed as the outcomes. This work is well organized and sound. However, there are some suggestions that should be considered to improve the quality of the paper.
+It is noted that your manuscript needs careful editing, such as the English grammar and sentence structure so that the goals and results in your work are friendly to the weak in English.
+
+For the innovatively reconstructed sampling intervals, whether a quantifiable indicator can be found to determine its advantages over traditional methods, the author can illustrate this as an extension.
+
+Reinforce the logical coherence of the introduction, highlight why the work was done, and compare the advantages of the existing work in the simulation section.
+
+There are so many contents such as IT-2FSs, IMMFs, HMM, lag of signal and asynchronous control considered in this work, the problem formulation part should have a more detailed description. 
+
+The mismatched membership functions and the derived multi-parameterized linear matrix inequalities are too complex for the beginner, can a simple solution be found to achieve the same effect.
+
+What impact does the asynchronous control, IMMFs, HMM and lag of signal have on system performance, and how does your job eliminate these effects, whether the logical connection between the two can be described by quantitative indicators.
+
+There are a lot of nice innovations in the paper such as the treatment of sampling intervals, the extension of LMI, can you explain the extension of their applications.
+
+The list of references is not in our style. Some modification work needs to be done before submitting.
+
+Overall, this paper can be accepted after some minor modifications.

@@ -1,0 +1,121 @@
+For Peer Review
+linear
+subsystems by membership functions(MFs), based upon which the well-established linear system theories
+can be exploited immediately. Thereby, an immediate result is that the modeling and performance analysis as
+well as control synthesis of nonlinear plants become relatively convenient. Accordingly, the theoretical research
+on T-S fuzzy model-based nonlinear control has gained rapid development interest [5-8]. Howbeit, the aforesaid
+publications are based upon the conventional type-1 fuzzy modeling method, which is unsolvable to handle the
+coeﬃcient uncertainties in the MFs. But the good news is, to manage this type of uncertainties, which always
+exist in engineering applications, the IT-2 fuzzy modeling approach has been developed in a timely manner by
+blending the lower and upper bounds of MFs. Speciﬁcally, the T-S fuzzy model can be approached as a special
+scenario when all the lower MFs of IT-2 fuzzy sets are severally equivalent to the upper MFs. Consequently,
+IT-2FSs have been widely preferred due to their ﬂexible structure and practical applicability to plenty of systems
+[11-14,54]. Most recently, Han et al. [9] addressed the security sliding mode control (SMC) design issue for
+IT-2FSs with stochastic communication protocol (SCP) and cyber attacks. Dong et al. in work [10] discussed
+the Hanker-norm-based model reduction problem for stochastic discrete-time nonlinear systems in IT-2 fuzzy
+framework. To this day, IT-2 fuzzy control synthesis issue is still an active and promising scientiﬁc research
+domain, especially in the practical engineering applications, such as vehicular yaw rate sensor, wireless sensor
+networks and modular-reconﬁgurable robots, variable speed wind turbine systems, and so forth.
+In numerous scientiﬁc and engineering domains, such as aeronautics and astronautics systems, train cave
+interconnection systems, interconnected large-scale power systems and robot manipulations with abrupt struc-
+tures or coeﬃcient variations can be accurately constructed by Markovian jump systems (MJSs) [15, 48], in
+which the variations mainly produced by stochastic failures or repairs of components, transformation of sub-
+system interconnections, abrupt variations in the operating point. Consequently, in the past more than half a
+century, research on optimization and control synthesis of MJSs has enjoyed enduring popularity and plenteous
+outcomes have been announced, for more details kindly refer to [16 − 19]. Nevertheless, what needs to be em-
+phasized is that there exists an implicity strong assumption in the fore-mentioned publications. Explicitly, the
+sojourn-time (ST) of the jump signals separately obeys geometric or exponential distribution in the discrete-
+time or continuous-time domain, which renders the transition probabilities (TPs) or transition rates (TRs) are
+invariable individually. This tremendously weakens its capability to model some complicated dynamics, and
+this also hinder its potential application background. To relax such a restriction, an alternative pathway is
+developed that introduce a semi-Markovian process (SMP) rather than Markovian process to portray the evo-
+lutions among the subsystems. Theoretically, the ST in SMP follows non-exponential distributions, including
+Weibull distribution [20], phase-type distribution, Gaussian distribution [21], geometric distribution, and so
+forth. On the strength of the variable TRs with “memory” property, that is why the last few decades have
+witnessed continuing research enthusiasm of scholars from home and abroad. Song et al. in [22] creatively ex-
+hibited a strategy to cope with the asynchronous SMC problem for singularity perturbed semi-MJSs (SMJSs).
+Very recently, the Ref. [23] addressed the resilient static output feedback control (OFC) issue for discrete-time
+SMJSs with piecewise homogenous incomplete semi-Markovian kernel (SMK). Howbeit, to our best knowledge,
+although some reports have been carried out on the stochastic actuator failures (SAFs) with Markovian process
+in both of the theory and applications [44 − 47, 59], no publications pay close attention to the SAFs with SMP
+on IT−2FSs. Thereby, our main incentivation of the current research is to seek the satisfactory answer for this
+thorny problem.
+Duo to modern high-performance computer, automatic and intelligent control technology along with wire-
+less communication networks have been promoted and developed mutually in recent years, make it possible to
+transmit the control signals from the physical plants to controller, which gives rise to the sampled-data control
+(SDC) strategy [24 − 25]. In the implementation of SDC, only the information of the system at its sampled in-
+stants to the controller is adopted during a ﬁxed sampled interval, which can signiﬁcantly diminish the network
+communication frequency and eﬀectively release computation burden. Meanwhile, exposed to the harsh outer
+space environment, sampler are gradually aging and the sampled-data periodic becomes heterogeneous in the
+process of time. Hence, how to acquire a maximum available sampling interval (MASI) is a pretty hot ﬁeld.
+The most popular and important direction is skillfully construct a Lyapunov functional and maximally estimate
+its derivative. More recently, the Ref. [52] has addressed the aperiodic sampled-data-based controller design
+issue for IT−2FSs by a reﬁned adaptive event-triggered communication mechanism. The Refs. [64] and [65]
+have investigated the membership-function-dependent sampled-data control design problem for IT−2FSs. Here-
+in, we raise a novelty looped functional alleged dual-sided sampled-interval-dependent looped semi-Markovian
+Lyapunov functional to further reduce the conservatism thanks to we only require the positivity at sampling
+moments rather than entire sampling intervals.
+2
+Page 3 of 29
+http://mc.manuscriptcentral.com/rnc-wiley
+International Journal of Robust and Nonlinear Control
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60

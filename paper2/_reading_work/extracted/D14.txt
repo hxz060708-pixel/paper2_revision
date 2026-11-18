@@ -1,0 +1,94 @@
+===== PDF PAGE 1 OF 2 =====
+ 
+ 
+ 
+ 
+ 
+The report on the paper entitled: "ENTIRE SOLUTIONS OF TWO CERTAIN FERMAT-TYPE 
+ORDINARY DIFFERENTIAL EQUATIONS" with references " OPENMATH-D-22-00217"  
+ 
+1. The title and abstract 
+ 
+The title adequately describes the purpose of the p aper. From the literature, it can be seen that 
+the most similar title is " On Entire Solutions of Two Certain Fermat-Type Differential–
+Difference Equations". So, it is well-matched. The abstract is written clearly and concisely. It 
+gives a precise statement of the problem. But, in l ines 6 and 8, Comma marks should be used 
+after  " 1a " and " also".  
+2. The introduction  
+i)  I think the interest of the manuscript is not well  enough connected to recent relevant works in 
+the area. The author(s) should add some recent work s to references. For example, the study 
+entitled " On Entire Solutions of Two Certain Ferma t-Type Differential–Difference Equations" 
+can be considered. So, the Author(s) can avoid the similarity between this and their research, 
+especially in shape. In this direction, I prefer to  see non-lengthy explanations in this section than 
+referenced theorems.  
+It doesn't look nice to use the words " after that"  for two consecutive sentences. After first "after 
+that", the sentence " Baker and Gross . . . " should be controlled.  
+Page 2 , 
+ Line 2 : "attentions" should be corrected to "attention".  
+Line 7 : "the certain" should be corrected to " a certain".  
+Line 12:  Comma after "furthermore".  
+Line 13:  "which satisfies" should be corrected to " that satisfies".  
+Line 16 and 21:  Commas after " 2a ".  
+Line 26:  "that the" should be corrected to "the".  
+Page 3 , 
+ Line 4 : "where g, p ... "--->: "where g and p ... ".  
+Line 16 and 26 : Commas after " 1φ  ".  
+Line 24:  "polynomial ... "---> : "polynomials ... ".  
+The phrase " ...not equal to zero at the same time " is used five times in the entire manuscript. 
+Authors should consider other alternatives.  
+3. The ODEs (1): 
+Page 4 , 
+ Line 2 : "  1a , 2a ... "---->  " 1a  and 2a ".  
+Line 15 : "  a , b ... "---->  " a  and b ". 
+4. The ODEs (2): 
+Page 5 , 
+Line 9 : Comma after "furthermore".  
+Line 28 : "Fermat type" should be corrected to " Fermat-type".  
+
+===== PDF PAGE 2 OF 2 =====
+Page 6 , Line 13 : I recommend author(s) that use ", which is the fo rm of that in Teorem3.2" 
+instead of "....of  in . . . ." and avoid using so many " In fact" like  that in the same page line 15, 
+page 7-line 1, page 11-line 9. 
+Page 7 
+,  
+Line 18 : "meromeorphic" must be corrected to " meromorphic ".  
+Line 3rd from the end: the equation (4.13) must be checked for an extra parenthesis.  
+Page 8 ,  
+Line 2 : ". . . p c =  ia ..." should be corrected to "". . . p c =  is ...".  
+Line 3 : "with the assumption p is ..." should be corrected to " with the assumption that p is ...".  
+Line 7:  "form (4.3) and (4.4)" should be corrected to " from (4.3) and (4.4)". 
+Page 10 , 
+Line 1 : " Similar to the arguments as in the proof of The orem 2.1, ..." should be corrected to " 
+Similar to the arguments in the proof of Theorem 2. 1," on the same page, line 3 and line 24 as 
+well as page 11-line9.  
+Line 3 : Comma after "From the equation".  
+Line 10 : "and " between "cosh, sinh".  
+Line 16 : Comma after "From the equation".  
+Line 22 : " reerite" must be corrected to "rewrite".  
+Line 24 : " exist" must be corrected to "exists". 
+Page 11 , 
+Line 7, the last line : Comma after "Next".  
+Line 22 : "and " between "... b, d".  
+Page 12 , 
+Line 5, line 11 : Comma after " cosh".  
+Line 22 : " helpful suggestions." must be corrected to "their helpful suggestions."  
+ 
+ As a reader, I prefer to see proofs of related the orems before considering so many 
+examples. I think this situation undermines the int egrity of the study. The text of the article is not  
+clear and flawless as per the grammar. On page 4- l ine 6, the Author(s) claim that 
+ϕ  is a 
+polynomial such that 2
+2
+pϕ =  where p   is a non-constant polynomial in ℂ. But, I think it's not 
+correct because this fails when for example 2 1 np z −= ; n ∈ ℕ.  So, this and its proof must be 
+checked if any mistakes.  
+The formulae (2.2) or (2.3) can be simplified and r ewritten in the form of nonlinear  first-order 
+differential equations in α  concerning without using pβ α= . Also, I have could not find any 
+difference between formulae (2.2) and (2.3). Both of them give the following: 
+( ) ( )
+2
+2 1 0 2 1 0 ˆ ˆ k z z a z z a α α β β ′ ′ + = − + , 
+where 1 1z i = +  , 1 1 ˆz z = , 2 2 1 z a a i = + , and 2 2 1 ˆz a ia = − .  
+ For all these reasons, I think that the study is b elow the level expected from a 
+scientific paper. This is why I propose the rejection of the manuscript.  
+ 

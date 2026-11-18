@@ -1,0 +1,76 @@
+This is BibTeX, Version 0.99d (TeX Live 2025)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: paper2.aux
+The style file: elsarticle-num.bst
+Database file #1: ref2.bib
+Warning--there's a number but no volume in wangMixedVehicleGroup2024
+Warning--there's a number but no volume in liuFalseDataInjectionAttack2023
+Warning--there's a number but no volume in dingSurveyModelBasedDistributed2019
+Warning--there's a number but no volume in yuanAdaptiveControlNonlinear2024
+Warning--there's a number but no volume in biAdaptiveDecentralizedFiniteTime2023
+Warning--there's a number but no volume in wangStabilityStabilizationTS2021
+Warning--there's a number but no volume in wangSwitchingAsynchronousControl2024
+Warning--there's a number but no volume in shengAperiodicSamplingDependentEventTriggeredControl2024
+Warning--there's a number but no volume in liFiniteTimeDynamicEventTriggered2022
+Warning--there's a number but no volume in liuObserverBasedAdaptiveEventTriggered2024
+Warning--there's a number but no volume in zhangNovelApproachVehicular2025
+Warning--there's a number but no volume in duIntervalType2Fuzzy2025
+Warning--there's a number but no volume in zhangNetworkedControlSystems2020
+Warning--there's a number but no volume in pangNetworkedPredictiveControl2026
+Warning--there's a number but no volume in yaoSecureControlMarkovian2023c
+Warning--there's a number but no volume in lianSwitchingLikeEventTriggeredControl2021
+Warning--there's a number but no volume in zhaDynamicEventTriggeredOutput2022
+Warning--there's a number but no volume in wangResilientAdaptiveIntermittent2024
+Warning--there's a number but no volume in wangResilientAdaptiveStabilization2025
+Warning--there's a number but no volume in postoyanFrameworkEventTriggeredStabilization2015
+Warning--there's a number but no volume in chenFinitetimeStabilityNonlinear2026
+Warning--there's a number but no volume in xingSwitchedFuzzyControl2024
+Warning--there's a number but no volume in chenProbabilisticEventTriggeredPolicy2023
+Warning--there's a number but no volume in caiAdaptiveFaulttolerantControl2025
+Warning--there's a number but no volume in zhangMixedDelayBasedAugmentedFunctional2024
+Warning--there's a number but no volume in ganesanSynchronizationStochasticNeural2024
+Warning--there's a number but no volume in wangNewApproachStability2018
+Warning--there's a number but no volume in guanModifiedLoopedFunctional2021a
+Warning--there's a number but no volume in samySampledDataControlIT22024
+You've used 36 entries,
+            2952 wiz_defined-function locations,
+            883 strings with 15437 characters,
+and the built_in function-call counts, 12224 in all, are:
+= -- 1147
+> -- 492
+< -- 1
++ -- 188
+- -- 152
+* -- 1012
+:= -- 1704
+add.period$ -- 36
+call.type$ -- 36
+change.case$ -- 36
+chr.to.int$ -- 0
+cite$ -- 65
+duplicate$ -- 302
+empty$ -- 1249
+format.name$ -- 188
+if$ -- 2968
+int.to.chr$ -- 0
+int.to.str$ -- 36
+missing$ -- 36
+newline$ -- 116
+num.names$ -- 36
+pop$ -- 226
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 633
+stack$ -- 0
+substring$ -- 1052
+swap$ -- 46
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 29
+while$ -- 108
+width$ -- 38
+write$ -- 290
+(There were 29 warnings)

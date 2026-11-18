@@ -1,0 +1,268 @@
+For Peer Review
+Remark
+3. By incorporating with the technologies of dual-sided looped Lyappunov functional and stochas-
+tic analytical framework together with free-matrix-based integral inequality, suﬃcient conditions that ensure
+stochastically stable of the resultant IT −2FSs (8) with SMJAFs and ROCGFs are constructed. The proposed
+looped-functional (12), which is intentional developed to seize the information among the whole sampling inter-
+vals. This step is critical in reducing the conservativeness of the theoretical achievement. In the end of Theorem
+1, to relax the strict constraints
+[
+✠
+(J )
+ij,m(Tk)
+]
+< 0, some appurtenant matrices
+[
+¥(J )
+ij,m(Tk)
+]
+are purposefully em-
+bedded, this reasonable operation is also vitally important to derive several conservative conditions but pose a
+challenge to computational complexity.
+In view of the complexity and unsolvability of matrix inequality constraints (9) − (11), we are incapable to
+parameterize the control gain matrices Km,j straightway due to there exists some nonlinear coupling elements.
+Thereby, to calculate the gain matrices Km,j, we shall to further induce in the following theorem.
+Theorem 2. For some preconcerted scalars h m, h M, ϑ, ϱ, α ∈ [0, 1], actuator fault matrices Gm and Lm,
+the resultant IT−2FSs (8) is stochastically stable with prescribed H∞ control performance index, if there exist
+matrices ¯Pm > 0, U϶m > 0, S϶m > 0, Z϶m > 0, Q϶m(϶= 1, 2), Rm = RT
+m, any matrices L♯m(♯ = 1, 2, 3), M♮m,
+N♮m, H♮m, J♮m(♮ = 1 , 2), Gm, Ym,j, and corresponding symmetric slack matrices [ ¥(J )
+ij,m(Tk)] equipped with
+suitable dimensions, and scalars G♯(♯ = 1, 2, 3) and εm > 0 with the conditions Wj − ℸjUj ≥ 0 satisfying the
+following PLMIs for any Tk ∈ {h m, h M }:
+[
+˜✠
+(J )
+ij,m(Tk)
+]
+−
+[
+¥(J )
+ij,m(Tk)
+]
+< 0, (33)
+ℸi
+[
+˜✠
+(J )
+ii,m(Tk)
+]
+− ℸi
+[
+¥(J )
+ii,m(Tk)
+]
++
+[
+¥(J )
+ii,m(Tk)
+]
+< 0, J = 1, 2, (34)
+ℸj
+[
+˜✠
+(J )
+ij,m(Tk)
+]
+− ℸj
+[
+¥(J )
+ij,m(Tk)
+]
++
+[
+¥(J )
+ij,m(Tk)
+]
++ ℸi
+[
+˜✠
+(J )
+ji,m(Tk)
+]
+− ℸi
+[
+¥(J )
+ji,m(Tk)
+]
++
+[
+¥(J )
+ji,m(Tk)
+]
+< 0, (35)
+where
+[
+˜✠
+(1)
+ij,m(Tk)
+]
+=
+
+
+
+
+
+˜✠1(Tk) ¯Ui
+√
+TkMT
+1m
+√
+3Tkh M
+3 MT
+2m
+√
+TkN T
+1m
+√
+3Tkh M
+3 N T
+2m
+√ϱ˜ℸ √α ˜ΥBiGmMm,j e 4
+√αGT
+mN T
+m,j
+⋆ −I 0 0 0 0 0 0 0
+⋆ ⋆ −Z1m 0 0 0 0 0 0
+⋆ ⋆ ⋆ −Z1m 0 0 0 0 0
+⋆ ⋆ ⋆ ⋆ −Z2m 0 0 0 0
+⋆ ⋆ ⋆ ⋆ ⋆ −Z2m 0 0 0
+⋆ ⋆ ⋆ ⋆ ⋆ ⋆ −Ξ1m 0 0
+⋆ ⋆ ⋆ ⋆ ⋆ ⋆ ⋆ −ε−1
+m In 0
+⋆ ⋆ ⋆ ⋆ ⋆ ⋆ ⋆ ⋆ −εmIn
+
+
+
+
+
+,
+[
+˜✠
+(2)
+ij,m(Tk)
+]
+=
+
+
+
+
+
+˜✠2(Tk) ¯Ui
+√
+TkHT
+1m
+√
+3Tkh M
+3 HT
+2m
+√TkJ T
+1m
+√
+3Tkh M
+3 J T
+2m
+√ϱ˜ℸ √α ˜ΥBiGmMm,j e 4
+√αGT
+mN T
+m,j
+⋆ −I 0 0 0 0 0 0 0
+⋆ ⋆ −S1m 0 0 0 0 0 0
+⋆ ⋆ ⋆ −S1m 0 0 0 0 0
+⋆ ⋆ ⋆ ⋆ −S2m 0 0 0 0
+⋆ ⋆ ⋆ ⋆ ⋆ −S2m 0 0 0
+⋆ ⋆ ⋆ ⋆ ⋆ ⋆ −Ξ1m 0 0
+⋆ ⋆ ⋆ ⋆ ⋆ ⋆ ⋆ −ε−1
+m In 0
+⋆ ⋆ ⋆ ⋆ ⋆ ⋆ ⋆ ⋆ −εmIn
+
+
+
+
+
+,
+and
+˜✠1(Tk) = ˜✠ + Tk ˜✠1, ˜✠2(Tk) = ˜✠ + Tk ˜✠2, ˜Π1 = e T
+1 + G1e T
+7 + G2e T
+3 + G3e T
+8 ,
+˜✠ =ΓT
+1
+[ N∑
+n=1
+ϑmnPn
+]
+Γ1 + ΓT
+3 U1mΓ3 − ΓT
+4 U1mΓ4 + ϱe T
+7 U2me 7 + He{ΓT
+5 [Q1mΓ6 + Q2mΓ7] + ΓT
+1 PmΓ2 + ˜Π1 ˜Π2
++ L1mΓ21 + L2mΓ22 + L3mΓ23 + M1mΓo1 + N1mΓo2 + H1mΓo3 + J1mΓo4} − ϑ2e T
+15e 15 − ϑ2e T
+16e 16,
+13
+Page 14 of 29
+http://mc.manuscriptcentral.com/rnc-wiley
+International Journal of Robust and Nonlinear Control
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60

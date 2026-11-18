@@ -1,0 +1,2597 @@
+===== PDF PAGE 1 OF 12 =====
+Exponential Stabilization of Time-Delayed T-S Fuzzy 
+Systems via Novel Two-Sided Looped Lyapunov-Krasovskii 
+Functional
+Journal: IEEE Transactions on Systems, Man and Cybernetics: Systems
+Manuscript ID SMCA-25-06-2213
+Manuscript Type: Regular Paper
+Date Submitted by the 
+Author: 13-Jun-2025
+Complete List of Authors: Baskaran, Muthu Vel Rajan; Vellore Institute of Technology - Chennai 
+Campus
+Kuppusamy, Subramanian; Deakin University - Geelong Waurn Ponds 
+Campus
+Chinnathambi, Rajivganthi; Vellore Institute of Technology - Chennai 
+Campus
+Key Words: Control systems, Fuzzy systems, Lyapunov methods, Stability
+ 
+
+
+===== PDF PAGE 2 OF 12 =====
+1
+Exponential Stabilization of Time-Delayed T-S
+Fuzzy Systems via Novel Two-Sided Looped
+Lyapunov-Krasovskii Functional
+Muthu Vel Rajan Baskaran, Subramanian Kuppusamy and Rajivganthi Chinnathambi
+Abstract—This paper investigates the exponential stability
+and stabilization of time-delayed Takagi-Sugeno (T-S) fuzzy
+systems under a sampled-data control framework. To achieve
+this, a novel two-sided looped Lyapunov-Krasovskii functional
+(TSLLKF) is introduced, incorporating a fractional parameter
+and an exponential decay rate. Unlike conventional methods,
+TSLLKF provides deeper insights into the sampling pattern and
+system states within a splitted sampling periods. By leveraging the
+Cauchy matrix inequality, a new integral inequality is developed
+to estimate the integral terms involving system states with fewer
+slack variables, thereby reducing conservativeness. Through the
+construction of TSLLKF and application of the proposed integral
+inequality, sufficient conditions are derived and expressed as
+linear matrix inequalities. The established criteria ensure the
+exponential stability of the proposed T-S fuzzy systems. Finally,
+the numerical results demonstrate the significance and practical
+relevance of the designed system, while comparative examples
+emphasize the superiority of the proposed methods.
+Index Terms—Linear matrix inequality, Time delay, Sampled-
+data control, Looped Lyapunov-Krasovskii functional, T-S fuzzy
+systems.
+I. I NTRODUCTION
+Nonlinear systems have emerged as a prominent research
+area, receiving considerable attention across various fields such
+as chemical engineering, energy, transportation and so on [1]–
+[3]. In particular, the T-S fuzzy systems (TSFS) has proven to
+be highly effective in modeling the complexities of nonlinear
+systems. Typically, fuzzy models are represented as a weighted
+sum of linear subsystems based on IF-THEN rules, which
+are characterized by fuzzy membership functions (FMFs) [4].
+Furthermore, stabilization is a key focus in system analysis
+and control, playing a crucial role in ensuring the proper
+operation of real-world systems. Recently, plenty of study
+has been focused on the stabilization of nonlinear systems
+through the TSFS approach [5]. For instance, chaotic system
+can be modeled by TSFS technique, and the stabilization
+requirements also explored in [6]. Based on TSFS technique,
+the stabilization of a permanent magnet synchronous generator
+in the context of wind turbine systems has been analyzed in
+[7].
+Muthu Vel Rajan Baskaran and Rajivganthi Chinnathambi are with De-
+partment of Mathematics, School of Advanced Sciences, Vellore Institute of
+Technology, Chennai, Tamilnadu-600 127, India.
+Subramanian Kuppusamy is with the School of Engineering, Deakin
+University, Waurn Ponds Campus, VIC 3216, Australia.
+E-mail addresses: muthu.velrajanb2024@vitstudent.ac.in (B. Muthu Vel Ra-
+jan), s.kuppusamy@deakin.edu.au (K. Subramanian), rajivganthi.c@vit.ac.in
+(C. Rajivganthi)
+Corresponding Author: Rajivganthi Chinnathambi
+Time-delays are commonly encountered in many practical
+processes, often deteriorating the performance of dynamical
+systems and potentially leading to oscillations and instabilities.
+Therefore, overcoming the challenges posed by time delays
+and ensuring system stability has become an essential task.
+These delays are also inherent when nonlinear systems are
+modeled using TSFS technique. Due to the prevalence and
+adverse effects of time delays, the stability analysis of time-
+delayed TSFS has emerged as a significant research area and
+has gained increasing attention in recent years [8]–[10].The
+main goal of these studies [8]–[10] is to determine the
+maximum allowable delay bound that ensures the stability of
+delayed TSFS.
+Nowadays, with the advancements in networked control
+systems, sampled-data control (SDC) has become a prominent
+research focus in the control field [11]–[13]. This approach
+transmits the state vector only at discrete sampling instants,
+significantly conserving scarce communication resources, such
+as limited bandwidth. For example, the authors in [14] have
+analyzed the stabilization of linear and nonlinear systems via
+SDC technique. Also, the SDC has been designed for TSFS
+with time delay in [15]. Besides that the memory SDC has
+been developed and analyzed to achieve stabilization of TSFS
+to deal with the constant signal transmission delay occurred by
+the updating signal successfully transmitted from the sampler
+to controller and to zero-order hold at sampling instant [16].
+To mention a few, stabilization of TSFS under the memory
+SDC has been investigated in [17]. Based on the memory SDC
+along with conventional SDC scheme in [18], the stability
+of interval-type 2 TSFS has been investigated. Moreover, the
+memory SDC has been utilized to establish the stabilization
+conditions for time-delayed TSFS in [19].
+On the other hand, the maximum allowable sampling period
+plays a crucial role in determining the performance of SDC,
+as it defines a more flexible operating condition [24]. For
+instance, a larger sampling period may result in limited com-
+munication capacity and bandwidth. Consequently, recent re-
+search has focused on developing various approaches, includ-
+ing continuous LKF, discontinuous LKF, looped functional and
+deriving new inequalities for estimating the integral terms,
+to extend the allowable sampling period while maintaining
+control efficiency. In particular, looped functional approach
+have received more attention to reduce the conservativeness
+in the design of SDC for TSFS [25]–[27], since it utilizes
+the fully integrated information on the states during sampling
+period and relaxes the positive definiteness at the sampling
+Page 1 of 11
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+
+===== PDF PAGE 3 OF 12 =====
+2
+instants. Recently, the refined looped Lyapunov functional has
+been constructed for TSFS by introducing the fractional pa-
+rameter in the sampling period and it can be divided into four
+sub-intervals [25]. As a result, this approach has yielded the
+less conservative results by enlarging the allowable sampling
+periods and has been widely applied for the stabilization of
+SDC systems. Inspired from the above, we have developed the
+modified two-sided looped LKF (TSLLKF) for the exponential
+stabilization of time-delayed TSFS under the memory SDC
+together with conventional SDC scheme to attain the larger
+sampling period and reduce the conservatism of results.
+The major contributions of this article are summarized
+as follows.
+1) A novel TSLLKF is developed for time-delayed TSFS,
+utilizing fractional sampling intervals based on the
+fractional parameter and distinct with [28]–[30], the
+exponential term is introduced in every functionals of
+TSLLKF to the exponential stabilization analysis.
+2) A new integral inequality is proposed with an exponen-
+tial relation based on the Cauchy matrix inequality with
+fewer slack variables which reduces the computational
+complexity of the proposed method.
+3) The sufficient conditions for exponential stabilization
+of time-delayed TSFS are established under the SDC
+scheme with a constant transmission delay in terms of
+linear matrix inequalities (LMIs).
+4) In the numerical simulation, the effectiveness and supe-
+riority of the proposed method is verified by utilizing the
+nonlinear models of stirred tank reactor (STR) system
+and Rossler’s system by enlarging the maximal sampling
+bound.
+Notations: Rn represents n-dimensional Euclidean space.
+He{X } = X+X T and diag{. . .} indicates the block diagonal
+matrix.P > 0 is a positive definite matrix. Rm×n denotes
+m × n real matrices space. ∗ represents the symmetric term in
+a symmetric matrix. δmin{P} is the minimum eigenvalue of
+real symmetric matrix P. ∥ · ∥ denotes the spectral norm for
+matrices or Euclidean norm for vectors. 0n denotes the zero
+matrix and I is an identity matrix with appropriate dimensions.
+II. SYSTEM FORMULATION
+The TSFS with time delay can be described as the following
+rules,
+Plant rule i: IF Ω1(t) is Ψi1, . . . and Ωp(t) is Ψip THEN
+(
+˙x(t) = Aix(t) + Aτcix(t − τc) + Biu(t),
+x(t) = Θ(t), t ∈ [−τc, 0], (1)
+where, x(t) ∈ Rn represents the system state vector and u(t)
+∈ Rm represents the control input signal. Ai ∈ Rn×n, Aτci
+∈ Rn×n, and Bi ∈ Rn×m are denoted by the known constant
+matrices, Θ(t) represents the initial condition and time-delay
+τc > 0 is a constant. Ω(t) = [Ω 1(t), Ω2(t), . . . ,Ωp(t)] is the
+premise variable and Ψil (i = 1, 2, . . . , r; l = 1, 2, . . . , p) is
+the fuzzy set. The number of fuzzy rules denoted by r.
+Now, based on the centre-average defuzzifier, product in-
+ferences and singleton fuzzier for systems (1), the following
+time-delayed TSFS are obtained.
+˙x(t) =
+rX
+i=1
+µi(Ω(t))[Aix(t) + Aτcix(t − τc) + Biu(t)], (2)
+here, µi(Ω(t)) represents the FMFs and it satisfying
+µi(Ω(t)) = φi(Ω(t))
+Pr
+i=1 φi(Ω(t)) ≥ 0,
+rX
+i=1
+µi(Ω(t)) = 1,
+with φi(Ω(t)) =Qr
+i=1 Ψil(Ω(t)) and Ψil(Ωl(t)) is the grade
+membership function of Ωl(t) in Ψil.
+Suppose that TSFS (2) is controlled by using the SDC. By
+taking the state time delay into account, the control input
+signal is generated using a zero-order-hold function, defined
+over the interval [tk, tk+1) as:
+Controller rule j: IF Ω1(t) is Ψj1, · · · and Ωp(t) is Ψjp
+THEN
+u(t) = Kjx(tk)+Kτcjx(tk − τc),
+in which, Kj and Kτcj ∈ Rn×m(j = 1, 2, . . . , r) represent the
+control gain matrices, and tk denote the sampling instants with
+t0 = 0. The aperiodic sampling periods satisfy tk+1 − tk =
+hk ∈ [hl, hu], where hl and hu are the lower and upper bounds
+of sampling periods, respectively. Hence, the overall aperiodic
+memory SDC scheme can be given as
+u(t) =
+rX
+j=1
+µj(Ω(tk))[Kjx(tk) + Kτcjx(tk − τc)], (3)
+Substituting ( 3) into (2), we can get the closed-loop system
+as,
+˙x(t) =
+rX
+i=1
+rX
+j=1
+µi(Ω(t))µj(Ω(tk))[Aix(t) + Aτcix(t − τc)
++ BiKjx(tk) + BiKτcjx(tk − τc)],
+(4)
+Next, we will derive the integral inequality to examine the
+stability condition of TSFS (4).
+Lemma 1: For any constant matrices T1 = TT
+1 > 0 and R1
+= RT
+1 > 0 and for the parameter 0 < α < 1, the following
+inequalities hold:
+−e2δ(t−hk)
+Z t
+ϖ1(t)
+˙xT (c)T1 ˙x(c)dc
+≤ e2δ(t−hk)(1 − α)ς1(t)ξT (t)XT−1
+1 X T ξ(t)
++ 2ξT (t)X[x(t) − x(ϖ1(t))], (5)
+−e2δ(t−hk)
+Z t
+ϖ1(t)
+xT (c)R1x(c)dc
+≤ e2δ(t−hk)(1 − α)ς1(t)ξT (t)F R−1
+1 F T ξ(t)
++ 2ξT (t)F
+Z t
+ϖ1(t)
+x(c)dc, (6)
+Page 2 of 11
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+
+===== PDF PAGE 4 OF 12 =====
+3
+where, X and F are the appropriate dimensional matrices,
+ϖ1(t) = tk + ας1(t), ϖ2(t) = t + ας2(t) and
+ξT (t) =
+"
+xT (t) xT (t − τc) xT (tk) xT (tk − τc)
+xT (tk+1) xT 
+ϖ1(t)
+
+xT 
+ϖ2(t)
+
+˙xT (t)
+Z t
+ϖ1(t)
+xT (c)dc
+Z ϖ1(t)
+tk
+xT (c)dc
+Z ϖ2(t)
+t
+xT (c)dc
+Z tk+1
+ϖ2(t)
+xT (c)dc
+#
+.
+Proof: From the Cauchy matrix inequality as in Lemma
+1 of [25], we get
+−2
+Z t
+ϖ1(t)
+ξT (t)X ˙x(c)dc
+≤
+Z t
+ϖ1(t)
+ξT (t)XT−1
+1 X T ξ(t)dc
++
+Z t
+ϖ1(t)
+˙xT (c)T1 ˙x(c)dc.
+Based on the above inequality, one can obtain
+−e2δ(t−hk)
+Z t
+ϖ1(t)
+˙xT (c)T1 ˙x(c)dc
+≤ e2δ(t−hk)
+Z t
+ϖ1(t)
+ξT (t)XT−1
+1 X T ξ(t)dc
++ 2ξT (t)X
+Z t
+ϖ1(t)
+˙x(c)dc. (7)
+Furthermore, we can express the inequality (7) as
+−e2δ(t−hk)
+Z t
+ϖ1(t)
+˙xT (c)T1 ˙x(c)dc
+≤ e2δ(t−hk)(1 − α)ς1(t)ξT (t)XT−1
+1 X T ξ(t)
++ 2ξT (t)X[x(t) − x(ϖ1(t))].
+Similarly, we can prove the inequality (6).
+Definition 1: [23] Given positive scalar δ∗ > 0, the system
+(4) can achieve exponential stability with a decay rate δ∗ when
+x(t0) ∈ Rn, one has
+∥x(t)∥ ≤ e−δ∗t sup
+−hu≤c≤0
+{∥x(c)∥}.
+III. MAIN RESULTS
+In this section, we determine the sufficient conditions based
+on the TSLLKF and utilizing Lemma 1. In this regard, we
+derive the following theorems, and corollary to find out the
+specified control gain matrices Kj and Kτcj from the solvable
+LMIs for the TSFS (4) under the aperiodic memory SDC.
+Theorem 1: For the given positive scalars τc, hl, hu, δ,
+control gain matrices Kj, Kτcj, parameters βw(w = 1, 2, 3),
+and 0 < α < 1, system (4) is globally exponential stable if
+there exist matrices Pf1 > 0, Qf2 > 0, Rf2 > 0, Sf2 > 0,
+Tf2 > 0 (f1 = 1, 2, 3 and f2 = 1, 2), any matrices Uf3 (f3 =
+1, 2, 3, 4), G, Nf2, Mf2, Yf2, Zf2, Hf2, Ff2, Wf2 and Xf2
+such that the following inequalities hold:
+
+ϕ1
+ij + hkϕ2
+ij Γ11X Γ12W Γ11F Γ12H
+∗ −T 1 0 0 0
+∗ ∗ − T1 0 0
+∗ ∗ ∗ −R 1 0
+∗ ∗ ∗ ∗ −R 2
+
+
+< 0, (8)
+
+
+
+ϕ1
+ij + hkϕ3
+ij Γ21Z Γ22Y Γ21N Γ22M
+∗ −T 2 0 0 0
+∗ ∗ − T2 0 0
+∗ ∗ ∗ − S2 0
+∗ ∗ ∗ ∗ −S 1
+
+
+
+< 0, (9)
+where
+Γ11 =
+p
+hk(1 − α)e−δhk , Γ12 =
+p
+hkαe−δhk ,
+Γ21 =
+p
+hk(1 − α), Γ22 =
+p
+hkα,
+ϕ1
+ij =He
+
+vT
+1 P1v8 + δv T
+1 P1v1 + τc[vT
+1 P2v1 − e−2δτc
+× vT
+2 P2v2] + δv T
+1 P3v1 − δv T
+1 P3v5 − δv T
+1 P3v3
++ δv T
+3 P3v5 + vT
+1 P3v8 − vT
+5 P3v8 + vT
+1 P3v8
+− vT
+3 P3v8 + [vT
+1 F1 + vT
+9 F2]v9 + [vT
+1 H1 + vT
+10H2]
+× v10 + [vT
+1 M1 + vT
+11M2]v11 + [vT
+1 N1 + vT
+12N2]v12
++ [vT
+1 X1 + vT
+6 X2][v1 − v6] + [vT
+3 W1 + vT
+6 W2]
+× [v6 − v3] + [vT
+5 Z1 + vT
+7 Z2][v5 − v7]
++ [vT
+1 Y1 + vT
+7 Y2][v7 − v1]
+
++ h2
+ue2δτc vT
+8 Q1v8
+− π2
+4 [v2 − v4]T Q2[v2 − v4] − e−2δhk[vT
+9 U1v9
++ vT
+10U2v10] − [vT
+11U3v11 + vT
+12U4v12]
++ He
+
+[v1 + β1v2 + β2v3 + β3v8]G
+× [Aiv1 + Aτciv2 + BiKjv3 + BiKτcjv4 − v8]
+
+,
+ϕ2
+ij =vT
+1 S1v1 − (1 − α)vT
+7 S1v7 + (1 − α)e2δhk vT
+7 S2v7
++ vT
+8 T2v8 − He
+
+vT
+11U3[(1 − α)v7 − v1]
+− (1 − α)e2δhk vT
+12U4v7
+
+,
+ϕ3
+ij =vT
+1 R1v1 − αe−2δhk vT
+6 R1v6 + αvT
+6 R2v6 + vT
+8 T1v8
++ He
+
+vT
+9 U1[v1 − αe−δhk v6] + αvT
+10U2v6
+
+,
+N =
+N T
+1 0n...0n|
+{z }
+10 times
+N T
+2
+T
+,
+M =
+M T
+1 0n...0n| {z }
+9 times
+M T
+2 0n
+T
+,
+Y =
+Y T
+1 0n...0n| {z }
+5 times
+Y T
+2 0n...0n| {z }
+5 times
+T
+,
+Z =
+0n...0n| {z }
+4 times
+Z T
+1 0n Z T
+2 0n...0n| {z }
+5 times
+T
+,
+H =
+H T
+1 0n...0n| {z }
+8 times
+H T
+2 0n 0n
+T
+,
+F =
+F T
+1 0n...0n| {z }
+7 times
+F T
+2 0n...0n| {z }
+3 times
+T
+,
+Page 3 of 11
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+
+===== PDF PAGE 5 OF 12 =====
+4
+W =
+0n 0n W T
+1 0n 0n W T
+2 0n...0n| {z }
+6 times
+T
+,
+X =
+X T
+1 0n...0n| {z }
+4 times
+X T
+2 0n...0n| {z }
+6 times
+T
+,
+˜νι =
+0n,(ι−1)n In 0n,(12−ι)n
+
+, ι = 1, 2, . . . ,12.
+Proof: We construct the following TSLLKF for the sys-
+tem (4);
+V (t) = V1(t) +
+7X
+ℓ=2
+Wℓ(t), (10)
+where,
+V1(t) =e2δtxT (t)P1x(t) + τc
+Z t
+t−τc
+e2δcxT (c)P2x(c)dc,
+W2(t) =2eδtηT
+1 (t, tk)P3η1(t, tk+1),
+W3(t) =h2
+u
+Z t
+tk−τc
+e2δ(c+τc) ˙xT (c)Q1 ˙x(c)dc
+− π2
+4
+Z t−τc
+tk−τc
+e2δ(c+τc)ηT
+2 (c)Q2η2(c)dc,
+W4(t) =ς2(t)
+Z t
+ϖ1(t)
+e2δcxT (c)R1x(c)dc
++
+Z ϖ1(t)
+tk
+e2δcxT (c)R2x(c)dc
+
+,
+W5(t) = − ς1(t)
+Z ϖ2(t)
+t
+e2δcxT (c)S1x(c)dc
++
+Z tk+1
+ϖ2(t)
+e2δcxT (c)S2x(c)dc
+
+,
+W6(t) =ς2(t)
+Z t
+tk
+e2δc ˙xT (c)T1 ˙x(c)dc
+− ς1(t)
+Z tk+1
+t
+e2δc ˙xT (c)T2 ˙x(c)dc,
+W7(t) =ς2(t)
+ hR t
+ϖ1(t) eδcx(c)dc
+iT
+U1
+×
+hR t
+ϖ1(t) eδcx(c)dc
+i
++
+hR ϖ1(t)
+tk
+eδcx(c)dc
+iT
+× U2
+hR ϖ1(t)
+tk
+eδcx(c)dc
+i!
+− ς1(t)
+ hR ϖ2(t)
+t eδcx(c)dc
+iT
+U3
+×
+hR ϖ2(t)
+t eδcx(c)dc
+i
++
+hR tk+1
+ϖ2(t) eδcx(c)dc
+iT
+× U4
+hR tk+1
+ϖ2(t) eδcx(c)dc
+i!
+,
+with η1(t, c) = x(t) − x(c) and η2(c) = x(c) − x(tk − τc).
+Now, taking the derivative of (10), we get
+˙V (t) = ˙V1(t) +
+7X
+ℓ=2
+˙Wℓ(t), (11)
+where
+˙V1(t) =2e2δt
+
+δxT (t)P1x(t) + xT (t)P1 ˙x(t)
+
++ τc
+
+e2δtxT (t)P2x(t) − e2δ(t−τc)xT (t − τc)
+× P2x(t − τc)
+
+,
+˙W2(t) =2eδt
+
+δη T
+1 (t, tk)P3η1(t, tk+1) + ˙η1
+T (t, tk)P3
+× η1(t, tk+1) + ηT
+1 (t, tk)P3 ˙η1
+T (t, tk+1)
+
+,
+˙W3(t) =h2
+ue2δ(t+τc) ˙xT (t)Q1 ˙x(t) − π2
+4 e2δtηT
+2 (t − τc)
+× Q2η2(t − τc),
+˙W4(t) = −
+
+e2δ(t−hk)
+Z t
+ϖ1(t)
+xT (c)R1x(c)dc
++ e2δ(t−hk)
+Z ϖ1(t)
+tk
+xT (c)R2x(c)dc
+
++ ς2(t)
+
+e2δtxT (t)R1x(t) − αe2δ(t−hk)
+× xT (ϖ1(t))R1x(ϖ1(t)) + αe2δtxT
+× (ϖ1(t))R2x(ϖ1(t))
+
+,
+˙W5(t) = −
+
+e2δt
+Z ϖ2(t)
+t
+xT (c)S1x(c)dc
++ e2δt
+Z tk+1
+ϖ2(t)
+xT (c)S2x(c)dc
+
++ ς1(t)
+
+e2δtxT (t)S1x(t) − (1 − α)e2δt
+× xT (ϖ2(t))S1x(ϖ2(t)) + (1 − α)e2δ(t+hk)
+× xT (ϖ2(t))S2x(ϖ2(t))
+
+,
+˙W6(t) = −
+
+e2δ(t−hk)
+Z t
+tk
+˙xT (c)T1 ˙x(c)dc
++ e2δt
+Z tk+1
+t
+˙xT (c)T2 ˙x(c)dc
+
++ ς2(t)e2δt ˙xT (t)T1 ˙x(t) + ς1(t)e2δt ˙xT (t)T2 ˙x(t),
+˙W7(t) = −
+ 
+e2δ(t−hk)
+hR t
+ϖ1(t) x(c)dc
+iT
+U1
+×
+hR t
+ϖ1(t) x(c)dc
+i
++ e2δ(t−hk)
+×
+hR ϖ1(t)
+tk
+x(c)dc
+iT
+U2
+hR ϖ1(t)
+tk
+x(c)dc
+i!
++ 2ς2(t)
+ 
+e2δt
+hR t
+ϖ1(t) x(c)dc
+iT
+U1
+
+x(t) − αe−δhk
+× x(ϖ1(t))
+
++ αe2δt
+hR ϖ1(t)
+tk
+x(c)dc
+iT
+U2
+× x(ϖ1(t))
+!
+−
+ 
+e2δt
+hR ϖ2(t)
+t x(c)dc
+iT
+U3
+×
+hR ϖ2(t)
+t x(c)dc
+i
++ e2δt
+hR tk+1
+ϖ2(t) x(c)dc
+iT
+U4
+×
+hR tk+1
+ϖ2(t) x(c)dc
+i!
+Page 4 of 11
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+
+===== PDF PAGE 6 OF 12 =====
+5
+− 2ς1(t)
+ 
+e2δt
+hR ϖ2(t)
+t x(c)dc
+iT
+U3
+
+(1 − α)
+× x(ϖ2(t)) − x(t)
+
+− (1 − α)e2δ(t+hk)
+×
+hR tk+1
+ϖ2(t) x(c)dc
+iT
+U4x(ϖ2(t))
+!
+.
+Now, by estimating the integral terms in ˙W6(t), we obtain
+−e2δ(t−hk)
+Z t
+tk
+˙xT (c)T1 ˙x(c)dc
+= −e2δ(t−hk)
+Z t
+ϖ1(t)
+˙xT (c)T1 ˙x(c)dc
+− e2δ(t−hk)
+Z ϖ1(t)
+tk
+˙xT (c)T1 ˙x(c)dc, (12)
+−e2δt
+Z tk+1
+t
+˙xT (c)T2 ˙x(c)dc
+= −e2δt
+Z tk+1
+ϖ2(t)
+˙xT (c)T2 ˙x(c)dc
+− e2δt
+Z ϖ2(t)
+t
+˙xT (c)T2 ˙x(c)dc. (13)
+By applying the inequality (5) in Lemma 1 into (12)-(13), we
+have
+−e2δ(t−hk)
+Z t
+ϖ1(t)
+˙xT (c)T1 ˙x(c)dc
+≤e2δ(t−hk)(1 − α)ς1(t)ξT (t)XT−1
+1 X T ξ(t)
++ 2ξT (t)X[x(t) − x(ϖ1(t))], (14)
+−e2δ(t−hk)
+Z ϖ1(t)
+tk
+˙xT (c)T1 ˙x(c)dc
+≤e2δ(t−hk)ας1(t)ξT (t)W T−1
+1 W T ξ(t)
++ 2ξT (t)W [x(ϖ1(t)) − x(tk)], (15)
+−e2δt
+Z tk+1
+ϖ2(t)
+˙xT (c)T2 ˙x(c)dc
+≤e2δt(1 − α)ς2(t)ξT (t)ZT−1
+2 Z T ξ(t)
++ 2ξT (t)Z[x(tk+1) − x(ϖ2(t))], (16)
+−e2δt
+Z ϖ2(t)
+t
+˙xT (c)T2 ˙x(c)dc
+≤e2δtας2(t)ξT (t)Y T−1
+2 Y T ξ(t)
++ 2ξT (t)Y [x(ϖ2(t)) − x(t)]. (17)
+Similarly, using the inequality (6) in Lemma 1, the integral
+inequalities in ˙W4(t) and ˙W5(t) are expressed as
+−e2δ(t−hk)
+Z t
+ϖ1(t)
+xT (c)R1x(c)dc
+≤e2δ(t−hk)(1 − α)ς1(t)ξT (t)F R−1
+1 F T ξ(t)
++ 2ξT (t)F
+Z t
+ϖ1(t)
+x(c)dc, (18)
+−e2δ(t−hk)
+Z ϖ1(t)
+tk
+xT (c)R2x(c)dc
+≤e2δ(t−hk)ας1(t)ξT (t)HR−1
+2 H T ξ(t)
++ 2ξT (t)H
+Z ϖ1(t)
+tk
+x(c)dc, (19)
+−e2δt
+Z ϖ2(t)
+t
+xT (c)S1x(c)dc
+≤e2δtας2(t)ξT (t)M S−1
+1 M T ξ(t)
++ 2ξT (t)M
+Z ϖ2(t)
+t
+x(c)dc, (20)
+−e2δt
+Z tk+1
+ϖ2(t)
+xT (c)S2x(c)dc
+≤e2δt(1 − α)ς2(t)ξT (t)N S−1
+2 N T ξ(t)
++ 2ξT (t)N
+Z tk+1
+ϖ2(t)
+x(c)dc. (21)
+Also, the following zero equation is valid for any non-singular
+matrix G,
+2[x(t)G + β1x(t − τc)G + β2x(tk)G + β3 ˙x(t)G]
+×
+rX
+i=1
+rX
+j=1
+µi(Ω(t))µj(Ω(tk))[Aix(t) + Aτcix(t − τc)
++ BiKjx(tk) + BiKτcjx(tk − τc) − ˙x(t)] = 0. (22)
+Substituting (14)-(22) in (11), yields
+˙V(t) ≤
+rX
+i=1
+rX
+j=1
+µi(Ω(t))µj(Ω(tk))ξ(t)(Ξij(t))ξT (t)
+=
+rX
+i=1
+rX
+j=1
+µi(Ω(t))µj(Ω(tk))ξ(t)
+ ς1(t)
+hk
++ (ϕ1
+ij + hkΛ0
+ij) + ς2(t)
+hk
++ (ϕ1
+ij + hkΛ1
+ij)
+
+ξT (t),
+where Ξij(t) = ϕ1
+ij + ς1Λ0
+ij + ς2Λ1
+ij with
+Λ0
+ij = ϕ2
+ij + (1 − α)XT−1
+1 X T + αW T−1
+1 W T
++ (1 − α)F R−1
+1 F T + αHR−1
+2 H T ,
+Λ1
+ij = ϕ3
+ij + (1 − α)ZT−1
+2 Z T + αY T−1
+2 Y T
++ (1 − α)N S−1
+2 N T + αM S−1
+1 M T .
+Through the convex combination technique, Ξij(t) < 0 holds
+for all t ∈ [tk, tk+1) if and only if
+ϕ1
+ij + hkΛ0
+ij < 0, (23)
+ϕ1
+ij + hkΛ1
+ij < 0. (24)
+Now, applying the Schur complement in (23) and (24), yields
+(8) and (9), which implies that ˙V (t) < 0.
+which implies that
+δmin(P1)e2δt∥x(t)∥2 ≤ V|t ≤ V|t=k ≤ V|t=k−1 ≤ V|t=0.
+(25)
+Through, we obtain
+∥x(t)∥ ≤
+(s
+V|t=0
+δmin(P1)
+)
+e−δt (26)
+Page 5 of 11
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+
+===== PDF PAGE 7 OF 12 =====
+6
+Further, if the condition in (8) - (9) hold with a positive scalar
+δ > 0 then we can conclude that the exponential stability for
+the system (4) is satisfied with decay rate δ. Thus, completes
+the proof.
+Remark 1: Previous studies [20]–[22] have examined the
+exponential stability of TSFS through the SDC scheme. These
+works employed the fundamental quadratic Lyapunov func-
+tional V1(t) = xT (t)P1x(t) and looped Lyapunov functional
+over the sampling intervals [tk, tk+1) where the Lyapunov
+functional V1(t) neglected the exponential component. How-
+ever, it is crucial to note that the exponential term plays a
+significant role in modern system analysis, as exponentially
+dependent Lyapunov functionals tend to be less conservative
+than their independent counterparts. In contrast to the pre-
+vious studies, we introduced a novel fundamental quadratic
+component as V1(t) = e2δtxT (t)P1x(t) along with an ex-
+ponentially dependent looped Lyapunov functional expressed
+asP7
+ℓ=2 Wℓ(t). Consequently, the exponential relation-based
+TSLLKF in (10) encompasses different cases compared to
+existing studies.
+Remark 2: Although the looped Lyapunov functional has
+received considerable focuses in the existing literature [15],
+[17], [24] for the stability analysis of SDC systems, the
+application of modified TSLLKF to the exponential stabiliza-
+tion of time-delayed TSFS via a memory SDC scheme is
+explored here for the first time. In this study, we introduce
+a fractional parameter α ∈ (0, 1) to split the sampling
+periods, which strengthens the internal coupling among the
+terms of ξ(t). In contrast to previous studies [15], [17],
+[24], we utilize these split sampling periods to construct
+the TSLLKF within P7
+ℓ=2 Wℓ(t), thereby making more ef-
+fective use of the available sampling information in the
+interval [tk, tk+1), and leading to less conservative stability
+conditions. Furthermore, with the introduction of fractional
+parameter α, the integral terms −e2δ(t−hk)R t
+tk
+˙xT (c)T1 ˙x(c)dc
+and −e2δtR tk+1
+t ˙xT (c)T2 ˙x(a)dc are also split as shown in
+(12)-(13). The estimation of these integral terms is carried out
+with the aid of Lemma 1, further contributing to the reduced
+conservativeness of the suggested method.
+Theorem 2: The system (4) is globally exponential stable
+for known scalars τc, hl, hu, δ, parameters βw(w = 1, 2, 3),
+and α ∈ (0, 1), if there exist matrices ˆPf1 > 0, ˆQf2 > 0,
+ˆRf2 > 0, ˆSf2 > 0, ˆTf2 > 0 (f1 = 1, 2, 3 and f2 = 1, 2), any
+matrices ˆUf3 (f3 = 1, 2, 3, 4), ˆNf2, ˆMf2, ˆYf2, ˆZf2, ˆHf2, ˆFf2,
+ˆWf2 and ˆXf2 such that the following LMIs hold:
+
+
+
+ˆϕ1
+ij + hk ˆϕ2
+ij Γ11 ˆX Γ12 ˆW Γ11 ˆF Γ12 ˆH
+∗ − ˆT1 0 0 0
+∗ ∗ − ˆT1 0 0
+∗ ∗ ∗ − ˆR1 0
+∗ ∗ ∗ ∗ − ˆR2
+
+
+
+< 0, (27)
+
+
+
+ˆϕ1
+ij + hk ˆϕ3
+ij Γ21 ˆZ Γ22 ˆY Γ21 ˆN Γ22 ˆM
+∗ − ˆT2 0 0 0
+∗ ∗ − ˆT2 0 0
+∗ ∗ ∗ − ˆS2 0
+∗ ∗ ∗ ∗ − ˆS1
+
+
+
+< 0, (28)
+where
+Γ11 =
+p
+hk(1 − α)e−δhk , Γ12 =
+p
+hkαe−δhk ,
+Γ21 =
+p
+hk(1 − α), Γ22 =
+p
+hkα,
+ˆϕ1
+ij =He
+
+vT
+1 ˆP1v8 + δv T
+1 ˆP1v1 + τc[vT
+1 ˆP2v1 − e−2δτc
+× vT
+2 ˆP2v2] + δv T
+1 ˆP3v1 − δv T
+1 ˆP3v5 − δv T
+1 ˆP3v3
++ δv T
+3 ˆP3v5 + vT
+1 ˆP3v8 − vT
+5 ˆP3v8 + vT
+1 ˆP3v8
+− vT
+3 ˆP3v8 + [vT
+1 ˆF1 + vT
+9 ˆF2]v9 + [vT
+1 ˆH1 + vT
+10 ˆH2]
+× v10 + [vT
+1 ˆM1 + vT
+11 ˆM2]v11 + [vT
+1 ˆN1 + vT
+12 ˆN2]v12
++ [vT
+1 ˆX1 + vT
+6 ˆX2][v1 − v6] + [vT
+3 ˆW1 + vT
+6 ˆW2]
+× [v6 − v3] + [vT
+5 ˆZ1 + vT
+7 ˆZ2][v5 − v7]
++ [vT
+1 ˆY1 + vT
+7 ˆY2][v7 − v1]
+
++ h2
+ue2δτc vT
+8 ˆQ1v8
+− π2
+4 [v2 − v4]T ˆQ2[v2 − v4] − e−2δhk[vT
+9 ˆU1v9
++ vT
+10ˆU2v10] − [vT
+11ˆU3v11 + vT
+12ˆU4v12]
++ He
+
+[v1 + β1v2 + β2v3 + β3v8]
+× [AiGv1 + AτciGv2 + BiLjv3 + BiLτcjv4 − Gv8]
+
+,
+ˆϕ2
+ij =vT
+1 ˆS1v1 − (1 − α)vT
+7 ˆS1v7 + (1 − α)e2δhk vT
+7 ˆS2v7
++ vT
+8 ˆT2v8 − He
+
+vT
+11ˆU3[(1 − α)v7 − v1]
+− (1 − α)e2δhk vT
+12ˆU4v7
+
+,
+ˆϕ3
+ij =vT
+1 ˆR1v1 − αe−2δhk vT
+6 ˆR1v6 + αvT
+6 ˆR2v6 + vT
+8 ˆT1v8
++ He
+
+vT
+9 ˆU1[v1 − αe−δhk v6] + αvT
+10ˆU2v6
+
+,
+ˆN =
+ ˆN T
+1 0n...0n| {z }
+10 times
+ˆN T
+2
+T
+,
+ˆM =
+ ˆM T
+1 0n...0n| {z }
+9 times
+ˆM T
+2 0n
+T
+,
+ˆY =
+ ˆY T
+1 0n...0n| {z }
+5 times
+ˆY T
+2 0n...0n| {z }
+5 times
+T
+,
+ˆZ =
+
+0n...0n| {z }
+4 times
+ˆZ T
+1 0n ˆZ T
+2 0n...0n| {z }
+5 times
+T
+,
+ˆH =
+ ˆH T
+1 0n...0n| {z }
+8 times
+ˆH T
+2 0n 0n
+T
+,
+ˆF =
+ ˆF T
+1 0n...0n| {z }
+7 times
+ˆF T
+2 0n...0n| {z }
+3 times
+T
+,
+ˆW =
+
+0n 0n ˆW T
+1 0n 0n ˆW T
+2 0n...0n| {z }
+6 times
+T
+,
+ˆX =
+ ˆX T
+1 0n...0n| {z }
+4 times
+ˆX T
+2 0n...0n| {z }
+6 times
+T
+.
+Moreover, the control gain matrices are calculated as Kj =
+LjG−1, and Kτcj = Lτcj G−1.
+Proof: Let us set G = G−1, ˆPf1 = GPf1 G, ˆQf2 =
+GQf2 G, ˆRf2 = GRf2 G, ˆSf2 = GSf2 G, ˆTf2 = GTf2 G, ˆNf2 =
+GNf2 G, ˆMf2 = GMf2 G, ˆYf2 = GYf2 G, ˆZf2 = GZf2 G, ˆHf2 =
+GHf2 G, ˆFf2 = GFf2 G, ˆWf2 = GWf2 G, ˆXf2 = GXf2 G, ˆUf3 =
+Page 6 of 11
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+
+===== PDF PAGE 8 OF 12 =====
+7
+GUf3G, ˆκ = diag{G, . . . ,G| {z }
+16 times
+}, Lj = KjG, and Lτcj = KτcjG.
+Next, by multiplying both sides of inequalities (8) and (9)
+by ˆκ, and applying the Schur complement, we obtain the LMIs
+(27) and (28).
+Remark 3: The stabilization analysis for time-delayed TSFS
+under the aperiodic memory SDC together with a conventional
+SDC are established in Theorem 2. In the following, we will
+derive the stabilization conditions for system (2) without time
+delay through the conventional aperiodic SDC (i.e., τc = 0 and
+Kτcj = 0 in (3) ) to evaluate the superiority of the suggested
+method. Hence, we have the system from (4) as follows:
+˙x(t) =
+rX
+i=1
+rX
+j=1
+µi(Ω(t))µj(Ω(tk))[Aix(t) + BiKjx(tk)].
+(29)
+Corollary 1: The system (29) is globally exponential stable
+for known scalars hl, hu, δ and parameters ˆβz(z = 1, 2), and
+α ∈ (0, 1), if there exist matrices ˆPf1 > 0, ˆQf2 > 0, ˆRf2 > 0,
+ˆSf2 > 0, ˆTf2 > 0 (f1 = 1, 2, 3 and f2 = 1, 2), any matrices
+ˆUf3 (f3 = 1, 2, 3, 4), ˆNf2, ˆMf2, ˆYf2, ˆZf2, ˆHf2, ˆFf2, ˆWf2
+and ˆXf2 such that the following LMIs hold:
+
+
+
+ˆπ1
+ij + hkˆπ2
+ij Γ11 ˆX Γ12 ˆW Γ11 ˆF Γ12 ˆH
+∗ − ˆT1 0 0 0
+∗ ∗ − ˆT1 0 0
+∗ ∗ ∗ − ˆR1 0
+∗ ∗ ∗ ∗ − ˆR2
+
+
+
+< 0 (30)
+
+
+
+ˆπ1
+ij + hkˆπ3
+ij Γ21 ˆZ Γ22 ˆY Γ21 ˆN Γ22 ˆM
+∗ − ˆT2 0 0 0
+∗ ∗ − ˆT2 0 0
+∗ ∗ ∗ − ˆS2 0
+∗ ∗ ∗ ∗ − ˆS1
+
+
+
+< 0 (31)
+where
+Γ11 =
+p
+hk(1 − α)e−δhk , Γ12 =
+p
+hkαe−δhk ,
+Γ21 =
+p
+hk(1 − α), Γ22 =
+p
+hkα,
+ˆπ1
+ij =He
+
+vT
+1 ˆP1v6 + δv T
+1 ˆP1v1 + δv T
+1 ˆP3v1 − δv T
+1 ˆP3v3
+− δv T
+1 ˆP3v2 + δv T
+2 ˆP3v3 + vT
+1 ˆP3v6 − vT
+3 ˆP3v6
++ vT
+1 ˆP3v6 − vT
+2 ˆP3v6 + [vT
+1 ˆF1 + vT
+7 ˆF2]v7
++ [vT
+1 ˆH1 + vT
+8 ˆH2]v8 + [vT
+1 ˆM1 + vT
+9 ˆM2]v9
++ [vT
+1 ˆN1 + vT
+10 ˆN2]v10 + [vT
+1 ˆX1 + vT
+4 ˆX2]
+× [v1 − v4] + [vT
+2 ˆW1 + vT
+4 ˆW2][v4 − v2]
++ [vT
+3 ˆZ1 + vT
+5 ˆZ2][v3 − v5] + [vT
+1 ˆY1 + vT
+5 ˆY2][v5 − v1]
+
+− e−2δhk[vT
+7 ˆU1v7 + vT
+8 ˆU2v8] − [vT
+9 ˆU3v9 + vT
+10ˆU4v10]
++ He
+
+[v1 + ˆβ1v2 + ˆβ2v6][AiGv1 + Bi ˆLjv2] − Gv6
+
+,
+ˆπ2
+ij =vT
+1 ˆS1v1 − (1 − α)vT
+5 ˆS1v5 + (1 − α)e2δhk vT
+5 ˆS2v5
++ vT
+6 ˆT2v6 − He
+
+vT
+9 ˆU3[(1 − α)v5 − v1]
+− (1 − α)e2δhk vT
+10ˆU4v5
+
+,
+ˆπ3
+ij =vT
+1 ˆR1v1 − αe−2δhk vT
+4 ˆR1v4 + αvT
+4 ˆR2v4 + vT
+6 ˆT1v6
++ He
+
+vT
+7 ˆU1[v1 − αe−δhk v4] + αvT
+8 ˆU2v4
+
+,
+ˆN =
+ ˆN T
+1 0n...0n| {z }
+10 times
+ˆN T
+2
+T
+,
+ˆM =
+ ˆM T
+1 0n...0n| {z }
+9 times
+ˆM T
+2 0n
+T
+,
+ˆY =
+ ˆY T
+1 0n...0n| {z }
+5 times
+ˆY T
+2 0n...0n| {z }
+5 times
+T
+,
+ˆZ =
+
+0n...0n| {z }
+4 times
+ˆZ T
+1 0n ˆZ T
+2 0n...0n| {z }
+5 times
+T
+,
+ˆH =
+ ˆH T
+1 0n...0n| {z }
+8 times
+ˆH T
+2 0n 0n
+T
+,
+ˆF =
+ ˆF T
+1 0n...0n| {z }
+7 times
+ˆF T
+2 0n...0n| {z }
+3 times
+T
+,
+ˆW =
+
+0n 0n ˆW T
+1 0n 0n ˆW T
+2 0n...0n| {z }
+6 times
+T
+,
+ˆX =
+ ˆX T
+1 0n...0n| {z }
+4 times
+ˆX T
+2 0n...0n| {z }
+6 times
+T
+.
+Moreover, the controller gain matrices are obtained from Kj
+= ˆLjG−1.
+Proof: The proof of Corollary 1 is directly derived from
+Theorems 1 and 2. Hence, the proof is omitted.
+IV. NUMERICAL EXAMPLES
+In this section, we simulate two cases of nonlinear STR
+system. In the first case, exponential stability of the nonlinear
+STR system is demonstrated through a design example. In the
+second case, the asymptotic stability is examined to facilitate
+comparison with existing literature. Additionally, the Rossler’s
+system is considered as part of the comparative study. These
+two comparison scenarios help validate the control strategy
+proposed.
+Example 1: Let us consider the nonlinear STR systems with
+time-delay as follows:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+˙˜x1(t) = − 1
+λ ˜x1(t) + Da
+ 
+1 − ˜x1(t)
+
+×exp
+ 
+˜x2(t)
+1+˜x2(t)/γ0
+!
++
+  1
+λ − 1
+
+˜x1(t − τc),
+˙˜x2(t) = −
+  1
+λ + ¯β
+
+˜x2(t) + HD a
+ 
+1 − ˜x1(t)
+
+×exp
+ 
+˜x2(t)
+1+˜x2(t)/γ0
+!
++
+  1
+λ − 1
+
+˜x2(t − τc) + ¯βu,
+˜xi(t) = θi, t ∈ [−τc, 0] i = 1, 2.
+where the state ˜x1(t) indicates the conversion rate of reaction
+with 0 ≤ ˜x1(t) ≤ 1, ˜x2(t) denotes the dimensionless temper-
+ature. The remaining parameters are presented as λ = 0.8,
+Da = 0.072, γ0 = 20, ¯β = 0.3 and H = 8. Based on
+[24], the nonlinear STR system possesses the following steady
+states without any control input: x1 = [0 .1440 0.8862] T ,
+x2 = [0.4472 2.7520] T , and x3 = [0.7646 4.7052] T .
+Among these, the steady states x2 = [0 .4472 2.7520] T ,
+Page 7 of 11
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+
+===== PDF PAGE 9 OF 12 =====
+8
+and x3 = [0.7646 4.7052] T , are locally stable, while x1 =
+[0.1440 0.8862]T is an unstable equilibrium.
+0 1 2 3 4 5 6 7 8
+Time(Secs)
+0.5
+1
+1.5
+2
+2.5
+3
+3.5
+4
+4.5x(t)
+x1(t)
+x2(t)
+Fig. 1: State responses of nonlinear STR system without u(t).
+Meanwhile, the state trajectories of the open-loop nonlinear
+STR system with u(t) = 0 is depicted in Fig. 1. As shown,
+the system is unable to stabilize at the desired operating
+point ˜xd = [0.1440 0.8862] T with the initial condition
+x(0) = [0 .5 3] T . Therefore, the mainn goal of this study
+is to stabilize the nonlinear STR system by the designed
+memory SDC scheme using the TSFS, ensuring convergence
+to a desired stable state. Let z(t) = ˜x(t)−˜xd with the expected
+operating point ˜xd = [0.1440, 0.8862]T when u(t) = 0.
+Moreover, the nonlinear STR system is represented within the
+TSFS framework as follows:
+0 1 2 3 4 5 6 7 8
+Time(Secs)
+0
+0.5
+1
+1.5
+2
+2.5
+3
+x(t)
+x1(t)
+x2(t)
+Fig. 2: State response of closed-loop T-S fuzzy-based STR
+system (32) for Case (i).
+Plant rule 1: If ˜x2(t) = 0.8862, then
+˙z(t) = A1z(t) + Aτc1z(t − τc) + B1u(t)
+Plant rule 2: If ˜x2(t) = 2.7520, then
+˙z(t) = A2z(t) + Aτc2z(t − τc) + B2u(t)
+Plant rule 3: If ˜x2(t) = 4.7052, then
+˙z(t) = A3z(t) + Aτc3z(t − τc) + B3u(t),
+where
+A1 =
+
+−1.4274 0.0757
+−1.4189 −0.9442
+
+, A 2 =
+
+−2.0508 0.3958
+−6.4066 1.6268
+
+,
+A3 =
+ −4.5279 0.3167
+−26.2228 0.9387
+
+, B1 = B2 = B3 =
+ 0
+0.3
+
+,
+Aτc1 = Aτc2 = Aτc3 =
+ 0.25 0
+0 0.25
+
+,
+and the FMFs are chosen as follows:
+µ1(˜x2) =
+
+
+
+
+
+1, ˜x2 ≤ 0.8862
+1 −
+
+˜x2−0.8862
+2.7520−0.8862
+
+, 0.8862 < ˜x2 < 2.7520
+0, ˜x2 ≥ 2.7520
+,
+µ2(˜x2) =
+(
+1 − µ1(˜x2), ˜x2 ≤ 2.7520
+1 − µ3(˜x2), ˜x2 > 2.7520 ,
+µ3(˜x2) =
+
+
+
+
+0, ˜x2 ≤ 2.7520
+˜x2−2.7520
+4.7052−2.7520
+
+, 2.7520 < ˜x2 < 4.7052
+1, ˜x2 ≥ 4.7052
+.
+Then, overall TSFS based nonlinear STR systems is given as
+˙x(t) =
+3X
+i=1
+3X
+j=1
+µi(Ω(t))µj(Ω(tk))[Aix(t) + Aτcix(t − τc)
++ BiKjx(tk) + BiKτcjx(tk − τc)]. (32)
+0 1 2 3 4 5 6 7 8
+Time(Secs)
+-14
+-12
+-10
+-8
+-6
+-4
+-2
+0
+2
+u(t)
+u(t)
+Fig. 3: Aperiodic memory SDC response of system (32) for
+Case (i).
+1 2 3 4 5 6 7 8
+Time(Secs)
+0
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6Sampling periods
+Fig. 4: Aperiodic sampling periods in Case (i).
+Page 8 of 11
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+
+===== PDF PAGE 10 OF 12 =====
+9
+Case (i): In this case, the parameters are set as follows:
+the exponential decay rate δ = 0 .05, fractional parameter
+α = 0.965, time delay τc = 1.56, tuning parameters β1 =
+0.052, β2 = 0.701, β3 = 0 .015, and the lower and upper
+bound of aperiodic sampling periods are hl = 0.004 and
+hu = 0.6, respectively. Then, the exponential stability criteria
+in Theorem 2 is solved for TSFS (32), and determined the
+following control gain matrices:
+K1 = K2 = K3 =
+
+0.2877 −2.1075
+
+, (33)
+Kτc1 = Kτc2 = Kτc3 =
+ −0.0415 0.0711 
+. (34)
+TABLE I: Calculated MATDs τmax for different hu values
+Methods hu = 0.5 hu = 0.6
+[15] 0.6128 1.4706
+[24] 0.6840 1.5293
+[17] 0.6841 1.5414
+Theorem 2 0.7120 1.5600
+With the initial condition x(0) = [0 .5 3] T and utilizing
+the parameters described above along with the control gain
+matrices (33)-(34), the state trajectories of STR systems (32)
+are illustrated in Fig. 2. As shown in Fig. 2, we confirm that the
+designed aperiodic memory SDC can be effectively regulate
+the nonlinear STR system states at the expected operating
+point ˜xd = [0.1440 0.8862]T . Also, the corresponding control
+inputs are shown in 3. Furthermore, the sampling periods are
+randomly distributed within the interval [0, 0.6] as depicted
+in Fig. 4, representing aperiodic sampled-data communication
+scenario.
+0 1 2 3 4 5 6 7 8
+Time(Secs)
+0
+0.5
+1
+1.5
+2
+2.5
+3
+x(t)
+x1(t)
+x2(t)
+Fig. 5: State responses of T-S fuzzy based STR system with
+u(t) for Case (ii).
+Case (ii): For the comparison purpose, we set the expo-
+nential decay rate to δ = 0 and choose the tuning parameters
+as β1 = 0.052, β 2 = 0.701 and β3 = 0.015. By applying
+Theorem 2 to the sufficient conditions for the asymptotic
+stability of TSFS (32), we compute the maximum allowable
+time delays (MATDs) τmax for different values of the upper
+bounds of sampling period: hu = 0.5 with α = 0.945 and
+hu = 0.6 with α = 0.965, as listed in Table I. Table I clearly
+shows that the proposed method yields the larger MATDs
+compared to the methods presented in [15], [17] and [24],
+demonstrating its effectiveness and superiority. Furthermore,
+the fractional sampling parameter α is played a crucial role
+in achieving larger sampling period for the proposed system
+in this work. For the reason, the largest sampling period can
+be obtained for different α values, as outlined in Table II. As
+0 1 2 3 4 5 6 7 8
+Time(Secs)
+-20
+-18
+-16
+-14
+-12
+-10
+-8
+-6
+-4
+-2
+0
+u(t)
+u(t)
+Fig. 6: Control response of system (32) in case (ii).
+1 2 3 4 5 6 7 8
+Time(Secs)
+0
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6Sampling periods
+Fig. 7: Aperiodic sampling periods in Case (ii)
+shown in Table II, the upper bound of sampling period hu
+gradually increases as the fractional parameter α increases.
+Simultaneously, the control gains are computed for hl = 0,
+hu = 0.6 and τc = 1.56 as
+K1 = K2 = K3 =
+ 0.4477 −3.0539 
+, (35)
+Kτc1 = Kτc2 = Kτc3 =
+ −0.0600 0.0941 
+. (36)
+TABLE II: Calculated largest upper bound of sampling period
+hu for different α values
+α 0.2 0.3 0.4 0.5 0.6 0.7
+hu 0.005 0.05 0.15 0.25 0.35 0.45
+For the control gains (35)-(36), the state responses of the
+nonlinear STR system under the initial condition x(0) =
+[0.5 3] T is presented in Fig. 5. From Fig. 5, the system
+(32) achieves asymptotic stability at the desired operating
+point ˜xd within a short period using the aperiodic memory
+SDC scheme, thereby demonstrating the efficacy of designed
+controller. Moreover, the corresponding memory SDC inputs
+and aperiodic sampling periods within the interval [0, 0.6] are
+illustrated in Fig. 6 and Fig. 7, respectively.
+Page 9 of 11
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+
+===== PDF PAGE 11 OF 12 =====
+10
+Example 2: Let us consider the following Rossler’s system
+as,
+
+
+
+˙˜x1(t) = −˜x2(t) − ˜x3(t),
+˙˜x2(t) = ˜x1(t) + ¯a˜x2(t),
+˙˜x3(t) = ¯b˜x1(t) − (¯c − ˜x1(t))˜x3(t) + u(t),
+(37)
+where ˜x1(t), ˜x2(t), and ˜x3(t) are state variables; u(t) is the
+control input. Let ¯a = 0.3, ¯b = 0.5 with ˜x1(t) ∈ [¯c − ¯d, ¯c +
+¯d]. Then, the T-S fuzzy framework of Rossler system (37) is
+presented with
+A1 =
+
+
+0 −1 −1
+1 ¯ a 0
+¯b 0 ¯d
+
+ , A2 =
+
+
+0 −1 −1
+1 ¯ a 0
+¯b 0 − ¯d
+
+ ,
+B1 = B2 =
+
+
+0
+0
+1
+
+
+T
+.
+TABLE III: Calculated maximum upper bound of sampling
+period hum for Rossler’s system
+Medhods [31] [32] [24] [25] [33] Corollary 1
+hu 0.0534 0.0959 0.1165 0.1210 0.1373 0.1390
+Also, the FMFs are defined as µ1(˜x1) = ¯c+ ¯d−˜x1
+2 ¯d1
+and
+µ2(˜x1) = 1 − µ1(˜x1), where ¯d = 10 and ¯c = 5. By selecting
+δ = 0, α = 0.965, ˆβ1 = −1.02 and ˆβ2 = −0.005, the LMIs
+in Corollary 1 are solved to calculate the largest upper bound
+of sampling period, as tabulated in TABLE III. According to
+TABLE III, the proposed method under the TSLLKF achieves
+the largest sampling upper bound of hu = 0.1390.
+At the same time, the maximum hu values obtained using
+the methods in [31], [32], [24], [25], [33] are 0.0534, 0.0959,
+0.1165, 0.1210, 0.1373, respectively. These results confirm
+that compared with [24], [25], [31]–[33], the proposed method
+yields the largest allowable sampling period, thus demonstrat-
+ing the effectiveness and superiority compared to the existing
+approaches.
+V. CONCLUSION
+The exponential stabilization of time-delayed T-S fuzzy
+systems has been investigated in this study using a memory-
+based SDC scheme with variable sampling. By incorporating
+a fractional parameter into the sampling period, a TSLLKF
+with an exponential term has been developed, which offers
+deeper insights into the state information by splitting the sam-
+pling period [tk, tk+1) into sub-intervals. Using the proposed
+TSLLKF and newly derived integral inequalities, sufficient
+conditions for exponential stabilization have been formulated
+in terms of LMIs. Finally, numerical simulations on both the
+nonlinear STR system and the Rossler system have validated
+the feasibility of the designed controller and demonstrated its
+effectiveness in achieving larger upper bounds of sampling
+periods compared to existing methods.
+REFERENCES
+[1] Z. -P. Wang and H. -N. Wu, Robust guaranteed cost sampled-data fuzzy
+control for uncertain nonlinear time-delay systems, IEEE Transactions
+on Systems, Man, and Cybernetics: Systems, 49(5) (2019) 964-975.
+[2] S. Kuppusamy and Y . H. Joo, Memory-based integral sliding-mode
+control for T–S fuzzy systems with PMSM via disturbance observer,
+IEEE Transactions on Cybernetics, 51(5) (2021) 2457-2465.
+[3] C. Ge, J. H. Park, C. Hua and X. Guan, Dissipativity analysis for T–S
+fuzzy system under memory sampled-data control, IEEE Transactions
+on Cybernetics, 51(2) (2021) 961-969.
+[4] T. Takagi and M. Sugeno, Fuzzy identification of systems and its
+applications to modeling and control, IEEE Transactions on Systems,
+Man and Cybernetics: System, 15(1) (1985) 116–132.
+[5] S. Kuppusamy and Y . H. Joo, Observer-based non-PDC control design
+for PMSG-based wind energy conversion systems, IEEE Transactions
+on Systems, Man and Cybernetics: Systems, 53(5) (2023) 2676-2683.
+[6] H. B. Zeng, K. L. Teo, Y . He and W. Wang, Sampled-data stabilization
+of chaotic systems based on a T–S fuzzy model, Information Sciences,
+483 (2019) 262–272.
+[7] P. Anbalagan and Y . H. Joo, Reachable set estimate performance and
+stochastic aperiodic sampling mechanism design for T-S fuzzy systems:
+its application to wind turbine system, IEEE Transactions on Fuzzy
+Systems, 32(4) (2024) 1900-1914.
+[8] D. El-Jimi, N. Chaibi, O. Lamrabet, I. Boumhidi and M. Charqi, Admis-
+sible control for a singular TS fuzzy time-delay system: application to
+a truck-trailer system, International Journal of Dynamics and Control,
+12(10) (2024) 3708-3718.
+[9] Z.-P. Wang, X. Zhang, J. Qiao, H.-N. Wu and T. Huang, Fuzzy fault-
+tolerant boundary control for nonlinear DPSs with multiple delays and
+stochastic actuator failures, IEEE Transactions on Fuzzy Systems, 32(5)
+(2024) 3121-3131.
+[10] W. -M. Wang, Y . -W. Wang, H. -B. Zeng and J. Huang, Further results
+on stability analysis of T–S fuzzy systems with time-varying delay,IEEE
+Transactions on Fuzzy Systems, 32(6) (2024) 3529-3541.
+[11] Z. L. Sheng, C. Lin, B. Chen and Q. G. Wang, Stability analysis of
+sampled-data systems via novel lyapunov functional method, Informa-
+tion Sciences, 585 (2022) 559–570.
+[12] A. Amini, A. Asif, A. Mohammadi and A. Azarbahram, Sampled-data
+dynamic event-triggering control for networked systems subject to DoS
+attacks, IEEE Transactions on Network Science and Engineering, 8(3)
+(2021) 1978-1990.
+[13] J. Wu, C. Peng, J. Zhang and E. Tian, A sampled-data-based secure
+control approach for networked control systems under random DoS
+attacks, IEEE Transactions on Cybernetics, 54(8) (2024) 4841-4851.
+[14] L. Shanmugam and Y . H. Joo, Further stability and stabilization con-
+dition for sampled-data control systems via looped-functional method,
+IEEE Transactions on Circuits and Systems II: Express Briefs, 68(1)
+(2021) 301-305.
+[15] C. C. Hua, S. S. Wu and X. P. Guan, Stabilization of T-S fuzzy
+system with time delay under sampled-data control using a new looped-
+functional, IEEE Transactions on Fuzzy Systems, 28(2) (2020) 400-407.
+[16] S. Kuppusamy and Y . H. Joo, Stabilization criteria for T–S fuzzy
+systems with multiplicative sampled-data control gain uncertainties,
+IEEE Transactions on Fuzzy Systems, 30(10) (2022) 4082-4092.
+[17] D. Xiong, C. -K. Zhang, X. Wan and Y . He, Stability and stabilization of
+T–S fuzzy systems under sampled-data control via a matrix-separation-
+based inequality, IEEE Transactions on Fuzzy Systems , 32(8) (2024)
+4312-4323.
+[18] S. Kuppusamy, S. S. Yu, H. M. Trinh and P. Shi, Stabilization of interval
+type-2 T–S fuzzy systems via time-dependent memory sampled-data
+control and its applications, IEEE Transactions on Fuzzy Systems, 32(11)
+(2024) 6439-6448.
+[19] Y . Qiu, C. Hua and Y . Wang, Nonfragile sampled-data control of T–S
+fuzzy systems with time delay, IEEE Transactions on Fuzzy Systems,
+30(8) (2022) 3202-3210.
+[20] N. Gunasekaran, G. Zhai and Q. Yu, Exponential sampled-data fuzzy
+stabilization of nonlinear systems and its application to basic buck
+converters, IET Control Theory & Applications, 15(9) (2021) 1157-1168.
+[21] B. Thangavel, S. Srinivasan, T. Kathamuthu, G. Zhai and N. Gu-
+nasekaran, Dynamical analysis of T–S fuzzy financial systems: a
+sampled-data control approach, International Journal of Fuzzy Systems,
+24(4) (2022) 1944-1957.
+[22] S. Peng, Q. Wang and B. Fu, Exponential stabilization of chaotic systems
+based on fuzzy time-triggered intermittent control, Chaos, Solitons &
+Fractals, 162 (2022) 112390.
+Page 10 of 11
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+
+===== PDF PAGE 12 OF 12 =====
+11
+[23] J. Li, X. Huang and Z. Li, Exponential stabilization for fuzzy sampled-
+data system based on a unified framework and its application, Journal
+of the Franklin Institute, 354(13) (2017) 5302-5327.
+[24] Z. Sheng, C. Lin, B. Chen and Q. G. Wang, Stability and stabilization
+of T-S fuzzy time-delay systems under sampled-data control via new
+asymmetric functional method, IEEE Transactions on Fuzzy Systems,
+31(9) (2023) 3197–3209.
+[25] L Shanmugam and Y . H. Joo, Stability criteria for fuzzy-based sampled-
+data control systems via a fractional parameter-based refined looped
+lyapunov functional, IEEE Transactions on Fuzzy Systems, 30(7) (2022)
+2538-2549.
+[26] Z. Yin and W. Zhang, Improved sampled-data asynchronous control for
+T-S fuzzy systems by fuzzy line integral and looped functional, IEEE
+Access, 12 (2024) 94081-94091.
+[27] G. Velmurugan and Y . H. Joo, Sampled-data control design for T–S
+fuzzy system via quadratic function negative-determination approach,
+IEEE Transactions on Fuzzy Systems, 32(3) (2024) 979-988.
+[28] Z. -G. Wu, P. Shi, H. Su and J. Chu, Sampled-data exponential synchro-
+nization of complex dynamical networks with time-varying coupling
+delay, IEEE Transactions on Neural Networks and Learning Systems,
+24(8) (2013) 1177-1187.
+[29] P. Tang and Y . Ma, Exponential stabilization and non-fragile sampled-
+date dissipative control for uncertain time-varying delay TS fuzzy
+systems with state quantization, Information Sciences, 545 (2021) 513-
+536.
+[30] H. Li, Y . Liu and Y . Ma, Stability of TS fuzzy system under non-
+fragile sampled-data H∞ control using augmented lyapunov-krasovskii
+functional, Journal of the Franklin Institute, 360(4) (2023) 3162-3188.
+[31] X.-L. Zhu, B. Chen, D. Yue and Y . Y . Wang, An improved input delay
+approach to stabilization of fuzzy systems under variable sampling,IEEE
+Transactions on Fuzzy Systems, 20(2) (2012) 330–341.
+[32] Y . J. Liu, J. H. Park, B.-Z. Guo and Y . J. Shu, Further results on
+stabilization of chaotic systems based on fuzzy memory sampled-data
+control, IEEE Transactions on Fuzzy Systems, 26(2) (2018) 1040–1045.
+[33] Y . Qiu, C. Hua and Y . Wang, Nonfragile sampled-data control of T–S
+fuzzy systems with time delay, IEEE Transactions on Fuzzy Systems,
+30(8) (2022) 3202-3210.
+Page 11 of 11
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60

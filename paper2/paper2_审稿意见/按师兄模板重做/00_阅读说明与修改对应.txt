@@ -1,0 +1,167 @@
+paper2 审稿意见、逐点回复与修改副本
+
+本包包含三份英文审稿意见、三份逐点回复，以及共同对应的论文修改副本。意见主体沿用师兄模板的一段总体评价加编号短段落；每条都对应已落实的修改。所有页码以本包修改稿 PDF 为准。
+
+审稿意见是供作者审阅和准备回复的草稿，不代表实际外审结果。
+
+模板依据与修改对应
+
+R1.1 英文表达
+依据：SMCA 第1条：英文；保留用户认可的原模板措辞。
+修改位置：Abstract, p. 1; Introduction, pp. 1–3; Sections 2 and 3; Conclusion, p. 18.
+
+paper2.tex 起始行：96, 108, 125, 128, 135, 149, 192, 288, 313, 334, 350, 462, 545, 875, 893, 934, 1042, 1857, 1860, 1865。
+
+
+
+R1.2 工程背景
+依据：SMCA 第2条、AMC 第2条：实际背景；落实到已有 PMSM 场景。
+修改位置：Introduction, p. 2, paragraph beginning "The PMSM example in Section 4".
+
+paper2.tex 起始行：170。
+
+
+
+R1.3 ξ1、ξ2 的作用
+依据：SMCA 第4条、AMC 第3条：参数含义；选用原稿仅在变换中出现的 ξ1、ξ2。
+修改位置：Section 3, p. 11, paragraph immediately before Theorem 3.2.
+
+paper2.tex 起始行：932。
+
+
+
+R1.4 重复句号
+依据：SMCA 第3条：具体排版错误；指出原文实际存在的重复句号。
+修改位置：Introduction, p. 1, paragraph discussing cyber threats.
+
+paper2.tex 起始行：135。
+
+
+
+R1.5 图7/13轴标签
+依据：SMCA 第7条、MATH 第8条：图示与术语；选取实际轴标签错误。
+修改位置：Fig. 7, p. 15, and Fig. 13, p. 18; corresponding figure source PDFs.
+
+paper2.tex 起始行：1651, 1837。
+
+修改文件：figs/actuator_fault.pdf、figs/2_actuator_fault.pdf。
+
+
+
+R1.6 近期文献
+依据：SMCA 第8条、AMC 第8条：近期文献；不照搬“文献过旧”的判断。
+修改位置：Introduction, p. 2, paragraph beginning "Recent work has"; References [34] and [35], p. 21.
+
+paper2.tex 起始行：184。
+
+
+
+R2.1 技术英文
+依据：ESWA 第1条、AMC 第1条：技术英文表达。
+修改位置：Abstract, p. 1; Introduction, pp. 1–3; Sections 2 and 3; Conclusion, p. 18.
+
+paper2.tex 起始行：96, 108, 125, 128, 135, 149, 192, 288, 313, 334, 350, 462, 545, 875, 893, 934, 1042, 1857, 1860, 1865。
+
+
+
+R2.2 泛函构造解释
+依据：ESWA 第4条：所选双侧泛函的作用；仅要求解释现有构造。
+修改位置：Remark 3.1, p. 11, added explanation beginning "In particular".
+
+paper2.tex 起始行：927。
+
+
+
+R2.3 攻击与故障作用路径
+依据：ESWA 的复杂模型/概念说明要求：解释原 Eq. (15) 中两个作用通道。
+修改位置：Section 2.4, p. 6, paragraph immediately after Eq. (15).
+
+paper2.tex 起始行：388。
+
+
+
+R2.4 离线设计步骤
+依据：AMC 第5条：设计过程需要更详细；补充离线求解与矩阵恢复流程。
+修改位置：End of Section 3, p. 13, paragraph beginning "For offline synthesis".
+
+paper2.tex 起始行：1509。
+
+
+
+R2.5 自适应阈值说明
+依据：ESWA 第5条、MATH 第7条：概念与说明性讨论；结合触发公式解释。
+修改位置：Section 2.2, p. 4, sentence below Eq. (6) and expanded Remark 2.2.
+
+paper2.tex 起始行：303, 306。
+
+
+
+R2.6 近期文献
+依据：ESWA 第2条、AMC 第8条：补充相关近期工作及联系。
+修改位置：Introduction, p. 2, paragraph beginning "Recent work has"; References [34] and [35], p. 21.
+
+paper2.tex 起始行：184。
+
+
+
+R3.1 英文与摘要结论
+依据：MATH 第1条：英文；侧重摘要和结论。
+修改位置：Abstract, p. 1; language edits in the main text; Conclusion, p. 18.
+
+paper2.tex 起始行：96, 108, 125, 128, 135, 149, 192, 288, 313, 334, 350, 462, 545, 875, 893, 934, 1042, 1857, 1860, 1865。
+
+
+
+R3.2 表1变化趋势
+依据：MATH 第6、7条：解释仿真现象；选取 Table 1 的实际趋势。
+修改位置：Example 1, p. 16, discussion immediately before Table 1.
+
+paper2.tex 起始行：1686。
+
+
+
+R3.3 通信节省率
+依据：MATH 第6、8条：结果解释和核对；节省率定义与算术。
+修改位置：Example 1, p. 16, calculation before Table 1; Example 2, p. 18, final paragraph.
+
+paper2.tex 起始行：1686, 1860。
+
+
+
+R3.4 图12结果解释
+依据：MATH 第6、7条、SMCA 第7条：图示讨论；解释两条曲线各自的作用。
+修改位置：Fig. 12 and its discussion in Example 2, p. 18.
+
+paper2.tex 起始行：1831, 1859。
+
+
+
+R3.5 结论适用范围
+依据：MATH 第7条的说明性讨论写法；结合原有结论，明确当前适用范围。
+修改位置：Conclusion, p. 18, final paragraph.
+
+paper2.tex 起始行：1867。
+
+
+
+R3.6 近期文献
+依据：MATH 第2条、SMCA 第8条：近期参考文献。
+修改位置：Introduction, p. 2, paragraph beginning "Recent work has"; References [34] and [35], p. 21.
+
+paper2.tex 起始行：184。
+
+
+
+共同修改说明
+
+三份意见中的英文和近期文献意见，共同对应同一批修改；没有重复插入文献或重复改写同一段正文。新+资料只作为补充，主要依据为 SMCA、AMC、ESWA、MATH 原模板。
+
+新增参考文献的作者、题名、卷年、文章号和 DOI 已按出版社页面核对。Chandrasekar 等文献在线发表于 2025 年12月，正式卷年为2026，按正式卷年著录。
+
+核对边界
+
+原始 paper2 未改动。原稿的95个显示数学环境保持原样；本次补充的是解释性文字及行内恢复公式，不属于定理重证。仿真未重跑，节省率按稿件现有计数核算。两张图仅替换轴标签文字。
+
+Word 文件保留原模板的页面、字体和编号样式，并检查了正文、评论与回复对应及文档结构。当前环境缺少 Word 转页组件，无法完成 Word 分页的视觉核验；使用前请在 Word 中查看分页。论文 PDF 已实际编译并核对页面。
+
+最终检查：论文 PDF 共21页，所有页已查看；图7与图13图注已缩短，避免并排图注靠得过近。原有参考文献条目不在本轮全面著录核对范围内。

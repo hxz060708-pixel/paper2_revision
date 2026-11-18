@@ -1,0 +1,40 @@
+22
+ing quaternion-valued Wirtinger-based integral inequality, AIMS Mathematics, 8 (2023), 10486-
+10512. https://doi.org/10.3934/math.2023532
+17. J. K. Pearson, D. L. Bisset, Neural networks in the Cli ﬀord domain, Proc. 1994 IEEE Int. Conf.
+Neural Netw, Orlando, FL, USA, (1994). https://doi.org/10.1109/ICNN.1994.374502
+18. S. Buchholz, G. Sommer, On Cliﬀord neurons and Cliﬀord multi-layer perceptrons, Neural Netw.
+21 (2008), 925-935. https://doi.org/10.1016/j.neunet.2008.03.004
+19. Y . Kuroe, Models of Cli ﬀord recurrent neural networks and their dynamics, Proc.
+2011 Int. Joint Conf. Neural Netw., San Jose, CA, USA, (2011), 1035-1041.
+https://doi.org/10.1109/IJCNN.2011.6033336
+20. E. Hitzer, T. Nitta, and Y . Kuroe, Applications of Cliﬀord’s geometric algebra, Adv. Appl. Cliﬀord
+Algebras, 23 (2013), 377-404. https://doi.org/10.1007/s00006-021-01196-7
+21. J. Zhu, J. Sun, Global exponential stability of Cli ﬀord-valued recurrent neural networks, Neuro-
+computing, 173 (2016), 685-689. https://doi.org/10.1016/j.neucom.2015.08.016
+22. Y . Liu, P. Xu, J. Lu, J. Liang, Global stability of Cli ﬀord-valued recurrent neural networks with
+time delays, Nonlinear Dyn., 84 (2016), 767-777. https://doi.org/10.1007/s11071-015-2526-y
+23. S. Shen, Y . Li.S p-Almost periodic solutions of Cliﬀord-valued fuzzy cellular neural networks with
+time-varying delays, Neural Process. Lett., 51 (2020), 1749-1769. https://doi.org/10.1007/s11063-
+019-10176-9
+24. Y . Li, J. Xiang, B. Li, Globally asymptotic almost automorphic synchronization of Cli ﬀord-
+valued recurrent neural networks with delays, IEEE Access, 7 (2019), 54946-54957.
+https://doi.org/10.1109/ACCESS.2019.2912838
+25. B. Li, Y . Li, Existence and global exponential stability of pseudo almost periodic solution for
+Cliﬀord-valued neutral high-order Hopﬁeld neural networks with leakage delays, IEEE Access, 7
+(2019), 150213-150225. https://doi.org/10.1109/ACCESS.2019.2947647
+26. Y . Li, J. Xiang, Global asymptotic almost periodic synchronization of Cliﬀord-valued CNNs with
+discrete delays, Complexity, 2019 (2019), 6982109. https://doi.org/10.1155/2019/6982109
+27. B. Li, Y . Li, Existence and global exponential stability of almost automorphic solution for Cliﬀord-
+valued high-order Hopﬁeld neural networks with leakage delays, Complexity, 2019 (2019),
+6751806. https://doi.org/10.1155/2019/6751806
+28. C. Aouiti, F. Dridi, Weighted pseudo almost automorphic solutions for neutral type fuzzy cellular
+neural networks with mixed delays and D operator in Cliﬀord algebra, Int. J. Syst. Sci., 51 (2020),
+1759-1781. https://doi.org/10.1080/00207721.2020.1777345
+29. C. Aouiti, I.B. Gharbia, Dynamics behavior for second-order neutral Cli ﬀord diﬀerential equa-
+tions: inertial neural networks with mixed delays, Comput. Appl. Math., 39 (2020), 120.
+https://doi.org/10.1007/s40314-020-01148-0
+30. Y . Li, J. Xiang, Existence and global exponential stability of anti-periodic solution for Cli ﬀord-
+valued inertial Cohen-Grossberg neural networks with delays, Neurocomputing, 332 (2019), 259-
+269. https://doi.org/10.1016/j.neucom.2018.12.064
+AIMS Mathematics V olume x, Issue x, xxx–xxx

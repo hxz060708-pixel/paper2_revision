@@ -1,0 +1,174 @@
+ 
+ 
+5 
+( )iAk
+, 
+( )iBk , 
+( )iDk , 
+( )iEk , 
+( )iFk  and 
+( )wiAk  are the additive uncertainties such that [39, 40]  
+( ) ( ) ( )
+( ) ( ) ( )
+( ) ( ) ( )
+( ) ( ) ( )
+1 1 1 1 1 2 1 1 3
+1 1 4 1 1 5 1 1 6
+i i i i i i i i i i i i
+i i wi i i i i i i i i i
+A k B k D k M k N M k N M k N
+E k F k A k M k N M k N M k N
+        
+           
+                                           (6) 
+with  
+( ) ( )11
+T
+ii k k I  
+                                                                                       (7) 
+where 
+1iM , 
+1iN , 
+2iN , 
+3iN , 
+4iN , 
+5iN  and 
+6iN  are the constant matrices with appropriate dimensions, 
+I  is the identity matrix with 
+appropriate dimension, and 
+( )1i k  is the time-varying norm-bounded uncertain matrix.  
+( )dk
+ is the time-varying state delay of neural networks such that  
+( ) ( )0, mMd d k d d k d    
+                                                                           (8) 
+where 
+md  is the lower bound of 
+( )dk , 
+Md  is the upper bound of 
+( )dk , and 
+d
+  is the upper bound of 
+( )dk .  
+( )k
+ is the time-varying interval distributed delay of neural networks such that  
+( ) ( )0, mM kk    
+                                                                         (9) 
+where 
+m
+  is the lower bound of 
+( )k
+ , 
+M
+  is the upper bound of 
+( )k
+ , and 
+  is the upper bound of 
+( )k
+ . The time-varying 
+state delay 
+( )dk  and time-varying interval distributed delay  
+( )k
+  constitute the mixed interval distributed delays  of the neural 
+networks.  
+( )wk
+ is the mismatched network noise such that  
+( ) ( )  
+0
+, 0, 0, 1, ,
+N
+T
+k
+w k w k k N 
+=
+  
+                                                               (10) 
+where 
+0   is a scalar.  
+Note that the random occurrence sensor nonlinearity are considered in the DGNNs, and measurable output in (2) is rewritten 
+as follows  
+( ) ( )( ) ( ) ( ) ( )( ) ( )1 viy k k y k k y k C v k= − +  +
+                                                            (11) 
+where 
+viC  is a gain matrix with appropriate dimension, 
+( )vk  is the measurable sensor noise, 
+( )( )yk  is the sensor nonlinearity, 
+( )k
+ is the stochastic variable describ ing the random occurrence  sensor nonlinearity , and according to Bernoulli probability 
+distribution, one has  
+( )
+( )
+ 1,
+0  ,
+ 
+ 
+occurring sensor nonlinearity
+occurring sensor nonlinear
+k if
+yk if u in t
+
+
+ = =
+                                                            (12) 
+with  
+( ) 
+( ) 
+1
+0 1 , 0 1
+Pr ob k
+Pr ob k
+
+  
+ == = = −  
+                                                                   (13) 
+where 
+( ) 1k =  denotes occurring sensor nonlinearity, and 
+( ) 0k =  denotes unoccurring  sensor nonlinearity. 
+( ) 1Pr ob k =  is 
+the Bernoulli probability distribution of 
+( ) 1k = , and 
+( ) 0Pr ob k =  is the Bernoulli probability distribution of 
+( ) 0k = . 
+  is 
+the value of Bernoulli probability distribution 
+( ) 1Pr ob k = , and 
+1 −  is the value of Bernoulli probability distribution 
+( ) 0Pr ob k =
+.  
+From (2), one knows that 
+( ) ( )iy k C x k= , substituting 
+( ) ( )iy k C x k=  into (11), one has  
+( ) ( )( ) ( ) ( ) ( )( ) ( )1 i i viy k k C x k k C x k C v k= − +  +
+                                                     (14) 
+Substituting ( 14) into ( 2), the stochastic T-S fuzzy DGNNs with additive uncertainties, mixed interval distributed delays and 
+mismatched network noise is described as follows  
+( ) ( ) ( ) ( ) ( )( ) ( ) ( )( )( ) ( ) ( )( )( ) ( ) ( ) ( ) ( )
+( ) ( )( ) ( ) ( ) ( )( ) ( )
+( ) ( )
+( ) ( ) ( )
+1
+1
+1
+, 1, 2, ,
+, , , 0
+n
+i i i i i wi
+i i vi
+i
+MM
+x k A k x k B k f x k D k g x k d k E k x k k F k u k A k w k
+y k k C x k k C x k C v k
+z k L x k i r
+x k k k max d
+
+
+
+
+
+=
+ + = + + − + − + +
+
+ = − +  +
+ ==
+ =  −  
+
+        (15) 

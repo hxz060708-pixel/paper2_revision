@@ -1,0 +1,220 @@
+ 
+ 
+19 
+where 
+( ) ( ) ( )12
+T
+x k x k x k=   .  
+Note that the T-S fuzzy model and stochastic Bernoulli theory are employed to describe the random occurrence sensor nonlinearity, 
+and (125) is rewritten as follows  
+( ) ( ) ( ) ( ) ( )( ) ( ) ( )( )( ) ( ) ( )( )( ) ( ) ( ) ( ) ( )
+( ) ( )( ) ( ) ( ) ( )( ) ( )
+( ) ( )
+( ) ( ) ( )
+1
+1
+1
+, 1, 2, ,
+, , , 0
+n
+i i i i i wi
+i i vi
+i
+MM
+x k A k x k B k f x k D k g x k d k E k x k k F k u k A k w k
+y k k C x k k C x k C v k
+z k L x k i r
+x k k k max d
+
+
+
+
+
+=
+ + = + + − + − + +
+
+ = − +  +
+ ==
+ =  −  
+
+       (126) 
+where 
+viC  is the gain matrix with appropriate dimension, 
+( )vk  is the measurable sensor noise, 
+( )( )iC x k  (i.e. 
+( )( )yk ) is the 
+sensor nonlinearity, and 
+( )k  is the stochastic variable describing the random occurrence sensor nonlinearity.  
+A 2-rules T-S fuzzy model is employed  and applying T -S fuzzy inference, 
+iA , 
+iB , 
+iD , 
+iE , 
+iF , 
+wiA , 
+iC , 
+viC  and 
+iL  (
+1, 2i = ) are 
+given as follows  
+1 2 1 2 1 2
+12
+0 01 0 0 02 0 0 02 0 05 0 01 0 04 0 03 0 08 0 02 0 06, , , , ,0 0 08 0 0 06 0 07 0 05 0 06 0 05 0 03 0 04 0 05 0 07
+0 05 0 02 0 02 0 05,0 01 0 04 0 01 0 09
+. . . . . . . . . .A A B B D D . . . . . . . . . .
+. . . .EE . . . .
+           = = = = = =            − − − −           
+−−   ==      
+1 2 1 2
+1 2 1 2 1
+0 02 0 09 0 02 0 01 0 01 0 06, , , , 0 03 0 01 0 04 0 02 0 02 0 08
+0 30 0 20 0 12 0 16 0 18 0 44 0 01 0 57, , , ,0 10 0 20 0 20 0 06 0 20 0 75 0 0
+ww
+vv
+. . . . . .F F A A. . . . . .
+. . . . . . . .C C C C L. . . . . . .
+−−       = = = =              
+−−       = = = = =       −−       
+2
+0 03 0 06,2 0 08 0 44 0 75
+..L. . .
+
+
+
+
+
+     =       
+ 
+For (126), the uncertainty-dependent static output feedback controller with measurable output error is designed as follows 
+( ) ( ) ( )( ) ( )( )( ) ( )( )( ) ( )( ) ( ) ( )( )
+( ) ( )
+1
+1
+n
+ˆ ˆ ˆ ˆ ˆx k Ax k Bf x k Dg x k d k E x k k K K k y k y k
+ˆˆz k Lx k
+
+
+
+=
+ + = + + − + − + +  −
+ =
+
+                  (127) 
+with  
+( ) ( )( ) ( ) ( )( )u k K K k y k y k= +  −
+ 
+Applying 2-rules T-S fuzzy model and stochastic Bernoulli theory to describe (127), one has  
+( ) ( )( ) ( ) ( )( ) ( )( )( ) ( )( )( ) ( ) ( ) ( ) ( )( )
+( ) ( )( ) ( )
+2
+1 1
+2
+1
+1
+n
+i i i i i i
+i
+ii
+i
+ˆ ˆ ˆ ˆ ˆx k h k A x k B f x k D g x k d k E x k k k K k y k y k
+ˆˆz k h k L x k
+
+
+   
+
+= =
+=
+ + = + + − + − + −  
+ =
+ 
+
+ 
+with  
+( ) ( )i i iK k K K k= + 
+ 
+where 
+( )k  is a stochastic variable describing the packet dropouts from controller to actuator.  
+According to Theorem 2 , the scalars 
+ , 
+ , 
+  (
+1, 2 = ), 
+1 , 
+1 , 
+1 , 
+2 , 
+21 0cc  , 
+0N  , 
+0  , 
+01  , 
+01  , 
+0Mmdd 
+, 
+0Mm  , 
+0   and 
+01   are given as 
+0 11. = , 
+0 82. = , 
+1 0 10. = , 
+2 0 20. = , 
+1 0 05. = , 
+1 0 99. = , 
+1 0 09. =−
+, 
+2 0 68. =− , 
+2 0 75c. = , 
+1 0 15c. = , 
+30N = , 
+0 52. = , 
+0 65. = , 
+0 85. = , 
+1 80Md. = , 
+0 29md. = , 
+0 50M . = , 
+0 26m . = ,  
+1 =
+ and 
+0 58. = , respectively. According to Theorem 2, the matrices 
+0  and 
+  are given as  
+2 20 1 60 1 38 2 97,0 19 2 60 2 09 2 84
+. . . .
+. . . .
+−    =  =    −   
+ 
+Solving the LMIs , where
+ , 
+ , 
+  (
+1, 2 = ), 
+1 , 
+1 , 
+1 , 
+2 , 
+21 0cc  , 
+0N  , 
+0  , 
+01  , 
+01  , 
+0Mmdd  , 
+0Mm 
+, 
+0  , 
+01  , 
+0  and 
+  satisfy the stability conditions in Theorem 2 , 
+iY  and 
+iZ  (
+1, 2i = ) are solved as 
+follows  
+1 2 1 1
+2 0474 2 2053 0 8650 0 3034 2 1703 2 9680 1 3704 2 3911, , ,0 5347 0 0994 0 1442 2 5730 0 9904 0 1076 1 1918 2 4838
+. . . . . . . .Y Y Z Z. . . . . . . .
+− − − −       = = = =        − − − −       
+ 
+The objective in this section is to solve the controller gain matrix 
+iK  (
+1, 2i = ), such that the closed -loop system is finite  time 
+bounded stable subject to 
+( )12, , , ,c c L N   and the mixed H∞ passive performance is guaranteed. In (124), it can be seen that the 

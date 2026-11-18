@@ -1,0 +1,122 @@
+For Peer Review
+Then ρ∗ = √ς is identiﬁed as the optimal control performance index, which can be acquired by solving (45).
+Remark 7. What is noteworthy is that the computational complexity of the PLMIs will be high and even grow
+higher with the increase of number of the elements in the faulty set H and the fuzzy rules when synthesis the
+resilient controller. With the purpose of designing the control gains, the unknown matrices G♯m(♯ = 1, 2, 3, 4)
+is uniﬁed by introducing the free matrix Gm, which is adopted to eliminate the cross-coupling parts and reduce
+the conservatism. Additionally, the free matrix Gm is closely related to the mode of the actuator failures, which
+is similar to the matrix decomposition in [39], but it will reduce the conservatism while also increase the burden
+of computing simultaneously. To further improve the theoretical developments in this article, more advanced
+inequalities including generalized free matrix based inequality and canonical Bessel-Legendre inequality will be
+adopted. One diﬃculty that occurs in developing the presented method herein is the computational burden
+even for existing advanced technique. This is mainly comes from the decision variables, the dimensions of the
+matrix inequalities, and the number of fuzzy rules.
+Remark 8. For higher level construction, it is a relaxation of TRM, this means the TRM are not ﬁxed con-
+stantly, it still follows MJP, which is more realistically. More recently, the energy-to-peak ﬁltering problem
+is studied in [40] for SMJSs with mismatched models, where a hidden semi-Markovian model (HSMM) is in-
+troduced to cope with the asynchronous phenomenon between the plant model and the ﬁlter model. Tian et
+al. [41] addressed the observer-based asynchronous synthesis for SMJSs, where the asynchronous phenomenon
+among the system models and controller models due to the limitations of the complex environments is described
+by a hidden semi-Markovian process. The work [42] discussed the asynchronous adaptive quantized feedback
+sliding mode control (SMC) for SMJSs with actuator failures using an event-triggered mechanism. Song et al.
+[22] provided a new systematic framework to settle the asynchronous SMC problem for SMJSs with singular
+perturbations, which can eﬀectively remove the dependence on the unavailable system model of sliding mode
+controller in some previous publications. Inspired by these pioneering works [22 , 40 − 42], we will explore the
+issue of asynchronous synthesis for IT2 fuzzy SMJSs between the system models and actuator faulty models.
+Remark 9. Theorems 2 −4 from diﬀerent angles provided diﬀerent channels to parameterize the resilient fuzzy
+controller gain matrices. The diﬃculties and challenges of the control synthesis methodology can be epitomized
+as three aspects: 1) The synthesis method of the resilient control gains is extremely complicated than some
+previous ones since several features are coalesced in one framework simultaneously, which might to eﬀects in the
+high computation burden to calculate the resilient controller gains. 2) The selected LKF and MMFs, which can
+reduce drastically the design conservatism but it is also accompanied by an increase in computational complex-
+ity. 3) The semi-Markovian model is adopted to depict the SAFs, which also leads to the diﬃculty in tackling
+the controller gains. In spite of these, our research article mainly exhibit a uniﬁed theoretical framework to cope
+with the IT-2 fuzzy-based resilient controller synthesis problem for nonlinear systems with SMJAFs initially.
+Remark 10. The core novelties of this control strategy mainly enumerates the following twofold: 1) The asyn-
+chronous MFs, resilience and hysteresis are constructed in a uniﬁed control framework, which more can meet
+the practical requirements of engineering applications. 2) A semi-Markovian jump fault model is introduced to
+depict SAFs, which is more ﬁt for practical applications. According to our knowledge, there are many paths
+can be adopted to categorize the random behavior of the actuator faults, such as Markovian chain, nonhomo-
+geneous Markovian chain, hidden-Markovian chain, high-level nonhomogeneous Markovian chain, inconsistent
+Markovian chain, or hidden semi-Markovian process, or inconsistent semi-Markovian process. Howbeit, most
+of the available reports may not reﬂect the random failures more precisely, to eliminate this restriction and
+investigate the asynchronous actuator failures, it is worth our eﬀort to make a further study.
+4. Simulation examples
+To verify the practicability and potency of the control synthesis methodology for IT −2FSs, three practical
+examples are exhibited during this section (for simplicity, set α(t) = 0).
+Example 1. The leader-follower tracking control for wheeled mobile robots is conducted (see Figure 2) to
+verify the applicability of our design method. The robot system can be represented by the model as [31]:
+
+
+
+
+˙x(t) = wly(t) + vl(t)(cos(θe(t)) − 1) + vl(t) − u1(t),
+˙y(t) = −wlx(t) + vl(t) sin(θe(t)),
+˙θe(t) = −u2(t),
+(46)
+in which the model is obtained by linearizing the operating points. Let
+[x(t), y(t), u1(t), u2(t)] = [xe(t) − x0, ye(t) − y0, v(t) − vl(t), w(t) − wl]. (47)
+17
+Page 18 of 29
+http://mc.manuscriptcentral.com/rnc-wiley
+International Journal of Robust and Nonlinear Control
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60

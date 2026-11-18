@@ -1,0 +1,129 @@
+11
++
+∑
+B∈Ω
+n∑
+i=1
+m∑
+j=1
+(
+F f
+j
+⏐⏐⏐bA. ¯B
+i j
+⏐⏐⏐
+)⏐⏐⏐˜yB
+j (t− τ(t)))
+⏐⏐⏐
++
+∑
+B∈Ω
+n∑
+i=1
+m∑
+j=1
+(
+Gg
+i
+⏐⏐⏐bA. ¯B
+ji
+⏐⏐⏐
+)⏐⏐⏐ ˜xB
+i (t− τ(t))
+⏐⏐⏐
+≤ −αV(t, ˜x(t), ˜y(t)) + β sup
+t−τ∗≤s≤t
+V(s, ˜x(s), ˜y(s)), (3.13)
+where
+α = min
+{
+min
+1≤i≤n
+di, min
+1≤ j≤m
+c j
+}
+> 0,
+β = max
+{(∑
+B∈Ω
+n∑
+i=1
+m∑
+j=1
+Gg
+i
+⏐⏐⏐bA. ¯B
+ji
+⏐⏐⏐
+)
+,
+(∑
+B∈Ω
+n∑
+i=1
+m∑
+j=1
+F f
+j
+⏐⏐⏐aA. ¯B
+i j
+⏐⏐⏐
+)}
+> 0.
+From the above estimate, for any solution ˜x(t), ˜y(t) of (2.3) such that
+V(s, ˜x(s), ˜y(s)) = ˜V(t, ˜x(t), ˜y(t)), t− τ∗≤ s≤ t,
+we have
+D+V(t, ˜x(t), ˜y(t))≤− (α− β)V(t, ˜x(t), ˜y(t)).
+By virtue of condition (2) of Theorem (3.5), there exists a real number λ > 0 such that
+α− β≥ λ,
+and it follows that
+D+V(t, ˜x(t), ˜y(t))≤− λV(t, ˜x(t), ˜y(t)), t , tk, t > t0. (3.14)
+Then using (3.14) and Theorem (3.5), we get
+V(t, ˜x(t), ˜y(t))≤ e−λ(t−t0)V(t0, ˜x(t0), ˜y(t0)), t > t0.
+So
+∑
+B∈Ω
+( n∑
+i=1
+⏐⏐⏐ ˜xB
+i (t)− x∗⏐⏐⏐ +
+m∑
+j=1
+⏐⏐⏐˜yB
+j (t)− y∗⏐⏐⏐
+)
+≤ e−λ(t−t0)
+∑
+B∈Ω
+( n∑
+i=1
+⏐⏐⏐ ˜xB
+i (t0)− x∗⏐⏐⏐ +
+m∑
+j=1
+⏐⏐⏐˜yB
+j (t0)− y∗⏐⏐⏐
+)
+,
+≤ e−λ(t−t0)
+∑
+B∈Ω
+( n∑
+i=1
+sup
+s∈[t0−τ∗,t0]
+⏐⏐⏐ ˜xB
+i (s)− x∗⏐⏐⏐
++
+m∑
+j=1
+sup
+s∈[t0−τ∗,t0]]
+⏐⏐⏐˜yB
+j (s)− y∗⏐⏐⏐
+)
+, t > t0.
+From Deﬁnition (3.2), the equilibrium (x∗, y∗) of the NNs (3.7) is globally exponentially stable. This
+completes the proof.
+AIMS Mathematics V olume x, Issue x, xxx–xxx

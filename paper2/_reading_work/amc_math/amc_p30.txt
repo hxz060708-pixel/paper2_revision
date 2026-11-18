@@ -1,0 +1,69 @@
+ 
+ 
+28 
+discrete-delayed and distributed-delayed couplings: A new Halanay-like impulsive differential comparative lemma." Expert Systems With 
+Applications 294 (2025): 128748.  
+[6] R. Suvethaa, J.J. Nietob  and P. Prakash. "Non-fragile output-feedback control for delayed memristive bidirectional associative memory 
+neural networks against actuator failure." Applied Mathematics and Computation 485 (2025): 129021.  
+[7] W.J. Yana, Y. Xue and X. Zhang. "Global exponential synchronization of competitive neural networks with D operators and mixed delays 
+and an application to secure communication." Information Sciences 719 (2025): 122473.  
+[8] L.Y. Shi and J. Wang. " Decentralized dynamic event -triggered passive bipartite synchronization for semi -Markov jump cooperation -
+competition neural networks under hybrid random cyber-attacks." Applied Mathematics and Computation 507 (2025): 129560.  
+[9] A. Nasiri, S.K. Nguang, A. Swain and D.J. Almakhles. "Reducing conservatism in an H∞ robust state-feedback control design of T-S fuzzy 
+systems: a nonmonotonic approach." IEEE Transactions on Fuzzy Systems 26.1 (2018): 386-390.  
+[10] H.K. Lam, L.G. Wu and J. Lam. "Two-step stability analysis for general polynomial-fuzzy-model-based control systems." IEEE Transactions 
+on Fuzzy Systems 23.3 (2015): 511-524.  
+[11] H.K. Lam and S.H. Tsai. "Stability analysis of polynomial -fuzzy-model-based control systems withmismatched premise membership 
+functions." IEEE Transactions on Fuzzy Systems 22.1 (2014): 223-229. 
+[12] T. Zhao, M.B. Huang and S.Y. Dian. "Robust stability and stabilization conditions for nonlinear networked control systems wit h network-
+induced delay via T-S fuzzy model." IEEE Transactions on Fuzzy Systems 29.3 (2021): 486-499. 
+[13] H. Qiu, H .M. Wang, F . Lia and S.P. Wen. " Intermittent dynamic event -triggered control for synchronization of Takagi -Sugeno fuzzy 
+competitive neural networks with leakage delay and different time scale." Fuzzy Sets and Systems 498 (2025): 109130.  
+[14] J.S. Zhang and X.B. Nie. "Multiple exponential stability for short memory fractional impulsive Cohen-Grossberg neural networks with time 
+delays." Applied Mathematics and Computation 486 (2025): 129066.  
+[15] G. Wang, L. Jia and H.G. Zhang. "S tability and stabilization of T -S fuzzy time-delay system via relaxed integral inequality and dynamic 
+delay partition." IEEE Transactions on Fuzzy Systems 29.10 (2021): 2829-2843.  
+[16] M. Wang, H.K. Lam, J.B. Qiu, H.C. Yan and Z.C. Li. "Fuzzy -affine-model-based filtering design for continuous -time roesser-type 2-D 
+nonlinear systems." IEEE Transactions on Cybernetics 53.5 (2023): 3220-3230. 
+[17] W.Q. Ji, J.B. Qiu and H.K. Lam. "Fuzzy -affine-model-based sliding -mode control for discrete -time nonlinear 2 -D sy stems via output 
+feedback." IEEE Transactions on Cybernetics 53.2 (2023): 979-987.  
+[18] W.Q. Ji, J.B. Qiu, S.F. Su and H.T. Zhang. "Fuzzy observer -based output feedback control of continuous -time nonlinear two-dimensional 
+systems." IEEE Transactions on Fuzzy Systems 31.4 (2023): 1391-1400.  
+[19] F.Y. Liu and G.B. Liu. "Extended dissipative analysis of integral sliding mode control for singular interval type -2 fuzzy systems with time 
+delay." Applied Mathematics and Computation 493 (2025): 129251.  
+[20] P.C. Zhang, Y.J. Liu, S.Y. Jiao and C. Yang. "Observer-based non-fragile control for T-S fuzzy switched systems against cyber attacks: A 
+double-layer PDT switching method." Applied Mathematics and Computation 495 (2025): 129308.  
+[21] Y.L. Wei, J.B. Qiu, H.K. Lam and L.G. Wu. "Approaches to T -S fuzzy-affine-model-based reliable output feedback  control for nonlinear 
+Itô  stochastic systems." IEEE Transactions on fuzzy systems 25.3 (2018): 569-583.  
+[22] H. Li, W.B. Xie, H.K. Lam and J. Zhang. "Membership function derivatives transformation approach for stability analysis and stabilization 
+control of T-S fuzzy systems." IEEE Transactions on Cybernetics 52.8 (2022): 7906-7912.  
+[23] S.C. Tong, K.W. Li and Y.M. Li. "Robust fuzzy adaptive finite -time control for high-order nonlinear systems with unmodeled dynamics." 
+IEEE Transactions on Fuzzy Systems 29.6 (2021): 1576-1589.  
+[24] T.T. Zhang and J.G. Jian. "New results on synchronization for second-order fuzzy memristive neural networks with time-varying and infinite 
+distributed delays." Knowledge-Based Systems 230 (2021): 107397.  
+[25] J.H. Dai, P. Tan, X. Yang, L. Xiao, L. Jia and Y.J. He. "A fuzzy adaptive zeroing neural network with superior finite -time convergence for 
+solving time-variant linear matrix equations." Knowledge-Based Systems 242 (2022): 108405. 
+[26] C.Z. Zhang, H.K. Lam, J.B. Qiu, C.J. Liu and Q.J. Chen. "A new design of membership-function-dependent controller for T-S fuzzy systems 
+under imperfect premise matching." IEEE Transactions on Fuzzy Systems 27.7 (2019): 1428-1440.  
+[27] S.L. Dong, C.L.P. Chen, M. Fang and Z.G. Wu. "Dissipativity-based asynchronous fuzzy sliding mode control for T-S fuzzy hidden Markov 
+jump systems." IEEE Transactions on Cybernetics 50.9 (2020): 4020-4030.  
+[28] Z.Y. Fei, C.X. Guan and W.X. Zheng. "A discontinuous Lyapunov function approach for hybrid event -triggered control of T -S fuzzy 
+systems." IEEE Transactions on Systems, Man, and Cybernetics: Systems 52.5 (2022): 3151-3162.  
+[29] G.D. Zhang and J.D. Cao. "New results on fixed/predefined-time synchronization of delayed fuzzy inertial discontinuous neural net works: 
+Non-reduced order approach." Applied Mathematics and Computation 440 (2023): 127671.  
+[30] L. Wang and C.M. Kellett. "Robust output feedback stabilization of MIMO invertible nonlinear systems with output-dependent multipliers." 
+IEEE Transactions on Automatic Control 67.6 (2022): 2989-2996. 
+[31] Y.X. Su and C.H. Zheng. "A simple unified control for output feedback finite -time stabilization of uncertain planar systems without 
+controllable/observable linearization." IEEE Transactions on Circuits and Systems-II: Express Briefs 68.1 (2021): 326-330. 
+[32] G.C. Calafiore and C. Possieri. "Output feedback Q -learning for linear -quadratic discrete -time finite -horizon control problems." IEEE 
+Transactions on Neural Networks and Learning Systems 32.7 (2021): 3274-3281.  
+[33] Y.L. Wei, J.H. Park, J.B. Qiu and H.Y. Jung. "Reliable output feedback control for piecewise affine systems with Markov -type sensor 
+failure." IEEE Transactions on Circuits and Systems-II: Express Briefs 65.7 (2018): 913-917. 
+[34] D. Liang and J. Huang. "Robust output regulation of linear systems by event-triggered dynamic output feedback control." IEEE Transactions 
+on Automatic Control 66.5 (2021): 2415-2422.  
+[35] S. Yan, Z. Gu, J.H. Park and X.P. Xie. "Adaptive memory -event-triggered static output control of T -S fuzzy wind turbine systems." IEEE 
+Transactions on Fuzzy Systems 30.9 (2022): 3894-3904.  
+[36] Z.W. Zhang, Z.J. Chen, Z. Sheng, D. Li and J. Wang. "Static output feedback secure synchronization control for Markov jump neu ral 
+networks under hybrid cyber-attacks." Applied Mathematics and Computation 430 (2024): 127274.  
+[37] G.J. Liu, X.H. Chang, J.H. Park and M.J. Hu. "Fault detection observer design for nonlinear systems via fuzzy Lyapunov functi ons." IEEE 
+Transactions on Systems, Man, and Cybernetics: Systems 52.10 (2022): 6607-6617.  

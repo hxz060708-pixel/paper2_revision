@@ -1,0 +1,129 @@
+For Peer Review
+Figure 10: An ephemeral schematic diagram of PMSG-based WES [66].
+Table IV. Nomenclature and Physical Explanations
+Nomenclature Physical Explanations Values
+ρ Air density 1.225 kg/m 3
+R Turbine radius 36.6 m
+Vω Wind velocity 9 m/s
+Cp(λ, β) Power coeﬃcient
+β Pitch angle
+λ Tip speed ratio
+Vd/Vq d − q frame stator voltages
+i d/i q d − q frame stator currents
+R s Stator resistance 3.174 Ω
+Id/Iq d − q frame stator inductance 17.5 mH
+ψmag Flux linkage 0.445 rad/s
+J Moment of inertia 4.87 × 106 kg/m 3
+Fc Viscous friction coeﬃcient torque 100 N.m.sec
+Twt/Telec Aerodynamic/electromagnetic torque
+Pwt Rated power 5 kW
+Pn Pole pais 10
+ωgrated Rated rotor speed 1.992 rad/s
+The wind speeds are separately set as 3 and 12 along with 18 m/s. The optimal tip speed ratio is λopt = 8.1
+and the maximum power coeﬃcient Cp max value is found to be as 0.48. It is possible to capture maximum
+power up to 5kW from these values in previous work. The d − q axis diﬀerential voltage equations are composed
+with electromagnetic torque equations (T elec) as below:
+
+
+
+
+
+
+
+
+
+
+
+
+Vd = RsId(t) − Pnωg(t)Iqi q(t) + Id
+di d
+dt ,
+Vq = RsIq(t) + Pnωg(t)Idi d(t) + Iq
+di q
+dt + Pnωg(t)ψmag,
+Telec = 1.5Pn{(Id − Iq)i d(t)i q(t) + i q(t)ψmag},
+J dωg(t)
+dt + Fcωg(t) = Telec − Twt
+(55)
+where the coeﬃcient values given in (42) and (43) are displayed in Table 4.
+If we consider the smooth air-gap (I d = Iq), the overall nonlinear dynamic model of PMVG-based WES
+represented as the following state space equation from (45) − (46) and assume that ωg(t) ∈ [a − b, a + b].
+˙x(t) = A(x)x(t) + Bu(t), (56)
+where the state variable and the control input are
+x(t) =
+[
+ωT
+g (t) IT
+q (t) IT
+d (t)
+]T
+, u =
+[
+VT
+q VT
+d
+]T
+23
+Page 24 of 29
+http://mc.manuscriptcentral.com/rnc-wiley
+International Journal of Robust and Nonlinear Control
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60

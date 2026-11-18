@@ -1,0 +1,25 @@
+  
+Highlights for Review 
+Dear Editors and Reviewers of "Applied Mathematics and Computation": 
+ 
+Warm greeting, with the best regards for you and your family, we wish that you and your family healthy and happy. We would 
+like to submit the manuscript entitled " Finite-time probabilistic stabilization and mixed performance analysis of delayed 
+generalized neural networks subject to mismatched network noise and sensor nonlinearity via fuzzy feedback algorithm 
+with measurable output error ". According to the " Guide for Authors " in this journal  "Applied Mathematics and 
+Computation", "Highlights" should include 3 to 5 bullet points (maximum 85 characters, including spaces, per bullet point). In 
+order to show the innovations of proposed methods, "Highlights" are summarized as follows:  
+(1) Computation complexity of LMIs is reduced by designing congruence transformation algorithm 
+(2) Application of proposed method is verified in delayed generalized neural networks 
+(3) Probabilistic distribution is employed to describe random occurrence characteristics of nonlinearity 
+(4) Delayed generalized neural networks are approximated via T-S fuzzy inference based on gain matrices 
+(5) Design conditions are relaxed by employing spectral norm scaling and dependent Lyapunov function 
+ 
+      We appreciate for Editors/Reviewers’ warm and careful work earnestly. Thank you very much for the comments concerning our 
+manuscript. We deeply appreciate your consideration of our manuscript, and we look forward to receiving comments from the  
+reviewers. We will be happy to edit the text further based on the helpful comments from the Reviewers.  
+ 
+ 
+ 
+ 
+ 
+Highlights (for review)

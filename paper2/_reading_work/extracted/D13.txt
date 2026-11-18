@@ -1,0 +1,26 @@
+===== PDF PAGE 1 OF 1 =====
+Report on OPENMATH-D-22-00217
+Entire solutions of two certain Fermat-type ordinary diﬀerential equations
+by Binbin Hu and Liu Yang
+In the study of nonlinear ordinary diﬀerential equations of complex variables, the
+characterization of analytic solutions of ﬁrst order equations are of interest. The paper
+under review consider characterizing the analytic solutions two certain Fermat-type
+ordinary diﬀerential equations. Such functional equations were originally introduced by
+analogy with the well-known Fermat’s last theorem. The authors describe the precise
+expression form of entire solutions for Fermat-type ordinary diﬀerential equations
+(a0f + a1f ′)2 + (a0f + a2f ′)2 = p
+and
+(a0f + a1f ′)2 + (a0f + a2f ′)2 = eg,
+where p, g are complex polynomials. Moreover, it is a very satisfactory fact that some
+examples are given to illustrate the existence of solutions for such equations in each case
+of the results in the paper.
+The paper is written clearly and easy to follow, and the mathematics is correct and
+strict. I think that the results in this paper will get to the attention of other scholars
+in Nevanlinna theory.
+So I am happy to recommend this paper for publication in your journal.
+Some suggestion on corrections:
+(1) P.2 Line 6 : “such as”should be “For example ”.
+(2) P.2 Line 8: “prove ”should be “proposed ”.
+(3) P.3 Line -11: The sentence “Inspired by the above results, especially the results
+of Li [12,13].”should be rewritten.
+1

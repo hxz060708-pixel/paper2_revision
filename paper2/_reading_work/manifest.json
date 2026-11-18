@@ -1,0 +1,410 @@
+[
+  {
+    "id": "D01",
+    "source": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\paper2\\paper2.pdf",
+    "relative": "paper2\\paper2.pdf",
+    "pages": 19,
+    "page_chars": [
+      4767,
+      4873,
+      2056,
+      4091,
+      2878,
+      2467,
+      1839,
+      2198,
+      2159,
+      2938,
+      2636,
+      2306,
+      1996,
+      1693,
+      2988,
+      1539,
+      3650,
+      3951,
+      3851
+    ],
+    "text": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\_reading_work\\extracted\\D01.txt",
+    "chars": 55473
+  },
+  {
+    "id": "D02",
+    "source": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\论文审稿参考\\peer review\\01_论文与意见配对\\01_JSCE-24-0030_入门示例\\JSCE-24-0030_Proof_hi.pdf",
+    "relative": "论文审稿参考\\peer review\\01_论文与意见配对\\01_JSCE-24-0030_入门示例\\JSCE-24-0030_Proof_hi.pdf",
+    "pages": 25,
+    "page_chars": [
+      2119,
+      607,
+      1034,
+      5790,
+      7546,
+      4038,
+      3852,
+      3972,
+      4598,
+      4700,
+      3648,
+      1892,
+      1988,
+      1103,
+      2309,
+      4378,
+      4303,
+      4357,
+      3555,
+      3675,
+      3427,
+      4264,
+      3584,
+      7276,
+      844
+    ],
+    "text": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\_reading_work\\extracted\\D02.txt",
+    "chars": 89648
+  },
+  {
+    "id": "D03",
+    "source": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\论文审稿参考\\peer review\\01_论文与意见配对\\01_JSCE-24-0030_入门示例\\peer review on JSCE-24-0030.pdf",
+    "relative": "论文审稿参考\\peer review\\01_论文与意见配对\\01_JSCE-24-0030_入门示例\\peer review on JSCE-24-0030.pdf",
+    "pages": 1,
+    "page_chars": [
+      2865
+    ],
+    "text": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\_reading_work\\extracted\\D03.txt",
+    "chars": 2893
+  },
+  {
+    "id": "D04",
+    "source": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\论文审稿参考\\peer review\\01_论文与意见配对\\02_SMCA-25-06-2213_具体问题示例\\SMCA-25-06-2213_Proof_hi(1).pdf",
+    "relative": "论文审稿参考\\peer review\\01_论文与意见配对\\02_SMCA-25-06-2213_具体问题示例\\SMCA-25-06-2213_Proof_hi(1).pdf",
+    "pages": 12,
+    "page_chars": [
+      617,
+      5888,
+      4707,
+      3389,
+      2483,
+      2714,
+      4826,
+      4333,
+      2362,
+      3734,
+      7023,
+      2455
+    ],
+    "text": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\_reading_work\\extracted\\D04.txt",
+    "chars": 44904
+  },
+  {
+    "id": "D05",
+    "source": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\论文审稿参考\\peer review\\01_论文与意见配对\\03_AMC-D-25-04496_方法与实验\\AMC-D-25-04496 (1).pdf",
+    "relative": "论文审稿参考\\peer review\\01_论文与意见配对\\03_AMC-D-25-04496_方法与实验\\AMC-D-25-04496 (1).pdf",
+    "pages": 32,
+    "note": "Full paper read by assigned reader. Pages with repeated vector-figure text checked through rendered pages; page 32 blank except page number.",
+    "text": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\_reading_work\\amc_math\\amc_full.txt"
+  },
+  {
+    "id": "D06",
+    "source": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\论文审稿参考\\peer review\\01_论文与意见配对\\04_MATH-8993_公式与图示\\Math-8993-peer-review (1).pdf",
+    "relative": "论文审稿参考\\peer review\\01_论文与意见配对\\04_MATH-8993_公式与图示\\Math-8993-peer-review (1).pdf",
+    "pages": 23,
+    "page_chars": [
+      2496,
+      4286,
+      2572,
+      2469,
+      1650,
+      1115,
+      1888,
+      2424,
+      1826,
+      1711,
+      1294,
+      1621,
+      1768,
+      1310,
+      1694,
+      2160,
+      1540,
+      780,
+      793,
+      2383,
+      3168,
+      3146,
+      2563
+    ],
+    "text": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\_reading_work\\extracted\\D06.txt",
+    "chars": 47382
+  },
+  {
+    "id": "D07",
+    "source": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\论文审稿参考\\peer review\\01_论文与意见配对\\05_ISATRANS-D-22-00600_表达与格式\\ISATRANS-D-22-00600_reviewer.pdf",
+    "relative": "论文审稿参考\\peer review\\01_论文与意见配对\\05_ISATRANS-D-22-00600_表达与格式\\ISATRANS-D-22-00600_reviewer.pdf",
+    "pages": 26,
+    "page_chars": [
+      1609,
+      364,
+      1466,
+      1836,
+      2435,
+      2295,
+      1431,
+      2111,
+      926,
+      1605,
+      1650,
+      828,
+      697,
+      1153,
+      365,
+      104,
+      535,
+      807,
+      350,
+      777,
+      666,
+      1724,
+      2388,
+      2406,
+      2413,
+      584
+    ],
+    "text": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\_reading_work\\extracted\\D07.txt",
+    "chars": 34346
+  },
+  {
+    "id": "D08",
+    "source": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\论文审稿参考\\peer review\\01_论文与意见配对\\05_ISATRANS-D-22-00600_表达与格式\\peer review on SATRANS-D-22-00600.pdf",
+    "relative": "论文审稿参考\\peer review\\01_论文与意见配对\\05_ISATRANS-D-22-00600_表达与格式\\peer review on SATRANS-D-22-00600.pdf",
+    "pages": 2,
+    "page_chars": [
+      2864,
+      720
+    ],
+    "text": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\_reading_work\\extracted\\D08.txt",
+    "chars": 3642
+  },
+  {
+    "id": "D09",
+    "source": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\论文审稿参考\\peer review\\01_论文与意见配对\\06_0189_中文示例\\0189.pdf",
+    "relative": "论文审稿参考\\peer review\\01_论文与意见配对\\06_0189_中文示例\\0189.pdf",
+    "pages": 6,
+    "page_chars": [
+      3206,
+      1589,
+      2106,
+      1859,
+      1156,
+      2438
+    ],
+    "text": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\_reading_work\\extracted\\D09.txt",
+    "chars": 12532
+  },
+  {
+    "id": "D10",
+    "source": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\论文审稿参考\\peer review\\01_论文与意见配对\\07_0292_简短英文示例\\0292.pdf",
+    "relative": "论文审稿参考\\peer review\\01_论文与意见配对\\07_0292_简短英文示例\\0292.pdf",
+    "pages": 6,
+    "page_chars": [
+      4896,
+      4766,
+      4345,
+      5145,
+      2085,
+      6049
+    ],
+    "text": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\_reading_work\\extracted\\D10.txt",
+    "chars": 27464
+  },
+  {
+    "id": "D11",
+    "source": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\论文审稿参考\\peer review\\02_尚未配对的审稿意见\\01_ESWA-D-22-07284_四份不同文本\\Comments on ESWA-D-22-07284.pdf",
+    "relative": "论文审稿参考\\peer review\\02_尚未配对的审稿意见\\01_ESWA-D-22-07284_四份不同文本\\Comments on ESWA-D-22-07284.pdf",
+    "pages": 1,
+    "page_chars": [
+      2477
+    ],
+    "text": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\_reading_work\\extracted\\D11.txt",
+    "chars": 2505
+  },
+  {
+    "id": "D12",
+    "source": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\论文审稿参考\\peer review\\02_尚未配对的审稿意见\\02_OPENMATH-D-22-00217_不同结论对照\\Referee report of  OPENMATH-D-22-00217 by BINBIN HU and LIU YANG ..pdf",
+    "relative": "论文审稿参考\\peer review\\02_尚未配对的审稿意见\\02_OPENMATH-D-22-00217_不同结论对照\\Referee report of  OPENMATH-D-22-00217 by BINBIN HU and LIU YANG ..pdf",
+    "pages": 3,
+    "page_chars": [
+      1700,
+      2391,
+      185
+    ],
+    "text": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\_reading_work\\extracted\\D12.txt",
+    "chars": 4364
+  },
+  {
+    "id": "D13",
+    "source": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\论文审稿参考\\peer review\\02_尚未配对的审稿意见\\02_OPENMATH-D-22-00217_不同结论对照\\Report-OPENMATH-D-22-00217.pdf",
+    "relative": "论文审稿参考\\peer review\\02_尚未配对的审稿意见\\02_OPENMATH-D-22-00217_不同结论对照\\Report-OPENMATH-D-22-00217.pdf",
+    "pages": 1,
+    "page_chars": [
+      1451
+    ],
+    "text": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\_reading_work\\extracted\\D13.txt",
+    "chars": 1479
+  },
+  {
+    "id": "D14",
+    "source": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\论文审稿参考\\peer review\\02_尚未配对的审稿意见\\02_OPENMATH-D-22-00217_不同结论对照\\The report on the paper with reference OPENMATH-D-22-00217.pdf",
+    "relative": "论文审稿参考\\peer review\\02_尚未配对的审稿意见\\02_OPENMATH-D-22-00217_不同结论对照\\The report on the paper with reference OPENMATH-D-22-00217.pdf",
+    "pages": 2,
+    "page_chars": [
+      2215,
+      2462
+    ],
+    "text": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\_reading_work\\extracted\\D14.txt",
+    "chars": 4735
+  },
+  {
+    "id": "D15",
+    "source": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\论文审稿参考\\peer review\\02_尚未配对的审稿意见\\03_FSS-D-21-00117_理论问题示例\\1_Comment On FSS-D-21-00117.pdf",
+    "relative": "论文审稿参考\\peer review\\02_尚未配对的审稿意见\\03_FSS-D-21-00117_理论问题示例\\1_Comment On FSS-D-21-00117.pdf",
+    "pages": 2,
+    "page_chars": [
+      3001,
+      1530
+    ],
+    "text": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\_reading_work\\extracted\\D15.txt",
+    "chars": 4589
+  },
+  {
+    "id": "D16",
+    "source": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\论文审稿参考\\peer review\\03_尚未配对的论文\\01_RNC-23-0196_李小庆论文\\RNC-23-0196_Proof_hi.pdf",
+    "relative": "论文审稿参考\\peer review\\03_尚未配对的论文\\01_RNC-23-0196_李小庆论文\\RNC-23-0196_Proof_hi.pdf",
+    "pages": 30,
+    "page_chars": [
+      1056,
+      3741,
+      4790,
+      6116,
+      6101,
+      4915,
+      4239,
+      2984,
+      3159,
+      2827,
+      2174,
+      2703,
+      2308,
+      3261,
+      3311,
+      3728,
+      3339,
+      3203,
+      5489,
+      2113,
+      724,
+      3144,
+      3570,
+      708,
+      1999,
+      3508,
+      1096,
+      5749,
+      6973,
+      4766
+    ],
+    "text": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\_reading_work\\extracted\\D16.txt",
+    "chars": 104743
+  },
+  {
+    "id": "D17",
+    "source": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\论文审稿参考\\peer review\\01_论文与意见配对\\01_JSCE-24-0030_入门示例\\peer review on JSCE.docx",
+    "relative": "论文审稿参考\\peer review\\01_论文与意见配对\\01_JSCE-24-0030_入门示例\\peer review on JSCE.docx",
+    "text": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\_reading_work\\extracted\\D17.txt",
+    "chars": 2813
+  },
+  {
+    "id": "D18",
+    "source": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\论文审稿参考\\peer review\\01_论文与意见配对\\02_SMCA-25-06-2213_具体问题示例\\Comment on SMCA-25-06-2213.docx",
+    "relative": "论文审稿参考\\peer review\\01_论文与意见配对\\02_SMCA-25-06-2213_具体问题示例\\Comment on SMCA-25-06-2213.docx",
+    "text": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\_reading_work\\extracted\\D18.txt",
+    "chars": 2683
+  },
+  {
+    "id": "D19",
+    "source": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\论文审稿参考\\peer review\\01_论文与意见配对\\03_AMC-D-25-04496_方法与实验\\Comment on AMC-D-25-04496.docx",
+    "relative": "论文审稿参考\\peer review\\01_论文与意见配对\\03_AMC-D-25-04496_方法与实验\\Comment on AMC-D-25-04496.docx",
+    "text": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\_reading_work\\extracted\\D19.txt",
+    "chars": 2313
+  },
+  {
+    "id": "D20",
+    "source": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\论文审稿参考\\peer review\\01_论文与意见配对\\04_MATH-8993_公式与图示\\comment on MATH-8993.docx",
+    "relative": "论文审稿参考\\peer review\\01_论文与意见配对\\04_MATH-8993_公式与图示\\comment on MATH-8993.docx",
+    "text": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\_reading_work\\extracted\\D20.txt",
+    "chars": 2255
+  },
+  {
+    "id": "D21",
+    "source": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\论文审稿参考\\peer review\\01_论文与意见配对\\06_0189_中文示例\\Comment On _on_0189.docx",
+    "relative": "论文审稿参考\\peer review\\01_论文与意见配对\\06_0189_中文示例\\Comment On _on_0189.docx",
+    "text": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\_reading_work\\extracted\\D21.txt",
+    "chars": 570
+  },
+  {
+    "id": "D22",
+    "source": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\论文审稿参考\\peer review\\01_论文与意见配对\\07_0292_简短英文示例\\Comment On _on_0292.docx",
+    "relative": "论文审稿参考\\peer review\\01_论文与意见配对\\07_0292_简短英文示例\\Comment On _on_0292.docx",
+    "text": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\_reading_work\\extracted\\D22.txt",
+    "chars": 1878
+  },
+  {
+    "id": "D23",
+    "source": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\论文审稿参考\\peer review\\02_尚未配对的审稿意见\\01_ESWA-D-22-07284_四份不同文本\\Comment On ESWA-D-22-07284.docx",
+    "relative": "论文审稿参考\\peer review\\02_尚未配对的审稿意见\\01_ESWA-D-22-07284_四份不同文本\\Comment On ESWA-D-22-07284.docx",
+    "text": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\_reading_work\\extracted\\D23.txt",
+    "chars": 4878
+  },
+  {
+    "id": "D24",
+    "source": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\论文审稿参考\\peer review\\02_尚未配对的审稿意见\\01_ESWA-D-22-07284_四份不同文本\\ESWA-D-22-07284_意见文本_原1.docx",
+    "relative": "论文审稿参考\\peer review\\02_尚未配对的审稿意见\\01_ESWA-D-22-07284_四份不同文本\\ESWA-D-22-07284_意见文本_原1.docx",
+    "text": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\_reading_work\\extracted\\D24.txt",
+    "chars": 2412
+  },
+  {
+    "id": "D25",
+    "source": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\论文审稿参考\\peer review\\02_尚未配对的审稿意见\\01_ESWA-D-22-07284_四份不同文本\\ESWA-D-22-07284_意见文本_原2.docx",
+    "relative": "论文审稿参考\\peer review\\02_尚未配对的审稿意见\\01_ESWA-D-22-07284_四份不同文本\\ESWA-D-22-07284_意见文本_原2.docx",
+    "text": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\_reading_work\\extracted\\D25.txt",
+    "chars": 2184
+  },
+  {
+    "id": "D26",
+    "source": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\论文审稿参考\\peer review\\02_尚未配对的审稿意见\\04_六篇短评合集_稿号未注明\\六篇论文短评合集_原Distributed H.docx",
+    "relative": "论文审稿参考\\peer review\\02_尚未配对的审稿意见\\04_六篇短评合集_稿号未注明\\六篇论文短评合集_原Distributed H.docx",
+    "text": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\_reading_work\\extracted\\D26.txt",
+    "chars": 5115
+  },
+  {
+    "id": "D27",
+    "source": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\论文审稿参考\\peer review\\03_尚未配对的论文\\01_RNC-23-0196_李小庆论文\\审稿意见_原1_推定配对副本.docx",
+    "relative": "论文审稿参考\\peer review\\03_尚未配对的论文\\01_RNC-23-0196_李小庆论文\\审稿意见_原1_推定配对副本.docx",
+    "text": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\_reading_work\\extracted\\D27.txt",
+    "chars": 2412
+  },
+  {
+    "id": "D28",
+    "source": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\论文审稿参考\\peer review\\03_尚未配对的论文\\01_RNC-23-0196_李小庆论文\\审稿意见_原2_推定配对副本.docx",
+    "relative": "论文审稿参考\\peer review\\03_尚未配对的论文\\01_RNC-23-0196_李小庆论文\\审稿意见_原2_推定配对副本.docx",
+    "text": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\_reading_work\\extracted\\D28.txt",
+    "chars": 2184
+  },
+  {
+    "id": "D29",
+    "source": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\论文审稿参考\\peer review\\99_Word临时锁文件\\~$er review on SATRANS-D-22-00600.docx",
+    "relative": "论文审稿参考\\peer review\\99_Word临时锁文件\\~$er review on SATRANS-D-22-00600.docx",
+    "error": "File is not a zip file",
+    "note": "Word temporary lock file; not a source document; excluded from reading scope."
+  }
+]

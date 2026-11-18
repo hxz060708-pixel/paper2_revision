@@ -1,0 +1,72 @@
+4
+and ϱ[B. ¯A] = 1 if eB¯eA =−eC then, eB¯eA = (−1)ϱ[B. ¯A]eC. In addition, we can ﬁnd a unique G C for any
+G C∈A that meets G B. ¯A = (−1)ϱ[B. ¯A]G C for eB¯eA = (−1)ϱ[B. ¯A]eC. Thus, G B. ¯AeB¯eA = G B. ¯A(−1)ϱ[B. ¯A]eC =
+(−1)ϱ[B. ¯A]G C(−1)ϱ[B. ¯A]eC = G CeC, and G = ∑
+C∈Ω
+G CeC∈A . We refer the reader to [17, 18, 19, 20, 21]
+for more information about Cliﬀord algebra.
+2.3. Problem Formulation
+Consider the following Cliﬀord-valued BAMNNs with time-varying delays
+
+˙xi(t) =−dixi(t) +
+m∑
+j=1
+ai jf j(y j(t− τ(t))) + Ii,
+xi(t) = ϕi(t), t0− τ∗≤ t≤ t0,
+˙y j(t) =−c jy j(t) +
+n∑
+i=1
+b jigi(xi(t− τ(t))) + J j,
+y j(t) = ψ j(t), t0− τ∗≤ t≤ t0,
+(2.1)
+where t > 0; i = 1, 2, ..., n; j = 1, 2, ..., m; xi(t), y j(t)∈A are the neural states; di∈ R, c j∈ R are
+the self-feedback connection weights; ai j, b ji are the connection weights; f j(·), gi(·) :A→A are the
+neuron activation functions; Ii, J j ∈A are the external inputs; τ(t) is the transmission delay which
+satisﬁes 0≤ τ(t)≤ τ∗ (τ∗=constant); ϕi(t), ψ j(t) (i = 1, 2, ..., n; j = 1, 2, ..., m) are the continuous
+functions on t∈ [t0− τ∗, t0].
+In nature, there are many physical systems that are subjected to impulsive phenomena that can
+inﬂuence the behavior of systems in a variety of ways; hence, it is essential to incorporate impulse
+eﬀects into the modeling process. As such, we consider the following Cli ﬀord-valued BAMNNs with
+time-varying delays and impulses.
+
+˙xi(t) =−dixi(t) +
+m∑
+j=1
+ai jf j(y j(t− τ(t))) + Ii, t , tk,
+∆xi(t) = uikxi(t−
+k ), t = tk,
+xi(t) = ϕi(t), t0− τ∗≤ t≤ t0,
+˙y j(t) =−c jy j(t) +
+n∑
+i=1
+b jigi(xi(t− τ(t))) + J j, t , tk,
+∆y j(t) = v jky j(t−
+k ), t = tk,
+y j(t) = ψ j(t), t0− τ∗≤ t≤ t0,
+(2.2)
+where ∆xi(tk) = xi(t+
+k )− xi(t−
+k ), xi(t+
+k ) = limt→t+
+k
+xi(tk) and xi(t−
+k ) = limt→t−
+k
+xi(tk) represent the
+right and the left limits of xi(tk) respectively; ∆y j(tk) = y j(t+
+k )− y j(t−
+k ), y j(t+
+k ) = limt→t+
+k
+y j(tk) and
+y j(t−
+k ) = limt→t−
+k
+y j(tk) represent the right and the left limits ofy j(tk) respectively; the impulsive moment
+tk, k = 1, 2, ... satisfying 0 < t0 < t1 < ..., < tk < ..., limk→+∞ tk = +∞; moreover, xi(t−
+k ) = xi(tk) and
+y j(t−
+k ) = y j(tk).
+The activation functions f j, gi are assumed to possess the following assumptions:
+Assumption: 1 f j, gi (i = 1, 2, ..., n; j = 1, 2, ..., m) is bounded onA and f j(0) = 0, gi(0) = 0.
+AIMS Mathematics V olume x, Issue x, xxx–xxx

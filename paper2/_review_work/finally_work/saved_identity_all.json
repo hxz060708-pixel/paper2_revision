@@ -1,0 +1,16 @@
+{
+  "local_paths": [
+    "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\finally_完整包.zip",
+    "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\finally\\01_语言修改逐字对照.pdf",
+    "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\finally\\02_审稿意见_Reviewer1_最终版.docx",
+    "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\finally\\03_审稿意见_Reviewer2_最终版.docx",
+    "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\finally\\04_审稿意见_Reviewer3_最终版.docx",
+    "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\finally\\05_回复与修改位置_Reviewer1.pdf",
+    "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\finally\\06_回复与修改位置_Reviewer2.pdf",
+    "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\finally\\07_回复与修改位置_Reviewer3.pdf",
+    "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\finally\\paper2_修改副本\\paper2.pdf"
+  ],
+  "result": {
+    "raw": "tool call error: failed to upload `C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\finally_完整包.zip` for `files[0]`: exec-server transport closed"
+  }
+}

@@ -1,0 +1,110 @@
+For Peer Review
+[47]
+Z. You, H.C. Yan, J. Sun, H. Zhang. Reliable Control for Flexible Spacecraft Systems With Aperiodic Sampling and
+Stochastic Actuator Failures[J]. IEEE Trans. Cybern. (2020). doi: 10.1109/TCYB.2020.3008045.
+[48] K.B. Shi, J. Wang, Y. Tang, S. Zhong . Reliable asynchronous sampled-data ﬁltering of T-S fuzzy uncertain delayed neural
+networks with stochastic switched topologies[J]. Fuzzy Sets Syst. 381 (2020): 1-25.
+[49] K.B. Shi, J. Wang, S. Zhong, X. Zhang, Y. Liu. New reliable nonuniform sampling control for uncertain chaotic neural
+networks under Markov switching topologies[J]. Applied Math. Comput. 347 (2019): 169-193.
+[50] Y.Y. Wang, B. Jiang, Z.G. Wu, S. Xie. Adaptive sliding mode fault-tolerant fuzzy tracking control with application to
+unmanned marine vehicles[J]. IEEE Trans. Syst. Man Cybern. Syst. 2020, 51(11): 6691-6700.
+[51] H. Shen, F. Li, J. Cao, Z.G. Wu, G. Lu. Fuzzy-model-based output feedback reliable control for network-based semi-
+Markov jump nonlinear systems subject to redundant channels[J]. IEEE Trans. Cybern. 2020, 50(11): 4599-4609.
+[52] Z.C. Li, H.C. Yan, H. Zhang, H.K. Lam. Aperiodic Sampled-Data-Based Control for Interval Type-2 Fuzzy Systems via
+Reﬁned Adaptive Event-Triggered Communication Scheme[J]. IEEE Trans. Fuzzy Syst. 2020,29(2):310-321
+[53] R. Zhang, D. Zeng, J.H. Park, Y. Liu. A new approach to stabilization of chaotic systems with nonfragile fuzzy propor-
+tional retarded sampled-data control[J]. IEEE Trans. Cybern. 49.9 (2018): 3218-3229.
+[54] L.K. Wang, H.R. Karimi, J.H. Gu. Stability Analysis for Interval Type-2 Fuzzy Systems by Applying Homogenous Polyno-
+mially Membership Functions Dependent Matrices and Switching Technique[J]. IEEE Trans. Fuzzy Syst. 2020, 29(2): 203-212.
+[55] J. Song, Y.G. Niu, Y. Zou. A parameter-dependent sliding mode approach for ﬁnite-time bounded control of uncertain
+stochastic systems with randomly varying actuator faults and its application to a parallel active suspension system[J]. IEEE
+Trans. Ind. Electron. 65.10 (2018): 8124-8132.
+[56] X.H. Ge, I. Ahmad, Q.L. Han. Dynamic event-triggered scheduling and control for vehicle active suspension over controller
+area network. Mech. Syst. Sig. Process. 152 (2021): 107481. https://doi.org/10.1016/j.ymssp.2020.107481.
+[57] S. Kuppusamy, Y.H. Joo. Stabilization of interval type-2 fuzzy-based reliable sampled-data control systems[J]. IEEE Trans.
+Cybern. 2020. https://doi.org/10.1109/TYCB.2020.3001609
+[58] R. Sakthivel, S.A. Karthick, B. Kaviarasan. Dissipativity-based non-fragile sampled-data control design of interval type-2
+fuzzy systems subject to random delays[J]. ISA Trans. 2018, 83: 154-164.
+[59] H. Shen, L. Su, J.H. Park. Reliable mixed H∞/passive control for T-S fuzzy delayed systems based on a semi-Markov
+jump model approach[J]. Fuzzy Sets Syst. 2017, 314: 79-98.
+[60] X. Song, J. Man, C.K. Ahn. Joint State and Fault Estimation for Networked Interconnected PDE Systems With
+Semi-Markov Fault Coeﬃcient via Conjunct Measurement[J]. IEEE Trans. Circuit. Syst I: Regular Pap. 2021. http-
+s://doi.org/10.1109/TCSL.2021.3087674
+[61] Y. Wang, P. Shi, H. Yan. Reliable control of fuzzy singularly perturbed systems and its application to electronic circuits[J].
+IEEE Trans. Circuit. Syst I: Regular Pap. 2018, 65(10): 3519-3528.
+[62] K. Ding, Q. Zhu, X. Yang. Intermittent Estimator-Based Mixed Passive and H∞ Control for High-Speed Train With
+Actuator Stochastic Fault[J]. IEEE Trans. Cybern. 2021. https://doi.org/10.11009/TYCB.2021.3079437
+[63] R.V. Aravind, P. Balasubramaniam. Membership-Function-Dependent Design of Quantized Fuzzy Sampled-
+Data Controller for Semi-Markovian Jump Systems With Actuator Faults[J]. IEEE Trans. Fuzzy Syst. 2022. http-
+s://doi.org/10.1109/TFUZZ.2022.3181456
+[64] Z. You, H. Yan, H. Zhang. Further Stability Criteria for Sampled-Data-Based Interval Type-2 Fuzzy Systems Via a Reﬁned
+Two-Side Looped-Functional Method[J]. IEEE Trans. Fuzzy Syst. 2022. https://doi.org/10.1109/TFUZZ.2022.3185711
+[65] M. Chen, H.K. Lam, B. Xiao, C. Xuan. Membership-Function-Dependent Control Design and Stability Anal-
+ysis of Interval Type-2 Sampled-Data Fuzzy-Model-Based Control System[J]. IEEE Trans. Fuzzy Syst. 2021. http-
+s://doi.org/10.1109/TFUZZ.2021.3062898
+[66] V. Gandhi, Y.H. Joo. TS fuzzy sampled-data control for nonlinear systems with actuator faults and its application to
+wind energy system[J]. IEEE Trans. Fuzzy Syst. 2020. https://doi.org/10.1109/TFUZZ.2020.3041113
+28
+Page 29 of 29
+http://mc.manuscriptcentral.com/rnc-wiley
+International Journal of Robust and Nonlinear Control
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60

@@ -1,0 +1,58 @@
+Plant Rulem: IFϕ 1(x(t))isG m
+1 andϕ 2(x(t))isG m
+2 and. . .andϕ p(x(t))isG m
+p ,THEN
+(
+˙x(t) =Amx(t) +B mu(t) +E mw(t)
+z(t) =Cx(t)
+(1)
+wherex(t)∈R nx,u(t)∈R nu,w(t)∈R nw, andz(t)∈R nz represent the state, control signal, disturbance input, and
+controlled output, respectively. The functionsϕv(x(t)) (v= 1,2, . . . , p)represent the premise variables, whileG m
+v denotes
+the corresponding fuzzy set for thev-th premise variable in rulem. The matricesAm,B m,E m, andCare of compatible
+dimensions. For rulem, the interval firing strength is defined by:
+Hm(x(t))≡
+
+hm(x(t)), hm(x(t))
+
+(2)
+where the lower and upper firing strengths are computed as
+hm(x(t)) =
+pY
+v=1
+µGmv
+(ϕv(x(t))), hm(x(t)) =
+pY
+v=1
+µGmv
+(ϕv(x(t))).(3)
+Within this formulation, the lower and upper MFs are denoted byµGmv
+(ϕv(x(t)))and µGmv
+(ϕv(x(t))), which satisfy the
+condition0≤µ Gmv
+(ϕv(x(t)))≤ µGmv
+(ϕv(x(t)))≤1.
+Using the fuzzy blending method, system (1) can be represented as
+
+
+
+˙x(t) =
+rX
+m=1
+hm(x(t)) [Amx(t) +B mu(t) +E mw(t)]
+z(t) =Cx(t)
+(4)
+whereh m(x(t))denotes the normalized membership function satisfyingh m(x(t)) =l m(x(t))hm(x(t)) + lm(x(t))hm(x(t)),
+andPr
+m=1 hm(x(t)) = 1. The weighting functionslm(x(t))and lm(x(t))satisfy0≤l m(x(t))≤ lm(x(t))≤1andl m(x(t)) +
+lm(x(t)) = 1.
+Remark 2.1.Fig. 1 illustrates the architecture of the considered IT-2 fuzzy CPSs. Sensor measurements are delivered over
+the communication network, where deception attacks may tamper with the transmitted data. Meanwhile, in the physical
+layer, the actuator failures are described by a Markov process. To reduce unnecessary network transmissions, an AETM is
+deployed between the sensor and the controller. Furthermore, the derivative information of the membership functions will
+be exploited to develop a region-dependent piecewise control strategy in the subsequent analysis.
+ActuatorIT2 FuzzyCPSsZOHSensorEventGeneratorFuzzyControllerNetworkYesNo
+ Deceptionattacks( )x t
+( )kx t( )jkx tAETMlaw
+Fig. 1.Architecture of the IT-2 fuzzy CPSs under deception attacks and actuator failures.
+3

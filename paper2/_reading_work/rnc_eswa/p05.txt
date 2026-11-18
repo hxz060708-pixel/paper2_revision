@@ -1,0 +1,121 @@
+For Peer Review
+In
+sundry practical systems or industrial production processes, the failure of sensors or actuators is in-
+eluctable, which may leads to system instability and even catastrophic accidents. In view of this fact, for the
+purpose of enhancing the security and reliability, reliable control strategy has been attracting considerable con-
+cerns in recent years [49 , 51]. The key motivation of reliable control refers to designing a suitable controller,
+which maintains the stability and meets the increasing requirements on closed-loop system reliability even in
+trap presence of control module failures. To be more speciﬁc, in practical applications, a major reliability
+requirement for the considered systems is to synthesize a controller which can tolerate intelligent module com-
+ponent failure [55, 63]. Nevertheless, the majority of previous works mainly have two aspects of limitations. One
+is that they ignore the randomness of the fault and the other is that the randomness of the fault modeling is not
+thorough to some extent. To mention just some of them, Wei et al. in [44] have raised a piecewise-Markovian
+Lyapunov approach to OFC synthesis for discrete-time fuzzy-aﬃne systems with actuator faults under a sin-
+gular system framework. Sun et al. [45] addressed the problem of ﬁnite-time sampled-data control synthesis
+for nonlinear ﬂexible spacecraft, which expressed by T-S fuzzy model with Markovian jump nonlinear actuator
+faults. Immediately after, the work [46] discussed the fault-tolerant control problem for the doubly fed induction
+generator (DFIG)-based wind turbine model with hybrid SAFs by exploiting T-S fuzzy modeling method, where
+the SAFs is regulated by a Markovian process. Regrettably, up to date, despite tremendous progressive eﬀorts
+concentrating on reliable control synthesis with actuator or sensor failures have been made, but the research
+targets in the aforementioned or other previous literatures are both have certain limitations to some degree,
+which may be practical unsuitable for some situations as some scholars have previously declared. In fact, due to
+the complexity of controller design, far too little attention has been gained to the actuator with semi-Markovian
+jump fault coeﬃcients, to say nothing of controller gains subject to randomly occurring ﬂuctuations (ROFs).
+According to the author’s knowledge, no publications on control synthesis for IT −2FSs with semi-Markovian
+jump actuator faults (SMJAFs) are available until now, this is another incentivation of this paper.
+On the ﬂip side, from the perspective of application, it is still exceedingly diﬃcult to accurate design con-
+troller to meet practical requirements due to inaccuracies or uncertainties that may occur during the controller
+implementation. These inaccuracies or uncertainties may yield some unexpected errors during the implemen-
+tation of the controller to some extent, which may result in instability and deteriorate system performance.
+It is therefore of considerable signiﬁcance to introduce supplementary adjustable gains during the controller
+synthesis such that the controller can insensitive to potential gain ﬂuctuations, which is academic called as
+resilient or nonfragile controller [26]. In consequence, it is not surprising that the resilient control synthesis
+with advanced control techniques for numerous physical plants has attracted considerable research attention,
+and several fruitful reports have been published in the literature [27 − 29]. When SMJAFs is concerned has
+not been fully examined due mainly to the technical diﬃculties stemming from some complicated factors. As
+such, herein, we are motivated to design fuzzy resilient sampled-data controller for IT−2FSs to ensure expected
+asymptotically stability in the presence of SMJAFs.
+Stipulated from the foregoing observations, this article is dedicated to solving the resilient reliable sampled-
+data control synthesis problem for the resultant IT−2FSs with SMJAFs. More speciﬁcally, in comparison some
+previous faulty models [45 − 47], the promising feature of this faulty model lies in its modeling precisely, in
+which the SAFs with semi-Markovian jump coeﬃcients is pioneering considered. Theoretically and technically
+speaking, the innovations and salient contributions made in this article can be roughly epitomized in the following
+ﬁvefold.
+(1) The resultant IT−2FSs (8), in which the randomly occurring controller gain ﬂuctuations (ROCGFs) and
+semi-Markovian-type jump actuator failures (SMJAFs) together with the mismatched membership functions
+(MMFs) are primitively simultaneously formulated under a systematic theoretical framework, thereby reﬂecting
+the system structure of the practical engineering applications more closely and broadening practical application
+background and making our research work more meaningful, and meanwhile the special feature naturally poses
+numerous complexity and challenges to the analysis and synthesis for IT−2FSs.
+(2) Duo to Markovian jump actuator failures (MJAFs) which greatly restricts its potential application
+scopes, to break this limitation and better ﬁt for the practice engineering background, the developed SAFs
+with the fault coeﬃcients complies a semi-Markovian swap rule. Since the semi-Markovian jump failures model
+permits the ST is not only restricted to the memoryless distribution but also can be Weibull distributed and
+Gaussian distributed, which is capable of depicting majority stochastic faulty patterns (including bias faulty
+model, outage faulty model, stuck faulty model and healthy actuator model). Hence, the considered faulty
+model might be more accord with the ever-increasing complexity of engineering background.
+(3) A prominent merit over some prior publications is that the information of the whole sampling intervals
+3
+Page 4 of 29
+http://mc.manuscriptcentral.com/rnc-wiley
+International Journal of Robust and Nonlinear Control
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60

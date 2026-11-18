@@ -1,0 +1,82 @@
+ 
+ 
+27 
+Theorem 2 are shown in Table 4. From Table 1 and Table 2, it can be seen that the parameters matrices 
+iY  and 
+iZ  (
+1, 2, 3i = ) are 
+solvable with 
+2 12Md. = , 
+0 62. =  and different 
+  by employing Theorem 2. From Table 3 and Table 4, it can be seen that the 
+parameters matrices 
+iY  and 
+iZ  (
+1, 2, 3i = ) are also solvable with 
+1 60. = , 
+0 62. =  and different 
+Md  by employing Theorem 2.  
+For comparison purpose , the comparison results of lower bound 
+  with 
+0 30md. = , 
+0 62. =  and different 
+Md  by employing 
+the methods in [51], [52] and Theorem 2  are shown in Table 5 . The comparison results of upper bound 
+Md  with 
+0 30md. = , 
+0 62. =
+ and different 
+  by employing the methods in [51], [52] and Theorem 2 are shown in Table 6. From Table 5, it can be 
+seen that the sm aller lower bound 
+  is obtained by employing Theorem 2 than ]51[ and ]52[. From Table 6, it can be seen that 
+the larger upper bound 
+Md  is obtained by employing Theorem 2 than ]51[ and ]52[.  
+For comparison purpose, the intervals of system parameters  
+a
+  and 
+b
+  for stability region are chosen as 
+38 48a
+  and 
+20 32b
+ in this example. T he methods in ]51[, ]52[ and Theorem 2 are employed to investigate the size of stability region in 
+Figure 9 and Figure 10. Via LMIs toolbox, the comparison results of stability region by employing the methods in ]51[ (‘ 
+×  ’) 
+and Theorem 2 (‘ O ’) are shown in Figure 9. The comparison results of stability region by employing the methods in ]52[ (‘ 
+×  ’) 
+and Theorem 2 (‘ O ’) are shown in Figure 10. From Figure 9 and Figure 10, it can be seen that there exists the feasible stability 
+region of the closed-loop system, and the stability region can be solved by employing the methods in ] 51[, ]52[ and Theorem 2, 
+respectively. Besides, compared the number of (‘ 
+×  ’)  and Theorem 2 (‘ O ’) in Figure 9 and Figure 10, it can be seen that the 
+larger stability region is obtained by employing Theorem 2 than [51] and [52].  
+6. Conclusion  
+This paper addresses the stochastic T -S fuzzy uncertainty-dependent static output  feedback control and  mixed H∞ passive  
+performance analysis for a class of stochastic T-S fuzzy DGNNs with additive uncertainties, mixed interval distributed delays and 
+mismatched network noise. The T-S fuzzy model and stochastic Bernoulli theory are employed to approximate the DGNNs plant 
+based on neural networks gains, such that  the uncertainties and nonlinearities in the neural networks  plant is approximated 
+effectively. The stochastic T -S fuzzy uncertainty-dependent static output  feedback controller with measurable output error is 
+designed via the uncertainty-dependent parameters and stochastic Bernoulli theory, such that the closed-loop system is finite time 
+bounded stable subject to 
+( )12, , , ,c c L N   and mixed H∞ passive  performance is guaranteed . The Bernoulli probability 
+distribution is employed, such that the random occurrence characteristic of sensor nonlinearity and packet dropouts are described 
+clearly in the neural networks transmission . The membership -function-dependent augmented Lyapunov fu nctional is designed 
+based on the bounds of delays  and spectral norm scaling technique  is employed, such that the stability conditions are relaxed by 
+adjusting delay-dependent parameters. The Schur complement and congruence transformation method are employed, such that the 
+computation process of LMIs is simplified and computation complexity of solving LMIs is reduced.  
+Acknowledgments 
+This paper is financially supported by National Natural Science Foundation of China (62203379); National Natural Science 
+Foundation of China and the Royal Society of Britain (62111530148); National Research Foundation of Korea (NRF) 
+(2019R1A5A8080290); and Basic Innovation and Research Cultivation Project of Yanshan University: Enterprise Joint Fund 
+Special Project (2024LGQL006).  
+Competing interests 
+All the authors declare that there is no conflict of interest regarding the publication of this paper.   
+References 
+[1] S.L. Hu, D. Yue, X.P. Xie, Y. Ma and X.X. Yin. "Stabilization of neural -network-based control systems via event -triggered control with 
+nonperiodic sampled data." IEEE Transactions on Neural Networks and Learning Systems 29.3 (2018): 573-585.  
+[2] W.B. Wang and F.F. Du. "A novel criterion on finite -time stability of fractional -order impulsive time -delay Hopfield neural networks ." 
+Communications in Nonlinear Science and Numerical Simulation 151 (2025): 109056.  
+[3] N.N. Zhao, Y.H. Qiao and C.Q. Xu. "New results on synchronization control of memristor-based quaternion-valued fuzzy neural networks 
+with delayed impulses." Fuzzy Sets and Systems 484 (2024): 108940.  
+[4] J.L. Chen, W.G. Sun and S. Zheng. "New predefined-time stability theorem and synchronization of fractional -order memristive delayed 
+BAM neural networks." Communications in Nonlinear Science and Numerical Simulation 148 (2025): 108850.  
+[5] H.G. Fan, J.H. Tang and Z.Z. Guo. "Nonrestricted impulsive sampling control for synchronization of uncertain neural networks with hybrid 

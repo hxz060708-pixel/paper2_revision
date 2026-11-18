@@ -1,0 +1,126 @@
+bΨ2mn =
+
+
+bΩ2mn
+√
+heY T
+21
+√
+heY T
+22 eT
+1 eNTCT √¯θ eT
+8 eKT
+n
+p
+1− ¯θ eT
+3 eKT
+n
+√τeΓT
+11BmFi1
+∗ − eR2m 0 0 0 0 0
+∗ ∗ − 3eR2m
+h2 0 0 0 0
+∗ ∗ ∗ −I0 0 0
+∗ ∗ ∗ ∗ −τ I0 0
+∗ ∗ ∗ ∗ ∗ −τ I0
+∗ ∗ ∗ ∗ ∗ ∗ −I
+
+
+(60)
+with
+bΩ0mn = Sym
+n
+eT
+1 ePime2
+o
++e T
+1
+JX
+j=1
+λijePjme1 −Γ T
+2 eH1mΓ2 + ΓT
+4 eH2mΓ4 +e T
+4eSe4 −σΓ T
+10eSΓ10 + Sym
+n
+eY T
+11Γ6 −2eY T
+12e6
+o
++ Sym
+n
+eY T
+21Γ8 −2eY T
+22e7
+o
++ Sym
+n
+eΓT
+11bΓ12
+o
+−e T
+8eΛe8 +e T
+3 LTeΛLe3 −γ 2eT
+9 e9
+bΩ1mn = bΩ0mn −hΓ T
+1fMmΓ1 +he T
+2 eR2me2 +hSym
+n
+ΓT
+4 eH2mΓ5
+o
++hSym
+n
+eY T
+12Γ7
+o
+bΩ2mn = bΩ0mn +hΓ T
+1fMmΓ1 +he T
+2 eR1me2 +hSym
+n
+ΓT
+2 eH1mΓ3
+o
++hSym
+n
+eY T
+22Γ9
+o
+bΓ12 =− eN e2 +A meN e1 + ¯θBmFi0eKne8 + (1− ¯θ)BmFi0eKne3 +E me9.
+Proof.Substituting the actuator fault modelF i =F i0 +F i1Vi into the controller-related term yields
+BmFieKn =B mFi0eKn +B mFi1VieKn. (61)
+Accordingly, the uncertainty-dependent part ofeΓ12 in Theorem 3.2 consists of two weighted terms associated withe8 and
+e3. By usingV T
+i Vi ≤Itogether with Young’s inequality, one obtains, forp∈ {3,8}:
+Sym{eΓT
+11BmFi1VieKnep} ≤τ eΓT
+11BmFi1F T
+i1BT
+meΓ11 +τ −1eT
+p eKT
+n eKnep,
+whereτ >0.
+Multiplying the above bound by the corresponding weights¯θand1− ¯θyields
+Sym{eΓT
+11eΓ12} ≤Sym{ eΓT
+11bΓ12}+τ eΓT
+11BmFi1F T
+i1BT
+meΓ11 + ¯θτ −1eT
+8 eKT
+n eKne8 + (1− ¯θ)τ −1eT
+3 eKT
+n eKne3.
+Substituting the above bound into the conditions of Theorem 3.2 and applying the Schur complement, the nonlinear
+terms involving eKT
+n eKn are converted into a set of tractable LMIs. Specifically, the additional Schur-complement blocks in
+(59) and (60) generate the three bounding terms associated with¯θτ −1,(1− ¯θ)τ −1, andτ, respectively. Hence, the conditions
+in Theorem 3.3 are obtained.
+Remark 3.2.In Theorem 3.3, the scaling parameterτ >0is introduced to handle the norm-bounded uncertainty matrixVi
+resulting from stochastic actuator failures. By applying Young’s inequality, the uncertain termVi is decoupled and eliminated.
+This transformation converts the robust synthesis problem into deterministic standard LMIs that can be efficiently handled
+by MATLAB LMI solvers.
+4. Numerical Examples
+This section considers an engineering-motivated example and a numerical simulation study to assess the effectiveness and
+applicability of the developed control scheme.
+12

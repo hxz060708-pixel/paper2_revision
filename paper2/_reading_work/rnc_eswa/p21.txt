@@ -1,0 +1,112 @@
+For Peer Review
+0 5 10 15 20 25 30
+0
+0.5
+1
+1.5
+2
+2.5
+3
+3.5
+4
+Time (s)
+State trajectoriesFigure 3: Evolutions of the faulty modes.
+0 5 10 15 20 25 30
+−0.5
+−0.4
+−0.3
+−0.2
+−0.1
+0
+0.1
+0.2
+0.3
+0.4
+0.5
+Time (s)
+State responses
+ 
+ 
+x1(t)
+x2(t)
+x3(t)
+Figure 4: State trajectories of the closed-loop IT-2FSs.
+0 5 10 15 20 25 30
+−0.04
+−0.02
+0
+0.02
+0.04
+0.06
+0.08
+Time (s)
+Amplitude
+ 
+ 
+u1(t)
+u2(t)
+Figure 5: Time response of the control input uf (t).
+19
+Page 20 of 29
+http://mc.manuscriptcentral.com/rnc-wiley
+International Journal of Robust and Nonlinear Control
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60

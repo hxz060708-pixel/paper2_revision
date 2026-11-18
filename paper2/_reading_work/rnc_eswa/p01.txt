@@ -1,0 +1,25 @@
+For Peer Review
+Design of Interval Type-2 Fuzzy-based Resilient Fault-
+tolerant Controller for Nonlinear Systems with Semi-
+Markovian Jump Actuator Failures and Its Applications
+Journal: International Journal of Robust and Nonlinear Control
+Manuscript ID RNC-23-0196
+Wiley - Manuscript type: Research Article
+Date Submitted by the 
+Author: 05-Feb-2023
+Complete List of Authors: Li, Xiaoqing; Hefei University of Technology
+Shi, Kaibo; Chengdu University School of Information Science and 
+Engineering
+Cheng, Jun; Guangxi Normal University
+Peng, Zhinan; University of Electronic Science and Technology of China 
+School of Automation Engineering
+Zhong, Shouming; University of Electronic Science and Technology of 
+China
+Keywords:
+Interval type-2 fuzzy systems (IT-2FSs), Imperfectly matched 
+membership functions (IMMFs), Semi-Markovian jump actuator failures 
+(SMJAFs), Dual-sided looped Lyapunov functional, Parameterized linear 
+matrix inequalities (PLMIs)
+ 
+http://mc.manuscriptcentral.com/rnc-wiley
+International Journal of Robust and Nonlinear Control

@@ -1,0 +1,22 @@
+{
+  "local_path": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\paper2_审稿意见\\第三版_意见正文\\01_审稿意见_Reviewer1_第三版.docx",
+  "operation": "create_library_file",
+  "status": "succeeded",
+  "path": "/paper2/01_审稿意见_Reviewer1_第三版.docx",
+  "file_id": "file_0000000074808211bff77f935eeedbe7",
+  "library_file_id": "libfile_c6d203d76e2c8191b7588aeb1afccb8e",
+  "file_name": "01_审稿意见_Reviewer1_第三版.docx",
+  "current_version_number": 0,
+  "restored_from_version_number": null,
+  "xattrs": [
+    {
+      "name": "user.library-file-version",
+      "value": "0"
+    }
+  ],
+  "directory_id": "6ad8aec7ea088191b4fb8df7483a6bc7",
+  "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+  "library_artifact_type": "report",
+  "file_size_bytes": 21400,
+  "external_connectors_accessed": false
+}

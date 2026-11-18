@@ -1,0 +1,91 @@
+===== PDF PAGE 1 OF 3 =====
+Referee report of the paper entitled
+“ Entire solutions of two certain Fermat-type ordinary
+diﬀerential equations ”
+(Reference number: Ms. No.
+OPENMATH-D-22-00217 )
+submitted to the Open Mathematics
+by Bin-Bin Hu and Liu Yang
+June 13, 2023
+In 1966, Baker [1] and Gross [2] independently proved that the entire solutions f
+and g of the functional equation f 2 + g2 = 1 are expressed as f = sin h and g =
+cos h respectively, where h is an entire function. In Gross [2] also proved that the
+meromorphic solutions f and g of the functional equation f 3 + g3 = 1 are expressed
+as f =
+(
+1
+2 + φ′(h)
+2
+√
+3 )
+)
+/(φ(h)) and f =
+(
+1
+2 − φ′(h)
+2
+√
+3 )
+)
+/(φ(h)), where φ is the Weierstrass
+elliptic function satisfying ( φ′)3 = 4 φ3 − 1. the positive n satisfying n ≥ 3, there are
+no non-constant meromorphic solutions for f 3 + g3 = 1 (cf.[1, 2, 3, 4]).
+The present authors consider the the precise expressions of the entire solutions of
+the following two Fermat-type ordinary diﬀerential equations:
+(a0f + a1f ′)2 + (a0f + a2f ′)2 = p (1)
+and
+(a0f + a1f ′)2 + (a0f + a2f ′)2 = eg, (2)
+where a0, a 1 and a2 are complex numbers with a0 ̸= 0 and |a1| + |a2| ̸= 0, while p and
+g are polynomials.
+Conclusion: By using classical Nevanlinna’s theory and results obtained in [1, 2,
+3]), the present authors mainly study the existence questions and the precise expressions
+of entire solutions of the Fermat-type ordinary diﬀerential equations (1) and (2). The
+results of the present paper are very interesting. The analysis and the reasoning of the
+present paper is new and deep. The results obtained in the present paper are right.
+The use of English language is sometimes a bit clumsy, and the Fermat-type ordinary
+1
+
+===== PDF PAGE 2 OF 3 =====
+diﬀerential equations (1) and (2) considered in the present paper are of rather special
+form. However, the results obtained in this paper are deﬁnitely worth to be published,
+and so I am happy to recommend this paper for publication in the Open Mathematics
+, subject to the minor revision as suggested below:
+1. Page 1. Since the present authors use the classical Nevanlinna theory to prove the
+main result. There fore, I suggest the present authors add the following sentences at
+the beginning of the “Introduction”:
+Throughout this paper, by meromorphic functions we will always mean meromor-
+phic functions in the complex plane. We adopt the standard notations in the Nevan-
+linna theory of meromorphic functions as explained in W.K.Hayman[5], I.Laine [6] and
+L.Yang [7]. It will be convenient to let E denote any set of positive real numbers of
+ﬁnite linear measure, not necessarily the same at each occurrence. For a non-constant
+meromorphic function h, we denote by T (r, h) the Nevanlinna characteristic of h and
+by S(r, h) any quantity satisfying S(r, h) = o(T (r, h)), as r → ∞ and r ̸∈ E.
+2. Page 1. The line after (1.2): I suggest “and a1, a 2 not equal to zero at the same
+time,” be changed into “and a1, a 2 are such that |a1| + |a2| ̸= 0,”.
+3. Page 2. The second line after (1.2): Throughout this paper, I suggest “ C” be
+changed into “ C”.
+4. Page 2. The Line 6-Line 7 after (1.2): I suggest
+“Baker and Gross showed that all meromorphic solutions f n + gn = 1 to equation
+and the solutions are characterized as follows:”
+be changed into
+“Baker [1]and Gross[5] showed that all meromorphic solutions f and g of the Fermat
+functional equation f n + gn = 1 are characterized as follows:”
+5. I suggest check the detail information of the lists of references on Page 12-Page 13
+of the manuscripts seriously again.
+6. I suggest check the whole manuscript seriously again.
+References
+[1] I.N. Baker, On a class of meromorphic functions , Proc. Am. Math. Soc. 17 (1966),
+819-822.
+[2] F. Gross, On the equation f n + gn = 1., Bull. Am. Math. Soc. 72(1966), 86-88.
+[3] F. Gross, On the equation f n + gn = 1. II., Bull. Am. Math. Soc. 74
+[4] W. Chen, Q. Han and J. B. Liu, On Fermat Diophantine functional equations,
+little Picard theorem and beyondk, Aequat. Math. 93 (2019), no. 2, 425-432. (1968),
+647-648.
+[5] W. K. Hayman, Meromorphic Functions, The Clarendon Press, Oxford, 1964.
+2
+
+===== PDF PAGE 3 OF 3 =====
+[6] I. Laine, Nevanlinna Theory and Complex Diﬀerential Equations , Walter de
+Gruyter, Berlin, 1993.
+[7] L. Yang, Value Distribution Theory , Springer-Verlag, Berlin Heidelberg, 1993.
+3

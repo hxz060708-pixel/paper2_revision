@@ -1,0 +1,203 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{wangMixedVehicleGroup2024}
+Z.~Wang, D.~Sun, L.~Wang, M.~Zhao, Mixed {{Vehicle Group Merging Control}} in
+  the {{Vicinity}} of {{Traffic Signals}}: {{A Cyber-Physical Perspective}},
+  IEEE Transactions on Intelligent Transportation Systems~(6) (2024)
+  5328--5341.
+
+\bibitem{liuFalseDataInjectionAttack2023}
+K.~Liu, H.~Zhang, Y.~Zhang, C.~Sun, False {{Data-Injection Attack Detection}}
+  in {{Cyber}}--{{Physical Systems With Unknown Parameters}}: {{A Deep
+  Reinforcement Learning Approach}}, IEEE Transactions on Cybernetics~(11)
+  (2023) 7115--7125.
+
+\bibitem{dingSurveyModelBasedDistributed2019}
+D.~Ding, Q.-L. Han, Z.~Wang, X.~Ge, A {{Survey}} on {{Model-Based Distributed
+  Control}} and {{Filtering}} for {{Industrial Cyber-Physical Systems}}, IEEE
+  Transactions on Industrial Informatics~(5) (2019) 2483--2499.
+
+\bibitem{chenRobustAdaptiveControl2024}
+L.~Chen, X.~Liu, L.~Zou, M.~Zhang, Robust {{Adaptive Control}} for {{Robotic
+  Manipulator}} with {{Output Constraints}}, in: 2024 {{IEEE}} 13th {{Data
+  Driven Control}} and {{Learning Systems Conference}} ({{DDCLS}}), 2024, pp.
+  1087--1092.
+
+\bibitem{yuanAdaptiveControlNonlinear2024}
+G.~Yuan, Z.~Zhang, C.~Qin, S.~S. Ge, Adaptive {{Control}} for {{Nonlinear
+  Time-Varying Systems With Unknown Control Coefficients}} and {{External
+  Disturbances}}, IEEE Transactions on Systems, Man, and Cybernetics:
+  Systems~(1) (2024) 119--130.
+
+\bibitem{biAdaptiveDecentralizedFiniteTime2023}
+Y.~Bi, T.~Wang, J.~Qiu, M.~Li, C.~Wei, L.~Yuan, Adaptive {{Decentralized
+  Finite-Time Fuzzy Secure Control}} for {{Uncertain Nonlinear CPSs Under
+  Deception Attacks}}, IEEE Transactions on Fuzzy Systems~(8) (2023)
+  2568--2580.
+
+\bibitem{wangStabilityStabilizationTS2021}
+G.~Wang, L.~Jia, H.~Zhang, Stability and {{Stabilization}} of {{T}}--{{S Fuzzy
+  Time-Delay System}} via {{Relaxed Integral Inequality}} and {{Dynamic Delay
+  Partition}}, IEEE Transactions on Fuzzy Systems~(10) (2021) 2829--2843.
+
+\bibitem{wangSwitchingAsynchronousControl2024}
+L.~Wang, Y.~Zhao, X.~Xie, H.-K. Lam, A {{Switching Asynchronous Control
+  Approach}} for {{Takagi-Sugeno Fuzzy Markov Jump Systems With Time-Varying
+  Delay}}, IEEE Transactions on Fuzzy Systems~(2) (2024) 595--606.
+
+\bibitem{shengAperiodicSamplingDependentEventTriggeredControl2024}
+Z.~Sheng, S.~Xu, An {{Aperiodic-Sampling-Dependent Event-Triggered Control
+  Strategy}} for {{Interval Type-2 Fuzzy Systems}}: {{New Communication
+  Scheme}} and {{Discontinuous Functional}}, IEEE Transactions on
+  Cybernetics~(11) (2024) 6436--6447.
+
+\bibitem{liFiniteTimeDynamicEventTriggered2022}
+X.~Li, W.~Song, Y.~Li, S.~Tong, Finite-{{Time Dynamic Event-Triggered Fuzzy
+  Output Fault-Tolerant Control}} for {{Interval Type-2 Fuzzy Systems}}, IEEE
+  Transactions on Fuzzy Systems~(11) (2022) 4926--4938.
+
+\bibitem{liuObserverBasedAdaptiveEventTriggered2024}
+Y.~Liu, P.~Zhang, S.~Lee, X.~Xie, Observer-{{Based Adaptive Event-Triggered
+  Control}} for {{Interval Type-2 Fuzzy Systems Under Multiple Cyber-Attacks}},
+  IEEE Transactions on Fuzzy Systems~(4) (2024) 2438--2447.
+
+\bibitem{zhangNovelApproachVehicular2025}
+J.~Zhang, Z.~Zhang, D.~Zhang, C.~Ni, T.~Zhang, X.~Jiang, Novel {{Approach}} of
+  {{Vehicular Cooperative Communication Based}} on {{Strategy}} of {{Interval
+  Type-2 Fuzzy Logic}} and {{Cooperative Game}}, IEEE Transactions on
+  Sustainable Computing~(3) (2025) 588--600.
+
+\bibitem{duIntervalType2Fuzzy2025}
+Z.~Du, X.~Xie, Y.~Kao, X.~Zhao, Interval {{Type-2 Fuzzy Dynamic Event-Triggered
+  H}} {$\infty$} {{Consensus}} of {{Multiagent Systems}}, IEEE Transactions on
+  Systems, Man, and Cybernetics: Systems~(6) (2025) 3954--3963.
+
+\bibitem{zhangNetworkedControlSystems2020}
+X.-M. Zhang, Q.-L. Han, X.~Ge, D.~Ding, L.~Ding, D.~Yue, C.~Peng, Networked
+  control systems: A survey of trends and techniques, IEEE/CAA Journal of
+  Automatica Sinica~(1) (2020) 1--17.
+
+\bibitem{pangNetworkedPredictiveControl2026}
+Z.-H. Pang, T.~Mu, Y.~Yu, H.~Guo, G.-P. Liu, Q.-L. Han, Networked {{Predictive
+  Control}}: {{A Survey}}, IEEE/CAA Journal of Automatica Sinica~(1) (2026)
+  3--20.
+
+\bibitem{yaoSecureControlMarkovian2023c}
+L.~Yao, X.~Huang, Z.~Wang, K.~Liu, Secure {{Control}} of {{Markovian Jumping
+  Systems Under Deception Attacks}}: {{An Attack-Probability-Dependent Adaptive
+  Event-Triggered Mechanism}}, IEEE Transactions on Control of Network
+  Systems~(4) (2023) 1818--1830.
+
+\bibitem{lianSwitchingLikeEventTriggeredControl2021}
+J.~Lian, Y.~Han, Switching-{{Like Event-Triggered Control}} for {{Networked
+  Markovian Jump Systems Under Deception Attack}}, IEEE Transactions on
+  Circuits and Systems II: Express Briefs~(10) (2021) 3271--3275.
+
+\bibitem{zhaDynamicEventTriggeredOutput2022}
+L.~Zha, R.~Liao, J.~Liu, X.~Xie, E.~Tian, J.~Cao, Dynamic {{Event-Triggered
+  Output Feedback Control}} for {{Networked Systems Subject}} to {{Multiple
+  Cyber Attacks}}, IEEE Transactions on Cybernetics~(12) (2022) 13800--13808.
+
+\bibitem{buEventTriggeredDataDrivenControl2023}
+X.~Bu, W.~Yu, Y.~Yin, Z.~Hou, Event-{{Triggered Data-Driven Control}} for
+  {{Nonlinear Systems Under Frequency-Duration-Constrained DoS Attacks}}, IEEE
+  Transactions on Information Forensics and Security (2023) 1449--1460.
+
+\bibitem{wangResilientAdaptiveIntermittent2024}
+X.~Wang, Y.~Cao, G.~Zong, H.~Wang, B.~Niu, Resilient {{Adaptive Intermittent
+  Control}} of {{Nonlinear Systems Under Deception Attacks}}, IEEE Transactions
+  on Systems, Man, and Cybernetics: Systems~(4) (2024) 2171--2180.
+
+\bibitem{wangResilientAdaptiveStabilization2025}
+X.~Wang, Y.~Cao, B.~Niu, H.~Wang, G.~Zong, X.~Zhao, Resilient {{Adaptive
+  Stabilization}} for {{Nonlinear CPSs Dealing With Deception Attacks}}, IEEE
+  Transactions on Control of Network Systems~(1) (2025) 135--143.
+
+\bibitem{postoyanFrameworkEventTriggeredStabilization2015}
+R.~Postoyan, P.~Tabuada, D.~Ne{\v s}i{\'c}, A.~Anta, A {{Framework}} for the
+  {{Event-Triggered Stabilization}} of {{Nonlinear Systems}}, IEEE Transactions
+  on Automatic Control~(4) (2015) 982--996.
+
+\bibitem{chenFinitetimeStabilityNonlinear2026}
+J.~Chen, W.~Wang, K.~Ding, G.~Wu, X.~Wu, Y.~Liu, J.~Cao, Finite-time stability
+  of nonlinear time-varying systems with event-triggered mechanism, Journal of
+  the Franklin Institute~(1) (2026) 108260.
+
+\bibitem{xingSwitchedFuzzyControl2024}
+J.-W. Xing, C.~Peng, X.~Xie, Switched {{Fuzzy Control}} for {{Nonlinear
+  Systems}} via a {{Fuzzy-Rule-Dependent Adaptive Event-Triggered Mechanism}},
+  IEEE Transactions on Fuzzy Systems~(3) (2024) 870--882.
+
+\bibitem{duFaultTolerantHInfinityStabilization2025}
+Z.~Du, C.~Chen, C.~Li, X.~Yang, J.~Li, Fault-{{Tolerant H-Infinity
+  Stabilization}} for {{Networked Cascade Control Systems With Novel Adaptive
+  Event-Triggered Mechanism}}, IEEE Transactions on Automation Science and
+  Engineering (2025) 22597--22608.
+
+\bibitem{tanDynamicMemoryEventTriggeredSlidingMode2025}
+Y.~Tan, J.~Liu, X.~Xie, E.~Tian, J.~Liu, Dynamic-{{Memory Event-Triggered
+  Sliding-Mode Secure Control}} for {{Nonlinear Semi-Markov Jump Systems With
+  Stochastic Cyber Attacks}}, IEEE Transactions on Automation Science and
+  Engineering (2025) 202--214.
+
+\bibitem{chenProbabilisticEventTriggeredPolicy2023}
+H.~Chen, G.~Zong, F.~Gao, Y.~Shi, Probabilistic {{Event-Triggered Policy}} for
+  {{Extended Dissipative Finite-Time Control}} of {{MJSs}} under
+  {{Cyber-Attacks}} and {{Actuator Failures}}, IEEE Transactions on Automatic
+  Control~(12) (2023) 7803--7810.
+
+\bibitem{caiAdaptiveFaulttolerantControl2025}
+J.~Cai, D.~Guo, W.~Wang, Adaptive fault-tolerant control of uncertain systems
+  with unknown actuator failures and input delay, Measurement and Control~(7)
+  (2025) 923--934.
+
+\bibitem{yaoMultiSensorBasedSwitchingEventTriggered2024}
+L.~Yao, X.~Huang, Z.~Wang, H.~Shen, A {{Multi-Sensor-Based Switching
+  Event-Triggered Mechanism}} for {{Synchronization Control}} of {{Markovian
+  Jump Neural Networks Under DoS Attacks}}, IEEE Transactions on Information
+  Forensics and Security (2024) 7548--7559.
+
+\bibitem{xuAsynchronousEventTriggeredControl2024}
+Z.~Xu, Y.~Yu, Z.-G. Wu, Y.~Shen, Asynchronous {{Event-Triggered}}
+  {{$H_{\infty}$}} {{Control}} for {{Continuous-Time Markov Jump Systems}},
+  IEEE Control Systems Letters (2024) 3386--3391.
+
+\bibitem{lianNewResultsStability2020}
+H.-H. Lian, P.~Deng, S.-P. Xiao, H.-Q. Xiao, New {{Results}} on {{Stability
+  Analysis}} for {{Sampled-Data Control Systems With Nonuniform Sampling}} and
+  {{Communication Delays}}, IEEE Access (2020) 86696--86705.
+
+\bibitem{zhangMixedDelayBasedAugmentedFunctional2024}
+Y.~Zhang, Y.~He, F.~Long, C.-K. Zhang, Mixed-{{Delay-Based Augmented
+  Functional}} for {{Sampled-Data Synchronization}} of {{Delayed Neural
+  Networks With Communication Delay}}, IEEE Transactions on Neural Networks and
+  Learning Systems~(2) (2024) 1847--1856.
+
+\bibitem{ganesanSynchronizationStochasticNeural2024}
+B.~Ganesan, P.~Mani, L.~Shanmugam, M.~Annamalai, Synchronization of
+  {{Stochastic Neural Networks Using Looped-Lyapunov Functional}} and {{Its
+  Application}} to {{Secure Communication}}, IEEE Transactions on Neural
+  Networks and Learning Systems~(4) (2024) 5198--5210.
+
+\bibitem{wangNewApproachStability2018}
+L.~Wang, H.-K. Lam, A {{New Approach}} to {{Stability}} and {{Stabilization
+  Analysis}} for {{Continuous-Time Takagi}}--{{Sugeno Fuzzy Systems With Time
+  Delay}}, IEEE Transactions on Fuzzy Systems~(4) (2018) 2460--2465.
+
+\bibitem{guanModifiedLoopedFunctional2021a}
+C.~Guan, Z.~Fei, P.~Park, Modified {{Looped Functional}} for {{Sampled-Data
+  Control}} of {{T}}--{{S Fuzzy Markovian Jump Systems}}, IEEE Transactions on
+  Fuzzy Systems~(9) (2021) 2543--2552.
+
+\bibitem{samySampledDataControlIT22024}
+S.~A. Samy, M.~M. Arjunan, Y.~H. Joo, Sampled-{{Data Control}} for {{IT-2 Fuzzy
+  Systems With Packet Losses}}: {{Fragmentation-Based Integral Inequality
+  Technique}}, IEEE Transactions on Systems, Man, and Cybernetics: Systems~(4)
+  (2024) 2354--2367.
+
+\end{thebibliography}

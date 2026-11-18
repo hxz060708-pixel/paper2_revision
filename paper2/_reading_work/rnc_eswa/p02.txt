@@ -1,0 +1,104 @@
+For Peer Review
+Highlights
+Theoretically and technically speaking, the innovations and salient contributions made in this 
+article can be roughly epitomized in the following fivefold.
+(1) The resultant IT−2FSs (8), in which the randomly occurring controller gain fluctuations 
+(ROCGFs) and semi-Markovian-type jump actuator failures (SMJAFs) together with the 
+mismatched membership functions (MMFs) are primitively simultaneously formulated under a 
+systematic theoretical framework, thereby reflecting the system structure of the practical 
+engineering applications more closely and broadening practical application background and making 
+our research work more meaningful, and meanwhile the special feature naturally poses numerous 
+complexity and challenges to the analysis and synthesis for IT−2FSs.
+(2) Duo to Markovian jump actuator failures (MJAFs) which greatly restricts its potential 
+application scopes, to break this limitation and better fit for the practice engineering background, 
+the developed SAFs with the fault coefficients complies a semi-Markovian swap rule. Since the 
+semi-Markovian jump failures model permits the ST is not only restricted to the memoryless 
+distribution but also can be Weibull distributed and Gaussian distributed, which is capable of 
+depicting majority stochastic faulty patterns (including bias faulty model, outage faulty model, stuck 
+faulty model and healthy actuator model). Hence, the considered faulty model might be more accord 
+with the ever-increasing complexity of engineering background.
+(3) A prominent merit over some prior reports is that the information of the whole sampling intervals
+are aperiodically and substantially captured. In this regard, a progressive looped functional alleged 
+dual-sided sampled-interval-dependent looped semi-Markovian Lyapunov functional is 
+innovatively reconstructed, which can further reduce the conservatism. For enhancing the 
+robustness and practical feasibility of the controller, the subsistent phenomenon of ROCGFs is also 
+contemplated.
+(4) In contrast to some previous achievements in the literature, in order to overcome the drawback 
+of parallel distributed compensation (PDC) and attain some less conservative conditions, the 
+imperfect premise matching concept is considered herein, which is depicted by the lower and upper 
+of the MFs. Simulated by the Ref. [58], some symmetric and auxiliary matrices are artfully and 
+feasibly imported, which can heighten the flexibility of the controller design but also pose a 
+challenge to the computational complexity.
+(5) By resorting to the stochastic analytical framework and matrix inequality decoupling method, 
+sufficient conditions for implementing the faulty mode-dependent fuzzy resilient controller are 
+developed by virtue of a linearization procedure. The developed constraints reexpressed in the shape 
+of multiple PLMIs, which can be checked by standard software. Additionally, in the light of Remark 
+4 that the TRs can converted to polytopic-type uncertainties, another available method is offered to 
+develop the finite-dimensional LMIs, which can verified readily by software package too. 
+Eventually, simulation results by three practical applications are carried out to expound the 
+availability and efficacy of the proposed control synthesis technique. In brief, the current research
+could be identified as our systematic attempt to study the IT-2FSs with ROCGFs and SMJAFs 
+simultaneously.
+Page 1 of 29
+http://mc.manuscriptcentral.com/rnc-wiley
+International Journal of Robust and Nonlinear Control
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60

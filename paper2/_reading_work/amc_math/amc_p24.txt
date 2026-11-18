@@ -1,0 +1,183 @@
+ 
+ 
+22 
+( )( )2h x k
+, 
+( )( )1 xk  and 
+( )( )2 xk  are given as follows  
+( )( ) ( ) ( )( ) ( )
+( )( ) ( ) ( )( ) ( )
+( )( ) ( ) ( )( ) ( )
+12
+12
+12
+0 08 , 0 16
+0 04 , 0 12
+0 09 , 0 05
+f x k tanh . k f x k tanh . k
+g x k tanh . k g x k tanh . k
+x k tanh . k x k tanh . k
+ = − =
+ = − =
+ = − =
+ 
+The sensor nonlinearity 
+( )( )yk  is given as follows  
+( )( ) ( )( )
+( )( )
+0 06
+0 15
+tanh . y k
+yk
+tanh . y k
+
+= 
+
+ 
+The state variables trajectory of 
+( )1xk  and 
+( )2xk  for the closed -loop system with 
+( )  0 22 5 36 7
+T
+x . . =  is shown in Figure 1. 
+The state variables trajectory of 
+( )1xk  and 
+( )2xk  for the closed -loop system with 
+( )  0 10 41 3
+T
+x. =−  is shown in Figure 2. The 
+state variables responses of 
+( )1xk  and 
+( )2xk  for the closed -loop system with 
+( )  0 16 8
+T
+x =−  is shown in Figure 3. The state 
+variables responses of 
+( )1xk  and 
+( )2xk  for the closed-loop system with 
+( )  0 24 12
+T
+x =−  is shown in Figure 4. The response of 
+mixed H∞ passive performance for the closed-loop system with 
+( ) ( )
+0 0102 .kw k v k . e −==  is shown in Figure 5. The response of mixed 
+H∞ passive performance for the closed-loop system with 
+( ) ( )0 01 0 89
+0 05 0 2
+. k .
+w k . . e
+−+
+=+  and 
+( )
+0 0102 .kv k . e −=  is shown in Figure 6.  
+From Figure 1 and Figure 2, it can be seen that the state variables trajectories of 
+( )1xk  and 
+( )2xk  are convergent to zero under 
+initial conditions 
+( )  0 22 5 36 7
+T
+x . . =  and 
+( )  0 10 41 3
+T
+x. =− . From Figure 3 and Figure 4, it can be seen that the state variables 
+responses are stabilized quickly under initial conditions 
+( )  0 16 8
+T
+x =−  and 
+( )  0 24 12
+T
+x =− . This means the closed-loop system 
+is finite time bounded stable subject to 
+( )12, , , ,c c L N   under any initial condition. From Figure 5, it can be seen that the response 
+of mixed H∞ passive performance for the closed-loop system with 
+( ) ( )
+0 0102 .kw k v k . e −==  is smaller than given performance index 
+1 =
+. Figure 6, it also can be seen that the response of mixed H∞ passive performance for the closed -loop system with
+( ) ( )0 01 0 89
+0 05 0 2
+. k .
+w k . . e
+−+
+=+
+ and 
+( )
+0 0102 .kv k . e −=  is smaller than given performance index 
+1 = . This means the mixed H∞ passive 
+performance of closed-loop system is guaranteed. From Figure 5 and Figure 6, it also can be seen that the response of mixed H∞ 
+passive performance dependent on the values of mismatched network noise 
+( )wk  and sensor noise 
+( )vk  at the same time.  
+5.2. Example 2 
+In this section, the example 2 is presented to show the advantage of the proposed method compared with other similar methods, 
+i.e., smaller bound 
+ , larger upper bound 
+Md  and larger stability region are obtained.  
+Consider a class of 3-dimensional DGNNs with additive uncertainties, mixed interval distributed delays and mismatched 
+network noise as follows  
+( ) ( )( ) ( ) ( )( ) ( )( ) ( )( ) ( )( )( ) ( )( )
+( )( )( ) ( )( ) ( ) ( )( ) ( )
+( ) ( )
+( ) ( )
+( ) ( ) ( )
+1
+1
+, , , 0
+n
+ww
+MM
+x k A A k x k B B k f x k D D k g x k d k E E k
+x k k F F k u k A A k w k
+y k Cx k
+z k Lx k
+x k k k max d
+
+
+
+
+=
+ + = +  + +  + +  − + + 
+
+  − + +  + + 
+ =
+ =
+ =  −  
+
+                      (128) 
+where 
+( ) ( ) ( ) ( )1 2 3
+T
+x k x k x k x k=   .  
+Note that the T-S fuzzy model and stochastic Bernoulli theory are employed to describe the random occurrence sensor nonlinearity, 
+and (128) is rewritten as follows  
+( ) ( ) ( ) ( ) ( )( ) ( ) ( )( )( ) ( ) ( )( )( ) ( ) ( ) ( ) ( )
+( ) ( )( ) ( ) ( ) ( )( ) ( )
+( ) ( )
+( ) ( ) ( )
+1
+1
+1
+, 1, 2, ,
+, , , 0
+n
+i i i i i wi
+i i vi
+i
+MM
+x k A k x k B k f x k D k g x k d k E k x k k F k u k A k w k
+y k k C x k k C x k C v k
+z k L x k i r
+x k k k max d
+
+
+
+
+
+=
+ + = + + − + − + +
+
+ = − +  +
+ ==
+ =  −  
+
+       (129) 

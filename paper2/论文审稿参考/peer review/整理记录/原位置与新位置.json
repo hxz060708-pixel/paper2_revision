@@ -1,0 +1,164 @@
+[
+  {
+    "old_path": "JSCE-24-0030_Proof_hi.pdf",
+    "new_path": "01_论文与意见配对\\01_JSCE-24-0030_入门示例\\JSCE-24-0030_Proof_hi.pdf",
+    "sha256": "74c841e1274532959c80bf93c11d5003bbc1bdc742362aa80c1aaf5bed306383",
+    "bytes": 1349898
+  },
+  {
+    "old_path": "peer review on JSCE.docx",
+    "new_path": "01_论文与意见配对\\01_JSCE-24-0030_入门示例\\peer review on JSCE.docx",
+    "sha256": "d871756560c37f5a1bee38727a7b7e62853a52be28e1450e954cb538ee00b93f",
+    "bytes": 18400
+  },
+  {
+    "old_path": "新建文件夹\\peer-review\\peer review on JSCE-24-0030.pdf",
+    "new_path": "01_论文与意见配对\\01_JSCE-24-0030_入门示例\\peer review on JSCE-24-0030.pdf",
+    "sha256": "40888f5893ae7bf496e9d6ef714ab58a56135e032b821bac49d68c74e4382e80",
+    "bytes": 112216
+  },
+  {
+    "old_path": "SMCA-25-06-2213_Proof_hi(1).pdf",
+    "new_path": "01_论文与意见配对\\02_SMCA-25-06-2213_具体问题示例\\SMCA-25-06-2213_Proof_hi(1).pdf",
+    "sha256": "f9070303627b6d819d90fe2236dc1c58ef87bcfd67bbe8522e9b0ba218f88971",
+    "bytes": 709373
+  },
+  {
+    "old_path": "Comment on SMCA-25-06-2213.docx",
+    "new_path": "01_论文与意见配对\\02_SMCA-25-06-2213_具体问题示例\\Comment on SMCA-25-06-2213.docx",
+    "sha256": "aebf03c8752f6d0694f5b6ab796b8a6d834ac8a57a9c8031edadffb6e3a61868",
+    "bytes": 25917
+  },
+  {
+    "old_path": "AMC-D-25-04496 (1).pdf",
+    "new_path": "01_论文与意见配对\\03_AMC-D-25-04496_方法与实验\\AMC-D-25-04496 (1).pdf",
+    "sha256": "e55ba2ad1b0142b012897fe3abeb9b1f840638c65f1223d45b4eb724873f0351",
+    "bytes": 11127864
+  },
+  {
+    "old_path": "Comment on AMC-D-25-04496.docx",
+    "new_path": "01_论文与意见配对\\03_AMC-D-25-04496_方法与实验\\Comment on AMC-D-25-04496.docx",
+    "sha256": "6d0ded313eaf4c1fc64dcca676d6db3b6745314b2ea593b886a24b929b67a6e0",
+    "bytes": 20828
+  },
+  {
+    "old_path": "Math-8993-peer-review (1).pdf",
+    "new_path": "01_论文与意见配对\\04_MATH-8993_公式与图示\\Math-8993-peer-review (1).pdf",
+    "sha256": "510cc98f6132c0d125efb5b3ffd9ca27b78dc8f0bfa2f4f9e655a6c5fd086d3d",
+    "bytes": 323075
+  },
+  {
+    "old_path": "comment on MATH-8993.docx",
+    "new_path": "01_论文与意见配对\\04_MATH-8993_公式与图示\\comment on MATH-8993.docx",
+    "sha256": "bbeccf636c8cee90318283bdb66a37750857a5aa9717a4ec1cf107e7ca0fb6e3",
+    "bytes": 17941
+  },
+  {
+    "old_path": "ISATRANS-D-22-00600_reviewer.pdf",
+    "new_path": "01_论文与意见配对\\05_ISATRANS-D-22-00600_表达与格式\\ISATRANS-D-22-00600_reviewer.pdf",
+    "sha256": "382d4406d65bda12767f87b582f9e921a45dc7a27ec39cd8db326d87b704c4a6",
+    "bytes": 1119239
+  },
+  {
+    "old_path": "新建文件夹\\peer-review\\peer review on SATRANS-D-22-00600.pdf",
+    "new_path": "01_论文与意见配对\\05_ISATRANS-D-22-00600_表达与格式\\peer review on SATRANS-D-22-00600.pdf",
+    "sha256": "eaa0f3c802eccbac7098ffa671329614743094b09841530ff0334092d2544e97",
+    "bytes": 125402
+  },
+  {
+    "old_path": "新建文件夹\\评审\\0189.pdf",
+    "new_path": "01_论文与意见配对\\06_0189_中文示例\\0189.pdf",
+    "sha256": "56382d3c4d6b0890f0be6bd7016a6478cf9a60324fc4c3fa42a3c57d2ad4951d",
+    "bytes": 642147
+  },
+  {
+    "old_path": "新建文件夹\\评审\\Comment On _on_0189.docx",
+    "new_path": "01_论文与意见配对\\06_0189_中文示例\\Comment On _on_0189.docx",
+    "sha256": "7ee9f005f517a99b2d292d87e1fbc4b437706f9cc4c3806167079b09edc7476f",
+    "bytes": 15447
+  },
+  {
+    "old_path": "新建文件夹\\评审\\0292.pdf",
+    "new_path": "01_论文与意见配对\\07_0292_简短英文示例\\0292.pdf",
+    "sha256": "80fe42ee6da6ae48e8a8f7ef243ccb2e73627ac5693b9c21d9d05540384fca1d",
+    "bytes": 949976
+  },
+  {
+    "old_path": "新建文件夹\\评审\\Comment On _on_0292.docx",
+    "new_path": "01_论文与意见配对\\07_0292_简短英文示例\\Comment On _on_0292.docx",
+    "sha256": "2c6a908ab56a745cd4585bf782ba9980c2179ec3b0b5416b433464c84e8bbc3f",
+    "bytes": 16222
+  },
+  {
+    "old_path": "1.docx",
+    "new_path": "02_尚未配对的审稿意见\\01_ESWA-D-22-07284_四份不同文本\\ESWA-D-22-07284_意见文本_原1.docx",
+    "sha256": "9581aca125bf870463dea9ffd723a3cbcafdc48db5d52e52e077d18775d57faf",
+    "bytes": 19450
+  },
+  {
+    "old_path": "2.docx",
+    "new_path": "02_尚未配对的审稿意见\\01_ESWA-D-22-07284_四份不同文本\\ESWA-D-22-07284_意见文本_原2.docx",
+    "sha256": "bc06f5b10cf7ab5b4f83d8946350f495b366063ea7f245a340f59e2d38d66424",
+    "bytes": 18921
+  },
+  {
+    "old_path": "Comment On ESWA-D-22-07284.docx",
+    "new_path": "02_尚未配对的审稿意见\\01_ESWA-D-22-07284_四份不同文本\\Comment On ESWA-D-22-07284.docx",
+    "sha256": "6bc31352f8d11805344fdb2c6284d9c3123a8376dcfef98c4c4e314fec38351d",
+    "bytes": 26481
+  },
+  {
+    "old_path": "Comments on ESWA-D-22-07284.pdf",
+    "new_path": "02_尚未配对的审稿意见\\01_ESWA-D-22-07284_四份不同文本\\Comments on ESWA-D-22-07284.pdf",
+    "sha256": "1c13e63b1010294842a8b730899a40e8bf371664e6a22eed1608631e92473332",
+    "bytes": 137177
+  },
+  {
+    "old_path": "新建文件夹\\Referee report of  OPENMATH-D-22-00217 by BINBIN HU and LIU YANG ..pdf",
+    "new_path": "02_尚未配对的审稿意见\\02_OPENMATH-D-22-00217_不同结论对照\\Referee report of  OPENMATH-D-22-00217 by BINBIN HU and LIU YANG ..pdf",
+    "sha256": "a1376ecefda0d0b89342c60e0a5467a665add2471e1d8d8bb74ffb8fa5d467a2",
+    "bytes": 46838
+  },
+  {
+    "old_path": "新建文件夹\\Report-OPENMATH-D-22-00217.pdf",
+    "new_path": "02_尚未配对的审稿意见\\02_OPENMATH-D-22-00217_不同结论对照\\Report-OPENMATH-D-22-00217.pdf",
+    "sha256": "fa07cedb39463e98bb4eb41b0bafb7d0941745a5a3fe8c41a62ae20be3b884c7",
+    "bytes": 66073
+  },
+  {
+    "old_path": "新建文件夹\\The report on the paper with reference OPENMATH-D-22-00217.pdf",
+    "new_path": "02_尚未配对的审稿意见\\02_OPENMATH-D-22-00217_不同结论对照\\The report on the paper with reference OPENMATH-D-22-00217.pdf",
+    "sha256": "3e933f76d24e50f73e5dcada18c90ae3257f042f267162ac1260d11c64d2be5a",
+    "bytes": 91447
+  },
+  {
+    "old_path": "1_Comment On FSS-D-21-00117.pdf",
+    "new_path": "02_尚未配对的审稿意见\\03_FSS-D-21-00117_理论问题示例\\1_Comment On FSS-D-21-00117.pdf",
+    "sha256": "5282427d528beba0405c1af805b0dd45c2f767bf44876122399fdaeba395ccd3",
+    "bytes": 156698
+  },
+  {
+    "old_path": "Distributed H.docx",
+    "new_path": "02_尚未配对的审稿意见\\04_六篇短评合集_稿号未注明\\六篇论文短评合集_原Distributed H.docx",
+    "sha256": "6f6b23f6fe840595aeb170378f54602ddfada154aab8be1e0db9c8e6a4cbdd17",
+    "bytes": 18927
+  },
+  {
+    "old_path": "RNC-23-0196_Proof_hi.pdf",
+    "new_path": "03_尚未配对的论文\\01_RNC-23-0196_李小庆论文\\RNC-23-0196_Proof_hi.pdf",
+    "sha256": "1238e42a2097b5af09a1e17912dbee307d6fdb6ddb8cceb7e2db7a0c3b9c2733",
+    "bytes": 886037
+  },
+  {
+    "old_path": "注意要点.txt",
+    "new_path": "04_原有经验笔记\\注意要点.txt",
+    "sha256": "79435822fde4934999b373d98f35d58b983edd7b13d0675325315b6310852c0f",
+    "bytes": 331
+  },
+  {
+    "old_path": "~$er review on SATRANS-D-22-00600.docx",
+    "new_path": "99_Word临时锁文件\\~$er review on SATRANS-D-22-00600.docx",
+    "sha256": "c61c90d3148b2f7a725fa1ee3c174ab0357e2fe2f67dc0df80c1f19460680311",
+    "bytes": 162
+  }
+]

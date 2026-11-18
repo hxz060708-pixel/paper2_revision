@@ -1,0 +1,22 @@
+{
+  "local_path": "C:\\Users\\zh'x\\Desktop\\我的论文\\审稿\\paper2\\paper2_审稿意见\\paper2_按师兄模板重做_完整包.zip",
+  "operation": "create_library_file",
+  "status": "succeeded",
+  "path": "/paper2/paper2_按师兄模板重做_完整包.zip",
+  "file_id": "file_000000000dc882309848a1ba190da6f9",
+  "library_file_id": "libfile_28a0d9f43b448191b14b263617747936",
+  "file_name": "paper2_按师兄模板重做_完整包.zip",
+  "current_version_number": 0,
+  "restored_from_version_number": null,
+  "xattrs": [
+    {
+      "name": "user.library-file-version",
+      "value": "0"
+    }
+  ],
+  "directory_id": "6ad8aec7ea088191b4fb8df7483a6bc7",
+  "mime_type": "application/zip",
+  "library_artifact_type": "other",
+  "file_size_bytes": 1747537,
+  "external_connectors_accessed": false
+}

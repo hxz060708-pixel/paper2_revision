@@ -1,0 +1,50 @@
+reported, including resilient adaptive intermittent control under sensor deception attacks [20] and K-filter-based quantized
+control under joint deception attacks [21]. Nevertheless, maintaining prescribedH∞ performance for IT-2 fuzzy CPSs under
+randomly occurring deception attacks remains a challenging issue.
+Communication efficiency is another key bottleneck in practical IT-2 fuzzy CPSs. Event-triggered mechanisms (ETMs)
+[22,23]determinedatatransmissionaccordingtoapredefinedtriggeringcriterion, therebyreducingredundantcommunication
+and bandwidth consumption. However, conventional static ETMs use fixed thresholds and cannot adapt well to state
+fluctuations caused by attacks, disturbances, or actuator anomalies. Adaptive event-triggered mechanisms (AETMs) [24, 25]
+and dynamic triggering strategies [26] adjust triggering parameters according to real-time or historical state information.
+For IT-2 fuzzy CPSs, a suitable AETM should reduce redundant transmissions while remaining compatible with fuzzy
+membership information and resilient control requirements.
+In addition to cyber-layer risks and communication constraints, physical-layer reliability is also critical for CPSs. Ac-
+tuators may suffer from hardware aging, mechanical wear, or harsh operating environments, which can cause stochastic
+degradation of the control channel [27, 28]. Markov processes are commonly used to describe switching among different
+actuator failure modes [29, 30]. If such failures are not considered in controller design, the resulting control input may be
+weakened or distorted. When actuator failures occur together with deception attacks, the transmitted state and the effec-
+tive control input are both corrupted. Hence, a secure control strategy for IT-2 fuzzy CPSs should simultaneously handle
+cyber-layer data falsification, physical-layer actuator uncertainty, and limited communication resources.
+Lyapunov–Krasovskii functional (LKF) techniques provide an effective framework for stability andH∞ performance
+analysis in networked and sampled-data systems. To reduce conservatism, advanced LKF and looped-functional techniques
+have been developed to exploit sampling intervals and state information. For instance, a state-dependent looped Lyapunov
+functional was designed in [31] to incorporate inter-sample dynamics. An augmented functional with delay-interaction
+and quadratic-time looped terms was proposed in [32] to exploit delay cross-information and integral states. A boundary-
+information-based looped Lyapunov functional combined with integral inequalities was developed in [33] to address sampled-
+datasynchronizationofuncertainstochasticneuralnetworks. Despitetheseadvances, adaptiveevent-triggeredH ∞ controlfor
+IT-2 fuzzy CPSs affected by stochastic deception attacks and Markov-type actuator failures remains insufficiently explored.
+Building on the above discussion, this study addresses adaptive event-triggeredH∞ control for IT-2 fuzzy CPSs affected
+by stochastic deception attacks and Markov-type actuator failures. The principal contributions are fourfold:
+1) A unified adaptive event-triggered closed-loop model is established for IT-2 fuzzy CPSs under concurrent cyber attacks
+and actuator failures.
+2) An adaptive triggering scheme is proposed, with its threshold updated according to the state error. By adjusting the
+threshold online according to real-time state-error information, the proposed mechanism reduces redundant transmis-
+sions while maintaining the desired control performance.
+3) A region-dependent fuzzy control scheme is developed by exploiting the sign information of the membership-function
+derivatives. The resulting region partition enables the control and triggering parameters to be jointly designed for each
+operational region.
+4) A two-sided FMF-dependent looped functional is formulated to incorporate state information from both subintervals
+of each sampling period. This construction reduces conservatism and yields tractable LMI-basedH∞ stability and
+synthesis conditions.
+The paper is organized as follows. Section 2 presents the system model and formulates the control problem. Section
+3 develops the stability analysis and controller design. Section 4 validates the proposed approach through an engineering-
+motivated example and a numerical example. Section 5 concludes the paper and outlines potential directions for future
+research.
+Notation:For a matrixQ,Sym{Q}=Q+Q T. The operatorscol{·}anddiag{·}denote column stacking and block-
+diagonal construction, respectively. The symbol∗represents entries determined by symmetry in block matrices, andL
+denotes the weak infinitesimal generator of the Markov process.
+2. Preliminaries and Problem Formulation
+2.1. System model
+The nonlinear system is represented by an IT-2 fuzzy model composed ofrrules, with them-th plant rule(m= 1,2, . . . , r)
+given as follows:
+2

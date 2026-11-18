@@ -1,0 +1,758 @@
+===== PDF PAGE 1 OF 6 =====
+  
+分布式驱动电动汽车操纵稳定性分层控制 
+ 
+邓翌迪 
+信息与电气工程学院 
+湖南科技大学 
+湘潭 ，中国 
+1263512162@qq.com
+吴金军 
+信息与电气工程学院 
+湖南科技大学 
+湘潭，中国 
+1016674965@qq.com
+周兰 
+信息与电气工程学院 
+湖南科技大学 
+湘潭，中国 
+zhoulan75@163.com
+张铸 
+信息与电气工程学院 
+湖南科技大学 
+湘潭，中国 
+eezhuzhang@126.com
+摘要：随着能源结构的转型，新能源汽车产业变得愈发重要 。本文提出分布式驱动电动汽车操纵稳定性 分层控制策略。首先构
+建车辆理想二自由度参考模型，上层采用滑模控制方法跟踪车辆理想二自由度模型的质心侧偏角和横摆角速度， 并获取附加横
+摆力矩。然后，下层综合考虑驱动力、附加横摆力矩 和执行机构限制等约束条件，采用二次规划算法，构建力矩优化分配的目
+标函数，得到维持车辆稳定行驶所需的四轮驱动转矩。最后利用Carsim和MATLAB/Simulink联合仿真验证控制策略的有效性，
+并参照国标，给出系统在转向盘转角阶跃输入和蛇形试验工况下的评分，综合评价车辆的操纵稳定性。 
+关键字：分层控制、操纵稳定性、滑模控制、转矩分配 
+Hierarchical Control of Driving Stability in Distributed Electric 
+Vehicles 
+Deng Yidi 
+School of Information and 
+Electrical Engineering 
+Hunan University of Science 
+and Technology 
+Xiangtan, China 
+1263512162@qq.com
+Wu Jinjun 
+School of Information and 
+Electrical Engineering 
+Hunan University of Science 
+and Technology 
+Xiangtan, China 
+1016674965@qq.com 
+Zhou Lan 
+School of Information and 
+Electrical Engineering 
+Hunan University of Science 
+and Technology 
+Xiangtan, China 
+zhoulan75@163.com 
+Zhang Zhu 
+School of Information and 
+Electrical Engineering 
+Hunan University of Science 
+and Technology 
+Xiangtan, China 
+eezhuzhang@126.com 
+Abstract：With the transformation of the energy structure, the new energy vehicle industry is becoming more and more important. This 
+paper presents a hierarchical control strategy for the manoeuvring stability of distributed -drive electric vehicles. First, a two -degree-of-
+freedom reference model of the vehicle is constructed, and the sliding mode control method is used in the upper layer to trac k the lateral 
+deflection angle of the centre of mass and the angular velocity of the pendulum of the reference model, thereby obtaining the  additional 
+pendulum moment. Then, in the lower layer, we consider the constraints such as the driving force, the additional transverse p endulum, 
+and the actuator limitations, and employ the quadratic programming algorithm to derive an objective function for the optimal allocation of 
+torque, and obtain the four -wheel drive torque required to maintain the stable driving of the vehicle. Finally, the effectiveness of the 
+control strategy is verified by joint simulation using Carsim and MATLAB/Simulink, and the scores of the system under steering wheel 
+angle step input and serpentine test conditions are given with reference to the national standard t o comprehensively evaluate the stability 
+of the vehicle.  
+Key Words：Hierarchical control, Control stability, Sliding mode control, Torque distribution 
+ 
+0 引言 
+随着全球对可持续发展和环保的重视，以及能源
+结构向清洁能源转型，新能源汽车产业愈显重 要
+[1]
+。
+新能源电动汽车主要可以分为三种类型，即燃料电池
+电动汽车、混合动力电动汽车和纯电动汽车
+[2]
+。纯电
+动汽车彻底摒弃石油作为能源的需求，而是直接依赖
+驱动电机来提供动力。纯电动汽车按照驱动方式分为
+两类，即集中式驱动
+[3]
+和分布式驱动
+[4]
+。 
+目前批量生产的新能源汽车动力系统大多沿用传
+统内燃机汽车的集中式驱动模式，一个动力装置至少
+驱动一根车轴
+[5]
+。分布式驱动电动汽车通过将轮毂电
+机直接置于轮毂内，取消包括主减速器、差速器和半
+轴在内的传动系统，实现了传统底盘无法做到的高度
+集成化布置和高效快速动力传输，被业内公认是未来
+最具发展潜力的电动汽车框架之一
+[6]
+。  
+分布式驱动电动汽车根据系统结构，分为两种，
+第一种是一体化控制
+[7]
+，第二种是分层控制
+[8]
+。一体
+化转矩控制通过构建整车模型，从驾驶员信息、车辆
+理想运动状态和当前车辆运动状态计算得出每个车 
+ 
+  国家自然科学基金项目 (62373145), 湖南省重点研发计划项目
+(2023GK2027)资助. 
+Supported by the National Natural Science Foundation of China 
+(62373145) and the Key Research and Development Program of Hunan 
+Province (2023GK2027). 
+
+===== PDF PAGE 2 OF 6 =====
+  
+ 
+图1 车辆控制系统结构框图 
+轮最优的输出转矩。一体式控制结构简单，但控制模
+型阶次较高，对控制器性能提出了更高的要求，不适
+宜车辆面对多工况、复杂的外界环境。本文采用分层
+控制方案，将横摆力矩和驱动转矩分配分开处理，解
+耦了横摆力矩控制和驱动转矩之间的动力学关系，相
+对于一体化控制而言，降低了整车转矩分配的系统维
+度和计算负担，提高多目标约束条件下控制策略的计
+算效率，增强分布式驱动汽车面对复杂多工况的操纵
+稳定性，更易于实现。 
+本文提出一种分布式驱动电动汽车分层控制策
+略。上层附加横摆力矩控制器采用滑模控制算法求取
+附加横摆力矩，下层转矩优化分配控制器采用二次规
+划算法(Quadratic programming)求得维持车辆稳定行
+驶 所 需 的 四 车 轮 驱 动 转 矩 。 运用 Carsim 和
+MATLAB/Simulink进行 车辆操纵稳定性 联合仿真试
+验, 并参考国标 QC/T48—1999中的评价准则 评价计
+分，给出转向盘转角阶跃输入和蛇形试验工况下的评
+分，以此综合评价车辆的操纵稳定性。 
+1 分布式电动车操纵稳定性控制系统结构 
+采用分层控制的分布式电动车操纵稳定性控制系 
+统模型分别由分布式驱动电动汽车模型、驾驶员模
+型、车辆二自由度动力模型、上层附加横摆力矩控制
+器、下层转矩优化分配控制器五个部分组成。如图 1
+所示，分布式驱动电动汽车模型向驾驶员模型和车辆
+二自由度动力模型提供车辆速度
+v 、路面附着系数
+u
+等状态数据，同时输出上层附加横摆力矩控制器所需
+的实际 横摆角速度
+ 和质心侧偏角
+ 。驾驶员 模型
+输 出 方向 盘 转角 和轮 毂电 机 行驶 所 需的 总纵 向力
+xF
+。基于车辆二自由度动力模型 ，利用 车辆相关
+参数和行驶状态数据计算出期望的横摆角速度
+r 和
+质心侧偏角
+r 。上层附加横摆力矩控制器 以车辆实
+际横摆角速度
+ 和质心侧偏角
+ 与期望横摆角速度
+r
+和质心侧偏角
+r 的差值为输入，设计滑模控制器
+获取附加横摆力矩。通过下层转矩优化分配控制器综
+合考虑驱动力、附加横摆力矩、垂向力以及执行机构
+限制的基础上，构建力矩优化分配的目标函数，并对
+该函数进行优化计算，从而得到维持车辆稳定行驶所
+需的四轮驱动力矩。 
+2 车辆动力学模型 
+v
+xv
+
+'o
+o
+L
+rL
+fL
+
+y
+ 
+x
+
+1yF
+2yF
+1u
+2u
+yv
+
+ 
+图2  车辆二自由度动力模型示意图 
+车辆质心侧偏角和横摆角速度是衡量车辆动态响
+应和稳定性的关键性指标。车辆二自由度动力学模型
+由七自由度整车动力学模型简化而来，主要分析汽车
+在水平面上的侧向运动和横摆运动。由于模型相对简
+单，因此可以容易的通过车辆状态参数来计算横摆角
+速度和质心侧偏角的参考值。车辆线性二自由度动力
+模型如图 2所示。其中：
+L 为前后轴距 ，
+fL ，
+rL 分
+别为车辆质心到前后轴的距离 ，
+ 为前轮转角 ，
+
+为车辆横摆角速度 ，
+ 为质心侧偏角 ，
+xv 为车辆的
+纵向速度，
+yv 为车辆的侧向速度 ，
+1yF 和
+2yF 分别为
+前后轮侧向力。 
+由车辆二自由度动力模型推导出车辆运动学运动
+方程： 
+= ( 1)
+f r f f r r f
+2
+x x x
+22
+f f r r f f r r f f
+z z x z
+k + k L k - L k k
+mv mv mv
+L k - L k L k + L k L k
+I I v I
+   
+   
+ + − −
+ = + −
+(1) 
+式中：m为整车质量  ，
+zI 为转动惯量，
+K 为稳定性
+因数，
+2
+f r
+rf
+LmLK L k k=− （ ） ，
+fk 和
+rk 分别为前后轴轮
+
+===== PDF PAGE 3 OF 6 =====
+  
+胎侧偏刚度。 
+当车辆处于稳态时，
+
+ 和
+
+ 接近于0，可由 式
+（1）推导出期望的横摆角速度和质心侧偏角: 
+2(1 )
+x
+r
+x
+v
+L Kv= +
+                    (2) 
+22
+2
+/ /( )
+1
+r f x r
+r
+x
+L L mL v L k
+Kv += +
+                 (3)  
+由于受到地面附着极限的限制，期望横摆角速度
+和质心侧偏角需要满足 
+max
+g
+r_
+x
+c v
+ =
+                         (4) 
+_ max 2g( )
+fr
+r
+xr
+mLL
+v k L =+
+                (5) 
+式中：
+_ maxr 和
+_ maxr 分别为路面限制条件下横摆角
+速度和质心侧偏角的最大值，
+c 为安全系数，一般取
+为0.85；
+ 为路面附着系数，
+g 为重力加速度。 
+由式（2）、（3）综合式(4)、（5）求得在路面
+限制条件下期望横摆角速度
+r_e 和质心侧偏角
+r_e 为 
+_ max2min ( ) (1 )
+x
+r_e r
+x
+v signL Kv    =  +
+，
+ (6) 
+22
+2
+_ max
+/ /( )
+1min
+             
+r f x r
+xr_e
+r
+L L mL v L k
+Kv A
+
+
+
+ +
+ += 
+
+
+    (7) 
+其中
+22
+2
+/ /( )sign( ) 1
+r f x r
+x
+L L mL v L kA Kv += + . 
+3  分布式电动车横摆力矩分层控制器设计 
+在车辆操纵过程中，横摆力矩分层控制策略能够
+根据驾驶者的意图和车辆的实际状态，快速而准确地
+调整车辆的前后轴四轮转矩分配，从而确保车辆在操
+纵过程中的稳定性和可控性。 
+3.1 上层附加横摆力矩控制器 
+滑模控制
+[9]
+具有快速响应、无需系统在线辨识、
+鲁棒性强的优点。本文上层控制器采用滑模控制，以
+横摆角速度和质心侧偏角为控制变量，得到车辆稳定
+行驶所需附加横摆力矩。 
+定义滑模面 
+__( ) ( ) r e r es a b    = − + −
+    (8) 
+式中：
+/m kg 为横摆角速度 的权重系数，
+b 为质心
+侧偏角的权重系数，权重系数的选取与路面条件、车
+辆动态特性以及车辆速度有关，通常通过试凑法来确
+定。 
+对式(8)求导得到 
+__( ) ( ) r e r es a b    = − + −
+   (9) 
+整理可得 
+__
+1 { ( ) } r e r esba   = − − +
+     (10) 
+总的横摆力矩为: 
+( )__
+1{ ( ) }z z r e r eM I I s b a   = = − − +
+  (11) 
+选取等速趋近律 
+signs k s= − 
+                     (12) 
+式中：
+sign 为符号 判断函数，
+k 为滑模控制增益 ，
+其值大小体现系统状态趋向滑模面运动的速度。为了
+抑制式(12)中符号函数不连续引起的抖振，本文选择
+饱和函数替代符号函数。 
+由式(12)可得由分布式驱动电动汽车纵向力所产
+生的期望附加横摆力矩为 
+ _
+_
+     sign ( )
+        ( ) ( )
+y
+z
+re
+z r e f yfl yfr yrl yrr r
+M M M
+I k s ba
+I L F F F F L
+
+
+ = −
+= −  − −
++ − + − +
+ (13) 
+式中：
+yM 为侧向力产生的横摆力矩；
+yflF ，
+yfrF ，
+yrlF
+，
+yrrF 为四轮侧向力，可由分布式驱动电动汽车
+Carsim模型得到。 
+3.2 下层转矩优化分配控制器设计 
+由上层附加横摆力矩控制器计算出车辆所需的附
+加横摆力矩后，下层转矩优化分配控制器采用二次规
+划算法
+[13]
+，综合考虑总驱动力、附加横摆力矩、垂向
+力以及执行机构限制等约束条件，构建力矩优化分配
+的目标函数，并对该函数进行优化计算，从而得到维
+持车辆稳定行驶所需的四轮驱动转矩。 
+根据实际要求，考虑路面附着限制，目标函数为 
+( )
+22
+x_ij y_ij
+2
+z_ij
+F + FJ=
+F
+                          (14) 
+式中：
+{}i f,r 表示车轮的前后轮,
+{}j l,r 表示车
+轮的左右轮；
+x_ijF 为汽车四轮所受纵向力；
+y_ijF 为
+汽车四轮所受侧向力；
+z_ijF 为汽车四轮所受垂向力; 
+
+为路面附着系数。 
+将目标函数
+J 作为本文的优化目标，根据车辆在
+行驶过程中各车轮所受的垂向力来对目标函数进行优
+化。由于轮毂电机只能控制纵向力，
+x_ijF 和车轮纵向
+力矩
+ijT 与轮胎滚动半径
+R 关系如式(15)所示 
+
+===== PDF PAGE 4 OF 6 =====
+  
+ 
+ij
+x_ij
+TF R=                                     (15) 
+式(14)的目标函数转化为 
+( )
+2
+ij
+2
+z_ij
+TJ=
+FR
+                 (16) 
+考虑附加横摆力矩
+M 和四轮总 纵向力矩
+T 的
+如下约束条件： 
+2 2 2 2
+fl fr rl rr
+ff rr
+fl fr rl rr
+T T T T T
+BB BBT T T T MR R R R
++ + + =
+− + − + = 
+   (17) 
+ 
+由于一般车辆前后车轮轮距近似，即 
+frB B B
+               (18) 
+进而得到 
+()2
+()2
+fl rl
+fr rr
+TMT R T B
+TMT R T B
+ = − −  = + −
+                      (19) 
+将约束条件式(19)代入式(16)得 
+ 
+( ) ( )
+( ) ( )
+2
+22
+      
+2
+rl rr
+22
+z_fl z_fr
+2 2
+rl rr
+22
+z_rl z_rr
+T M T M- R - T + R - TBBJ = +
+F R F R
+T T++
+F R F R
+
+
+           (20) 
+对
+rlT 和
+rrT 求偏导： 
+( ) ( )
+( ) ( )
+2 22
+2 22
+rl
+rl
+22
+rl z_fl z_rl
+rr
+rr
+22
+rr z_fr z_rr
+TM- R - T TJ B= - +T F R F R
+TM+ R - T TJ B= - +T F R F R
+
+
+   
+    
+  (21) 
+由
+r
+0
+rl r
+JJ
+TT
+ == 分别得到
+rlT 和
+rrT 的最优解： 
+ 
+2
+2 2 2 2
+z_rl z_rl
+rl 2 2 2 2
+z_rl z_fl
+F T F M-R BT= F + F
+
+
+                   (22) 
+2
+2 2 2 2
+z_rr z_rr
+rr 2 2 2 2
+z_rr z_fr
+F T F M+R BT= F + F
+
+
+
+                (23) 
+再将式(22)、(23)代入式(19)，求得
+flT 和
+frT 的最优
+解，由此得维持车辆稳定行驶所需四轮驱动转矩。 
+4 仿真实验验证 
+为验证分布式驱动电动汽车分层控制策略的有效
+性，通过Carsim与MATLAB/Simulink进行联合仿真实
+验，选用车型为C-Class,Hatchback,车辆驱动方式改为
+轮毂电机直接驱动，转矩输入为外部模型直接输入到
+车轮，依据控制策略所需车辆模型信息，设置Carsim
+对应的输入输出变量 ，控制器参数为
+0.1ab== ，
+2k =
+，采用的车辆模型参数如表1所示。 
+表1 模型参数表 
+名称 参数值 
+整车质量
+/ kgm  1412 
+前后车轴平均轮距
+/mB  1.675 
+质心到前轴的距离
+/mfL  1.015 
+质心到后轴的距离
+/mrL  1.895 
+路面附着系数
+  0.85 
+整车转动惯量
+2/ (kg m )zI
+  2700 
+车轮滚动半径
+/mR  0.354 
+前轮侧偏刚度
+1/ (N rad )fk −
+ -128940 
+4.1 方向盘角阶跃试验 
+参照国标QB/T 6323-2014设置方向盘角阶跃仿真
+实验 [15]，在方向盘角阶跃输入试验中，以恒定侧向
+加速度为 2
+2m/ s 确定方向盘转动位置，对应的方向盘
+转角是244°。汽车首先以100km/h沿直线行驶3s，3s
+后迅速转动方向盘至试验要求的转角处并固定一定时
+间。通过仿真实验得到方向盘角阶跃工况下横摆角速
+度和侧向角速度的响应曲线如图3、图4所示。 
+根据图4数据计算得 到横摆角速度的响应时间为
+0.07s,依据国标QC/T 480 -1999中的评分准则[16]，按侧
+向加速度为 2
+2m/ s 时的汽车横摆角速度响应时间
+T 进
+行评分计分，其评分为： 
+60
+60 100
+4060N T T TT= +  − − （ ）
+         (24) 
+ 
+图3 侧向加速度响应曲线 
+
+===== PDF PAGE 5 OF 6 =====
+  
+ 
+图4 横摆角速度响应曲线 
+式中
+N 为汽车横摆角速度响应时间计分值 ，
+60T  为
+汽车横摆角速度响应时间的下限值为0.20s，
+100T 为汽
+车横摆角速度响应时间的上限值 为0.06s。通过式(24)
+计算得到角阶跃工况下模拟仿真实验得分为97.1分，
+仿真结果表明在方向盘角阶跃输入工况下，车辆可以
+平稳并迅速地过渡到新的行驶状态，可控性强，具有
+良好的瞬态响应性能。 
+4.2 蛇行工况试验 
+本文重点对操纵稳定性实验更为复杂的蛇行工
+况进行模拟仿真实验，参照国标QB/T 6323-2014规
+定的蛇行工况主要试验内容 [15]，标定桩距为 30m,
+以基准车速 65km/h通过 蛇行 工况进行 仿真试验。
+Carsim中设置蛇形路径如图 5所示。 通过模拟仿真
+实验可以得到基准车速为65km/h，蛇行工况试验下
+的汽车横摆角速度、方向盘转角和质心侧偏角，将
+分层控制中考虑多约束条件的二次规划转矩优化分
+配(QP转矩优化)和平均转矩分配控制进行对比，仿
+真结果如图6、图7、图8所示。 
+ 
+图5 车辆行驶路径 
+ 
+图6 方向盘转角响应曲线 
+ 
+图7 横摆角速度响应曲线 
+ 
+图8 质心侧偏角响应曲线 
+依据国标QC/T 480 -1999中的评分准则 [16]，按基
+准车速65km/h下的平均横摆角速度峰值
+ ，与平均方
+向盘转角峰值
+ 进行评价计分，其评分只为 
+60
+60 100
+4060N = +  − − （ ）
+        (25) 
+式中
+N 为 平均横摆角速度峰值的评价计分值 ，
+60
+为平均横摆角速度的下限值 为25.0deg/s，
+100 为平均
+横摆角速度的上限值为10.0deg/s。 
+平均方向盘转角峰值的评价计分值为 
+60
+60 100
+4060N = +  − − （ ）
+          (26) 
+式中
+N 为平均方向盘转角峰值的评价计分值 ，
+60
+为平均方向盘转角的下限值 为180.0deg，
+100 为平均
+方向盘转角的上限值为60.0deg。 
+对于不能达到基准车速的汽车， 平均横摆角速度
+峰值的评价计分值和平均方向盘转角峰值的评价计分
+值为 
+60
+z
+VNN V
+ = = 
+                        (27) 
+式中
+N 为平均横摆角速度峰值的评价计分值 ，
+N
+为平均方向盘转角峰值的评价计分值 ，
+V 为实际达
+到的蛇行车速，
+zV 为规定的基准车速。 
+蛇行试验的综合评价计分值计算公式为 
+2
+3
+s
+NNN
++=
+                          (28) 
+式中：
+sN 为蛇行工况的综合评价计分值。 
+
+===== PDF PAGE 6 OF 6 =====
+  
+根据图6和图7中模拟仿真实验数据得：基准车速
+65km/h下，QP转矩优化 分配控制的 车辆横摆角速度
+峰值为 13.4deg/s,方向盘转角峰值为 54.6deg；平均转
+矩分配 控制的 横摆角速度峰值为 14deg/s,方向盘转角
+峰值为 55.2deg。通过式 (28)计算可得： QP转矩优化
+分配控制下蛇形工况模拟仿真实验得分为94分，平均
+转矩 分配控制 下蛇形工况模拟仿真实验得分为 92.9
+分，仿真实验结果表明分层控制策略能有效补偿上层
+控制器所需的附加横摆力矩，车辆能够稳定行驶。 
+综合图8模拟仿真实验数据可知， 相对于平均转
+矩分配控制， 蛇行工况下 QP转矩优化 分配控制 在提
+高车辆行驶稳定性方面，性能更佳。重点体现在描述
+车辆稳定性相关的质心侧偏角，峰值幅度较平均转矩
+分配控制下的质心侧偏角下降约20%，横摆角速度的
+峰值更小，方向盘转角也更加平滑。 
+5 结论 
+针对分布式驱动电动汽车的操纵稳定性问题，本
+文提出了滑模和二次规划相结合的分层控制策略，解
+耦驱动力矩和横摆力矩控制，降低了控制系统维度，
+对于不同工况控制方法更加灵活。 参照国标QC/T 48
+—1999 中的评价准则 ，进行了汽车操纵稳定性的角
+阶跃工况和蛇形工况Carsim和MATLAB/Simulink联合
+仿真实验，完成了对于角阶跃工况和蛇形工况结果的
+评价打分。仿真实验结果表明上层控制器计算所得的
+附加横摆力矩控制可以 很好的 实现车辆操纵的稳定
+性，本文提出的下层二次规划转矩优化分配，相比较
+平均转矩分配策略，在车辆行驶的稳定性方面效果更
+佳。本文利用分层控制的整车控制策略，对于车辆操
+纵稳定性性能评价研究具有一定的参考价值。此外，
+控制器上层的车辆理想二自由度模型，在车辆低速、
+大转向以及一些更复杂多变的工况 具有一定的 局限
+性。后续将针对考虑更多现实约束条件限制下的复杂
+多工况控制方法和模型展开研究。 
+参考文献 
+[1] 陈柳钦. 新能源汽车产业发展的政策支持 . 南通大学报 , 
+2010, 26(04): 124-133. 
+[2] 刘海峰. 不同种类电动汽车发展现状 . 节能与环保, 2008,  
+(01): 22-24. 
+[3] 曹秉刚, 张传伟, 白志峰, 李竟成. 电动汽车技术进展和发
+展趋势. 西安交通大学学报, 2004, 01: 1-5. 
+[4] 钟龙飞, 彭育辉, 江铭. 基于相平面的分布式驱动电动汽车
+稳定性控制. 汽车工程, 2021. 43(05): 721-729. 
+[5] M. Satoshi. Innovation by in-wheel-motor drive unit. vehicle 
+system dynamics, 2012, 50(06): 807–830. 
+[6] 殷国栋, 金贤建, 张云. 分布式驱动电动汽车底盘动力学控
+制研究综述. 重庆理工大学学报. 2016, 30(08): 13-19. 
+[7] H. Zhou, F. Jia, H. Jing, Z. Liu , L. Gü venç. “Coordinated 
+longitudinal and lateral motion control for four  wheel 
+independent motor drive electric vehicle,” IEEE Trans. Veh. 
+Technol, 2018, 67(05): 3782-3790. 
+[8] A. Nasri, G. Brahim. Artificial intelligence application’s for 
+4WD electric vehicle control System. Intelligent Control and 
+Automation, 2012, 2(03): 243-250. 
+[9] 于树友, 李文博, 刘艺等. 四轮独立驱动电动汽车转向稳定
+控制. 控制理论与应用, 2021, 38(06): 719-730. 
+[10] L.Liang, L.Yishi, R.R.Wang. A 3 -dimentional dynamics 
+control framework of vehicle lateral stability and rollover 
+prevention via active braking with MPC. IEEE Transactions  
+on Industrial Electronics, 2016, 64(4): 243-250. 
+[11] 姜立标, 吴中伟. 基于趋近律滑模控制的智能车辆轨迹跟
+踪研究. 农业机械学报, 2018, 49(3): 381-386. 
+[12] 邱泉. 基于模糊滑模控制算法的分布式驱动电动汽车横向
+稳定性控制研究. 汽车电器, 2022, (10): 35-38. 
+[13] L.Xiong, Z.Yu. Control allocation of vehicle dynamics 
+control for a 4 in -wheel-motored EV. Power Electronics and 
+Intelligent Transportation System, International Conference 
+on. IEEE,  2009, 2: 307-311. 
+[14] 杨鹏飞, 熊璐, 余卓平. 四轮轮毂电机驱动电动汽车电机 /
+液压系统联合控制策略. 汽车工程, 2013, 35(10): 921-926. 
+[15] GB/T 6323-2014,汽车操纵稳定性试验方法. 
+[16] QC/T 480-1999,汽车操纵稳定性指标限值与评价方法. 

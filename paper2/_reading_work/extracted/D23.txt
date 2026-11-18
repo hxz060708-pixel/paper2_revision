@@ -1,0 +1,27 @@
+Comment on ESWA-D-22-07284
+This article has addressed the hidden-Markovian model-based asynchronous sampled-data control synthesis problem for interval type-2 (IT2) fuzzy semi-Markovian jump systems (S-MJSs) with stochastic actuator failures (SAFs). Herein, the asynchronous factor resulted from twofold: 1) hidden Markovian model (HMM) and 2) imperfectly matched membership functions (IMMFs) between the original plant and the controller. By considering the information of sampling intervals adequately, a fresh looped Lyapunov functional called bilateral looped Lyapunov functional is innovatively constructed. By suitably incorporating with the skills of stochastic analysis and relaxed integral inequality together with symmetric slack matrices, numerically testable sufficient conditions are established by multi-parameterized LMIs (M-PLMIs). Conclusively, the design methodology brought forward herein is demonstrated by two practical examples, which show the potency and practicability. The organization of this paper is well structured. The result is of such fundamental importance, and the primary novelties and contributions are sound. However, the following aspects should be considered to improve the quality of the paper.
+
+It is noted that your manuscript needs careful editing by someone with expertise in technical English editing paying particular attention to English grammar, spelling, and sentence structure so that the goals and results of the study are clear to the reader.
+   We strongly suggest that you obtain assistance from a colleague who is well-versed
+in English or whose native language is English.
+
+The practical motivation and the research background of this article are not too clear, the author should address this issue. Additionally, to enhance the research background of this article, the authors suggested to refer to some related references. More recent literature may be updated to enhance the research motivation of this article. There is some confusion in the language organization, the author should pay attention to the logical relation of the introduction part of the paper.
+
+It is very challenging and comprehensive problem to consider double asynchronous factors: 1) hidden Markovian model (HMM) and 2) mismatched membership functions (MMFs), the derived multi-parameterized linear matrix inequalities (M-PLMIs) seem to be quite complex and only feasibility problem are considered herein. And the readers may want to know how much conservatism and computational complexity are introduced.
+
+What is called two-sided looped Lyapunov functional has been proposed in some existing works. With respect to the two-sided looped Lyapunov functional, what are the advantages of the functional selected in this article for stability and controller synthesis? Please clear this point. 
+
+Some concepts are confusing to define. Such as, 1) mismatched membership functions (MMFs) and matched membership functions (MMFs); 2) Bilateral looped functional and dual-sided sampling-interval-dependent looped Lyapunov functional.
+In the revised manuscript, the author should define them canonically. And Other similar errors should be checked by the author.
+
+The simulation part is not complete, please supplement. Such as, the non-fragility of the asynchronous controller is ignored. There is no comparison to show the effectiveness of the control method. The responses of the control input has not yet been displayed. In response to these, the authors should give detailed statements.
+
+There is a controversial thing in Theorems 1-3, struck failure Lw in Theorem 1, unknown Lw in Theorem 2 and known Lw in Theorem 3. The author is requested to correct similar errors. And some others are not enumerated. 
+
+Most of the listed references are not in our style and the information of some references are incomplete. The author should check them carefully throughout this paper. Before submitting a revision be sure that the material is properly prepared and formatted. Such as,
+[34] X Song, M Wang, CK Ahn. Finite-time H∞ asynchronous control for nonlinear Markov jump distributed parameter systems via quantized fuzzy output-feedback approach. IEEE Trans. Cybern. 2019, 50(9): 4098-4109.
+[36] Ma C, Fu H, Wu W. Asynchronous fault detection for delayed semi-Markov jump systems with mismatched mode-dependent nonlinearities[J]. Inf. Sci. 2022, 587: 679-691.
+[38] ZG Wu, P Shi, Z Shu, H Su, R Lu. Passivity-based asynchronous control for Markov jump systems[J]. IEEE Trans. Automat. Control. 2016, 62(4): 2020-2025.
+[68] V. Gandhi, Y.H. Joo. TS fuzzy sampled-data control for nonlinear systems with actuator faults and its application to wind energy system[J]. IEEE Trans. Fuzzy Syst. 2020. https://doi.org/10.1109/TFUZZ.2020.3041113
+ 
+Overall, if the author can take the above problem seriously, this paper can be accepted after some minor modifications.

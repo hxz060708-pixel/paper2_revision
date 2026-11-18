@@ -1,0 +1,131 @@
+9
+Lemma 3.4. [39] Assume that the positive constants α, β satisfy α > β > 0, continuous function
+V(t, ˜x(t), ˜y(t)) satisfying the following inequality
+D∗V(t, ˜x(t), ˜y(t)) =−αV(t, ˜x(t), ˜y(t)) + β ˜V(t, ˜x(t), ˜y(t))
+where ˜V(t, ˜x(t), ˜y(t)) = sup
+t−τ∗≤s≤t
+V(s, ˜x(s), ˜y(s)) and λ > 0 is a constant. Then for all t≥ t0, we have
+V(t, ˜x(t), ˜y(t))≤ sup
+t0−τ∗≤s≤t0
+V(s, ˜x(s), ˜y(s))e−λ(t−t0)
+in which λ is the unique positive solution of α− βeλτ∗
+.
+3.2. Stability of equilibria of BAMNNs with impulses
+This section presents new global exponential stability criteria for Cli ﬀord-valued BAMNNs with
+time-varying delays and impulsive eﬀects by using Lypunov functional.
+Theorem 3.5. Suppose that:
+(1) Assumptions (A1)-(A3) are fulﬁlled.
+(2) The system parameters a A. ¯B
+i j , bA. ¯B
+ji , (i = 1, 2, ..., n; j = 1, 2, ..., m) satisfy
+α > β > 0, (3.8)
+where α = min
+{
+min
+1≤i≤n
+di, min
+1≤ j≤m
+c j,
+}
+,
+β = max
+{(∑
+B∈Ω
+n∑
+i=1
+m∑
+j=1
+Gg
+i
+⏐⏐⏐bA. ¯B
+ji
+⏐⏐⏐
+)
+,
+(∑
+B∈Ω
+n∑
+i=1
+m∑
+j=1
+F g
+j
+⏐⏐⏐aA. ¯B
+i j
+⏐⏐⏐
+)}
+.
+(3) The impulsive jumps u ik( ˜xA
+i (t−
+k )), v jk(˜yA
+j (t−
+k )) satisfy uik( ˜xA
+i (t−
+k )) =−σik( ˜xA
+i (t−
+k )− x∗), v jk(˜yA
+j (t−
+k )) =
+−µ jk(˜yA
+j (t−
+k )− y∗), then
+max
+{
+max
+1≤i≤n
+⏐⏐⏐1 + σik
+⏐⏐⏐, max
+1≤ j≤m
+⏐⏐⏐1 + µ jk
+⏐⏐⏐
+}
+≤ 1, (3.9)
+for all i = 1, 2, ..., n; j = 1, 2, ..., m; k = 1, 2....
+Then there exists a constant λ > 0 such that all solutions of (3.7) satisfy the inequality
+∑
+B∈Ω
+( n∑
+i=1
+⏐⏐⏐ ˜xB
+i (t)− x∗⏐⏐⏐ +
+m∑
+j=1
+⏐⏐⏐˜yB
+j (t)− y∗⏐⏐⏐
+)
+= e−λ(t−t0)
+∑
+B∈Ω
+( n∑
+i=1
+sup
+s∈[t0−τ∗,t0]
+⏐⏐⏐ ˜xB
+i (s)− x∗⏐⏐⏐
++
+m∑
+j=1
+sup
+s∈[t0−τ∗,t0]
+⏐⏐⏐˜yB
+j (s)− y∗⏐⏐⏐
+)
+, t > t0, (3.10)
+then the NNs (3.7) is globally exponentially stable.
+Proof: Deﬁne the Lyapunov function as
+V(t, ˜x(t), ˜y(t)) =
+∑
+B∈Ω
+n∑
+i=1
+⏐⏐⏐ ˜xB
+i (t)
+⏐⏐⏐ +
+∑
+B∈Ω
+m∑
+j=1
+⏐⏐⏐˜yB
+j (t)
+⏐⏐⏐. (3.11)
+AIMS Mathematics V olume x, Issue x, xxx–xxx

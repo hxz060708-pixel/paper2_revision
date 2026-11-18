@@ -1,0 +1,134 @@
+ 
+ 
+18 
+( ) ( ) ( ) ( ) ( ) ( ) ( )
+1
+00
+2 1 0T T T
+kk
+z k z k z k w k w k w k   
+
+−
+==
+    − − −    
+   
+                                            (120) 
+i.e.,  
+( ) ( ) ( ) ( ) ( ) ( ) ( )
+1
+00
+21T T T
+kk
+z k z k z k w k w k w k   
+
+−
+==
+    − −    
+   
+                                              (121) 
+From (121), one knows that the inequality ( 121) is the subset of ( 46), thus the mixed H∞ and passive performance of the closed-
+loop system (38) is guaranteed according to Definition 2. This means the objective (ii) in Remark 2 is achieved, and the proof of 
+Step 1 is completed.      (Q. E. D)  
+Step 2. The proof of the objective (iii) in Remark 2: the controller gain matrix 
+iK  in (35) is determined by employing the 
+proposed method.  
+In order to determine the controller gain matrix 
+iK , the diagonal matrix 
+  is designed as follows  
+ 
+26
+diag I I I=
+                                                                                (122) 
+Applying the congruence transformation method, 
+ , 
+( )1aPh , 
+( )2aPh  and 
+I  are employed to design the congruence transformation 
+matrices 
+( )h
+  and 
+( )
+T h
+  as follows 
+( ) ( ) ( ) ( ) ( ) ( ) ( ) ( )1 2 1 1 2 1 ,
+TT T T T T
+a a a a a ah diag P h P h P h I I I h diag P h P h P h I I I ==  
+         (123) 
+Taking the congruence transformation of ( 112) by multiplying 
+( )h
+  and 
+( )
+T h
+  into Pre- and Post- of (112), one can obtain the 
+stability condition (103). From (48)-(49) and (104)-(105), it can be seen that the stability condition (48) is equivalent to (104) and 
+the stability condition (49) is equivalent to (105). With above analysis, Theorem 2 is equivalent to Theorem 1. Thus, the controller 
+gain matrix 
+iK  in (35) can be determined as follows  
+1
+i i iK Y Z
+−
+=
+                                                                                       (124) 
+From (124), it can be seen that the controller gain matrix 
+iK  can be determined. This means the obj ective (iii) in Remark 2 is 
+achieved, and the proof of Step 2 is completed.      (Q. E. D.) 
+From the proofs of Step 1 and Step 2, it can be seen that the mixed H∞ and passive performance of closed-loop system (38) is 
+guaranteed according to Definition 2, and the controller gain matrix 
+iK  can be determined. The proof of Theorem 2 is completed.      
+(Q. E. D) 
+Remark 5. The mixed H∞ and passive performance analysis is based on H∞ and passive theory, and consider the H∞ and passive 
+characteristic of neural networks . It has better ability to describe the neural networks performance [ 50]. Thus, the mixed H∞ and 
+passive performance of DGNNs is investigated in this paper. Moreover, the mixed H∞ and passive performance can be improved 
+by adjusting performance index 
+  [50]. Besides, it can be seen that Schur complement is employed to convert the inequality (47) 
+to obtain (116). The Schur complement can build a block matrix with same structure as the original matrix. Via the block matrix, 
+the computation process of LMIs can be simplified in this paper. Furthermore, 
+ , 
+( )1aPh , 
+( )2aPh  and 
+I  are employed to design 
+the congruence transformation matrices 
+( )h
+  and 
+( )
+T h
+ , the computation complexity of solving LMIs is reduced and computer 
+storage space is saved . With above reasons , the Schur complement  and congruence transformation method are employed to 
+guarantee mixed H∞ passive performance and determine the controller gain matrix 
+iK  for the closed-loop system in Theorem 2.  
+5. Simulation examples 
+5.1. Example 1 
+In this section, the example 1 is presented to show the effectiveness of the proposed method, i.e., closed -loop system is finite 
+time bounded stable subject to 
+( )12, , , ,c c L N   and mixed H∞ passive performance is guaranteed.  
+Consider a class of 2-dimensional DGNNs with additive uncertainties, mixed interval distributed delays  and mismatched 
+network noise as follows  
+( ) ( )( ) ( ) ( )( ) ( )( ) ( )( ) ( )( )( ) ( )( )
+( )( )( ) ( )( ) ( ) ( )( ) ( )
+( ) ( )
+( ) ( )
+( ) ( ) ( )
+1
+1
+, , , 0
+n
+ww
+MM
+x k A A k x k B B k f x k D D k g x k d k E E k
+x k k F F k u k A A k w k
+y k Cx k
+z k Lx k
+x k k k max d
+
+
+
+
+=
+ + = +  + +  + +  − + + 
+
+  − + +  + + 
+ =
+ =
+ =  −  
+
+                      (125) 

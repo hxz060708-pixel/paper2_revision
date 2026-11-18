@@ -1,0 +1,273 @@
+10
+Firstly, we consider the case of t = tk, by (3.7), we have
+V(tk, ˜x(tk), ˜y(tk)) =
+∑
+B∈Ω
+n∑
+i=1
+⏐⏐⏐ ˜xB
+i (t−
+k ) + ∆˜xB
+i (tk)
+⏐⏐⏐ +
+∑
+B∈Ω
+m∑
+j=1
+⏐⏐⏐˜yA
+j (t−
+k ) + ∆˜yA
+j (tk)
+⏐⏐⏐
+=
+∑
+B∈Ω
+n∑
+i=1
+⏐⏐⏐1 + σik
+⏐⏐⏐
+⏐⏐⏐ ˜xB
+i (t−
+k )
+⏐⏐⏐ +
+∑
+B∈Ω
+m∑
+j=1
+⏐⏐⏐1 + µ jk
+⏐⏐⏐
+⏐⏐⏐˜yB
+j (t−
+k )
+⏐⏐⏐
+≤ max
+{⏐⏐⏐1 + σik
+⏐⏐⏐,
+⏐⏐⏐1 + µ jk
+⏐⏐⏐
+}(∑
+B∈Ω
+n∑
+i=1
+⏐⏐⏐ ˜xB
+i (t−
+k )
+⏐⏐⏐ +
+∑
+B∈Ω
+m∑
+j=1
+⏐⏐⏐˜yB
+j (t−
+k )
+⏐⏐⏐
+)
+≤ max
+{
+max
+1≤i≤n
+⏐⏐⏐1 + σik
+⏐⏐⏐, max
+1≤ j≤m
+⏐⏐⏐1 + µ jk
+⏐⏐⏐
+}
+V(t−
+k , ˜x(t−
+k ), ˜y(t−
+k ))
+≤V (t−
+k , ˜x(t−
+k ), ˜y(t−
+k )). (3.12)
+Secondly, we consider the case of t , tk. Calculate the upper right Dini derivative of V(t) along the
+solutions of (3.7), we obtain
+D+V(t, ˜x(t), ˜y(t))≤
+∑
+B∈Ω
+n∑
+i=1
+sgn( ˜xB
+i (t)) ˙˜xB
+i (t) +
+∑
+B∈Ω
+m∑
+j=1
+sgn(˜yB
+j (t))˙˜yB
+j (t)
+=
+∑
+B∈Ω
+n∑
+i=1
+sgn( ˜xB
+i (t))
+(
+− di ˜xB
+i (t) +
+m∑
+j=1
+aA. ¯B
+i j ˜f B
+j (˜y j(t− τ(t)))
+)
++
+∑
+B∈Ω
+m∑
+j=1
+sgn(˜yB
+j (t))
+(
+− c j˜yB
+j (t) +
+n∑
+i=1
+bA. ¯B
+ji ˜gB
+i ( ˜xi(t− τ(t)))
+)
+=−
+∑
+B∈Ω
+n∑
+i=1
+sgn( ˜xB
+i (t))di ˜xB
+i (t) +
+∑
+B∈Ω
+n∑
+i=1
+sgn( ˜xB
+i (t))
+m∑
+j=1
+aA. ¯B
+i j ˜f B
+j (˜y j(t− τ(t)))
+)
+−
+∑
+B∈Ω
+m∑
+j=1
+sgn(˜yB
+j (t))c j˜yB
+j (t) +
+∑
+B∈Ω
+m∑
+j=1
+sgn(˜yB
+j (t))
+n∑
+i=1
+bA. ¯B
+ji ˜gB
+i ( ˜xi(t− τ(t)))
+)
+=−
+∑
+B∈Ω
+n∑
+i=1
+di
+⏐⏐⏐ ˜xB
+i (t)
+⏐⏐⏐ +
+∑
+B∈Ω
+n∑
+i=1
+m∑
+j=1
+⏐⏐⏐aA. ¯B
+i j
+⏐⏐⏐
+⏐⏐⏐ ˜f B
+j (˜y j(t− τ(t)))
+⏐⏐⏐
+−
+∑
+B∈Ω
+m∑
+j=1
+c j
+⏐⏐⏐˜yB
+j (t)
+⏐⏐⏐ +
+∑
+B∈Ω
+m∑
+j=1
+n∑
+i=1
+⏐⏐⏐bA. ¯B
+ji
+⏐⏐⏐
+⏐⏐⏐˜gB
+i ( ˜xi(t− τ(t)))
+⏐⏐⏐
+≤
+∑
+B∈Ω
+n∑
+i=1
+(
+− di
+⏐⏐⏐ ˜xB
+i (t)
+⏐⏐⏐ +
+m∑
+j=1
+F f
+j
+⏐⏐⏐aA. ¯B
+i j
+⏐⏐⏐
+⏐⏐⏐˜yB
+j (t− τ(t)))
+⏐⏐⏐
+)
++
+∑
+B∈Ω
+m∑
+j=1
+(
+− c j
+⏐⏐⏐˜yB
+j (t)
+⏐⏐⏐ +
+n∑
+i=1
+Gg
+i
+⏐⏐⏐bA. ¯B
+ji
+⏐⏐⏐
+⏐⏐⏐ ˜xB
+i (t− τ(t))
+⏐⏐⏐
+)
+≤ −
+∑
+B∈Ω
+n∑
+i=1
+di
+⏐⏐⏐ ˜xB
+i (t)
+⏐⏐⏐−
+∑
+B∈Ω
+m∑
+j=1
+c j
+⏐⏐⏐˜yB
+j (t)
+⏐⏐⏐
+AIMS Mathematics V olume x, Issue x, xxx–xxx

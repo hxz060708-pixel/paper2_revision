@@ -1,0 +1,219 @@
+8
+≤
+( n∑
+i=1
+1
+d2
+i
+∑
+B∈Ω
+m∑
+j=1
+(
+F f
+j
+⏐⏐⏐aA. ¯B
+i j
+⏐⏐⏐
+)2)∑
+B∈Ω
+m∑
+j=1
+⏐⏐⏐ˆyB
+j− ˇyB
+j
+⏐⏐⏐
+2
++
+( m∑
+j=1
+1
+c2
+j
+∑
+B∈Ω
+n∑
+i=1
+(
+Gg
+i
+⏐⏐⏐bA. ¯B
+ji
+⏐⏐⏐
+)2)∑
+B∈Ω
+n∑
+i=1
+⏐⏐⏐ ˆxB
+i − ˇxB
+i
+⏐⏐⏐
+2
+≤ α
+(∑
+B∈Ω
+n∑
+i=1
+⏐⏐⏐ ˆxB
+i − ˇxB
+i
+⏐⏐⏐
+2
++
+∑
+B∈Ω
+m∑
+j=1
+⏐⏐⏐ˆyB
+j− ˇyB
+j
+⏐⏐⏐
+2
+)
+≤ α
+ ˘xB
+i − ˘yB
+i
+
+2
+.
+where
+α = max
+{( n∑
+i=1
+1
+d2
+i
+∑
+B∈Ω
+m∑
+j=1
+(
+F f
+j
+⏐⏐⏐aA. ¯B
+i j
+⏐⏐⏐
+)2)
+,
+( m∑
+j=1
+1
+c2
+j
+∑
+B∈Ω
+n∑
+i=1
+(
+Gg
+i
+⏐⏐⏐bA. ¯B
+ji
+⏐⏐⏐
+)2)}
+.
+Thus, we have
+Ψ( ˘x)−Ψ(˘y)
+≤√α
+ ˘x− ˘y
+ which implies that the mappingΨ : R2m(n+m)→ R2m(n+m) is a
+contraction on R2m(n+m). Hence by the contraction mapping principle, there exists a unique ﬁxed point
+π∗ = (x∗, y∗)T = (x∗
+1, x∗
+2, ..., x∗
+n, y∗
+1, y∗
+2, ..., y∗
+m)T∈ R2m(n+m) such that Ψ(π∗) = π∗ which deﬁnes the unique
+solution of the NNs (2.3).
+Next, in order to translate the equilibrium point of (2.3) into origin, we denote the transformation
+by ˜xA
+i (t) = xA
+i (t)− x∗ and ˜yA
+j (t) = yA
+j (t)− y∗. Hence the transformation form of (2.3) can be indicated by
+
+˙˜xA
+i (t) = −di ˜xA
+i (t) +
+∑
+B∈Ω
+m∑
+j=1
+aA. ¯B
+i j ˜f B
+j (˜y j(t− τ(t))), t , tk,
+∆ ˜xA
+i (t) = uik ˜xA
+i (t−
+k ), t = tk,
+˜xA
+i (t) = ˜ϕA
+i (t), t0− τ∗≤ t≤ t0,
+˙˜yA
+j (t) = −c j˜yA
+j (t) +
+∑
+B∈Ω
+n∑
+i=1
+bA. ¯B
+ji ˜gB
+i ( ˜xi(t− τ(t))), t , tk,
+∆˜yA
+j (t) = v jk ˜yA
+j (t−
+k ), t = tk,
+˜yA
+j (t) = ˜ψA
+j (t), t0− τ∗≤ t≤ t0,
+(3.7)
+where ˜f B
+j (˜y j(t− τ(t))) = f B
+j (y j(t− τ(t)) + y∗)− f B
+j (y∗), ˜gB
+i ( ˜xi(t− τ(t))) = gB
+i (xi(t− τ(t)) + x∗)− gB
+i (x∗),
+˜ϕA
+i (t) = ϕA
+i (t)− x∗ and ˜ψA
+j (t) = ψA
+i (t)− y∗.
+Next, some lemmas and deﬁnitions are introduced to obtain the main results of this paper.
+Deﬁnition 3.2. [38] The equilibrium (x∗, y∗)T = (x∗
+1, x∗
+2, ..., x∗
+n, y∗
+1, y∗
+2, ..., y∗
+m)T of the NNs (2.2) or equiv-
+alent NNs (2.3) is said to be globally exponentially stable, if there exists constants γ > 0 and λ > 0
+such that
+n∑
+i=1
+⏐⏐⏐ ˜xi(t)− x∗⏐⏐⏐ +
+m∑
+j=1
+⏐⏐⏐˜y j(t)− y∗⏐⏐⏐ = γe−λt
+( n∑
+i=1
+sup
+s∈[t0−τ∗,t0]
+⏐⏐⏐ ˜xi(s)− x∗⏐⏐⏐ +
+m∑
+j=1
+sup
+s∈[t0−τ∗,t0]
+⏐⏐⏐˜y j(s)− y∗⏐⏐⏐
+)
+, t > t0.
+Deﬁnition 3.3. [39] For any ( t, ˜x, ˜y)∈ [tk−1, tk, )× R2m(m+n), k = 1, 2, ...; letV : R2m(m+n)→ R2m(m+n)
+be a continuous function, the upper right Dini derivative ofV(t, ˜x(t), ˜y(t)) with respect to NNs (3.7) is
+deﬁned by
+D+V(t, ˜x(t), ˜y(t)) = lim
+h→0+
+supV(t + h, ˜x(t + h), ˜y(t + h))−V (t, ˜x(t), ˜y(t))
+h .
+AIMS Mathematics V olume x, Issue x, xxx–xxx

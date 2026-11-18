@@ -1,0 +1,115 @@
+2.4. Controller Design with Actuator Failures
+In this section, an IT-2 fuzzy controller is synthesized. Based on the corrupted and triggered signalxc(tkh), then-th
+controller rule is formulated as:
+Controller Rulen: IFϕ 1(x(t))isJ n
+1 and. . .andϕ p(x(t))isJ n
+p,THEN
+u(t) =K nxc(tkh), n= 1,2, . . . , r (10)
+whereK n denote the controller gains to be designed. Through fuzzy blending, the resulting control law takes the form
+u(t) =
+rX
+n=1
+hn(x(t))Knxc(tkh). (11)
+To account for stochastic actuator failures, the actual control signal takes the form
+u(t) =
+rX
+n=1
+hn(x(t))Fr(t)Knxc(tkh), (12)
+For notational convenience, leti=r(t). ThenF i =F r(t) ∈R nu×nu is defined asF i = diag{f 1
+i , f2
+i , . . . , fnu
+i }, where
+0≤f k
+i− ≤f k
+i ≤f k
+i+ ≤1,(k= 1,2, . . . , n u).f k
+i− andf k
+i+ are known real constants. Defining¯f k
+i =
+f k
+i++f k
+i−
+2 andf k
+i =
+f k
+i+−f k
+i−
+2 ,
+one obtains
+Fi =F i0 +F i1Vi (13)
+whereF i0 = diag{ ¯f1
+i , ¯f2
+i , . . . , ¯f nu
+i },F i1 = diag{f 1
+i , f2
+i , . . . , fnu
+i },V i = diag{v1
+i , v2
+i , . . . , vnu
+i }forv k
+i ∈[−1,1]. Then,V T
+i Vi ≤I
+holds.
+The stochastic parameterr(t)evolves as a right-continuous Markov chain over the finite state setJ≜{1,2, . . . , J}. The
+corresponding transition-rate matrixΠ≜[λ ij]∈R J×J is characterized by
+Pr{r(t+ ∆t) =j|r(t) =i}=
+(
+λij∆t+o(∆t), i̸=j
+1 +λ ii∆t+o(∆t), i=j
+(14)
+where∆t >0andlim ∆t→0(o(∆t)/∆t) = 0. For anyi, j∈J, the transition ratesλ ij satisfyλ ij ≥0fori̸=j, and
+λii =− P
+j∈J,j̸=i λij.
+By substituting the controller (12) into the system (4), and considering the stochastic deception attack model (8), the
+closed-loop system fort∈[t kh+jh, t kh+ (j+ 1)h)is formulated as:
+
+
+
+˙x(t) =
+rX
+m=1
+rX
+n=1
+hmhn
+n
+Amx(t) +B mFiKn
+
+(1−θ(t kh))x(tkh) +θ(t kh)f(x(t kh))
+
++E mw(t)
+o
+z(t) =
+rX
+m=1
+rX
+n=1
+hmhnCx(t)
+(15)
+whereh m andh n denoteh m(x(t))andh n(x(t)), respectively.
+Lemma 2.1.([34]) ForG h =Pr
+m=1 hmGm, the inequality ˙Gh ≤0is guaranteed whenever the following conditions hold:
+(
+if ˙hv ≤0,thenG v −G r ≥0,
+if ˙hv >0,thenG v −G r ≤0,
+(16)
+wherev= 1, . . . , r−1.
+Remark 2.4.Lemma 2.1 indicates that the state space can be partitioned into2r−1 operational regions, denoted byV l
+(l= 1,2, . . . ,2 r−1), according to the sign combinations of˙hv. Correspondingly, each regionV l is associated with a set of
+matrix inequalities, denoted byCl, which are derived from the switching conditions in (16). Here, ther-th rule is selected as
+the reference rule for constructing the matrix conditions.
+Motivated by Lemma 2.1, a corresponding piecewise control strategy is designed. Based on the switching information
+characterized by the sign of˙hv, the controller gains are designed to be region-dependent. Consequently, the piecewise fuzzy
+controller (12) is reformulated as follows:
+u(t) =
+
+
+
+Pr
+n=1 hnFiK1
+nxc(tkh), x(t)∈ V 1,
+... ...
+Pr
+n=1 hnFiK l
+nxc(tkh), x(t)∈ V l.
+(17)
+5

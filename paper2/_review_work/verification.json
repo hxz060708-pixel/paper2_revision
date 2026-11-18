@@ -1,0 +1,24 @@
+{
+  "comment_count": 6,
+  "review_response_comment_identity": true,
+  "numbered_items": 6,
+  "manuscript_pages": 19,
+  "source_location_checks": true,
+  "original_files_unchanged": true,
+  "compile_success": true,
+  "unresolved_citations": false,
+  "word_visual_qa": "NOT COMPLETED: no LibreOffice executable; Word COM access denied",
+  "existing_bibliography_warnings": "29 original bibliography entries have issue numbers but no volume. New entries are complete; original entries were not changed.",
+  "new_references": [
+    {
+      "key": "liuTorusEventBased2025",
+      "url": "https://www.sciltp.com/journals/ijndi/articles/2504000064",
+      "doi": "10.53941/ijndi.2025.100003"
+    },
+    {
+      "key": "chandrasekarAdaptiveEvent2026",
+      "url": "https://link.springer.com/article/10.1007/s40747-025-02172-5",
+      "doi": "10.1007/s40747-025-02172-5"
+    }
+  ]
+}

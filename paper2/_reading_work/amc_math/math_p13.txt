@@ -1,0 +1,310 @@
+13
+≤ max
+{
+max
+1≤i≤n
+(1 + σik)2, max
+1≤ j≤m
+(1 + µ jk)2
+}
+V(t−
+k , ˜x(t−
+k ), ˜y(t−
+k ))
+≤V (t−
+k , ˜x(t−
+k ), ˜y(t−
+k )). (3.19)
+Secondly, we consider the case of t , tk. Calculate the upper right Dini derivative of V(t, ˜x(t), ˜y(t))
+along the solutions of (3.7), we obtain
+D+V(t, ˜x(t), ˜y(t)) =
+∑
+B∈Ω
+n∑
+i=1
+( ˜xB
+i (t)) ˙˜xB
+i (t) +
+∑
+B∈Ω
+n∑
+i=1
+(˜yB
+j (t))˙˜yB
+j (t)
+=
+∑
+B∈Ω
+n∑
+i=1
+( ˜xB
+i (t))
+(
+− di ˜xB
+i (t) +
+m∑
+j=1
+aA. ¯B
+i j ˜f B
+j (˜y j(t− τ(t)))
+)
++
+m∑
+j=1
+(˜yB
+j (t))
+(
+− c j˜yB
+j (t) +
+n∑
+i=1
+bA. ¯B
+ji ˜gB
+i ( ˜xi(t− τ(t)))
+)
+=−
+∑
+B∈Ω
+n∑
+i=1
+di( ˜xB
+i (t))2 +
+∑
+B∈Ω
+n∑
+i=1
+m∑
+j=1
+aA. ¯B
+i j ( ˜xB
+i (t)) ˜f B
+j (˜y j(t− τ(t)))
+−
+∑
+B∈Ω
+m∑
+j=1
+c j(˜yB
+j (t))2 +
+∑
+B∈Ω
+m∑
+j=1
+n∑
+i=1
+bA. ¯B
+ji (˜yB
+j (t))˜gB
+i ( ˜xi(t− τ(t)))
+=−
+∑
+B∈Ω
+n∑
+i=1
+di( ˜xB
+i (t))2 +
+∑
+B∈Ω
+n∑
+i=1
+m∑
+j=1
+F f
+j
+⏐⏐⏐aA. ¯B
+i j
+⏐⏐⏐
+⏐⏐⏐ ˜xB
+i (t)
+⏐⏐⏐
+⏐⏐⏐˜yB
+j (t− τ(t))
+⏐⏐⏐
+−
+∑
+B∈Ω
+m∑
+j=1
+c j(˜yB
+j (t))2 +
+∑
+B∈Ω
+m∑
+j=1
+n∑
+i=1
+Gg
+i
+⏐⏐⏐bA. ¯B
+ji
+⏐⏐⏐
+⏐⏐⏐˜yB
+j (t)
+⏐⏐⏐
+⏐⏐⏐ ˜xB
+i (t− τ(t))
+⏐⏐⏐
+=−
+∑
+B∈Ω
+n∑
+i=1
+di( ˜xB
+i (t))2 +
+∑
+B∈Ω
+n∑
+i=1
+m∑
+j=1
+F f
+j
+⏐⏐⏐aA. ¯B
+i j
+⏐⏐⏐1
+2
+(( ˜xB
+i (t))2 + (˜yB
+j (t− τ(t)))2)
+−
+∑
+B∈Ω
+m∑
+j=1
+c j(˜yB
+j (t))2 +
+∑
+B∈Ω
+m∑
+j=1
+n∑
+i=1
+Gg
+i
+⏐⏐⏐bA. ¯B
+ji
+⏐⏐⏐1
+2
+((˜yB
+j (t))2 + ( ˜xB
+i (t− τ(t)))2)
+=− 1
+2
+∑
+B∈Ω
+n∑
+i=1
+(
+2di−
+m∑
+j=1
+F f
+j
+⏐⏐⏐aA. ¯B
+i j
+⏐⏐⏐
+)
+( ˜xB
+i (t))2 + 1
+2
+∑
+B∈Ω
+n∑
+i=1
+m∑
+j=1
+(
+F f
+j
+⏐⏐⏐aA. ¯B
+i j
+⏐⏐⏐
+)
+(˜yB
+j (t− τ(t)))2
+− 1
+2
+∑
+B∈Ω
+m∑
+j=1
+(
+2c j−
+n∑
+i=1
+Gg
+i
+⏐⏐⏐bA. ¯B
+ji
+⏐⏐⏐
+)
+(˜yB
+j (t))2 + 1
+2
+∑
+B∈Ω
+m∑
+j=1
+n∑
+i=1
+(
+Gg
+i
+⏐⏐⏐bA. ¯B
+ji
+⏐⏐⏐
+)
+( ˜xB
+i (t− τ(t)))2
+=−
+( n∑
+i=1
+2di−
+∑
+B∈Ω
+n∑
+i=1
+m∑
+j=1
+F f
+j
+⏐⏐⏐aA. ¯B
+i j
+⏐⏐⏐
+)1
+2( ˜xB
+i (t))2
++
+(∑
+B∈Ω
+n∑
+i=1
+m∑
+j=1
+F f
+j
+⏐⏐⏐aA. ¯B
+i j
+⏐⏐⏐
+)1
+2(˜yB
+j (t− τ(t)))2
+−
+( m∑
+j=1
+2c j−
+∑
+B∈Ω
+n∑
+i=1
+m∑
+j=1
+Gg
+i
+⏐⏐⏐bA. ¯B
+ji
+⏐⏐⏐
+)1
+2(˜yB
+j (t))2
+AIMS Mathematics V olume x, Issue x, xxx–xxx

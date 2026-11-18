@@ -1,0 +1,69 @@
+3
+order to illustrate how e ﬀective the main ﬁndings are, we have provided a numerical example with
+simulation results.
+The paper is structured as follows: Section 2 provides the basic concepts of Cli ﬀord algebra, the
+problem model and assumptions about activation functions. The main results of this study are stated in
+Section 3; Theorem (3.1) presents suﬃcient criteria for the existence of the equilibrium point; Theorem
+(3.5) and (3.6) provides su ﬃcient conditions for the global exponential stability of the considered
+NNs. In Corollary (3.8), (3.9), the results of stability criteria are discussed in a special case. Section 4
+discusses numerical case studies that demonstrate the feasibility of the derived results. Section 5 shows
+the conclusion of this paper.
+2. Mathematical Formulation and Problem Deﬁnition
+2.1. Notations
+Let us consider the n-dimensional real vector space, the n-dimensional real Cliﬀord vector space,
+the set of all n× m real matrices, and the set of all n× m real Cliﬀord matrices are denoted by Rn,
+An, Rn×m, andAn×m, respectively. The superscripts T and∗, respectively indicate the transposition and
+involution transposition of matrices. The norm of Rn is deﬁned as∥z∥ =
+n∑
+p=1
+|zp|. For z = ∑
+A∈Ξ
+zAeA∈A
+denote∥z∥A = ∑
+A∈Ξ
+|zA|.
+2.2. Cli ﬀord Algebra
+The Cliﬀord real algebra over Rm is given by
+A =
+{ ∑
+A⊆{1,2,...,m}
+aAeA, aA∈ R
+}
+,
+where eA = ew1ew2...ewη with A = w1, w2, ..., wη, 1 ≤ w1 < w2 < ... < wη ≤ m. Furthermore,
+e∅ = e0 = 1 and e{w} = ew, w = 1, 2, ..., m denotes the Cli ﬀord generators that fulﬁll the following
+conditions (i) epeq + eqep = 0, p , q, p, q = 1, 2, ..., m, ( ii) e2
+p =−1, p = 1, 2, ..., m. For con-
+venience, we write one element as the product of many Cli ﬀord generators e1e2e3e4 = e1234. Deﬁne
+Ω ={∅, 1, 2, . . . ,A, . . . ,12 . . .m}, we get
+A =
+{ ∑
+A
+aAeA, aA∈ R
+}
+,
+where ∑
+A
+is the short form of ∑
+A∈Ω
+andA is isomorphic to R2m
+.
+For any Cliﬀord number x = ∑
+A∈Ω
+xAeA∈A , the involution of x is denoted by ¯x = ∑
+A∈Ω
+xA¯eA, where
+¯eA = (−1)
+ϱ[A](ϱ[A]+1)
+2 eA, and ϱ[A] = 0 if A =∅ and ϱ[A] = η if A = w1w2...wη∈ Ω. From the deﬁnition,
+we get eA¯eA = ¯eAeA = 1. For x = ∑
+A∈Ω
+xAeA : R→A , where xA : R→ R, A∈ Ω, and ˙x(t) = ∑
+A∈Ω
+˙xA(t)eA.
+Since eB¯eA = (−1)
+ϱ[A](ϱ[A]+1)
+2 eBeA, then eB¯eA = eC or eB¯eA =−eC, eC is a basis for Cli ﬀord algebraA.
+For instance, ew1w2 ¯ew2w3 =−ew1w2ew2w3 =−ew1ew2ew2ew3 =−ew1(−1)ew3 = ew1ew3 = ew1w3. Thus, one can
+identify the unique corresponding basis eC with regard to a given eB¯eA. Deﬁneϱ[B. ¯A] = 0 if eB¯eA = eC
+AIMS Mathematics V olume x, Issue x, xxx–xxx

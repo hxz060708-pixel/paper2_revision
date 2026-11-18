@@ -1,0 +1,158 @@
+For Peer Review
+[tk,
+tk+1) along with [t k − ϱ, tk+1 − ϱ) are aperiodically and substantially captured. In this regard, a progressive
+looped functional alleged dual-sided sampled-interval-dependent looped semi-Markovian Lyapunov functional
+is innovatively reconstructed, which can further reduce the conservatism. For enhancing the robustness and
+practical feasibility of the controller, the subsistent phenomenon of ROCGFs is also contemplated.
+(4) In contrast to some previous achievements in the literature, in order to overcome the drawback of parallel
+distributed compensation (PDC) and attain some less conservative conditions, the imperfect premise matching
+concept is considered herein, which is depicted by the lower and upper of the MFs. Simulated by the Ref. [58],
+some symmetric and auxiliary matrices
+[
+¥(J )
+ij,m(Tk)
+]
+(J = 1, 2) are artfully and feasibly imported, which can
+heighten the ﬂexibility of the controller design but also pose a challenge to the computational complexity.
+(5) By resorting to the stochastic analytical framework and matrix inequality decoupling method, suﬃcient
+conditions for implementing the faulty mode-dependent fuzzy resilient controller are developed by virtue of a
+linearization procedure. The developed constraints reexpressed in the shape of multiple PLMIs, which can be
+checked by standard software. Additionally, in the light of Remark 4 that the TRs can converted to polytopic-
+type uncertainties, another available method is oﬀered to develop the ﬁnite-dimensional LMIs, which can veriﬁed
+readily by software package too. Eventually, simulation results by three practical applications are carried out to
+expound the availability and eﬃcacy of the proposed control synthesis technique. In brief, the current research
+could be identiﬁed as our systematic attempt to study the IT-2FSs with ROCGFs and SMJAFs simultaneously.
+The remaining parts of this article are articulated as follows. The system description and some preliminaries
+including lemmas and deﬁnition are illustrated in Section 2. Stable analysis and resilient controller synthesis are
+discussed in Section 3. Several practical applications are conducted to conﬁrm the practicability and feasibility
+in Section 4. Concluding remarks and promising research directions are ulteriorly elaborated in Section 5.
+Nomenclature: Throughout this work, Rn and Rm×n separately denote the n-dimensional Euclidean space
+and m × n real matrix space. Sn and S+
+n respectively represent the set of symmetric matrices and the set of
+positive deﬁnite matrices of Rn×n. Π > 0(Π ≥ 0) means that the matrix Π is a real symmetric positive deﬁnite
+(or semi-deﬁnite). Prob {Φ} mean the occurrence probability of the event Φ and E{℧} is the mathematical
+expectation of ℧. An elliptical term produced by symmetry is represented by an asterisk ( ⋆). X ⊕ Y means(
+X 0
+0 Y
+)
+. I and 0 respectively represent the identify and zero matrices of compatible dimensions. The part
+H + H T is simpliﬁed as He{H }. Matrices are supposed to have suitable dimensions for operation except for
+concretely declared.
+2. Problem formulation and preliminaries
+Consider a class of IT−2FSs, which described by the following IF-THEN rules:
+Plant rule i: IF ζ1(x(t)) is Mi1 and ζ2(x(t)) is Mi2, . . ., and ζg(x(t)) is Mig, THEN
+{
+˙x(t) = Aix(t) + Biuf(t) + Diω(t),
+z(t) = Cix(t) + Eiω(t),
+(1)
+where Miℓ denotes the fuzzy set of i-th rule ( i = 1, . . . , r, ℓ = 1, . . . , g) and the scalar r is the number of IF-
+THEN rules; x(t) ∈ Rn is the state vector; ζℓ(x(t)) are the measurable premise variables; uf(t) ∈ Rm represents
+controlled input; z(t) ∈ Rl is the output; ω(t) ∈ Rν is the external disturbance which belongs toL2[0, ∞); Ai, Bi,
+Ci, Di, Ei and Fi are system matrices. The ﬁring strength of the i-th rule is the interval set [U
+i(x(t)), ¯Ui(x(t))]
+with U i(x(t)) = ∏g
+ℓ ΦMiℓ(ζℓ(x(t))) ≥ 0 and ¯Ui(x(t)) = ∏g
+ℓ=1 ¯ΦMiℓ(ζℓ(x(t))) ≥ 0. The lower and upper MFs∏g
+ℓ=1 Φ
+Miℓ(ζℓ(x(t))) and ∏g
+ℓ=1 ¯ΦMiℓ(ζℓ(x(t))) have the property 0 ≤ ∏g
+ℓ=1 Φ
+Miℓ(ζℓ(x(t))) ≤ ∏g
+ℓ=1 ¯ΦMiℓ(ζℓ(x(t))),
+which leads to 0 ≤ U
+i(x(t)) ≤ ¯Ui(x(t)).
+By incorporating fuzzy blending, the weighted IT−2FSs (1) can be expressed by
+
+
+
+
+
+
+
+
+˙x(t) =
+r∑
+i=1
+Ui(ζ(t))
+[
+Aix(t) + Biuf(t) + Diω(t)
+]
+,
+z(t) =
+r∑
+i=1
+Ui(ζ(t))
+[
+Cix(t) + Eiω(t)
+]
+,
+(2)
+where Ui(x(t)) = χ
+i(x(t))U i(x(t)) + ¯χi(x(t)) ¯Ui(x(t)) and ∑r
+i=1 Ui(x(t)) = 1. 0 ≤ χi(x(t)) ≤ ¯χi(x(t)) ≤ 1 with
+the behavior χi(x(t)) + ¯χi(x(t)) = 1, here χi(x(t)) and ¯χi(x(t)) are the weight functions and Ui(x(t)) denotes
+the grades of membership. The update instant time of the sampler is expressed by tk, and supposed to meet
+4
+Page 5 of 29
+http://mc.manuscriptcentral.com/rnc-wiley
+International Journal of Robust and Nonlinear Control
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60

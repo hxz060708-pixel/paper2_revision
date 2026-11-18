@@ -1,0 +1,777 @@
+=== PDF PAGE 1 ===
+ISA Transactions  
+A Novel Optimized Fuzzy Adaptive Proportional-Integral-Derivative Control Theory for
+Anti-Lock Application
+--Manuscript Draft--
+ 
+Manuscript Number: ISATRANS-D-22-00600
+Article Type: Research article
+Section/Category: Analysis
+Keywords: Antilock-Braking-system;  Wavelet Fuzzy;  Hybrid optimization;  Slip and friction;
+Stability of stopping distance
+Abstract: Antilock-Braking-system (ABS) has attracted in all fields of automobile applications.
+Hence, to offer appropriate braking capacity, different controller types have been
+implemented with the required braking parameters. However, in some cases, the
+tuning of error percentage became significantly less, resulting in maximum slip rate
+and minimum friction. Hence, the present research work has focused on designing a
+novel Wavelet Fuzzy adaptive-hybrid Lion-strawberry Proportional-Integral-Derivative
+(WFA-HLSPID) for the ABS to maximize the control performance while it applied in the
+vehicle. Initially, the signal errors were filtered by the wavelet filter and fuzzy logic then
+the controller's gains were tuned by the hybrid Lion-strawberry fitness model. Then the
+optimized controller is applied in the ABS application. Furthermore, the performance of
+the ABS has been checked with the different road conditions that are snow, icy, wet,
+and dry. In all cases, the stopping distance, slip rate, and friction have been validated
+using MATLAB/Simulink. Finally, the proposed ABS has gained the minimum gain and
+error rate of the previous models.
+Powered by Editorial Manager® and ProduXion Manager® from Aries Systems Corporation
+
+=== PDF PAGE 2 ===
+ 
+ 
+Highlight 
+1. A novel Wavelet Fuzzy adaptive-hybrid Lion-strawberry Proportional-Integral-Derivative 
+(WFA-HLSPID) has been designed 
+2. Moreover, the designed controller mechanism is checked with Anti-Lock Braking System 
+3. Then the performance are validated in dual phases, before and after applying the Hybrid 
+optimization 
+ 
+ 
+ 
+ 
+Highlights (for review)
+
+=== PDF PAGE 3 ===
+1  
+A Novel Optimized Fuzzy Adaptive Proportional-Integral-Derivative 
+Control Theory for Anti-Lock Application  
+Abstract 
+Antilock-Braking-system (ABS) has attracted in all field s of automobile applications. Hence, to 
+offer appropriate braking capacity, different controller types have  been implemented with the 
+required braking parameters. However, in some cases , the tuning of error percentage became 
+significantly less , resulting  in maximum slip rate and minimum friction. Hence, the present 
+research work has focused on designing a novel Wavelet Fuzzy adaptive -hybrid Lion-strawberry 
+Proportional-Integral-Derivative (WFA -HLSPID) for the ABS to maximize the control 
+performance while it applied in the vehicle. Initially, the signal errors were filtered by the wavelet 
+filter and fuzzy logic then the controller 's gains were tuned by the hybrid Lion -strawberry fitness 
+model. Then the optimized controller is applied in the ABS application. Fu rthermore, the 
+performance of the ABS has been checked with the different road conditions that are snow, icy, 
+wet, and dry. In all cases, the stopping distance, slip rate , and friction ha ve been validated using 
+MATLAB/Simulink. Finally, the proposed ABS has gained the minimum gain and error rate of the 
+previous models.  
+Keywords: Antilock-Braking-system, Wavelet Fuzzy, H ybrid optimizat ion, Slip and friction, 
+Stability of stopping distance. 
+Blinded Manuscript  - without Author Details
+
+=== PDF PAGE 4 ===
+2  
+1. Introduction 
+Proportional-Integral-Derivative (PID) plays a vital part in industrial applications due to its 
+good robustness, high reliability, and simple structure; it is the easiest control method [1]. Based 
+on the system error, the PID controller is modeled, which u tilizes integral, differential, and 
+proportional to compute the control quantity for excellent performance [2]. Several tuning methods 
+include neural networks, fuzzy reasoning, and genetic algorithms [3]. However, the conventional 
+PID algorithms have no noticeable impact and less efficiency, while the techniques with intelligent 
+algorithms can attain good effect and high efficiency [4]. In addition, to tune the PID controller 
+parameters, soft computing was an efficient, intelligent algorithm [5]. Standard soft computing 
+methods include neural networks, meta -heuristic algorithms, fuzzy logic, probability reasoning, 
+etc. [6]. Fuzzy logic utilizes fuzzy sets for studying language forms, laws, and fuzzy thinking [7]. 
+Neural networks process the data by adjusting  the incorporation among higher internal nodes, and 
+probabilistic reasoning makes decisions based on uncertain information [8]. Moreover, the meta -
+heuristic algorithm combines local search and random algorithms. The PID controller architecture 
+is shown in figure 1. 
+ 
+Figure 1: PID controller 
+In nonlinear -based control designing, gain scheduling is commonly used [9]. Generally, 
+gain scheduling-based controllers have regulated the dynamic system of liberalized models under 
+various operating conditions [10]. M oreover, in-between states, the parameters of controllers are 
+scheduled. In addition, the feedback controllers are multivariable [11]. The nonlinear controller 
+controls the nonlinear plant connected with linear controllers by switching or interpolation 
+
+
+=== PDF PAGE 5 ===
+3  
+methods. Subsequently, the linear parameter varying (LPV) technique is used for plants with time -
+varying, changing some vector  parameters [12]. In the research based on control engineering, 
+optimization techniques have recently attained a dynamic area in this  field [13]. Nevertheless, 
+precise optimization methods are needed to resolve the optimization -based issues in the process of 
+control [14].  
+The optimization techniques like Brain Storm algorithm [15], Fruit -Fly algorithm [16], 
+Differential Evolution algorithm [17], Particle Swarm algorithm [18], Ant Colony algorithm [19], 
+Gravitational Search algorithm [20], etc., have been used for controllin g the dynamic -based 
+nonlinear systems. However, maintain the dynamic system's nonlinear behavior by linear 
+approaches. Moreover, several techniques developed recently are radial basis -PID [21], wavelet -
+based neural training PID controller [22], hybrid optimized controller  [23], etc., to improve the 
+speed control, dynamic performance, and controller's robustness. But still, these problems are not 
+resolved yet. Hence , these issues motivated this research to implement the hybrid optimization 
+with wavelet f ilter strategy to improv e controller performance. In addition, the function of the 
+controller is checked with the ABS.  
+The presented article is sketched in the way of the second section has de scribed recent 
+associated work of wavelet fuzzy PID system, 3 rd section has detailed the ABS and problem 
+formulation, 4 th section has discussed the proposed strategy for the defined problem. Then, the 
+outcome of the presented model is explained in section.5 , and the research arguments are 
+concluded in 6th section.  
+2. Related Work 
+Some recent literatures related to the adaptive Proportional -Integral-Derivative (PID) 
+controller are described as follows: 
+In aquaculture, the water body's dissolved oxygen -based content is essential for aquatic 
+product's growth and requires co ntrol. Zhou et al.  [21] have presented a differential evolution 
+algorithm with optimized radial -basis-function with neural network PID controller. The DE 
+algorithm improves the PID's initial parameters, and the RBF -based neural network's learning 
+ability adjusts the parameters of PID. The results demonstrated that DE -RBF-PID improved the 
+response speed, tracking performance, and accuracy. However, the error rate and running time are 
+high. 
+
+=== PDF PAGE 6 ===
+4  
+Due to its speed control, the brushless -direct current (BLDC) motors are widely utilized in 
+larger applications like aeronautics, consumer electronics, military, and transport applications. 
+Karuppannan and Muthusamy [22] have presented a wavelet -based neural training PID controller 
+to accomplish the BLDC motor's effective s peed control with specifications. The result indicated 
+that the proposed method has the finest speed control under varying load conditions. Moreover, the 
+gain was improved ata medium level. 
+Yang et al.  [23] have presented a hybrid Particle Swarm  Algorithm and Cuckoo Search 
+algorithm to tune the parameters of fuzzy -based PID controller. Moreover, t he controllers are 
+designed to enhance the micro gas turbine's performance with varied structures . The outcomes 
+indicated that the proposed strategy ha d improved t he dynamic performance and controller's 
+robustness. Meanwhile, it increases the computation time, and the experimental analysis is 
+difficult. 
+In industrial-based applications, PID controller has good performance, but optimizing the 
+intelligent controller a lgorithm is required. For that, Guo  et al. [24] have proposed a Fractional -
+Order-based Fish Migration algorithm based on Fractional Calculus's theory . The results 
+demonstrated that the presented model had obtained better performance. However, the running 
+time is high, and particle numbers affect the performance. 
+Mohanty and Panda [25] have presented a FO adaptive fuzzy -based PID controller  with 
+filter for a novel load frequency -based controller. Moreover, the pr oposed model is a hybrid 
+power-based system with electric vehicles depending on the modified slap-based swarm algorithm. 
+The result indicated that the presented controller has better control to reduce the frequency -based 
+fluctuations. However, electric vehicle gain affects the controller-based actions. 
+The key process of this work is described as follows 
+ Initially, the Anti-lock system is designed in the MATLAB environment with the 
+required parameters 
+ Consequently, the novel WFA-HLSPID controller has been designed with enough 
+friction force function 
+ Moreover, the designed hybrid controller is validated with an Anti-lock 
+application by estimating their braking capacity.  
+
+=== PDF PAGE 7 ===
+5  
+ Here, the braking capacity has been verified in two modes : before  and after 
+optimization.  
+ Finally, the successive score of the proposed controller is measured by some key 
+metrics like stability, friction coefficient, slip rate, execution time, gain. 
+3. System Model with Problem 
+An ABS has been employed  to prevent the locking and  wheel slide in sophisticated 
+automobiles after the brakes are applied. Moreover,  it is a vehicle safety system ; the 
+specific controller is used to regulate the required torque to maintain an optimal slip ratio. In 
+addition, the slip ratio expresses the relationship between the wheel's rotation and speed. It is an 
+automated technology that operates on the same principles as cadence  and threshold breaking that 
+was skilled drivers used with prior generation braking systems. Its response time was  lightning 
+fast, making steering effortless for the dri ver. Also, the ABS provides increased vehicle stability 
+and reduces stopping length on dry and slippery surfaces. The ABS model is illustrated in figure 2. 
+ 
+Figure 2: ABS Model 
+However, ABS dramatically increases braking distance while maintaining vehicle  control 
+on loose surfaces such as snow-covered or gravel pavement. 
+Nrv Fma 
+                                                  (1) 
+The force balance between the vehicle speeds is described in Eqn. (1). Here
+r is the 
+friction of the wheel's rotation.  
+
+
+=== PDF PAGE 8 ===
+6  
+v
+wtv
+t
+l
+Rl  
+                                                        (2) 
+Here, the vehicle 's linear velocity is denoted as
+vl . Moreover, the torque that has been 
+generated in the wheel center, while the vehicle in the moving condition is detailed in Eqn. (2). 
+Nwrbww FRuj  
+                                                      (3) 
+The wheel center is determined as
+w , and the inertia moment is denoted as
+wj , which is 
+calculated in Eqn. (3). ABS parameters have functioned on the basis of Eqn. (4). 
+ 
+
+vw
+w
+w
+2
+w
+a
+t
+v
+Nrt*
+lj
+R
+j
+R
+m
+1
+l
+F 
+
+
+
+
+ 
+                                             (4) 
+The PID controller became utilized worldwide for many application s. But the only issue in 
+this PID controller is handling the disturbance. If the external disturbance of the controller is not 
+tuned perfectly, it has resulted in a high error. It might reduce the controller stability, so different 
+optimization and linear equations have been implemented along with the PID controller to tune the 
+controller functions. However, the error tuning mechanism was not perfect because the occurrence 
+of error is unique based on each application. These issues have motivated this research to 
+implement a novel hyb rid optimization strategy to tune the PID controller for different 
+applications.  
+4. Proposed WFA-HLSPID for ABS 
+The present article has aimed to design a novel Wavelet Fuzzy adaptive -hybrid Lion -
+strawberry Proportional-Integral-Derivative (WFA -HLSPID) controller for the anti -lock braking 
+systems. Initially, the planned model is developed in the MATLAB environment with sufficient 
+tuning parameters. Consequently, the designed hybrid controller algorithm is test ed against with 
+anti-lock braking system in dual phases with and without optimization.  
+Initially, the torque and brake signal error is optimized by the wavelet filter condition. Then 
+based on the ABS requirement against different road conditions, the controller parameters were 
+tuned. The proposed architecture is detailed in figure 3. Finally, the performance of the proposed 
+
+=== PDF PAGE 9 ===
+7  
+controller has been measured and compared with other models.  
+ 
+ 
+Figure 3 proposed WFA-HLSPID architecture 
+4.1 Design of WFA-HLSPID 
+  
+The controller adopted in the present research work is the wavelet fuzzy PID controller 
+[26]; for the error filtering function, the wavelet filter function is used. Also, the PID parameters 
+were tuned by the strawberry optimization [28] and lion algorithm [27] fitness. Initially, the PID 
+system was designed with the linear time -variant function. Consequently, the fuzzy rules were 
+incorporated in the PID system in the regulatory procedures.  
+The function of the wavelet filter is described in Eqn. (5) here, 
+  is the function variable 
+and 
+x is the input of the function parameter 
+  
+2
+2x
+2 e)x1()x(
+
+
+                                         (5) 
+Here 
+x is the data of the ABS, and then the outcome of the fuzzy wavelet model is 
+measured using eqn. (5) and (6) 
+
+
+=== PDF PAGE 10 ===
+8  
+)x(R)x(f t
+n
+1k
+tw   
+
+                                                           (6) 
+The ABS parameters are
+ttw ,R  , here, the slip rate of the antilock system is  denoted as 
+t
+rotational rapidity (speed) is determined as
+t , and the wheel radius is denoted as
+wR . 
+Moreover, the PID constraints are
+idp k,k,k , and the 
+z  is the predicted noise from the imported 
+database.  
+dt
+dzkdt)z(k)z(k)t(f
+*
+dt*it*p  
+                                            (7) 
+Then the utilized fuzzy rule to control the ABS is explained in eqn.  (7); here, the error 
+function is denoted as 
+*z  
+)s(1rule f
+ IF 
+c is 
+Ω  THEN
+d  is 
+cp
+                                                 (8) 
+Here, 
+c is the fuzzy system, Gaussian function is represented as
+Ω , 
+d determines output 
+constraints and 
+cp described the control parameters. The fuzzy rule is described in Eqn. (8), and 
+the Gaussian function is described in Eqn. (9). 
+
+
+
+
+
+ 
+ 
+i
+j
+2i
+j
+i
+j2/1 )ec(
+expΩ
+
+                                                    (9) 
+Here, 
+i
+je is the center Gaussian antecedent and 
+i
+j represents the spread Gaussian 
+antecedent, which is detailed in eqn. (10).
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+kn0
+nzm,mn
+kn
+mzl,lm
+lk
+0z,0
+)n,m,l,k(u
+i
+ii
+ii
+i
+ii
+ii
+i
+                               (10) 
+Here, 
+l is the response variable and 
+n represents the polynomial coefficient function. These 
+dual variables have denoted the design parameters. In addition, 
+k it represents the respond vector 
+of the function process and 
+m denotes the polynomial coefficients in the function module. The 
+
+=== PDF PAGE 11 ===
+9  
+controller's transfer function is des cribed in Eqn. (11), and the gain parameters were measured 
+using Eqn. (12), Eqn. (13), and Eqn. (14).  
+ 
+tjd
+t
+ji
+jpt
+* )o(k)o(k)o(k)(G  
+                    (11) 
+The ABS speed transfer function is determined as 
+)(G t
+*  and 
+jo is the operation condition  
+)t(kk)t|o(k
+n
+1j
+op)0(pjp jj
+
+
+                                                    
+(12) 
+)t(kk)t|o(k
+n
+1j
+oi)0(iji jj
+
+
+                                                       (13) 
+)t(kk)t|o(k
+n
+1j
+od)0(djd jj
+
+
+                                                     (14) 
+Moreover, the vehicle speed rate based on moving and stopping distance has been 
+measured by Eqn. (15) 
+ speed_rundist_stop V.V)slip(v 
+                                            (15) 
+To tune the slip rate of the vehicle, initially, the slip rate of the vehicle is calculated 
+concerning vehicle running speed and stop rate. Hence, this process is performed by the strawberry 
+fitness in Eqn. (16).  
+slip_imummin
+slip_imummaxslip_optimum 
+                                          (16) 
+The results of the optimal slip validation are stored
+t while applying the brake; this optimal 
+slip rate has been functioned to stop the vehicle. Moreover, the desired slip rate has been found for 
+each vehicle run by updating the best selection formulation from the lion fitness. The maximum 
+braking efficiency with the optimal slip rate has been functioned using Eqn. (17) 
+
+
+
+
+
+
+slipslip
+sllpslip
+brake BestV0
+VBest1
+V
+                                             (17) 
+Moreover, the optimal slip rate has been chosen with the help of lion fitness. 
+
+=== PDF PAGE 12 ===
+10  
+Algorithm: 1 WFA-HLSPID 
+ 
+Start 
+{ 
+ 
+;,,R,int ttw   
+ // initializing wavelet and ABS parameters 
+ ABS slip rate validation() 
+ { 
+ 
+ttw ,,Rrate_slip   
+ // by estimating the ABS parameters in the particular vehicle the slip rate of the 
+ABS has been validated.  
+ } 
+ Fixing Control setting () 
+ { 
+ 
+;k,kk di,p  
+ //initializing the controller parameters 
+ 
+dipABS k,k,kV   
+ // applying the control parameters in the ABS 
+ } 
+ Fixing optimal slip rate() 
+ { 
+ 
+slipVcalculate  
+ // calculating the vehicle slip rate 
+ 
+slip_OptimumVbrake   
+ // fixing the optimum slip rate in vehicle braking system   
+ } 
+}  
+stop 
+Hence, the design and the tuning function have been explained in pseudo-code in algorithm 
+1 and flowchart figure 4. In addition, the speed rate of the vehicle is calculated by the strawberry 
+
+=== PDF PAGE 13 ===
+11  
+equations. Finally, the strawberry function is given to the lion optimization fitness function. Hence, 
+dual fitness has been obtained, which is helped to all ABS parameters regularly without changing 
+the functional constraints. Thus, the usage of resource and computation costs has been reduced.  
+ 
+Figure 4: Flow of WFA-HLSPID 
+5. Results And Discussion 
+The planned research work is executed and simulated in the MATLAB environment and 
+running in the windows 10 plat  forms. Initially, the ABS braking system was designed with the 
+required parameters, then a novel WFA -HLSPID was designed to regulate  the control function of 
+the ABS. The simulation parameters are given in table1. 
+
+
+=== PDF PAGE 14 ===
+12  
+Table 1: Simulation parameters 
+Simulation parameters Specification 
+Velocity 88 
+Wheel radius 15/12 
+Brake Torque 1 
+Vehicle mass 50 
+Brake pressure 1500 
+Inertia 0.01 
+ 
+To evaluate the braking condition with the proposed control system, the road benchmark 
+data has been taken, which includes a few road conditions that are dry, icy, and wet.  
+5.1 Case study 
+The efficiency of the ABS is validated with differe nt road conditions that are wet, dry, and 
+icy land. Considering these three road condition s, maintaining the friction in the icy land roads is  
+very difficult. Hence, it has gained less friction score. The optimal friction and slip based on the 
+road condition are tabulated in table 2. 
+Table 2: Optimal slip and friction 
+Case analysis  
+Road types Optimum slip Maximum friction  
+Wet 0.18 0.42 
+Dry 0.28 0.9 
+Icy 0.09 0.23 
+Snow 0.12 0.3 
+ 
+Moreover, the table describes the measured friction coefficient and optimal  slip score 
+value. It has been verified that the friction coefficient has been measured for the icy road condition 
+is very low. Hereafter, the slip rate of the automobiles was measured in 3 road conditions  
+
+=== PDF PAGE 15 ===
+13  
+ 
+Figure 5: ABS with WFA-HLSPID 
+The Simulink mode l of the ABS is described in figure 5. Here, the slip rates have been 
+changed based on the road types . The wheel and vehicle speed has been validated to measure the 
+vehicle slip rate in specific road conditions . Hence, the calculated speed rate of the whee l and 
+vehicle is described in figure 6. 
+ 
+a) 
+
+
+=== PDF PAGE 16 ===
+14  
+ 
+b) 
+ 
+c) 
+ 
+d) 
+Fig.6 When and vehicle speed: a)snow road, b)icy road, c) dry road, d) wet road 
+
+
+=== PDF PAGE 17 ===
+15  
+5.1.1 Stability analysis 
+ The primary purpose of the ABS  is to slow and stop the vehicle ; in some cases, such as 
+on ice and  asphalt surfaces, the high  friction force rate  may not be accurately described. Hence, 
+that has  resulted in greater  braking force available on the vehicle's single sides than  other sides . 
+Moreover, the dual side of the car is fully braked. A sliding or yaw moment occurs, which tends to 
+pull the automobile to the maximum friction side, resulting in instability of the vehicle.  
+ 
+a) 
+ 
+b) 
+
+
+=== PDF PAGE 18 ===
+16  
+ 
+c) 
+ 
+d) 
+Figure 7: stopping distance: a) Snow road, b) Icy road, c) Dry road, d) Wet road 
+Here, the braking stability measure has been validated in the form of the stopping distance 
+that is discussed i n figure 7. The stopping distance of the vehicle is calculated for four c ondition 
+roads. Also, the stability has been measured in dual phases with and without optimization. In 
+addition, the vehicle 's slip rate has been fixed based on the road conditions. Moreover, the slip  
+ratio has been measured using Eqn. (18) 
+dt)(u)(u)etargt( t0t2t0t1t   
+                              (18) 
+Here, the change of slip ratio from target slip rate is denoted as
+)etargt(t , and the target 
+slip rate is determined as
+0t . Also, the related variables are mentioned as
+21 u,u , respectively. 
+
+
+=== PDF PAGE 19 ===
+17  
+Consequently, the command for the parameter torque is measured in the form of driving and target 
+torque described in Eqn. (19). Here, the  
+)driver(Tr has represented the torque required for the 
+driving and 
+)etargt(Tr is the fixed maximum torque.  
+)driver(Tr),etargt(Trmin(Trslip 
+                                         (19) 
+ 
+a) 
+ 
+b) 
+
+
+=== PDF PAGE 20 ===
+18  
+ 
+c) 
+ 
+d) 
+Figure 8: Slip ratio: a) Snow road, b) Icy road, c) Dry road, d) Wet road 
+The slip ratio mainly depends on the acceleration of the wheel and vehicle. The graph in 
+figure 8 proved that the hybrid optimization strategy has helped  maintain the optimal slip ratio 
+with the proper required stability range. In the initial stage, the slip rate is started from the set point 
+'0', and then at the final, it has reached the target torque.  
+5.2 Performance validation  
+Here, the main motive of this work is to minimize the vehicle 's wheel slip rate when the 
+brake is applied. So, the controller gains  were minimized by the strawberry and lion fitness. Also, 
+the Mean-square-Error has been recorded when the vehicle wheels torques are in a different range.   
+
+
+=== PDF PAGE 21 ===
+19  
+Table 3: Comparison of controller parameters 
+Controller parameters 
+Techniques Kp Ki Kd MSE 
+Waf-tune 0.35 0.0005 6.5 0.1165 
+Ziegler 0.09 0.0144 1.4062 0.384 
+Twiddle 0.13461 0.00025 3.0534 0.1823 
+Proposed (WFA-HLSPID) without 
+optimization 
+0.1245 0.00435 2.625 0.35 
+Proposed (WFA-HLSPID) 0.07 0.0345 1.2054 0.015 
+ 
+Hence, to verify the improvement score of the designed model , some of the recent 
+associated methods were discussed: Waf-tune, Ziegler, and Twiddle [29]. In addition, the proposed 
+WFA-HLSPID control system  is validated under dual conditions  before and after applying the 
+optimization conditions.  
+ 
+Figure 9: Performance validation 
+
+
+=== PDF PAGE 22 ===
+20  
+The model, waf -tune has obtained the Kp score as 0.35, Ki0.0005, Kd 6.5 , and the MSE 
+0.1165. Moreover, the Ziegler approach has observed the controller constraints as Kp 0.09, Ki 
+0.0144, Kd 1.4062 , and MSE 0.384, the Twiddle scheme has earned the Kp rate as 0.13461, Ki 
+0.00025, Kd 3.0534 , and MSE as 0.1823. Finally, the proposed WFA -HLSPID without 
+optimization process has earned the Kp score as 0.1245, Ki 0.00435, Kd 2.625 , and MSE 0.35. 
+Moreover, t he proposed controller with optimization has earned the minimized gain than other 
+models, Kp 0.07, Ki 0.035, Kd 1.2054 , and MSE 0.015. These statistical are mentioned in figure 9 
+and table 3. 
+5.3 Discussion 
+The proposed strategy has measured the most acceptable value from all the parameters 
+validation. Hence, it was verified that the proposed hybrid model is suitable for the ABS 
+applications to improve vehicle performance.  
+Table 4: Overall performance of WFA-HLSPID 
+Overall performance  
+Method  Kp Ki Kd MSE 
+Proposed (WFA-HLSPID) without 
+optimization 
+0.1245 0.00435 2.625 0.35 
+Proposed (WFA-HLSPID) 0.07 0.0345 1.2054 0.015 
+In addition, the measured time for the execution of the proposed WFA-HLSPID is 80s. The 
+overall outcome is discussed in table 4. The hybrid optimization framework has afforded the finest 
+results than without optimization. Also, less friction has been recorded for the road condition snow 
+and icy, but the slip rate is minimum than the dry condition roads. Hence, the brake system ha s 
+been balanced.  
+6. Conclusion 
+The ABS is a hot topic in the automobile industry ; hence, maintaining the slip and friction 
+in all road condition s is complex . So, the present work has developed a novel hybrid braking 
+
+=== PDF PAGE 23 ===
+21  
+system to enrich the ABS functions. The te chnique is named WFA -HLSPID, the wavelet filter 
+function has turned the error signal, and the hybrid optimization fitness has regulated the controller 
+process. Finally, the proposed controller has attained a minimum slip rate than the other models. 
+The minimum slip rate has been validated in controller gain and MSE. Hence, the proposed novel 
+WFA-HLSPID has attained less MSE as 0.015 ; compared to other models , it has minimized the 
+MSE up to 1.2%. Also, to find  the exact improvement score. The hybrid optimization controller 
+model has minimized the MSE up to 0.73% compared to without optimization . In addition, the 
+gain of the novel WFA -HLSPID is Kp 0.07, Ki 0.035, Kd 1.2054 , and MSE 0.015. Hence, the 
+designed system is appropriate for ABS applications.  
+References 
+[1] Vilas KJ, Asutkar VG. A novel optimal firefly algorithm based gain scheduling 
+proportional integral derivative controller for rotor spinning machine speed control,  Int J Dyn  
+Control 2021; 9 :1730–1745. https://doi.org/10.1007/s40435-021-00776-6. 
+[2] Vedik B, Kumar  R, Deshmukh R, Verma S, Shiva CK. Renewable energy -based load 
+frequency stabilization of interconnected power systems using quasi -oppositional dragonfly 
+algorithm. J Control Autom Electr syst 2021; 32(1):227-243, https://doi.org/10.1007/s40313-020-
+00643-3. 
+[3] Elsisi M, Mahmoud  K, Lehtonen M, Darwish MMF. An Improved Neural Network  
+Algorithm to Efficiently Track Various Trajectories of Robot M anipulator Arms, IEEE Access.  
+2021; 9: 11911-11920, doi: 10.1109/ACCESS.2021.3051807. 
+[4] He Q, Zheng H, Ma X, Wang L, Kong H, Zhu Z. Artificial intelligence application in a 
+renewable energy-driven desalination system: A critical review.  Energy and AI 2022; 7: 100123, 
+https://doi.org/10.1016/j.egyai.2021.100123. 
+[5] Han K, Huang  T, Yin  L. Quantum parallel multi -layer Monte Carlo optimization 
+algorithm for controller parameters optimization of doubly -fed induction generator -based wind 
+turbines. Appl Soft Comput 2021; 112: 107813, https://doi.org/10.1016/j.asoc.2021.107813. 
+[6] Ismayil Siyad  C, Tamilselvan  S. Soft Computing Techniques for Physical Layer 
+Security of IoT Devices.  2021; 89. Springer, Cham. https://doi.org/10.1007/978 -3-030-75657-
+4_2. 
+[7] Sanz JA, Bustince H. A wrapper methodology to learn interval -valued fuzzy rule -based 
+
+=== PDF PAGE 24 ===
+22  
+classification systems,  Appl. Soft Comput  2021; 104: 107249. 
+https://doi.org/10.1016/j.asoc.2021.107249 
+[8] Holzinger A, Malle B, Saranti A, Pfeifer B. Towards multi-modal causability with Graph 
+Neural Networks enabling information fusion for explainable AI.  Inf Fusion  2021; 71: 28-37. 
+https://doi.org/10.1016/j.inffus.2021.01.008 
+[9] Biglarahmadi M, Ketabi  A, Reza Baghaee  H, Guerrero  JM. Integrated Nonlinear 
+Hierarchical Control and Management of Hybrid AC/DC Micr ogrids, IEEE Syst J  doi: 
+10.1109/JSYST.2021.3050334. 
+[10] Nakabi TA, Toivanen  P. Deep reinforcement learning for energy management in a 
+microgrid with flexible demand.  Sustain Energy Grids Netw  2021; 25: 100413. 
+https://doi.org/10.1016/j.segan.2020.100413 
+[11] Li H, Song B, Tang X, Xie Y, Zhou X. Adaptive Pareto Optimal  Control of T –S Fuzzy 
+System with Input Constraints and Its Application.  Int J  Fuzzy Syst  2021; 1-22. 
+https://doi.org/10.1007/s40815-021-01180-0 
+[12] Marcos A, Waitman  S, Sato  M. Fault tolerant linear parameter varying flight control 
+design, verification and validation.  J Franklin Inst 2022; 359(2): 653-676. 
+https://doi.org/10.1016/j.jfranklin.2021.02.040 
+[13] Fragapane G, de Koster  R, Sgarbossa  F, Strandhagen  JO. Planning and control of 
+autonomous mobile robots for intralogistics: Literature review and research 
+agenda. Eur J Oper Res 2021; 294(2): 405-426. https://doi.org/10.1016/j.ejor.2021.01.019 
+[14] Sun L, Li  X, Chen L. Motor Speed Control w ith Convex Optimization -Based Position 
+Estimation in the Current Loop, IEEE Trans Power Electron  2021; 36(9): 10906-10919, doi: 
+10.1109/TPEL.2021.3068309. 
+[15] Li J, Li  J, Zhang L, Sang  H, Han  Y, Chen  Q. Solving type -2 fuzzy distributed hybrid 
+flowshop scheduling using an improved brain storm optimization algorithm.  Int J  Fuzzy Syst  
+2021; 23(4): 1194-1212. https://doi.org/10.1007/s40815-021-01050-9.  
+[16] Fountas NA, Kanarachos  S, Stergiou CI. A Visual Contrast –Based Fruit Fly Algorithm 
+for Optimizing Conventional and Nonconventional Machining Processes. Int J Adv Manuf Techn 
+2020; 109(9): 2901-2914. https://doi.org/10.1007/s00170-020-05841-6 
+[17] Zhang X, Jin  L, Cui  C, Sun  J. A self -adaptive multi -objective dynamic differential 
+evolution algorithm and its application in chemical engineering.  Appl Soft Comput  2021; 106: 
+107317. https://doi.org/10.1016/j.asoc.2021.107317 
+
+=== PDF PAGE 25 ===
+23  
+[18] Xu J, Bhattacharyya  SP. Efficient Tuning of PID Controllers using Swarm -based 
+Optimization Algorithms, 2021 9th International Conferenc e on Systems and Control (ICSC). 
+2021: 572-579. doi: 10.1109/ICSC50472.2021.9666637. 
+[19] Ali AT, Mohamedy AMO, Salimz  ASA, El -Aminx EAOM, Ahmed  OMK. Design and 
+Implementation of Two-Wheeled Self-Balancing Robot Using PID Controller, 2020 International 
+Conference on Computer, Control, Electrical, and El ectronics Engineering (ICCCEEE). 2021; 1 -
+5. doi: 10.1109/ICCCEEE49695.2021.9429579. 
+[20] Cuevas E, Diaz  P, Camarena  O. ANFIS-Hammerstein Model for Nonlinear Systems 
+Identification Using GSA.  2021: 195. Springer, Cham. https://doi.org/10.1007/978 -3-030-
+58100-8_5 
+[21] Zhou X, Li D, Zhang L, Duan Q. Application of an adaptive PID controller enhanced by a 
+differential evolution algorithm for precise control of dissolved oxygen in recirculating 
+aquaculture systems.  Biosyst Eng 2021; 208: 186-198. 
+https://doi.org/10.1016/j.biosystemseng.2021.05.019 
+[22] Karuppannan A, Muthusamy  M. Wavelet neural learning -based type -2 fuzzy PID 
+controller for speed regulation in BLDC motor.  Neural Comput  Appl 2021; 33(20): 13481-
+13503. https://doi.org/10.1007/s00521-021-05971-2 
+[23] Yang R, Liu Y, Yu Y, He X, Li H. Hybrid improved particle swarm optimization -cuckoo 
+search optimized fuzzy PID controller for micro gas turbine.  Energy Rep  2021; 7: 5446-5454. 
+https://doi.org/10.1016/j.egyr.2021.08.120 
+[24] Guo B, Zhuang Z, Pan JS, Chu SC. Optimal Design and Simulation for PID Controller 
+Using Fractional -Order Fish M igration Optimization Algorithm. IEEE Access 2021; 9:  8808-
+8819, doi: 10.1109/ACCESS.2021.3049421. 
+[25] Mohanty D, Panda S. Modified salp swarm algorithm-optimized fractional-order adaptive 
+fuzzy PID controller for frequency regulation of hybrid power system with electric 
+vehicle. Journal of Control, Autom Electr stsy 2021; 32(2): 416-438. 
+https://doi.org/10.1007/s40313-020-00683-9 
+[26] Davanipour M, Javanmardi  H, Goodarzi  N. (2018).  Chaotic self -tuning PID controller 
+based on fuzzy wavelet neural network model. Iran J Sci Technol - Trans Electr Eng 2018; 42(3): 
+357-366.  https://doi.org/10.1007/s40998-018-0069-1 
+[27] Banadkooki FB, Ehteram  M, Ahmed  AN, Teo FY, Ebrahimi  M, Fai CM, El -Shafie A. 
+Suspended sediment load prediction using artificial neural network and ant lion optimization 
+
+=== PDF PAGE 26 ===
+24  
+algorithm. Environ Sci Pollut  Res. 2020; 27(30); (2020) 38094 -38116. 
+https://doi.org/10.1007/s11356-020-09876-w 
+[28] Khan MS, ul Hassan  CA, Shah  MA, Shamim A. Software Cost and Effort Estimation 
+using a New Optimization Algorithm Inspired by Strawberry Plant, 2018 24th International 
+Conference on Automation and Computing (ICAC). 2018; 1 -6. doi: 
+10.23919/IConAC.2018.8749003. 
+[29] Farag W. Complex trajectory tracking using PID control for autonomous 
+driving. Int J Intell Transp Syst Res 2020; 18(2): (2020) 356-366. https://doi.org/10.1007/s13177-
+019-00204-2 
+ 
+ 

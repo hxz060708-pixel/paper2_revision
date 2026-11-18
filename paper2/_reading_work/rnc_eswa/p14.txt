@@ -1,0 +1,329 @@
+For Peer Review
+F
+or any scalars G♯(♯ = 1, 2, 3) and matrices Gwm(w = 1, . . . ,4) with compatible dimensions, it follows from
+the IT−2FSs (8) that the following equation holds:
+E
+{
+2
+r∑
+i=1
+r∑
+i=1
+UiWj
+[
+xT(t)G1m + G1 ˙xT(t)G2m + G2 ˙xT(t − ϱ)G3m + G3xT(t − ϱ)G4m
+][
+− ˙x(t) + Aix(t)
++ Bi[Gm(Km,j + α(t)∆Km,j(t))x(tk − ϱ) + Lmψ(t)] + Diω(t)
+]}
+= 0 (29)
+In virtue of the Lemma 3 in the Ref. [53], one has
+2αℸ(t)BiGm∆Km,j(t)x(tk − ϱ)
+≤αεmℸ(t)BiGmMm,jMT
+m,jGmBT
+i ℸT(t) + αε−1
+m [Nm,jx(tk − ϱ)]T[Nm,jx(tk − ϱ)], (30)
+where ℸ(t) =
+[
+xT(t)G1m + G1 ˙xT(t)G2m + G2 ˙xT(t − ϱ)G3m + G3xT(t − ϱ)G4m
+]
+.
+By combining with (18) − (30), it yields that
+E{LV (t) + zT(t)z(t) − ϑ2ϖT(t)ϖ(t)} ≤ ζT(t)
+[ tk+1 − t
+Tk
+¶1(Tk) + t − tk
+Tk
+¶2(Tk)
+]
+ζ(t), (31)
+where
+¶1(Tk) = ✠1(Tk) + Tk
+[
+M T
+1 Z −1
+1 M 1 + h2
+M
+3 M T
+2 Z −1
+1 M 2 + N T
+1 Z −1
+2 N 1 + h 2
+M
+3 N T
+2 Z −1
+2 N 2
+]
++ ϱ
+3∑
+i=1
+1
+2i − 1 L iU −1
+2 L T
+i ,
+¶2(Tk) = ✠2(Tk) + Tk
+[
+H T
+1 S −1
+1 H 1 + h 2
+M
+3 H T
+2 S −1
+1 H 2 + J T
+1 S −1
+2 J 1 + h 2
+M
+3 J T
+2 S −1
+2 J 2
+]
++ ϱ
+3∑
+i=1
+1
+2i − 1 L iU −1
+2 L T
+i .
+According to the Lemma 2, ¶1(Tk) < 0 and ¶2(Tk) < 0 are separately equivalent to
+[
+✠
+(J )
+ii,m(Tk)
+]
+< 0
+and
+[
+✠
+(J )
+ij,m(Tk)
+]
++
+[
+✠
+(J )
+ji,m(Tk)
+]
+< 0(m ∈ H , J = 1 , 2) simultaneously, which further leads to E{LV (t) +
+zT(t)z(t) − ϑ2ϖT(t)ϖ(t)} < 0. Thereby, it follows from Deﬁnition 1 that the IT −2FSs (8) is stochastically
+stable. Furthermore, it is evident that the resultant closed-loop IT −2FSs (8) is stochastically stable with
+ψ(t) = 0 and ω(t) = 0. The proof is accomplished.
+Nevertheless, what needs to be particularly emphasized is that the information of the MFs which derived
+from the plant and controller is not involved in the matrix inequalities
+[
+✠
+(J )
+ii,m(Tk)
+]
+< 0 and
+[
+✠
+(J )
+ij,m(Tk)
+]
++
+[
+✠
+(J )
+ji,m(Tk)
+]
+< 0(J = 1, 2) . To get rid of this restriction and attain more conservative conditions, some
+symmetric and auxiliary matrices
+[
+¥(J )
+ij,m(Tk)
+]
+equipped with appropriate dimensions are introduced in a goal-
+directed way. In the light of their relationship, we have∑r
+i=1
+∑r
+j=1 Ui(Uj−Wj)
+[
+¥(J )
+ij,m(Tk)
+]
+= ∑r
+i=1 Ui
+[∑r
+j=1 Uj−
+∑r
+j=1 Wj
+][
+¥(J )
+ij,m(Tk)
+]
+= 0 promptly. Impelled by the Ref. [9], by considering the inconsistent MFs concept, it
+can be deduced that
+r∑
+i=1
+r∑
+j=1
+UiWj[ ¯✠
+(J )
+ij,m(Tk)] =
+r∑
+i=1
+r∑
+j=1
+UiWj[ ¯✠
+(J )
+ij,m(Tk)] +
+r∑
+i=1
+r∑
+j=1
+Ui(Uj − Wj)[¥(J )
+ij,m(Tk)]
+=
+r∑
+i=1
+r∑
+j=1
+Ui
+[
+Uj − ℸjWj + ℸjWj
+]
+[ ¯✠
+(J )
+ij,m(Tk)] +
+r∑
+i=1
+r∑
+j=1
+Ui
+[
+Uj − Wj + ℸjWj − ℸjWj
+]
+[¥(J )
+ij,m(Tk)]
+=
+r∑
+i=1
+r∑
+j=1
+UiUj
+[
+ℸj[ ¯✠
+(J )
+ij,m(Tk)] − ℸj[¥(J )
+ij,m(Tk)] + [¥(J )
+ij,m(Tk)]
+]
++
+r∑
+i=1
+r∑
+j=1
+Ui(Uj − ℸjUj)
+[
+[ ¯✠
+(J )
+ij,m(Tk)] − [¥(J )
+ij,m(Tk)]
+]
+=
+r∑
+i=1
+U 2
+i
+[
+ℸi[ ¯✠
+(J )
+ii,m(Tk)] − ℸi[¥(J )
+ij,m(Tk)] + [¥(J )
+ij,m(Tk)]
+]
++
+r∑
+i=1
+r∑
+j=1
+Ui(Wj − ℸjUj)
+[
+[ ¯✠
+(J )
+ij,m(Tk)] − [¥(J )
+ij,m(Tk)]
+]
++
+r−1∑
+i=1
+r∑
+j=i+1
+UiUj
+[
+(ℸj([ ¯✠
+(J )
+ij,m(Tk)] − ℸj[¥(J )
+ij,m(Tk)] + [¥(J )
+ij,m(Tk)]
++ ℸi([ ¯✠
+(J )
+ji,m(Tk)] − ℸi[¥(J )
+ij,m(Tk)] + [¥(J )
+ij,m(Tk)]
+]
+. (32)
+12
+Page 13 of 29
+http://mc.manuscriptcentral.com/rnc-wiley
+International Journal of Robust and Nonlinear Control
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60

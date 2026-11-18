@@ -1,0 +1,130 @@
+eΨ2mn =
+
+
+eΩ2mn
+√
+heY T
+21
+√
+heY T
+22 eT
+1 eNTCT
+∗ − eR2m 0 0
+∗ ∗ − 3eR2m
+h2 0
+∗ ∗ ∗ −I
+
+
+(57)
+with
+eΩ0mn = Sym{eT
+1 ePime2}+e T
+1
+JX
+j=1
+λijePjme1 −Γ T
+2 eH1mΓ2 + ΓT
+4 eH2mΓ4 +e T
+4eSe4 −σΓ T
+10eSΓ10 + Sym
+n
+eY T
+11Γ6 −2eY T
+12e6
+o
++ Sym
+n
+eY T
+21Γ8 −2eY T
+22e7
+o
++ Sym
+n
+eΓT
+11eΓ12
+o
+−e T
+8eΛe8 +e T
+3 LTeΛLe3 −γ 2eT
+9 e9
+eΩ1mn =eΩ0mn −hΓ T
+1fMmΓ1 +he T
+2 eR2me2 +hSym
+n
+ΓT
+4 eH2mΓ5
+o
++hSym
+n
+eY T
+12Γ7
+o
+eΩ2mn =eΩ0mn +hΓ T
+1fMmΓ1 +he T
+2 eR1me2 +hSym
+n
+ΓT
+2 eH1mΓ3
+o
++hSym
+n
+eY T
+22Γ9
+o
+where eΓ11 =e 1 +ξ 1e2 +ξ 2e3 and eΓ12 =− eN e2 +A meN e1 + ¯θBmFieKne8 + (1− ¯θ)BmFieKne3 +E me9. In addition,Γ i
+(i= 1,2, . . . ,10),C, andLare defined as in Theorem 3.1. Moreover, the controller gain is recovered asKn = eKneN −1.
+Proof.Define eN=Q −1
+1 ,Q 2 =ξ 1Q1 and letQ 3 =ξ 2Q1. Moreover, defineN 2 = diag{eN ,eN}andN 3 = diag{eN ,eN ,eN}. Set
+ePim = eNTPimeN, fMm =N T
+2 MmN2, eHlm =N T
+3 HlmN3, eRlm = eNTRlmeN, eS= eNTSeN, eΛ = eNTΛeN, eYq1 = eNTYq1Σ1, eYq2 =
+eNTYq2Σ1 (q∈ {1,2}) and eKn =K neN. The congruence matrices are defined asΣ1 = diag{eN ,eN ,eN ,eN ,eN ,eN ,eN ,eN , Inw }.
+Σ2 = diag{Σ1, eN ,eN , Inz }. By pre- and post-multiplying (24) and (25) withΣT
+2 andΣ 2, respectively, the LMIs (56) and (57)
+are obtained. (55) is derived by applying a congruence transformation to (23).
+Notably, the synthesis conditions obtained in Theorem 3.2 still involve the norm-bounded uncertainty matrixVi caused
+by stochastic actuator failures. As a result, these conditions cannot be directly solved using standard numerical optimization
+toolboxes. To overcome this difficulty, Theorem 3.3 introduces a robust bounding technique to eliminate the uncertainty-
+dependent terms and obtain deterministic LMIs.
+Theorem 3.3.For given scalarsh >0, ¯θ∈[0,1],σ >0,γ >0,ξ 1,ξ 2, andτ >0, the closed-loop IT-2 fuzzy system (15)
+is asymptotically stable with a prescribedH∞ performance levelγif there exist symmetric positive definite matrices ePim,
+fMm, eR1m, eR2m, eS, eΛ, structured symmetric matriceseH1m and eH2m, a nonsingular matrixeN, and matriceseY11, eY12, eY21,
+eY22, eKn with appropriate dimensions, such that for each Markov statei∈J, fuzzy rulesm, n= 1,2, . . . , r, and switching
+conditionC l (l= 1,2, . . . ,2 r−1), the following LMIs are feasible:
+
+
+
+bΨgmn <0, m=n
+bΨgmn +bΨgnm <0,1≤m < n≤r
+(58)
+forg= 1,2, and the derivative constraints (55) are satisfied, where
+bΨ1mn =
+
+
+bΩ1mn
+√
+heY T
+11
+√
+heY T
+12 eT
+1 eNTCT √¯θ eT
+8 eKT
+n
+p
+1− ¯θ eT
+3 eKT
+n
+√τeΓT
+11BmFi1
+∗ − eR1m 0 0 0 0 0
+∗ ∗ − 3eR1m
+h2 0 0 0 0
+∗ ∗ ∗ −I0 0 0
+∗ ∗ ∗ ∗ −τ I0 0
+∗ ∗ ∗ ∗ ∗ −τ I0
+∗ ∗ ∗ ∗ ∗ ∗ −I
+
+
+(59)
+11

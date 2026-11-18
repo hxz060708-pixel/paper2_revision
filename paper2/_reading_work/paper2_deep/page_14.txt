@@ -1,0 +1,119 @@
+Time	(s)
+0 2 4 6 8 10 12 14 16 18 20
+State	responses
+-3
+-2.5
+-2
+-1.5
+-1
+-0.5
+0
+0.5
+1
+1.5
+x1(t)
+x2(t)
+x3(t)
+Fig. 3.State responsesx(t)without control input.
+Time	(s)
+0 2 4 6 8 10 12 14 16 18 20
+State	responses
+-3
+-2.5
+-2
+-1.5
+-1
+-0.5
+0
+0.5
+1
+1.5
+x1(t)
+x2(t)
+x3(t) Fig. 4.State responsesx(t)with control input.
+With the scalar parameters chosen asτ= 0.8,ξ 1 = 0.01,ξ 2 = 0.01,h= 0.05,γ= 2,σ= 4, ¯θ= 0.4,ϕ= 25,χ= 1.1,
+d1 = 12, andc 1 = 5, the LMIs in Theorem 3.3 are solved under the constraint setC1 =
+ePiv − ePir ≥0, fMv − fMr ≥
+0, eR1v −eR1r ≥0, eR2v −eR2r ≤0, eH1v − eH1r ≥0, eH2v − eH2r ≥0
+	
+,which gives the controller gains and weighting matrix as
+follows:
+K11 =
+h
+−3.1181−3.9483−0.0182
+i
+, K12 =
+h
+−3.4620−4.5144−0.0619
+i
+, S1 =
+
+
+9.7356 10.9579−0.0543
+10.9579 14.8266−0.7842
+−0.0543−0.7842 0.8651
+
+ .
+Under the same system matrices and scalar parameters, the LMIs are further solved with the constraint setC 2 =ePiv − ePir ≤0, fMv −fMr ≤0, eR1v − eR1r ≤0, eR2v − eR2r ≥0, eH1v − eH1r ≤0, eH2v − eH2r ≤0
+	
+,yielding the following
+controller gains and weighting matrix:
+K21 =
+h
+−3.3108−3.8233−0.2673
+i
+, K22 =
+h
+−3.4639−4.0632−0.3020
+i
+, S2 =
+
+
+9.4184 10.1425 0.6210
+10.1425 12.5051−0.0274
+0.6210−0.0274 0.8892
+
+ .
+Time	(s)
+0 2 4 6 8 10 12 14 16 18 20
+dh1=dt
+-1.5
+-1
+-0.5
+0
+0.5
+1
+1.5
+Fig. 5.Evolution of ˙h1(t).
+Time	(s)
+0 2 4 6 8 10 12 14 16 18 20
+ControlInputu(t)
+-1.2
+-1
+-0.8
+-0.6
+-0.4
+-0.2
+0
+0.2
+0.4 Fig. 6.Control inputu(t).
+Time	(s)
+0 2 4 6 8 10 12 14 16 18 20
+Operation	models
+1
+2
+Fig. 7.Evolution of the actuator fault moder(t).
+Time	(s)
+0 2 4 6 8 10 12 14 16 18 20
+Theadaptivelaw/(t)
+0.24
+0.25
+0.26
+0.27
+0.28
+0.29
+0.3
+0.31
+0.32
+/(t) Fig. 8.Adaptive thresholdδ(t).
+14

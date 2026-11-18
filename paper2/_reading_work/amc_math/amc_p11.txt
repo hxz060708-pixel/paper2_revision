@@ -1,0 +1,143 @@
+ 
+ 
+9 
+where 
+cF − , 
+cF + , 
+cG − , 
+cG + , 
+cH −  and 
+cH +  are the scalars.  
+Assumption 2. [44]. For the sensor nonlinearity 
+( )( )iC x k  in (14), the following inequality holds  
+( )( ) ( )( ) ( ) ( )( ) ( )
+22
+1 2 1 2 , 0 0i i i iC x k C x k C x k C x k −    −  =
+                                                 (41) 
+where 
+  is a given matrix with appropriate dimension.  
+Definition 1 (Finite time bounded stability) [45]. Under any initial condition, the system (38) is said to be finite  time bounded 
+stable subject to 
+( )12, , , ,c c L N   if the following inequalities hold  
+( ) ( )  ( ) ( ) 
+( ) ( )  
+1 1 1 2 2 2
+0
+, 0, 0, 1, ,
+TT
+N
+T
+k
+x k Lx k c x k Lx k c
+w k w k k N 
+=
+   
+
+
+  
+
+                                                              (42) 
+where 
+21 0cc  , 
+0N   and 
+0   are the scalars, 
+0TLL=  is a matrix with appropriate dimension.  
+Definition 2 (Mixed H∞ and passive performance) [46]. Under zero initial condition, the mixed H∞ and passive performance of the 
+system (38) is guaranteed if the following inequality holds  
+( ) ( ) ( ) ( ) ( ) ( ) ( )
+1
+00
+2 1 , 0, 0 1T T T
+kk
+z k z k z k w k w k w k     
+
+−
+==
+    − −       
+   
+                                 (43) 
+where 
+ 
+  is the mathematical expectation of “ 
+  ”, 
+0   is the mixed H∞ and passive performance index, and 
+01   is the 
+weighting index denoting the trade -off between H∞ performance and passivity performance. Note that it is H∞ performance 
+constraint condition if 
+1 =  and it is passive performance constraint condition if 
+0 = .  
+Lemma 1 (Schur complement) [ 47]. For the giv en matrices 
+11M
+ , 
+12M
+ , 
+21M
+  and 
+22M
+  with appropriate dimensions satisfying
+11 11
+TMM=
+ and 
+22 22
+TMM =
+ , the following inequality  
+11 12
+21 22
+0MM
+MM
+ 
+
+                                                                                    (44) 
+is equivalent to  
+22
+1
+11 12 22 21
+0
+0T
+M
+M M M M −
+  −
+                                                                                (45) 
+Remark 2. The objective in this paper is to design the controller (35) for the system (22) such that  
+(i) the closed-loop system (38) is finite time bounded stable subject to 
+( )12, , , ,c c L N   according to Definition 1;  
+(ii) the mixed H∞ and passive performance of closed-loop system (38) is guaranteed according to Definition 2, i.e., 
+( )zk
+  and 
+( )wk
+  
+satisfy  
+( ) ( ) ( ) ( ) ( ) ( ) ( )
+1
+00
+2 1 , 0, 0 1T T T
+kk
+z k z k z k w k w k w k     
+
+−
+==
+    − −       
+   
+                                (46) 
+where 
+0   is the mixed H∞ and passive performance index, and 
+01   is the weighting index denoting the trade-off between 
+H∞ performance and passivity performance.  
+(iii) the controller gain matrix 
+iK  in (35) can be determined by employing the proposed method.  
+Remark 3. The static output feedback control is easy to implement, because it may be difficult to obtain all the state variables 
+information to achieve the state feedback  [48]. The required conditions of static output feedback control are less conservative, 
+because the system stability and control accuracy can be improved by adjusting static output feedback gains [48]. Besides, the 
+controller design conditions can be relaxed by adjusting the uncertainty -dependent parameters in the controller. Moreover, the T -
+S fuzzy model has nice ability to facilitate the controller design and it is more effective to design the controller in practice. 
+Meanwhile, the stochastic variable 
+( )k  and Bernoulli probability distribution 
+( ) Pr ob k  are suitable  to describe random 
+occurrence characteristic of packet dropouts from controller to actuator. Thus, 
+( )k  and 
+( ) Pr ob k  are employed to describe 
+the controller in the form of (32). Thus, the stochastic T-S fuzzy uncertainty-dependent static output feedback controller is designed 
+in (35). From (15) and (32), it can be seen that the random occurrence characteristic of sensor nonlinearity and packet dropouts are 
+all considered in the DGNNs. With above reasons, the controller design is challenging in this paper due to the random occurrence 
+characteristic of sensor nonlinearity and packet dropouts in the neural networks transmission.  
+4. Main results  

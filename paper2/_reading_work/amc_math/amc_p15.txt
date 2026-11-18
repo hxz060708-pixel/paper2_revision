@@ -1,0 +1,224 @@
+ 
+ 
+13 
+( )( ) ( )( ) ( )( )( ) ( )( )( )1 2 2 1 2 2 0T T T T T
+i i i ix k k H C C H x k k C H x k k C H x k k     −   − −  −  − 
+                              (74) 
+From (16) and (19), it can be seen that the following inequality holds  
+( ) ( )( )( ) ( )( )( ) ( ) ( )( )( )( ) ( )( )( )( )2 1 2 1 0
+TTT
+i i i i i i
+ˆ ˆC C C x k k C x k k C x k k C x k k        + − −  − + −  −   − 
+             (75) 
+where  
+( ) ( )( ) ( )( )( ) ( )( )221i i i vi
+ˆC C H x k k C H x k k C v k k    = − − +  − + −
+                                               (76) 
+From (39), one knows that  
+( ) ( )
+( )
+ˆxkxk xk
+= 
+
+                                                                                       (77) 
+Based on the inequality (75) and (77), one can obtain  
+( ) ( )( )( ) ( )( )( ) ( ) ( )( )( )( ) ( )( )( )( )2 1 2 1 0
+TTT
+i i i i i iC C C x k k C x k k C x k k C x k k        + − −  − + −  −   − 
+             (78) 
+where  
+( ) ( )( ) ( )( )( ) ( )( )221i i i viC C H x k k C H x k k C v k k    = − − +  − + −
+                                              (79) 
+Combining (58) and (78), one has  
+( )( ) ( ) ( )( ) ( ) ( )  ( ) ( ) 121 TT
+aaV x k V x k w k w k k k    + − − = 
+                                              (80) 
+where  
+( ) ( ) ( ) ( )( ) ( ) ( ) ( )( ) ( ) ( )( ) ( )( )
+( )( )( ) ( )( )( ) ( ) ( ) ( )( ) ( ) ( ) ( )( )
+( ) ( )( ) ( )( ) ( )( )( ) ( )( )( ) ( )( )( ) ( ) ( )( )
+1
+1
+T T T T T T T T T
+m M m M
+n
+T T T T T T T
+m M m
+Tn
+T T T T T T
+Mi
+k x k x k d x k d k x k d x k x k k x k f x k x k
+ˆ ˆ ˆ ˆ ˆ ˆg x k k x k k x k x k d x k d k x k d x k x k k
+ˆ ˆ ˆ ˆ ˆx k f x k x k g x k k x k k C x k k w k v k k
+
+
+
+
+    
+   
+     
+=
+=
+= − − − − − −
+− − − − − − −
+− − −  − − 
+
+
+    (81) 
+According to the stability condition (47), one knows that 
+0 , substituting 
+0  into (80), one has  
+( )( ) ( ) ( )( ) ( ) ( )  ( ) ( ) 1210 TT
+aaV x k V x k w k w k k k    + − − =  
+                                          (82) 
+From Theorem 1, one knows that 
+1  and 
+2  are the given scalars, one can choose appropriate 
+1  and 
+2  such that  
+( )( )  ( )( ) ( ) ( ) 121 T
+aaV x k V x k w k w k+  +
+                                                            (83) 
+Based on (83), it can be checked that  
+( )( )  ( )( ) ( ) ( )
+1
+1
+1 1 2
+t
+t
+k
+kk k s T
+a a t
+sk
+V x k V x k w s w s  
+−
+− −−
+=
++ 
+
+
+                                                     (84) 
+where 
+tk  is defined in (17). 
+From Theorem 1, one knows that 
+ , 
+1  and 
+2  are the given scalars, one can choose appropriate 
+ , 
+1  and 
+2  such that  
+( )( )  ( )( ) a t a tV x k V x k 
+−
+
+                                                                          (85) 
+( )( )  ( )( ) ( ) ( )
+1
+1
+1
+1
+1 1 1 2
+t
+t t t
+t
+k
+k k k s T
+a t a t
+sk
+V x k V x k w s w s  −
+−
+−
+− − −−
+−
+=
++ 
+
+
+                                                 (86) 
+where 
+tk −  is the previous moment of 
+tk .  
+Combining (84)-(86), one can obtain  
+( )( )  ( )( ) ( ) ( ) ( )( ) ( ) ( )
+( )( ) ( ) ( ) ( ) ( )
+1
+1
+11
+11
+1 2 1 1 2 1
+1 1
+1 1
+1 1 2 1 1 2 1
+tt
+tt
+t
+t t t
+tt
+kk
+k k k k k s T k s T
+a a t a t
+s k s k
+k k
+k k k k k s T k s T
+at
+s k s k
+V x k V x k w s w s V x k w s w s
+V x k w s w s w s w s
+     
+     
+
+−
+−
+−−
+−− − − − − −
+==
+− −
+− − − − −−
+−
+==
+       +  +   
+      
+ + +
+
+
+
+
+( )( ) ( ) ( ) ( ) ( ) ( ) ( )
+0
+01
+11 1
+11 1
+1 0 2 1 1 2 1 1 2 1
+tt
+t t t t
+tt
+kk k
+k k k k k s k k k sN N T T k s T
+a
+s k s k s k
+V x k w s w s w s w s w s w s         
+−
+−− −
+− − − − − − − −−
+= = =
++ + + + 
+
+  
+  (87) 
+Let us define 
+0 0k = , and substituting 
+0 0k =  into (87), one has  
+( )( )  ( )( ) ( ) ( )
+1
+1 1 2
+0
+0
+N
+N N N N T
+aa
+s
+V x k V x w s w s    
+−
+=
++ 
+ 
+                                                      (88) 

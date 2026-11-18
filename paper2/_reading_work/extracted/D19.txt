@@ -1,0 +1,17 @@
+Comment on AMC-D-25-04496
+This paper addresses the finite-time probabilistic stabilization and mixed performance analysis of delayed generalized neural networks (DGNNs) subject to mismatched network noise and sensor nonlinearity via a fuzzy feedback algorithm.  By employing uncertainty-dependent Lyapunov functionals, spectral norm scaling, and Schur complement techniques, the authors derive novel LMI-based stability conditions and demonstrate reduced computational complexity. The topic is relevant, the approach is interesting, and the results contribute to the field of stochastic fuzzy neural network control. However, several issues should be addressed before the paper can be considered for publication:
+The manuscript requires careful editing to improve English grammar, sentence structure, and overall readability. Some parts of the abstract and main text are overly complex and should be refined for clarity.
+
+While the introduction outlines the theoretical background, the practical motivations for studying finite-time probabilistic stabilization in DGNNs remain insufficiently justified.  The authors are encouraged to elaborate on specific real-world applications where mismatched noise and sensor nonlinearities occur, and how the proposed approach provides advantages over existing methods.
+
+Some parameters and assumptions are not sufficiently explained. For example, the physical meaning of the parameters in the finite-time bound  should be clarified.
+
+Equation (6) is missing an equality sign, making it meaningless. Please revise this to ensure the equation is properly stated and the derivation is valid. 
+
+The description of the fuzzy feedback algorithm should be provided in greater detail to enhance clarity and understanding.
+
+The theoretical derivations, while sound in general, contain certain gaps. The transitions between lemmas and theorems are not sufficiently detailed, which may hinder comprehension.
+
+The simulation section should include results related to event-triggered mechanisms and control inputs to more comprehensively demonstrate the effectiveness of the controller.
+
+The references are somewhat outdated, with limited coverage of recent advances.  Incorporating more up-to-date works would strengthen the research motivation and highlight the novelty of this study.
