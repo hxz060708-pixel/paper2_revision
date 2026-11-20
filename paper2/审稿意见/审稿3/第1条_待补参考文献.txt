@@ -1,0 +1,14 @@
+审稿人 3 · 第 1 条（参考文献更新）
+
+以下两篇文献由该审稿人提供，待补入论文参考文献。审稿人编号按投稿系统截图排序。
+
+1.
+\bibitem{yzg2026} Yan, Z.G., Zhang, J.H., Hu, G.L., Gao, Z.W.:
+A unified approach for input-output finite-time mean square stabilization of nonlinear stochastic Markovian jump systems with Poisson noise.
+IEEE Trans. Autom. Control \textbf{71}(8), 5588-5595 (2026).
+DOI: 10.1109/TAC.2026.3673089
+
+2.
+Zhiguo Yan*, Gaizhen Chang, Zhuangzhuang Xing, Ruimin Xu, Jun Cheng.
+Annular Finite-Time Stability and Stabilization in Probability for Nonlinear Stochastic Markov Jump Systems With Impulsive Effects.
+International Journal of Robust and Nonlinear Control, vol. 36, no. 1, pp. 245-255, 2026.
