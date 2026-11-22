@@ -1,0 +1,237 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{guo2024nonfragileb}
+R.~Guo, S.~Xu, B.~Zhang, Q.~Ma, Nonfragile {{Exponential Synchronization}} for
+  {{Delayed Fuzzy Memristive Inertial Neural Networks}} via {{Memory
+  Sampled-Data Control}}, IEEE Trans. Fuzzy Syst. 32~(6) (2024) 3825--3837.
+
+\bibitem{li2024resilientb}
+X.~Li, P.~Shi, W.~Zhang, M.~Saif, Resilient {{Synchronization}} for {{Insecure
+  Markovian Jump Neural Networks}} to {{Mitigate Dual Cyber Attacks}}, IEEE
+  Trans. Circuits Syst. I: Regul. Pap. 71~(12) (2024) 5997--6009.
+
+\bibitem{sang2019exponential}
+H.~Sang, J.~Zhao, Exponential {{Synchronization}} and {{L}}\_2 -{{Gain
+  Analysis}} of {{Delayed Chaotic Neural Networks Via Intermittent Control With
+  Actuator Saturation}}, IEEE Trans. Neural Netw. Learn. Syst. 30~(12) (2019)
+  3722--3734.
+
+\bibitem{wang2024fuzzya}
+S.~Wang, K.~Shi, J.~Cao, S.~Wen, Fuzzy adaptive event-triggered synchronization
+  control mechanism for {{T}}--{{S}} fuzzy {{RDNNs}} under deception attacks,
+  Commun. Nonlinear Sci. Numer. Simul. 134 (2024) 107985.
+
+\bibitem{zhang2025finitetimea}
+J.~Zhang, S.~Zhu, K.-N. Wu, M.~Shen, S.~Wen, Finite-{{Time Stabilization}} of
+  {{Semi-Markov Reaction-Diffusion Memristive NNs With Unbounded Time-Varying
+  Delays}}, IEEE Trans. Circuits Syst. I: Regul. Pap. 72~(4) (2025) 1832--1842.
+
+\bibitem{lin2023synchronization}
+S.~Lin, X.~Liu, Synchronization and control for directly coupled
+  reaction--diffusion neural networks with multiweights and hybrid coupling,
+  Chaos Solit. Fractals 175 (2023) 113944.
+
+\bibitem{wang2023synchronization}
+Z.-P. Wang, X.~Zhang, J.-F. Qiao, H.-N. Wu, T.~Huang, Synchronization of
+  reaction--diffusion neural networks with random time-varying delay via
+  intermittent boundary control, Neurocomputing 556 (2023) 126645.
+
+\bibitem{qi2025protocolbaseda}
+W.~Qi, N.~Zhang, J.~H. Park, Z.-G. Wu, H.~Yan, Protocol-{{Based
+  Synchronization}} of {{Semi-Markovian Jump Neural Networks With DoS Attacks}}
+  and {{Application}} to {{Quadruple-Tank Process}}, IEEE Trans. Autom. Sci.
+  Eng. 22 (2025) 1377--1389.
+
+\bibitem{liu2024preassignedtime}
+H.~Liu, J.~Cheng, J.~Cao, I.~Katib, Preassigned-time synchronization for
+  complex-valued memristive neural networks with reaction--diffusion terms and
+  {{Markov}} parameters, Neural Netw. 169 (2024) 520--531.
+
+\bibitem{wei2025timespacea}
+W.~Wei, B.~Zhang, J.~Cheng, J.~Cao, D.~Zhang, H.~Yan, Time-space sampled-data
+  control for semi-{{Markov}} reaction-diffusion neural networks: {{Adopting}}
+  multiple event-triggered protocols, Inf. Sci. 698 (2025) 121779.
+
+\bibitem{yao2024multisensorbaseda}
+L.~Yao, X.~Huang, Z.~Wang, H.~Shen, A {{Multi-Sensor-Based Switching
+  Event-Triggered Mechanism}} for {{Synchronization Control}} of {{Markovian
+  Jump Neural Networks Under DoS Attacks}}, IEEE Trans. Inf. Forensics Secur.
+  19 (2024) 7548--7559.
+
+\bibitem{sang2021sampleddatabased}
+H.~Sang, J.~Zhao, Sampled-{{Data-Based H}}{$\infty$} {{Synchronization}} of
+  {{Switched Coupled Neural Networks}}, IEEE Trans. Cybern. 51~(4) (2021)
+  1968--1980.
+
+\bibitem{li2024hmmbased}
+X.~Li, K.~She, K.~Shi, J.~Cheng, K.~Qiu, Z.~Peng, {{HMM-based}} asynchronous
+  synthesis for {{Interval}} type-2 fuzzy semi-{{Markovian}} jump systems with
+  its applications: {{A}} bilateral looped functional methodology, Expert
+  Systems with Applications 240 (2024) 122213.
+
+\bibitem{li2024nonfragile}
+X.~Li, K.~She, K.~Shi, J.~Cheng, S.~Zhong, Z.~Peng, Nonfragile switched
+  sampled-data control for ship electric propulsion systems with stochastic
+  actuator failures: {{A}} dual-sided looped fuzzy {{Lyapunov}} functional,
+  Fuzzy Sets and Systems 483 (2024) 108914.
+
+\bibitem{wei2025probabilisticsamplingbaseda}
+W.~Wei, D.~Zhang, J.~Cheng, J.~Cao, D.~Zhang, W.~Qi,
+  Probabilistic-sampling-based asynchronous control for semi-{{Markov}} jumping
+  neural networks with reaction--diffusion terms, Neural Netw. 184 (2025)
+  107072.
+
+\bibitem{liu2023new}
+X.~Liu, L.~Xiong, H.~Zhang, J.~Cao, New {{Criteria}} of {{Event-triggered
+  Exponential State Estimation}} for {{Delayed}} semi-{{Markovian
+  Memristor-based Neural Networks}}, Expert Syst. Appl. 224 (2023) 119938.
+
+\bibitem{xiong2023stochastic}
+L.~Xiong, L.~Cai, J.~Cao, T.~Wu, H.~Zhang, Stochastic quantized control for
+  memristive neural networks with mixed semi-{{Markov}} jump and sampled-data
+  communications using a novel approach, Knowl.-Based Syst. 277 (2023) 110751.
+
+\bibitem{cai2022remote}
+S.~Cai, V.~K.~N. Lau, Remote {{State Estimation}} of {{Nonlinear Systems Over
+  Fading Channels}} via {{Recurrent Neural Networks}}, IEEE Trans. Neural Netw.
+  Learn. Syst. 33~(8) (2022) 3908--3922.
+
+\bibitem{zhang2024state}
+Y.~Zhang, L.~Zhou, State estimation for proportional delayed complex-valued
+  memristive neural networks, Inf. Sci. 680 (2024) 121150.
+
+\bibitem{zha2024statea}
+L.~Zha, J.~Miao, J.~Liu, X.~Xie, E.~Tian, State {{Estimation}} for {{Delayed
+  Memristive Neural Networks With Multichannel Round-Robin Protocol}} and
+  {{Multimodal Injection Attacks}}, IEEE Trans. Syst. Man Cybern.: Syst. 54~(6)
+  (2024) 3738--3748.
+
+\bibitem{cheng2024proportionalintegral}
+J.~Cheng, L.~Liang, H.~Yan, J.~Cao, S.~Tang, K.~Shi, Proportional-{{Integral
+  Observer-Based State Estimation}} for {{Markov Memristive Neural Networks
+  With Sensor Saturations}}, IEEE Trans. Neural Netw. Learn. Syst. 35~(1)
+  (2024) 405--416.
+
+\bibitem{yang2024protocolbased}
+F.~Yang, H.~Dong, Y.~Shen, X.~Li, D.~Dai, Protocol-{{Based Non-Fragile State
+  Estimation}} for {{Delayed Recurrent Neural Networks Subject}} to {{Replay
+  Attacks}}, IEEE/CAA J. Autom. Sin. 11~(1) (2024) 249--251.
+
+\bibitem{zhao2021nonfragile}
+D.~Zhao, Z.~Wang, G.~Wei, X.~Liu, Nonfragile {{H}}{$\infty$} {{State
+  Estimation}} for {{Recurrent Neural Networks With Time-Varying Delays}}: {{On
+  Proportional}}--{{Integral Observer Design}}, IEEE Trans. Neural Netw. Learn.
+  Syst. 32~(8) (2021) 3553--3565.
+
+\bibitem{liu2022resilient}
+H.~Liu, Z.~Wang, W.~Fei, J.~Li, Resilient {{H}}{$\infty$} {{State Estimation}}
+  for {{Discrete-Time Stochastic Delayed Memristive Neural Networks}}: {{A
+  Dynamic Event-Triggered Mechanism}}, IEEE Trans. Cybern. 52~(5) (2022)
+  3333--3341.
+
+\bibitem{li2021outlierresistant}
+J.~Li, Z.~Wang, H.~Dong, G.~Ghinea, Outlier-{{Resistant Remote State
+  Estimation}} for {{Recurrent Neural Networks With Mixed Time-Delays}}, IEEE
+  Trans. Neural Netw. Learn. Syst. 32~(5) (2021) 2266--2273.
+
+\bibitem{cheng2023outlierresistant}
+J.~Cheng, L.~Liang, J.~Cao, Q.~Zhu, Outlier-{{Resistant State Estimation}} for
+  {{Singularly Perturbed Complex Networks With Nonhomogeneous Sojourn
+  Probabilities}}, IEEE Trans. Cybern. 53~(12) (2023) 7800--7809.
+
+\bibitem{fang2023outlierresistant}
+F.~Fang, Y.~Liu, J.~H. Park, Y.~Liu, Outlier-{{Resistant Nonfragile Control}}
+  of {{T}}--{{S Fuzzy Neural Networks With Reaction}}--{{Diffusion Terms}} and
+  {{Its Application}} in {{Image Secure Communication}}, IEEE Trans. Fuzzy
+  Syst. 31~(9) (2023) 2929--2942.
+
+\bibitem{lin2023stability}
+H.-C. Lin, H.-B. Zeng, X.-M. Zhang, W.~Wang, Stability {{Analysis}} for
+  {{Delayed Neural Networks}} via a {{Generalized Reciprocally Convex
+  Inequality}}, IEEE Trans. Neural Netw. Learn. Syst. 34~(10) (2023)
+  7491--7499.
+
+\bibitem{zhang2024mixeddelaybased}
+Y.~Zhang, Y.~He, F.~Long, C.-K. Zhang, Mixed-{{Delay-Based Augmented
+  Functional}} for {{Sampled-Data Synchronization}} of {{Delayed Neural
+  Networks With Communication Delay}}, IEEE Trans. Neural Netw. Learn. Syst.
+  35~(2) (2024) 1847--1856.
+
+\bibitem{ni2023intermittenta}
+Y.~Ni, Z.~Wang, Intermittent sampled-data control for exponential
+  synchronization of chaotic delayed neural networks via an interval-dependent
+  functional, Expert Syst. Appl. 223 (2023) 119918.
+
+\bibitem{li2025fixed}
+L.~Li, Q.~Gan, R.~Li, Q.~Kang, H.~Wu, Fixed-/predefined-time stability of
+  impulsive fuzzy neural networks: {{Lyapunov}} method with indefinite
+  derivative, Commun. Nonlinear Sci. Numer. Simul. 142 (2025) 108542.
+
+\bibitem{ganesan2024synchronizationa}
+B.~Ganesan, P.~Mani, L.~Shanmugam, M.~Annamalai, Synchronization of
+  {{Stochastic Neural Networks Using Looped-Lyapunov Functional}} and {{Its
+  Application}} to {{Secure Communication}}, IEEE Trans. Neural Netw. Learn.
+  Syst. 35~(4) (2024) 5198--5210.
+
+\bibitem{sheng2022asymmetric}
+Z.~Sheng, C.~Lin, B.~Chen, Q.-G. Wang, An {{Asymmetric Lyapunov}}--{{Krasovskii
+  Functional Method}} on {{Stability}} and {{Stabilization}} for {{T-S Fuzzy
+  Systems With Time Delay}}, IEEE Trans. Fuzzy Syst. 30~(6) (2022) 2135--2140.
+
+\bibitem{anbalagan2025meansquare}
+P.~Anbalagan, Z.~Feng, T.~Huang, Y.~Cui, Mean-{{Square Synchronization}} of
+  {{Additive Time-Varying Delayed Markovian Jumping Neural Networks Under
+  Multiple Stochastic Sampling}}, IEEE Trans. Neural Netw. Learn. Syst. (2025)
+  1--15.
+
+\bibitem{li2025loopedtype}
+X.~Li, K.~Shi, L.~Han, J.~Cheng, W.~Sun, Z.~Peng, A looped-type functional for
+  non-fragile fuzzy sampled-data control of doubly fed induction
+  generator-based wind energy conversion systems with failures, Engineering
+  Applications of Artificial Intelligence 142 (2025) 109812.
+
+\bibitem{yang2019design}
+T.~Yang, Y.~Wei, Z.~Tu, H.~Zeng, M.~A. Kinsy, N.~Zheng, P.~Ren, Design {{Space
+  Exploration}} of {{Neural Network Activation Function Circuits}}, IEEE Trans.
+  Comput.-Aided Des. Integr. Circuits Syst. 38~(10) (2019) 1974--1978.
+
+\bibitem{song2021gainscheduled}
+X.~Song, J.~Man, S.~Song, C.~K. Ahn, Gain-{{Scheduled Finite-Time
+  Synchronization}} for {{Reaction}}--{{Diffusion Memristive Neural Networks
+  Subject}} to {{Inconsistent Markov Chains}}, IEEE Trans. Neural Netw. Learn.
+  Syst. 32~(7) (2021) 2952--2964.
+
+\bibitem{wang2024synchronization}
+S.~Wang, K.~Shi, J.~Wang, Y.~Yu, S.~Wen, J.~Yang, S.~Han, Synchronization
+  sampled-data control of uncertain neural networks under an asymmetric
+  {{Lyapunov}}--{{Krasovskii}} functional method, Expert Syst. Appl. 239 (2024)
+  122475.
+
+\bibitem{wu2023adaptiveb}
+T.~Wu, J.~Cao, L.~Xiong, J.~H. Park, X.~Tan, Adaptive {{Event-Triggered
+  Mechanism}} to {{Synchronization}} of {{Reaction}}--{{Diffusion CVNNs}} and
+  {{Its Application}} in {{Image Secure Communication}}, IEEE Trans. Syst. Man
+  Cybern.: Syst. 53~(9) (2023) 5307--5320.
+
+\bibitem{li2020dynamic}
+Q.~Li, Z.~Wang, W.~Sheng, F.~E. Alsaadi, F.~E. Alsaadi, Dynamic event-triggered
+  mechanism for {{H}}{$\infty$} non-fragile state estimation of complex
+  networks under randomly occurring sensor saturations, Inf. Sci. 509 (2020)
+  304--316.
+
+\bibitem{zhang2022quasisynchronization}
+R.~Zhang, H.~Wang, J.~H. Park, H.-K. Lam, P.~He, Quasisynchronization of
+  {{Reaction}}--{{Diffusion Neural Networks Under Deception Attacks}}, IEEE
+  Trans. Syst. Man Cybern.: Syst. 52~(12) (2022) 7833--7844.
+
+\bibitem{tai2023asynchronous}
+W.~Tai, X.~Li, J.~Zhou, S.~Arik, Asynchronous dissipative stabilization for
+  stochastic {{Markov-switching}} neural networks with completely- and
+  incompletely-known transition rates, Neural Netw. 161 (2023) 55--64.
+
+\end{thebibliography}

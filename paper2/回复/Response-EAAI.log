@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.11.11)  19 NOV 2026 08:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.11.11)  22 NOV 2026 12:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -511,12 +511,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 59--81
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--81
+Underfull \hbox (badness 10000) in paragraph at lines 82--87
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--84
+Underfull \hbox (badness 10000) in paragraph at lines 82--87
 
  []
 
@@ -525,218 +525,51 @@ Underfull \hbox (badness 10000) in paragraph at lines 83--84
 [1
 
 {e:/Latex/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 85--86
+Underfull \hbox (badness 10000) in paragraph at lines 90--95
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--88
+Underfull \hbox (badness 10000) in paragraph at lines 96--101
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--90
+Underfull \hbox (badness 10000) in paragraph at lines 96--101
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--93
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--95
+Underfull \hbox (badness 10000) in paragraph at lines 104--105
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
-
- []
-
-<outlier.pdf, id=11, 421.57521pt x 316.18124pt>
-File: outlier.pdf Graphic file (type pdf)
-<use outlier.pdf>
-Package pdftex.def Info: outlier.pdf  used on input line 101.
-(pdftex.def)             Requested size: 252.94499pt x 189.7102pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 98--104
+Underfull \hbox (badness 10000) in paragraph at lines 108--114
 
  []
 
 
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 108--113
+Underfull \hbox (badness 10000) in paragraph at lines 166--172
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 108--113
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 114--115
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 118--123
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 118--123
+Underfull \hbox (badness 10000) in paragraph at lines 186--192
 
  []
 
 
 
-[3 <./outlier.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 124--125
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 126--127
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 132--137
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 132--137
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 138--139
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 140--141
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 144--149
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 144--149
-
- []
-
-
-
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 150--151
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 190--195
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 190--195
-
- []
-
-
-
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 198--203
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 198--203
-
- []
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 207.
-
-LaTeX Font Info:    Trying to load font information for OML+cmr on input line 2
-07.
-(e:/Latex/texlive/2025/texmf-dist/tex/latex/base/omlcmr.fd
-File: omlcmr.fd 2024/11/19 v2.5n Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 207.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 207.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 207.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 207.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 207.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 207.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 207.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 207.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 207.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 207.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 207.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 207.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 207.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 207.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 207.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 207.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 207.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 207.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 207.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 207.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 211--219
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 211--219
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 207--213
 
  []
 
@@ -768,390 +601,189 @@ Underfull \hbox (badness 10000) in paragraph at lines 225--235
 
 
 
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 236--241
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 236--241
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--250
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 268--272
+
+ []
+
+
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 276--282
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 301--307
+
+ []
+
+
+
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 236--241
+Underfull \hbox (badness 10000) in paragraph at lines 316--323
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 236--241
+Underfull \hbox (badness 10000) in paragraph at lines 348--349
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 244--249
+Underfull \hbox (badness 10000) in paragraph at lines 354--386
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 244--249
+Overfull \hbox (1.1382pt too wide) in paragraph at lines 354--386
+\OT1/cmr/m/n/10 ***************************************************************
+************************** 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 354--386
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 250--251
+Underfull \hbox (badness 10000) in paragraph at lines 354--386
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 252--253
+Underfull \hbox (badness 10000) in paragraph at lines 388--394
 
  []
 
 
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 258--262
+Underfull \hbox (badness 10000) in paragraph at lines 395--399
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 266--271
+Underfull \hbox (badness 10000) in paragraph at lines 414--430
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 266--271
+Underfull \hbox (badness 10000) in paragraph at lines 432--437
 
  []
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 275.
+Underfull \hbox (badness 10000) in paragraph at lines 432--437
+
+ []
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 275.
+Underfull \hbox (badness 10000) in paragraph at lines 438--439
+
+ []
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 275.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 275.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 275.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 275.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 275.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 275.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 275.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 275.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 275.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 275.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 275.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 275.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 275.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 275.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 275.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 275.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 275.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 275.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 279--283
+Underfull \hbox (badness 10000) in paragraph at lines 442--448
 
  []
 
 
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 289--294
+Underfull \hbox (badness 10000) in paragraph at lines 467--471
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 289--294
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 295--296
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 297--298
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 299--303
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 304--307
-
- []
-
+<figs/actuator_fault.pdf, id=38, 704.6325pt x 459.7175pt>
+File: figs/actuator_fault.pdf Graphic file (type pdf)
+<use figs/actuator_fault.pdf>
+Package pdftex.def Info: figs/actuator_fault.pdf  used on input line 474.
+(pdftex.def)             Requested size: 443.86316pt x 289.58147pt.
 
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 310--311
+<figs/event_tri_time.pdf, id=42, 712.6625pt x 459.7175pt>
+File: figs/event_tri_time.pdf Graphic file (type pdf)
+<use figs/event_tri_time.pdf>
+Package pdftex.def Info: figs/event_tri_time.pdf  used on input line 481.
+(pdftex.def)             Requested size: 443.86316pt x 286.31963pt.
+
+
+[10 <./figs/actuator_fault.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 491--492
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 315--325
+Underfull \hbox (badness 10000) in paragraph at lines 494--495
 
  []
 
 
-Overfull \hbox (1.1382pt too wide) in paragraph at lines 315--325
-\OT1/cmr/m/n/10 ***************************************************************
-************************** 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 315--325
+Underfull \hbox (badness 10000) in paragraph at lines 497--498
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 315--325
+Underfull \hbox (badness 10000) in paragraph at lines 499--501
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 315--325
+Underfull \hbox (badness 10000) in paragraph at lines 502--503
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 326--327
+Underfull \hbox (badness 10000) in paragraph at lines 504--505
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 328--329
+Underfull \hbox (badness 10000) in paragraph at lines 506--507
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 330--334
+Package caption Warning: Unused \captionsetup[table] on input line 46.
+See the caption package documentation for explanation.
 
- []
 
+Package caption Warning: Unused \captionsetup[figure] on input line 53.
+See the caption package documentation for explanation.
 
-Underfull \hbox (badness 10000) in paragraph at lines 335--338
 
- []
 
-
-
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 341--347
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 348--353
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 348--353
-
- []
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 357.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 357.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 357.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 357.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 357.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 357.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 357.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 357.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 357.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 357.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 357.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 357.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 357.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 357.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 357.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 357.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 357.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 357.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 357.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 357.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 361--366
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 361--366
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 367--368
-
- []
-
-
-
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 371--376
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 371--376
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 377--378
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 381--386
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 381--386
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 388--389
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 390--395
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 390--395
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 396--398
-
- []
-
-
-
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 400--401
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 403--404
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 405--407
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 408--409
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 410--411
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 412--413
-
- []
-
-
-
-[13] (./Response-EAAI.aux)
+[11 <./figs/event_tri_time.pdf>] (./Response-EAAI.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 7422 strings out of 473190
- 121525 string characters out of 5716852
- 513570 words of memory out of 5000000
- 30490 multiletter control sequences out of 15000+600000
- 571962 words of font info for 95 fonts, out of 8000000 for 9000
+ 7396 strings out of 473190
+ 121250 string characters out of 5716852
+ 508570 words of memory out of 5000000
+ 30466 multiletter control sequences out of 15000+600000
+ 572308 words of font info for 96 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 58i,11n,65p,1415b,498s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 58i,6n,65p,1389b,250s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <e:/Latex/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
 e:/Latex/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><e:/
 Latex/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><e:/Late
@@ -1164,11 +796,11 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><e:/Latex/texlive/2025/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmr9.pfb><e:/Latex/texlive/2025/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmsy10.pfb><e:/Latex/texlive/2025/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmsy7.pfb><e:/Latex/texlive/2025/texmf-dist/fonts/typ
-e1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Response-EAAI.pdf (13 pages, 207956 bytes).
+e1/public/amsfonts/cm/cmti10.pfb>
+Output written on Response-EAAI.pdf (11 pages, 286960 bytes).
 PDF statistics:
- 137 PDF objects out of 1000 (max. 8388607)
- 94 compressed objects within 1 object stream
+ 135 PDF objects out of 1000 (max. 8388607)
+ 83 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

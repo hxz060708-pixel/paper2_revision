@@ -77,145 +77,145 @@
 ~\\
 \textbf{1.} It is noted that your manuscript needs careful editing, such as the English grammar and sentence structure so that the goals and results in your work are friendly to the weak in English.
 \\[10pt]
-\indent \textbf{Reply 1:}We sincerely appreciate your constructive suggestions. The following provides our detailed clarifications and corresponding revisions point by point. \\
-
-
-1) The outliers discussed in this paper refer to deviations in the numerical values of the measurement output $y(t,\eth)$. In this study, attacks, disturbances, and faults are regarded as factors that may cause abnormal variations in the measured output $y(t,\eth)$, and these factors are collectively referred to as abnormal disturbance. When the measurement or transmission process of $y(t,\eth)$ is affected by such abnormal disturbance, the measured output exhibits a certain deviation relative to the true value of $y(t,\eth)$. Evidently, these data are outliers and cannot accurately reflect the true state information of the neural network being estimated.\\
-
-The relevant concepts have been thoroughly refined and clarified in the revised manuscript as follows:\\
-
-``Measurement outliers refer to data points that significantly deviate from the overall data trend, {\color{red}primarily caused by abnormal disturbances. Typical sources of such abnormal disturbances include sensor faults, network attacks, and environmental variations. These abnormal disturbances lead to large measurement deviations between the measured and actual values, resulting in outliers that degrade estimation accuracy and may even severely impair RSE."}(The fourth paragraph in the introduction)\\
-
-2) An outlier represents a numerical abnormality in the output $y(t,\eth)$, which remains an inherent characteristic of $y(t,\eth)$ itself. Similar to the existing studies on outlier-resilient estimation (see https://doi.org/10.1007/s11071-024-09404-2; 10.1109/TNNLS.2020.2991151), this paper characterizes the influence of measurement outliers through variations in the numerical values of $y(t,\eth)$. Consequently, the transmission of such corrupted measurement data to the estimator inevitably affects the estimation accuracy.\\
-
-3) The explanation of the saturation function is provided in Remark 2.4 of this paper, and here we further elaborate on its role in mitigating outliers.
-\\
-
-\textbf{Remark 2.4.} To effectively mitigate the influence of such outliers, a saturation function (4) is introduced in the proposed ORSE. The parameter $\kappa_{\text{max}}$ represents the saturation level. The saturation function (4) suppresses outliers by enforcing upper and lower bounds on the measurements. {\color{red}Specifically, when the measurement data are not outliers, the output of the saturation function (4) equals its input, ensuring that the transmitted data accurately reflect the true state of the estimated system. Conversely, when the measurement data are outliers, the output of the saturation function (4) is constrained to its upper or lower bound (depend on the sign of the outlier). Hence, the saturation function (4) effectively suppresses the impact of large outliers by limiting their magnitude, thereby reducing the estimation error.} The value of $\kappa_{\text{max}}$ can be determined a priori based on engineering practice, reflecting the confidence in the measurement output. In this sense, the saturation function (4) is confidence-dependent. Notably, in the absence of the saturation function, ORSE (3) simplifies to a conventional resilient state estimator.\\
-
-4) How does the abnormal disturbance presented in figure 3 is incorporated into the system model? It seems that there are no theoretical derivations associated with it in the modelling part.\\
-
-In this paper, the term abnormal disturbance collectively refers to factors that cause measurement data to deviate and become outliers. In Fig. 3, the horizontal axis represents the occurrence time of the abnormal disturbance, while the vertical axis indicates the measurement deviation induced by the disturbance (i.e., the deviation that transforms normal measurements into outliers). Fig. 3 illustrates the occurrence times and specific values of outliers in Numerical Example 1. For instance, according to Table 1, the measurement data at $t=15$ are identified as outliers, with the corresponding value given by $y(15,\eth)+10$.\\
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=3.5in]{outlier.pdf}
-	\caption{\color{red}Measurement deviation caused by abnormal disturbance.}
-	\label{Fig.4}
-\end{figure}
-
-Thank you once again for your valuable feedback regarding the relevant concepts in this paper. We hope that these revisions will improve the logical structure and coherence of the manuscript, making the connection between key concepts and related work clearer. Your suggestions will undoubtedly help enhance the presentation of the research.
+\indent \textbf{Reply 1:}
 
 ~\\
 \\
-\textbf{2.} \textcolor{red}{The} motivation for jointly considering deception attacks, actuator failures, and communication limitations needs clarification. Could the authors clarify why these factors require simultaneous consideration and how their combined effects influence closed-loop stability and $\mathrm{H}_{\infty}$ performance?
+\textbf{2.} \textcolor{red}{The} motivation for jointly considering deception attacks, actuator failures, and communication limitations needs clarification. Could the authors clarify why these factors require simultaneous consideration and how their combined effects influence closed-loop stability and $\mathrm{H}_{\infty}$ performance? \textcolor{red}{Complete}
 \\[10pt]
-\indent \textbf{Reply 2:} Thank you for this comment.\\
+\indent \textbf{Reply 2:} Thank you for this comment. In Eq.~(15), the actuator scales a command based on the most recently released sample. If that sample was falsified, the feedback may continue to use incorrect data while an actuator fault reduces the effectiveness of the command. This can impair the controller's ability both to drive the state back to equilibrium and to attenuate external disturbances. The two revised sentences are quoted below.\\
 
-In Eq.~(15), the actuator scales a command based on the most recently released sample. If that sample was falsified, the feedback may continue to use incorrect data while an actuator fault reduces the effectiveness of the command. This can impair the controller's ability both to drive the state back to equilibrium and to attenuate external disturbances. We revised the last two sentences of the following paragraph in the Introduction.\\
-
-\textbf{Introduction (p.~2).} In addition to cyber-layer risks and communication constraints, physical-layer reliability is also critical for CPSs. Actuators may suffer from hardware aging, mechanical wear, or harsh operating environments, which can cause stochastic degradation of the control channel [27, 28]. Markov processes are commonly used to describe switching among different actuator failure modes [29, 30]. If such failures are not considered in controller design, the resulting control input may be weakened or distorted. \textcolor{red}{With event-triggered transmission, the controller may continue to use a falsified sample until the next release, while an actuator fault may weaken the command computed from that sample. These effects must therefore be considered together when assessing whether the feedback can stabilize the plant and achieve the prescribed $\mathrm{H}_\infty$ disturbance attenuation.}
+\textcolor{red}{With event-triggered transmission, the controller may continue to use a falsified sample until the next release, while an actuator fault may weaken the command computed from that sample. These effects must therefore be considered together when assessing whether the feedback can stabilize the plant and achieve the prescribed $\mathrm{H}_\infty$ disturbance attenuation.} (The fifth paragraph in the introduction)
 
 ~\\
 \\
 \textbf{3.} The author should check the References carefully throughout this paper, there are many references which not fit our style need some modification and there is something wrong with the formatting of the Reference.
 \\[10pt]
-\indent \textbf{Reply 3:} Thanks to you for your good comment. \\
-
-Compared with the traditional LKF, the proposed asymmetric LKF offers two main advantages.\\
-
-First, the matrix $R_2$ in the LKF $V_2(t)$ is not required to be symmetric, and when $R_2=0$, $V_2(t)$ naturally degenerates into the conventional LKF. Second, the proposed asymmetric LKF relaxes the positive definiteness constraint on all associated matrices, thereby reducing conservatism compared with traditional LKF. A detailed explanation of the proposed asymmetric LKF, along with an analysis of its computational complexity, is provided in Remark 3.1.\\
-
-\textbf{Remark 3.1.} It is noteworthy that an important characteristic of $V_1(t, \eth)$ is its dependence on the system mode. In addition, unlike conventional LKFs, the constructed $V_2(t, \eth)$ is asymmetric. However, when $R_2 = 0$ in Theorem 3.1, $V_2(t, \eth)$ degenerates into a symmetric form. Moreover, the positive definiteness condition of this LKF is more relaxed compared to traditional LKF, requiring only the matrices $\Theta_{1}$, $\Theta_{2u}$, $T$ and $N D_k$ to be positive definite, without imposing positive definiteness on all related matrices, thereby reducing the conservatism in the analysis process. {\color{red} Furthermore, for the $u$th semi-Markov mode in Theorem 3.1, the number of decision variables is $n[8.5n+0.5(\mathcal{N}+1)( \mathcal{N}+2)n+(\mathcal{N}+10)n+5.5]$. It is worth noting that if $V_2(t, \eth)$ were replaced by a general symmetric augmented LKF of the form $V_2(t, \eth) = \int_\Omega \int_{t-\wp}^t \left[\vartheta^\text{T}(\nu, \eth), \int_\nu^t \vartheta^\text{T}(\mu, \eth) d\mu \right] R \left[ \vartheta^\text{T}(\nu, \eth), \int_\nu^t \vartheta^\text{T}(\mu, \eth) d\mu \right]^\text{T} d\nu \, d\eth$, where $R \in \mathbb{R}^{2n \times 2n}$ is positive define matrix, the resulting $V_2(t, \eth)$ would significantly increase the complexity of condition (12), thereby raising the computational complexity.}
-
-
+\indent \textbf{Reply 3:}
 
 ~\\
 \\
-\textbf{4.} \textcolor{red}{Please} clarify the physical meaning of the actuator-failure parameters $F_{i0}$, $F_{i1}$ and the Markov transition-rate matrix used in the simulation. How are the failure-level bounds and the transition rates chosen, and does the closed-loop system remain stable under more severe failure modes?
+\textbf{4.} \textcolor{red}{Please} clarify the physical meaning of the actuator-failure parameters $F_{i0}$, $F_{i1}$ and the Markov transition-rate matrix used in the simulation. How are the failure-level bounds and the transition rates chosen, and does the closed-loop system remain stable under more severe failure modes? \textcolor{red}{Complete}
 \\[10pt]
 \indent \textbf{Reply 4:} Thank you for this comment.\\
 
-1) In Eq.~(13), $F_{i0}$ gives the midpoint of the actuator effectiveness interval in mode $i$, and $F_{i1}$ gives its half-width. We chose two illustrative levels of partial loss for the simulations. The intervals are $[0.8,1.0]$ in mode~1 and $[0.6,1.0]$ in mode~2, corresponding to maximum losses of $20\%$ and $40\%$ of nominal effectiveness, respectively.\\
+1) In Eq.~(13), $F_{i0}$ and $F_{i1}$ denote the midpoint and half-width, respectively, of the actuator effectiveness interval in mode $i$. For the simulation in Example~1, we chose $[0.8,1]$ and $[0.6,1]$ to represent two degrees of partial actuator failure. At the lower bounds, the actuator delivers $80\%$ of the commanded input in mode~1 and $60\%$ in mode~2.\\
 
-2) The off-diagonal entries of the Markov transition-rate matrix give the rates of switching between modes. We used $\lambda_{12}=0.6$ and $\lambda_{21}=1.2$ per unit time. These choices give a mean residence time of about $1.67$ time units in mode~1 and $0.83$ in mode~2, so the actuator spends less time per visit in the more degraded mode.\\
+2) We used illustrative transition rates of $\lambda_{12}=0.6$ and $\lambda_{21}=1.2$ per unit time to model switching between the two failure modes. With these values, the mean residence time in the more degraded mode is half that in the less degraded mode.\\
 
-3) The reported closed-loop trajectories remain bounded as the actuator switches between these two modes. Stability of the same controller for losses above $40\%$ has not been established. It would require checking the stability conditions with the enlarged failure bounds and the reported controller gains held fixed.
-
-~\\
-\\
-\textbf{5.} The operational regions are determined by the signs of the membership-function derivatives. For readers unfamiliar with this construction, the link between a derivative sign pattern and the associated matrix constraints may not be immediately apparent. Could the authors explain how the signs of the membership-function derivatives determine the regional constraints and how these constraints are incorporated into controller synthesis? 
-\\[10pt]
-\indent \textbf{Reply 5:} Thanks to you for your good comment.\\
-
-Due to the presence of the Bernoulli variable, the fluctuation of the estimator gain differs in each simulation run, leading to variations in the comparative results shown in Table 1. This phenomenon is reasonable and expected. The results in Table 1 correspond specifically to the evolution of the Bernoulli random variable illustrated in Fig.~4. As long as the Bernoulli variable $\alpha(t)$ evolves as depicted in Fig.~4 with an expected value of 0.6, the results in Table 1 remain fixed. To further demonstrate the reliability of the comparison, several additional sets of results under different expectations $\bar{\alpha}$ have been added and are presented in Table 2 and Table 3.\\
-
-\begin{table}[h]
-	\centering
-	{\color{red}
-		\caption{{\color{red}The estimation error caused by measurement outliers with $\bar{\alpha}=0.5$.}}
-		\label{tab2}
-		\begin{adjustbox}{width=1\textwidth}
-		\begin{tabular}{c|c|c|c|c|c}
-			\toprule
-			\multicolumn{2}{c|}{Time}& 10 & 15 & 25 & 40 \\ \hline
-			\multicolumn{2}{c|}{Measurement outlier} &$y_i(10,0.5) + 15$ & $y_i(15,0.5)+10$ & $y_i(25,0.5)+8$ & $y_i(40,0.5)+12$ \\ \hline
-			\multirow{2}*{Resilient state estimator}& $\vartheta_1(t,0.5)$ & 0.915 & 0.619 & 0.491 & 0.743 \\ \cline{2-6}
-			~ & $\vartheta_2(t,0.5)$ & -0.186 & -0.135& -0.910 & -1.093 \\ \hline
-			\multirow{2}*{ORSE} & $\vartheta_1(t,0.5)$ & 0.111 &0.113 & 0.112 & 0.113\\ \cline{2-6}
-			~ & $\vartheta_2(t,0.5)$ & -0.165 &-0.166 & -0.165 & -0.166 \\ \bottomrule
-		\end{tabular}
-	\end{adjustbox}
-	}
-\end{table}
-
-\begin{table}[h]
-	\centering
-	{\color{red}
-		\caption{{\color{red}The estimation error caused by measurement outliers with $\bar{\alpha}=0.8$.}}
-		\label{tab3}
-		\begin{adjustbox}{width=1\textwidth}
-		\begin{tabular}{c|c|c|c|c|c}
-			\toprule
-			\multicolumn{2}{c|}{Time}&10 & 15 & 25 & 40 \\ \hline
-			\multicolumn{2}{c|}{Measurement outlier} &$y_i(10,0.5) + 15$ & $y_i(15,0.5)+10$ & $y_i(25,0.5)+8$ & $y_i(40,0.5)+12$ \\ \hline
-			\multirow{2}*{Resilient state estimator}& $\vartheta_1(t,0.5)$& 0.919 & 0.214 & 0.168 & 0.746 \\ \cline{2-6}
-			~ & $\vartheta_2(t,0.5)$ & -1.357& -0.126 & -0.100 & -1.095 \\ \hline
-			\multirow{2}*{ORSE} & $\vartheta_1(t,0.5)$ & 0.112 & 0.072 & 0.070 & 0.113 \\ \cline{2-6}
-			~ & $\vartheta_2(t,0.5)$ & -0.164 & -0.041 & -0.042 & -0.166 \\ \bottomrule
-		\end{tabular}
-	\end{adjustbox}
-	}
-\end{table}
+3) Under the conditions of Theorem~3.3, the controller designed in Example~1 guarantees closed-loop stability as the actuator switches between the two specified failure modes. This guarantee includes the more severe case in mode~2, where the actuator can deliver as little as $60\%$ of the commanded input. For a wider failure interval, the same controller retains this guarantee provided that the stability conditions hold over the enlarged interval with its gains fixed.
 
 ~\\
 \\
-\textbf{6.} Table 1 reports packet counts and saving rates for several values of $\sigma$, but the implications of the trend could be discussed more explicitly. The reported packet count increases from 85 to 164 as $\sigma$ rises from 4 to 20, while the saving rate decreases from 78.75\% to 59.00\%. Could the authors explain why the packet count increases and the saving rate decreases as $\sigma$ rises, and how this trend relates to the adaptive threshold and triggering condition under the tested settings?
+\textbf{5.} \textcolor{red}{The} operational regions are determined by the signs of the membership-function derivatives. For readers unfamiliar with this construction, the link between a derivative sign pattern and the associated matrix constraints may not be immediately apparent. Could the authors explain how the signs of the membership-function derivatives determine the regional constraints and how these constraints are incorporated into controller synthesis? \textcolor{red}{Complete} 
 \\[10pt]
-\indent \textbf{Reply 6:} Thanks to you for your good comment. In response, we have expanded the conclusion section to discuss the future directions of this research. The specific points are as follows:\\
+\begingroup
+\setlength{\parskip}{6pt}
+\indent \textbf{Reply 5:} Thank you for raising this point. The two-rule system in Example~1 illustrates how the derivative sign determines a regional constraint. Since $h_1+h_2=1$, we have $\dot P_{ih}=\dot h_1(P_{i1}-P_{i2})$. To ensure $\dot P_{ih}\preceq 0$, we impose $P_{i1}-P_{i2}\succeq 0$ when $\dot h_1\leq 0$ and $P_{i1}-P_{i2}\preceq 0$ when $\dot h_1>0$. Applying the same reasoning to the other matrix derivatives, according to their required signs, gives the two constraint sets $\mathcal C_1$ and $\mathcal C_2$. We then solve the LMIs of Theorem~3.3 under the corresponding constraint set to obtain the controller gains and triggering weight matrix for each region.\par
+\noindent \textbf{Remark 2.4.} Lemma 2.1 indicates that the state space can be partitioned into $2^{r-1}$ operational regions, denoted by $\mathcal{V}_l$ ($l = 1,2,\dots,2^{r-1}$), according to the sign combinations of $\dot{h}_v$. \textcolor{red}{Taking rule $r$ as the reference, Eq.~(16) ensures that each term $\dot h_v(G_v-G_r)$ is negative semidefinite by requiring $G_v-G_r\succeq 0$ when $\dot h_v\leq 0$ and $G_v-G_r\preceq 0$ when $\dot h_v>0$. For each region $\mathcal V_l$, the inequalities obtained according to the required sign of each matrix derivative form the constraint set $\mathcal C_l$. We impose $\mathcal C_l$ when solving the LMIs of Theorem~3.3 to obtain the controller gains $K_n^l$ and the triggering weight matrix $S^l$ for that region.} (Remark 2.4)\par
+\endgroup
+% Matching working draft; verify its manuscript edits and locations before use.
+% Thank you for this comment. We have added an explanation after the regional-controller and triggering definitions in Section 2.4. Each derivative-sign pattern selects the matrix inequalities collected in its regional constraint set, and those inequalities are imposed together with the synthesis LMIs. The text gives a concrete example: a nonpositive membership derivative combined with a positive-semidefinite difference of the corresponding P matrices produces a negative-semidefinite derivative contribution; reversing both signs preserves this result. It separately explains why the R2 difference has the opposite orientation, in accordance with the existing nonnegative derivative requirement. The same choices are carried into the transformed synthesis conditions, after which the active sign pattern selects the regional gains and triggering matrix. No theorem condition, displayed equation, or mathematical derivation has been changed.
+%
+%
+% \textbf{Revision location.} Clean manuscript p. 6. Marked manuscript p. 7. Revision items M26.
+% Previous template example.
+% \indent \textbf{Reply 5:} Thanks to you for your good comment.\\
+%
+% Due to the presence of the Bernoulli variable, the fluctuation of the estimator gain differs in each simulation run, leading to variations in the comparative results shown in Table 1. This phenomenon is reasonable and expected. The results in Table 1 correspond specifically to the evolution of the Bernoulli random variable illustrated in Fig.~4. As long as the Bernoulli variable $\alpha(t)$ evolves as depicted in Fig.~4 with an expected value of 0.6, the results in Table 1 remain fixed. To further demonstrate the reliability of the comparison, several additional sets of results under different expectations $\bar{\alpha}$ have been added and are presented in Table 2 and Table 3.\\
+%
+% \begin{table}[h]
+% 	\centering
+% 	{\color{red}
+% 		\caption{{\color{red}The estimation error caused by measurement outliers with $\bar{\alpha}=0.5$.}}
+% 		\label{tab2}
+% 		\begin{adjustbox}{width=1\textwidth}
+% 		\begin{tabular}{c|c|c|c|c|c}
+% 			\toprule
+% 			\multicolumn{2}{c|}{Time}& 10 & 15 & 25 & 40 \\ \hline
+% 			\multicolumn{2}{c|}{Measurement outlier} &$y_i(10,0.5) + 15$ & $y_i(15,0.5)+10$ & $y_i(25,0.5)+8$ & $y_i(40,0.5)+12$ \\ \hline
+% 			\multirow{2}*{Resilient state estimator}& $\vartheta_1(t,0.5)$ & 0.915 & 0.619 & 0.491 & 0.743 \\ \cline{2-6}
+% 			~ & $\vartheta_2(t,0.5)$ & -0.186 & -0.135& -0.910 & -1.093 \\ \hline
+% 			\multirow{2}*{ORSE} & $\vartheta_1(t,0.5)$ & 0.111 &0.113 & 0.112 & 0.113\\ \cline{2-6}
+% 			~ & $\vartheta_2(t,0.5)$ & -0.165 &-0.166 & -0.165 & -0.166 \\ \bottomrule
+% 		\end{tabular}
+% 	\end{adjustbox}
+% 	}
+% \end{table}
+%
+% \begin{table}[h]
+% 	\centering
+% 	{\color{red}
+% 		\caption{{\color{red}The estimation error caused by measurement outliers with $\bar{\alpha}=0.8$.}}
+% 		\label{tab3}
+% 		\begin{adjustbox}{width=1\textwidth}
+% 		\begin{tabular}{c|c|c|c|c|c}
+% 			\toprule
+% 			\multicolumn{2}{c|}{Time}&10 & 15 & 25 & 40 \\ \hline
+% 			\multicolumn{2}{c|}{Measurement outlier} &$y_i(10,0.5) + 15$ & $y_i(15,0.5)+10$ & $y_i(25,0.5)+8$ & $y_i(40,0.5)+12$ \\ \hline
+% 			\multirow{2}*{Resilient state estimator}& $\vartheta_1(t,0.5)$& 0.919 & 0.214 & 0.168 & 0.746 \\ \cline{2-6}
+% 			~ & $\vartheta_2(t,0.5)$ & -1.357& -0.126 & -0.100 & -1.095 \\ \hline
+% 			\multirow{2}*{ORSE} & $\vartheta_1(t,0.5)$ & 0.112 & 0.072 & 0.070 & 0.113 \\ \cline{2-6}
+% 			~ & $\vartheta_2(t,0.5)$ & -0.164 & -0.041 & -0.042 & -0.166 \\ \bottomrule
+% 		\end{tabular}
+% 	\end{adjustbox}
+% 	}
+% \end{table}
 
-``Eventually, two numerical examples are presented to verify the effectiveness of the proposed theoretical methodology. {\color{red}In the future, we will consider the case of asynchronous switching between the estimator and system modes. Additionally, to further improve the estimation performance of outlier-resistant estimator, it will be necessary to enhance the estimator structure, such as by adopting a saturation function with dynamic thresholds."}(In the conclusion)
 
 ~\\
 \\
-\textbf{7.} The parameters $\xi_1$, $\xi_2$, and $\tau$ introduced in Theorems 3.2 and 3.3 are not explained. Please clarify their role in the LMI transformation, how they are chosen in the simulation, and whether the feasibility of the conditions is sensitive to their values.
+\textbf{6.} \textcolor{red}{Table} 1 reports packet counts and saving rates for several values of $\sigma$, but the implications of the trend could be discussed more explicitly. The reported packet count increases from 85 to 164 as $\sigma$ rises from 4 to 20, while the saving rate decreases from 78.75\% to 59.00\%. Could the authors explain why the packet count increases and the saving rate decreases as $\sigma$ rises, and how this trend relates to the adaptive threshold and triggering condition under the tested settings? \textcolor{red}{Complete}
 \\[10pt]
-\indent \textbf{Reply 7:} Thank you for this valuable suggestion. In response to this suggestion, we have provided a clear description of the algorithm for minimizing the H$\infty$ performance index $\gamma$ in Remark 3.4.\\
+\begingroup
+\setlength{\parskip}{6pt}
+\indent \textbf{Reply 6:} Thank you for this suggestion. Equation~(6) shows that a larger $\sigma$ lowers the equilibrium threshold $1/\sigma$. A lower threshold in (5) means that a smaller change from the last transmitted sample can trigger a new transmission. In Table~1, the number of packets transmitted over the same 400 sampling instants rose from 85 to 164, so the saving rate fell from $78.75\%$ to $59.00\%$. We have added this explanation to the paragraph introducing Table~1.\par
+\noindent Table~1 compares the proposed AETM with the time-triggered mechanism, which transmits all 400 samples. \textcolor{red}{Increasing $\sigma$ from 4 to 20 lowers the equilibrium value $1/\sigma$ of the adaptive threshold from 0.25 to 0.05. For a given sampled state and weighting matrix, a lower threshold $\delta(t)$ allows a smaller sampling error to trigger transmission under (5). This is consistent with the higher packet counts and lower saving rates observed in Table~1.} (The paragraph introducing Table~1 in Example~1)\par
+\endgroup
+% Matching working draft; verify its manuscript edits and locations before use.
+% Thank you for this suggestion. We have expanded the discussion after Table 1 and stated the time-triggered baseline of 400 candidate transmissions. The saving rate is defined as the fraction of baseline transmissions avoided. The text connects the reported increase from 85 to 164 packets, and decrease from 78.75\% to 59.00\%, to the decrease of the equilibrium threshold from 0.25 to 0.05 as \(\sigma\) increases from 4 to 20. For fixed sampled state, error, and weighting matrix, a smaller threshold makes the triggering condition easier to satisfy. We explicitly qualify this interpretation: the actual count also depends on the closed-loop trajectory, threshold dynamics, and resulting design matrices. Thus, the table documents the observed communication trade-off for these settings and is not presented as a universal monotonicity result. The entries in Table 1 have not been altered.
+%
+%
+% \textbf{Revision location.} Clean manuscript p. 16. Marked manuscript p. 17. Revision items M45, M46.
+% Previous template example.
+% \indent \textbf{Reply 6:} Thanks to you for your good comment. In response, we have expanded the conclusion section to discuss the future directions of this research. The specific points are as follows:\\
+%
+% ``Eventually, two numerical examples are presented to verify the effectiveness of the proposed theoretical methodology. {\color{red}In the future, we will consider the case of asynchronous switching between the estimator and system modes. Additionally, to further improve the estimation performance of outlier-resistant estimator, it will be necessary to enhance the estimator structure, such as by adopting a saturation function with dynamic thresholds."}(In the conclusion)
 
-\textbf{Remark 3.4.}  {\color{red} The lower value of $\gamma$ indicates better capability in suppressing external disturbances and maintaining system stability. Therefore, minimizing the H$\infty$ performance index $\gamma$ is crucial in practical systems. Based on the results in Theorem 3.1, the optimization problem for minimizing the H$\infty$ performance index can be formulated as follows:
-\begin{align*}
-	\min \gamma \ \text{subject to} \, \Theta_{1}\textgreater 0,\, \Theta_{2u} \textgreater 0,\,  T \textgreater 0,\,  N D_k \textgreater 0, \, \hat{\Xi}_u  \textless 0
-\end{align*}}
-
-We believe that this addition enhances the readability and practical applicability of the paper by clarifying how to implement the proposed control and estimation framework in practice.
 
 ~\\
 \\
-\textbf{8.} \textcolor{red}{There} are several minor numerical and grammatical errors that should be corrected. First, the communication saving rate in Example 2 should be 83.75\% rather than 83.79\%. Second, in the proof of Theorem 3.1, ``condition (22) guarantee'' should read ``condition (22) guarantees''. Please check the manuscript for similar issues elsewhere.
+\textbf{7.} \textcolor{red}{The} parameters $\xi_1$, $\xi_2$, and $\tau$ introduced in Theorems 3.2 and 3.3 are not explained. Please clarify their role in the LMI transformation, how they are chosen in the simulation, and whether the feasibility of the conditions is sensitive to their values. \textcolor{red}{Complete}
 \\[10pt]
-\indent \textbf{Reply 8:} Thank you for pointing out these errors. In Example 2, 65 transmissions out of 400 candidate instants give a saving rate of $100(1-65/400)=83.75\%$. We also corrected the verb in the proof of Theorem 3.1 and a similar agreement error in Section 2.4. The revised wording is given below.\\[4pt]
-Example 2: “yielding a communication saving rate of \textcolor{red}{$83.75\%$}.”\\
-Proof of Theorem 3.1: “condition (22) \textcolor{red}{guarantees} the negativity of the corresponding fuzzy-weighted double-sum terms.”\\
-Section 2.4: “where $K_n$ \textcolor{red}{denotes the controller gain for rule $n$}.”\\
+\begingroup
+\setlength{\parskip}{6pt}
+\indent \textbf{Reply 7:} Thank you for asking how these parameters enter the design and how their values are chosen. The scalars $\xi_1$ and $\xi_2$ fix the proportions among the slack matrices in Theorem~3.2. In Theorem~3.3, $\tau$ sets the relative weights of the two terms used to bound the actuator uncertainty. We prescribe the three scalars before solving the LMIs and use feasibility in both regions as the selection criterion. The nominal choices $(0.01,0.01,0.8)$ in Example~1 and $(2,4,2)$ in Example~2 both admit a solution in each region at $h=0.05$ and $\gamma=2$. We also checked sensitivity by re-solving the two regional problems after changing one scalar at a time by $-10\%$ or $+10\%$. All 24 perturbed regional problems were feasible. We have added the parameter interpretation to Remark~3.2 and the sensitivity results to the opening paragraph of Section~4.\par
+\noindent \textbf{Remark 3.2.} \textcolor{red}{In Theorem~3.2, the relations $Q_2=\xi_1Q_1$ and $Q_3=\xi_2Q_1$ allow a common change of variables under which the gains enter the LMIs linearly through $\widetilde K_n=K_nQ_1^{-1}$.} In Theorem~3.3, the scaling parameter $\tau > 0$ is introduced to handle the norm-bounded uncertainty matrix $V_i$ resulting from stochastic actuator failures. \textcolor{red}{Young's inequality bounds the resulting cross term by two quadratic terms, with weight $\tau$ on the term involving $B_mF_{i1}$ and weight $1/\tau$ on the term involving $\widetilde K_n$.} (Remark~3.2)\par
+\noindent This section considers an engineering-motivated example and a numerical simulation study to assess the effectiveness and applicability of the developed control scheme. \textcolor{red}{In each example, we prescribe $(\xi_1,\xi_2,\tau)$ and check that the LMIs of Theorem~3.3 are feasible separately under $\mathcal C_1$ and $\mathcal C_2$ at $h=0.05$ and $\gamma=2$. To assess sensitivity, we increased and decreased each scalar by $10\%$ in turn, holding the other two at their reported values. Both regional LMI problems remained feasible at all six perturbed settings in each example.} (The opening paragraph of Section~4)\par
+\endgroup
+% Previous template example.
+% \indent \textbf{Reply 7:} Thank you for this valuable suggestion. In response to this suggestion, we have provided a clear description of the algorithm for minimizing the H$\infty$ performance index $\gamma$ in Remark 3.4.\\
+%
+% \textbf{Remark 3.4.}  {\color{red} The lower value of $\gamma$ indicates better capability in suppressing external disturbances and maintaining system stability. Therefore, minimizing the H$\infty$ performance index $\gamma$ is crucial in practical systems. Based on the results in Theorem 3.1, the optimization problem for minimizing the H$\infty$ performance index can be formulated as follows:
+% \begin{align*}
+% 	\min \gamma \ \text{subject to} \, \Theta_{1}\textgreater 0,\, \Theta_{2u} \textgreater 0,\,  T \textgreater 0,\,  N D_k \textgreater 0, \, \hat{\Xi}_u  \textless 0
+% \end{align*}}
+%
+% We believe that this addition enhances the readability and practical applicability of the paper by clarifying how to implement the proposed control and estimation framework in practice.
+
+
+~\\
+\\
+\textbf{8.} \textcolor{red}{There} are several minor numerical and grammatical errors that should be corrected. First, the communication saving rate in Example 2 should be 83.75\% rather than 83.79\%. Second, in the proof of Theorem 3.1, ``condition (22) guarantee'' should read ``condition (22) guarantees''. Please check the manuscript for similar issues elsewhere. \textcolor{red}{Complete}
+\\[10pt]
+\begingroup
+\setlength{\parskip}{6pt}
+\indent \textbf{Reply 8:} Thank you for pointing out these errors.\par
+\noindent 1) In Example~2, 65 transmissions occurred over 400 candidate sampling instants, giving a saving rate of $(400-65)/400=0.8375=83.75\%$. We have corrected the reported percentage.\par\nopagebreak
+\noindent Under this fixed setting, only 65 transmissions are triggered out of 400 candidate sampling instants, yielding a communication saving rate of \textcolor{red}{$83.75\%$}. (Example~2)\par
+\noindent 2) We corrected the verb in the proof of Theorem~3.1 and a similar subject--verb agreement error in the description of $K_n$ in Section~2.4.\par\nopagebreak
+\noindent condition (22) \textcolor{red}{guarantees} the negativity of the corresponding fuzzy-weighted double-sum terms. (Proof of Theorem~3.1)\par
+\endgroup\vspace{6pt}
 
 Special thanks to you for your good comments. All your suggestions are very important, they have important guiding significance to my thesis writing and scientific research work.\\
 
@@ -235,82 +235,121 @@ Thank you for this constructive suggestion again!
 
 ~\\
 \\
-\textbf{2.} Why is it necessary to consider deception attacks, actuator failures, and communication limitations together? The Introduction should explain their interaction in the feedback loop more clearly and strengthen the practical motivation for the proposed framework.
+\textbf{2.} \textcolor{red}{Why} is it necessary to consider deception attacks, actuator failures, and communication limitations together? The Introduction should explain their interaction in the feedback loop more clearly and strengthen the practical motivation for the proposed framework. \textcolor{red}{Complete}
 \\[10pt]
-\indent \textbf{Reply 2:} Thank you very much for this constructive suggestion. We have revisited Fig. 1 and made the necessary revisions. A detailed explanation of Fig. 1 is as follows:\\
+\indent \textbf{Reply 2:} Thank you for raising this point. When bandwidth is limited, transmitting every sample may be impractical. The design question is whether event-triggered feedback can still stabilize the plant when a transmitted measurement may be falsified and the actuator may deliver only part of the commanded input. We have clarified this motivation in the Introduction.\\
 
-The framework illustrated in Fig. 1 corresponds to the model described in Section 2. The output $y(t,\eth)$ of the observed system (1) is measured by sensors and transmitted to the remote state estimator through a wireless network. The estimator then obtains the estimation error $B_{r(t)}\vartheta(t,\eth)$ between the estimator output $\bar{y}(t,\eth)$ and the measured data of the estimated system (1) output $y(t,\eth)$. It is worth noting that abnormal disturbances, such as sensor faults or network attacks, may cause the measured data $y(t,\eth)$ to become outliers that deviate significantly from their true values, thereby leading to abnormal estimation errors. The error signal is processed by a saturation function (4), which suppresses these outliers to the saturation boundary. Subsequently, the adjusted signal, combined with the probabilistically fluctuating estimator gain, is fed back into the estimator, enabling it to update the estimated state based on the processed error information.
+\textcolor{red}{With event-triggered transmission, the controller may continue to use a falsified sample until the next release, while an actuator fault may weaken the command computed from that sample. These effects must therefore be considered together when assessing whether the feedback can stabilize the plant and achieve the prescribed $\mathrm{H}_\infty$ disturbance attenuation.} (The fifth paragraph in the introduction)
 
 ~\\
 \\
-\textbf{3.} The interpretation of the adaptive-threshold parameter in Remark 2.2 is not sufficiently clear. Please explain its relationship with the equilibrium threshold and how the threshold evolves from different initial values under the influence of the sampling error.
+\textbf{3.} \textcolor{red}{The} interpretation of the adaptive-threshold parameter in Remark 2.2 is not sufficiently clear. Please explain its relationship with the equilibrium threshold and how the threshold evolves from different initial values under the influence of the sampling error. \textcolor{red}{Complete}
 \\[10pt]
-\indent \textbf{Reply 3:} Thanks to you for your good comment. \\
-
-Compared with the traditional LKF, the proposed asymmetric LKF offers two main advantages.\\
-
-First, the matrix $R_2$ in the LKF $V_2(t)$ is not required to be symmetric, and when $R_2=0$, $V_2(t)$ naturally degenerates into the conventional LKF. Second, the proposed asymmetric LKF relaxes the positive definiteness constraint on all associated matrices, thereby reducing conservatism compared with traditional LKF. A detailed explanation of the proposed asymmetric LKF, along with an analysis of its computational complexity, is provided in Remark 3.1.\\
-
-\textbf{Remark 3.1.} It is noteworthy that an important characteristic of $V_1(t, \eth)$ is its dependence on the system mode. In addition, unlike conventional LKFs, the constructed $V_2(t, \eth)$ is asymmetric. However, when $R_2 = 0$ in Theorem 3.1, $V_2(t, \eth)$ degenerates into a symmetric form. Moreover, the positive definiteness condition of this LKF is more relaxed compared to traditional LKF, requiring only the matrices $\Theta_{1}$, $\Theta_{2u}$, $T$ and $N D_k$ to be positive definite, without imposing positive definiteness on all related matrices, thereby reducing the conservatism in the analysis process. {\color{red} Furthermore, for the $u$th semi-Markov mode in Theorem 3.1, the number of decision variables is $n[8.5n+0.5(\mathcal{N}+1)( \mathcal{N}+2)n+(\mathcal{N}+10)n+5.5]$. It is worth noting that if $V_2(t, \eth)$ were replaced by a general symmetric augmented LKF of the form $V_2(t, \eth) = \int_\Omega \int_{t-\wp}^t \left[\vartheta^\text{T}(\nu, \eth), \int_\nu^t \vartheta^\text{T}(\mu, \eth) d\mu \right] R \left[ \vartheta^\text{T}(\nu, \eth), \int_\nu^t \vartheta^\text{T}(\mu, \eth) d\mu \right]^\text{T} d\nu \, d\eth$, where $R \in \mathbb{R}^{2n \times 2n}$ is positive define matrix, the resulting $V_2(t, \eth)$ would significantly increase the complexity of condition (12), thereby raising the computational complexity.}
-
+\begingroup
+\setlength{\parskip}{6pt}
+\indent \textbf{Reply 3:} Thank you for this question. In (5), $\delta(t)$ sets the relative tolerance for the sampling error, and $\sigma$ determines its equilibrium value $1/\sigma$ in (6). When the sampling error is nonzero, a threshold above $1/\sigma$ decreases toward it, whereas a threshold below $1/\sigma$ increases toward it. At a given threshold away from equilibrium, a larger weighted sampling error makes the adjustment faster. If the sampling error is zero, the threshold has zero update rate. We have clarified this behavior in Remark~2.2.\par
+\noindent \textcolor{red}{The equilibrium threshold is $1/\sigma$, since the factor $1/\delta(t)-\sigma$ vanishes at this value. When the sampling error is nonzero, $\delta(t)$ decreases toward $1/\sigma$ if it starts above this value and increases toward it if it starts below. For example, when $\delta(t)>1/\sigma$, a larger weighted sampling error drives the threshold down more rapidly, making the triggering condition in (5) easier to satisfy. When the current sample is close to the last transmitted sample, the threshold changes only gradually.} \mbox{(Remark~2.2)}\par
+\endgroup
+% Matching working draft; verify its manuscript edits and locations before use.
+% Thank you for this question. We have clarified the interpretation of the existing adaptation law in Remark 2.2. For a positive threshold and nonzero sampling error, the threshold increases when it is below 1/sigma and decreases when it is above 1/sigma. Its derivative is zero when the error is zero or the threshold equals 1/sigma. The weighted error magnitude scales the rate of adjustment. For fixed sampled state, error, and weighting matrix, a larger threshold makes the triggering inequality harder to satisfy. We also explain that actual transmission times depend on the joint evolution of these quantities, so the equilibrium alone does not imply the same trajectory or communication savings for every initial condition.
+%
+%
+% \textbf{Revision location.} Clean manuscript p. 4. Marked manuscript p. 5. Revision items M17, M18.
+% Previous template example.
+% \indent \textbf{Reply 3:} Thanks to you for your good comment. \\
+%
+% Compared with the traditional LKF, the proposed asymmetric LKF offers two main advantages.\\
+%
+% First, the matrix $R_2$ in the LKF $V_2(t)$ is not required to be symmetric, and when $R_2=0$, $V_2(t)$ naturally degenerates into the conventional LKF. Second, the proposed asymmetric LKF relaxes the positive definiteness constraint on all associated matrices, thereby reducing conservatism compared with traditional LKF. A detailed explanation of the proposed asymmetric LKF, along with an analysis of its computational complexity, is provided in Remark 3.1.\\
+%
+% \textbf{Remark 3.1.} It is noteworthy that an important characteristic of $V_1(t, \eth)$ is its dependence on the system mode. In addition, unlike conventional LKFs, the constructed $V_2(t, \eth)$ is asymmetric. However, when $R_2 = 0$ in Theorem 3.1, $V_2(t, \eth)$ degenerates into a symmetric form. Moreover, the positive definiteness condition of this LKF is more relaxed compared to traditional LKF, requiring only the matrices $\Theta_{1}$, $\Theta_{2u}$, $T$ and $N D_k$ to be positive definite, without imposing positive definiteness on all related matrices, thereby reducing the conservatism in the analysis process. {\color{red} Furthermore, for the $u$th semi-Markov mode in Theorem 3.1, the number of decision variables is $n[8.5n+0.5(\mathcal{N}+1)( \mathcal{N}+2)n+(\mathcal{N}+10)n+5.5]$. It is worth noting that if $V_2(t, \eth)$ were replaced by a general symmetric augmented LKF of the form $V_2(t, \eth) = \int_\Omega \int_{t-\wp}^t \left[\vartheta^\text{T}(\nu, \eth), \int_\nu^t \vartheta^\text{T}(\mu, \eth) d\mu \right] R \left[ \vartheta^\text{T}(\nu, \eth), \int_\nu^t \vartheta^\text{T}(\mu, \eth) d\mu \right]^\text{T} d\nu \, d\eth$, where $R \in \mathbb{R}^{2n \times 2n}$ is positive define matrix, the resulting $V_2(t, \eth)$ would significantly increase the complexity of condition (12), thereby raising the computational complexity.}
 
 
 ~\\
 \\
-\textbf{4.} \textcolor{red}{The} manuscript employs a two-sided looped functional incorporating fuzzy membership information. Could the authors explain how the looped structure captures inter-sample dynamics and what additional benefits the membership-dependent terms bring to the stability analysis?
+\textbf{4.} \textcolor{red}{The} manuscript employs a two-sided looped functional incorporating fuzzy membership information. Could the authors explain how the looped structure captures inter-sample dynamics and what additional benefits the membership-dependent terms bring to the stability analysis? \textcolor{red}{Complete}
 \\[10pt]
 \indent \textbf{Reply 4:} Thank you for raising these two points.\par
-{\setlength{\parskip}{5pt}\indent In Eq.~(29), the two integrals in $V_3$ capture state variation over the two parts of the sampling interval, before and after the current time $t$. At either sampling endpoint, one integration interval has zero length and the other integral has zero weight. Thus, $V_3$ captures the inter-sample dynamics while vanishing at both endpoints.\par
-\indent The membership-dependent matrices allow the integral weights to vary with the current rule memberships. For example, for two rules, Eq.~(45) gives $\dot R_{1h}=\dot h_1(R_{11}-R_{12})$. The ordering conditions in Eq.~(47) ensure that $\dot R_{1h}\preceq 0$ and $\dot R_{2h}\succeq 0$, so both membership-dependent derivative terms in Eq.~(34) are nonpositive. This flexibility in choosing the integral weights may reduce the conservatism of the stability criterion.\par}
+{\setlength{\parskip}{5pt}\indent In Eq.~(29), the two integrals in $V_3$ use the state derivative over the two parts of the sampling interval, before and after the current time $t$. At either sampling endpoint, one integration interval has zero length and the other integral has zero weight. Thus, $V_3$ captures the inter-sample dynamics while vanishing at both endpoints.\par
+\indent The membership-dependent matrices allow the integral weights to vary with the current rule memberships. For example, for two rules, Eq.~(45) gives $\dot R_{1h}=\dot h_1(R_{11}-R_{12})$. Within the active region, the matrix orderings specified after Eq.~(47) give $\dot R_{1h}\preceq 0$ and $\dot R_{2h}\succeq 0$, so both membership-dependent derivative terms in Eq.~(34) are nonpositive. This flexibility in choosing the integral weights may reduce the conservatism of the stability criterion.\par}
 
 ~\\
 \\
-\textbf{5.} The connection between the membership-function derivatives and the regional matrix constraints needs further explanation. How do the derivative signs determine the directions of the matrix inequalities? A representative example would help readers understand the regional controller design.
+\textbf{5.} \textcolor{red}{The} connection between the membership-function derivatives and the regional matrix constraints needs further explanation. How do the derivative signs determine the directions of the matrix inequalities? A representative example would help readers understand the regional controller design. \textcolor{red}{Complete}
 \\[10pt]
-\indent \textbf{Reply 5:} Thank you for this valuable suggestion. In response to this suggestion, we have provided a clear description of the algorithm for minimizing the H$\infty$ performance index $\gamma$ in Remark 3.4.\\
+\begingroup
+\setlength{\parskip}{6pt}
+\indent \textbf{Reply 5:} Thank you for suggesting a concrete example. In Example~1, the two membership functions satisfy $h_1+h_2=1$, so $\dot h_2=-\dot h_1$. Hence $\dot{\widetilde P}_{ih}=\dot h_1(\widetilde P_{i1}-\widetilde P_{i2})$ and $\dot{\widetilde R}_{2h}=\dot h_1(\widetilde R_{21}-\widetilde R_{22})$. The stability conditions require the first derivative to be negative semidefinite and the second to be positive semidefinite. Thus, in the region where $\dot h_1\leq 0$, we impose $\widetilde P_{i1}-\widetilde P_{i2}\succeq 0$ and $\widetilde R_{21}-\widetilde R_{22}\preceq 0$. When $\dot h_1>0$, both inequalities are reversed so that the two derivatives retain their required signs. Example~1 uses the resulting constraint sets $\mathcal C_1$ and $\mathcal C_2$ to compute the gains for the respective regions. The general rule is explained in the revised Remark~2.4.\par
+\noindent \textbf{Remark 2.4.} Lemma 2.1 indicates that the state space can be partitioned into $2^{r-1}$ operational regions, denoted by $\mathcal{V}_l$ ($l = 1,2,\dots,2^{r-1}$), according to the sign combinations of $\dot{h}_v$. \textcolor{red}{Taking rule $r$ as the reference, Eq.~(16) ensures that each term $\dot h_v(G_v-G_r)$ is negative semidefinite by requiring $G_v-G_r\succeq 0$ when $\dot h_v\leq 0$ and $G_v-G_r\preceq 0$ when $\dot h_v>0$. For each region $\mathcal V_l$, the inequalities obtained according to the required sign of each matrix derivative form the constraint set $\mathcal C_l$. We impose $\mathcal C_l$ when solving the LMIs of Theorem~3.3 to obtain the controller gains $K_n^l$ and the triggering weight matrix $S^l$ for that region.} (Remark 2.4)\par
+\endgroup
+% Matching working draft; verify its manuscript edits and locations before use.
+% Thank you for this suggestion. We have added an explanation after the regional controller and triggering definitions in Remark 2.4. For example, a nonpositive membership-function derivative multiplied by a positive semidefinite matrix difference gives a negative semidefinite term; for a positive derivative, reversing the matrix inequality produces the same sign. We also explain why the R2-related inequality has the opposite orientation, as the analysis requires a nonnegative derivative for that weighted matrix. Collecting these choices gives the constraint set for each region, which is imposed together with the synthesis LMIs. This addition explains the existing constraints without altering the theorem or proof.
+%
+%
+% \textbf{Revision location.} Clean manuscript p. 6. Marked manuscript p. 7. Revision items M26.
+% Previous template example.
+% \indent \textbf{Reply 5:} Thank you for this valuable suggestion. In response to this suggestion, we have provided a clear description of the algorithm for minimizing the H$\infty$ performance index $\gamma$ in Remark 3.4.\\
+%
+% \textbf{Remark 3.4.}  {\color{red} The lower value of $\gamma$ indicates better capability in suppressing external disturbances and maintaining system stability. Therefore, minimizing the H$\infty$ performance index $\gamma$ is crucial in practical systems. Based on the results in Theorem 3.1, the optimization problem for minimizing the H$\infty$ performance index can be formulated as follows:
+% \begin{align*}
+% 	\min \gamma \ \text{subject to} \, \Theta_{1}\textgreater 0,\, \Theta_{2u} \textgreater 0,\,  T \textgreater 0,\,  N D_k \textgreater 0, \, \hat{\Xi}_u  \textless 0
+% \end{align*}}
+%
+% We believe that this addition enhances the readability and practical applicability of the paper by clarifying how to implement the proposed control and estimation framework in practice.
 
-\textbf{Remark 3.4.}  {\color{red} The lower value of $\gamma$ indicates better capability in suppressing external disturbances and maintaining system stability. Therefore, minimizing the H$\infty$ performance index $\gamma$ is crucial in practical systems. Based on the results in Theorem 3.1, the optimization problem for minimizing the H$\infty$ performance index can be formulated as follows:
-\begin{align*}
-	\min \gamma \ \text{subject to} \, \Theta_{1}\textgreater 0,\, \Theta_{2u} \textgreater 0,\,  T \textgreater 0,\,  N D_k \textgreater 0, \, \hat{\Xi}_u  \textless 0
-\end{align*}}
-
-We believe that this addition enhances the readability and practical applicability of the paper by clarifying how to implement the proposed control and estimation framework in practice.
 
 ~\\
 \\
-\textbf{6.} \textcolor{red}{There} are several minor numerical and grammatical errors in the manuscript. First, the saving rate in Example 2 should be 83.75\%, rather than 83.79\%, based on 65 transmissions out of 400 candidate sampling instants. Second, in Section 2.4, ``where $K_n$ denote the controller gains'' should be revised to ``where $K_n$ denotes the controller gain for rule n''. Third, ``condition \ldots{} guarantee'' in the proof of Theorem 3.1 should read ``condition \ldots{} guarantees''. Please correct these errors and check the manuscript for similar issues.
+\textbf{6.} \textcolor{red}{There} are several minor numerical and grammatical errors in the manuscript. First, the saving rate in Example 2 should be 83.75\%, rather than 83.79\%, based on 65 transmissions out of 400 candidate sampling instants. Second, in Section 2.4, ``where $K_n$ denote the controller gains'' should be revised to ``where $K_n$ denotes the controller gain for rule n''. Third, ``condition \ldots{} guarantee'' in the proof of Theorem 3.1 should read ``condition \ldots{} guarantees''. Please correct these errors and check the manuscript for similar issues. \textcolor{red}{Complete}
 \\[10pt]
-\indent \textbf{Reply 6:} We appreciate your careful reading of these passages.\par
-{\setlength{\parskip}{5pt}\indent In Example~2, only 65 of the 400 samples were transmitted, so the saving rate is based on the 335 transmissions avoided. We also verified the four percentages in Table~1 against the packet counts. The revised value and the two wording corrections appear below.\par
-\indent 1) Example~2: ``only 65 transmissions are triggered out of 400 candidate sampling instants, yielding a communication saving rate of \textcolor{red}{$83.75\%$}.''\par
-\indent 2) Section~2.4: ``where $K_n$ \textcolor{red}{denotes the controller gain for rule $n$}.''\par
-\indent 3) Proof of Theorem~3.1: ``Based on the Schur complement, condition (22) \textcolor{red}{guarantees} the negativity of the corresponding fuzzy-weighted double-sum terms.''\par}
+\begingroup
+\setlength{\parskip}{6pt}
+\indent \textbf{Reply 6:} Thank you for identifying these three errors.\par
+\noindent 1) We have corrected the saving rate in Example~2 to $83.75\%$, since 335 of the 400 possible transmissions were avoided. We also recalculated all four saving rates in Table~1 from the reported packet counts and confirmed that each percentage is correct.\par\nopagebreak
+\noindent Under this fixed setting, only 65 transmissions are triggered out of 400 candidate sampling instants, yielding a communication saving rate of \textcolor{red}{$83.75\%$}. (Example~2)\par
+\noindent 2) Section~2.4 now identifies $K_n$ as the gain for rule $n$.\par\nopagebreak
+\noindent where $K_n$ \textcolor{red}{denotes} the controller \textcolor{red}{gain for rule $n$}. (Section~2.4)\par
+\noindent 3) The proof of Theorem~3.1 now uses \emph{guarantees} to agree with the singular subject \emph{condition (22)}.\par\nopagebreak
+\noindent condition (22) \textcolor{red}{guarantees} the negativity of the corresponding fuzzy-weighted double-sum terms. (Proof of Theorem~3.1)\par
+\endgroup
 
 ~\\
 \\
-\textbf{7.} The literature review would benefit from broader coverage of recent advances in secure IT-2 fuzzy control and event-triggered control. The authors are encouraged to include more relevant contemporary studies.
+\textbf{7.} \textcolor{red}{The} literature review would benefit from broader coverage of recent advances in secure IT-2 fuzzy control and event-triggered control. The authors are encouraged to include more relevant studies published within the past three years to strengthen the research motivation and clarify the distinctions and connections between this work and existing methods. \textcolor{red}{Complete}
+% R2.7: Method comparison addressed. Review recent literature during the planned reference update.
 \\[10pt]
-\indent \textbf{Reply 7:} Thank you very much for your comment. In response to your suggestion, we have enriched the introduction to highlight the innovation and significance of our work, and have included relevant references.\\
+\begingroup
+\setlength{\parskip}{6pt}
+\indent \textbf{Reply 7:} Thank you for this suggestion. We have revised the fourth paragraph of the Introduction to clarify how our switching rule differs from that in [24]. Our work also shares with [27] the problem of control under cyberattacks and actuator failures. Reference [27] uses a probabilistic triggering policy. In our design, the sampling error governs how the triggering threshold evolves.\par
+\noindent Adaptive event-triggered mechanisms (AETMs) [24, 25] and dynamic triggering strategies [26] adjust triggering parameters according to real-time or historical state information. \textcolor{red}{In [24], the membership grades determine which fuzzy controller is active. In our design, the signs of the membership-function derivatives define the operating regions, and the controller gains and triggering weight matrix are designed jointly for each region.} (The fourth paragraph in the introduction)\par
+\endgroup\vspace{\baselineskip}
+% Earlier wording retained for comparison.
+% \noindent \textcolor[rgb]{0,0.50,0}{The threshold update and the regional design are given in Sections 2.2 and 2.4, respectively.}\par
+% \noindent \textcolor[rgb]{0,0.50,0}{For IT-2 fuzzy CPSs, a suitable AETM should reduce redundant transmissions while remaining compatible with fuzzy membership information and resilient control requirements.}\par
+% Previous template example.
+% \indent \textbf{Reply 7:} Thank you very much for your comment. In response to your suggestion, we have enriched the introduction to highlight the innovation and significance of our work, and have included relevant references.\\
+%
+% ``{\color{red}Compared with time-dependent switching mechanisms [12] and MJP, the semi-MJP exhibits higher randomness and generality, enabling a more accurate characterization of the stochastic and memory-dependent switching behaviors in practical systems [13, 14]."}(The second paragraph in the introduction)\\
+%
+% ``{\color{red}Therefore, investigating the design of outlier-resistant estimators to mitigate the impact of outliers on estimation performance is of significant importance. Although numerous results have been reported on estimator designs addressing outliers or gain perturbations, these approaches fail to simultaneously suppress the adverse effects of measurement outliers and probabilistic parameter fluctuations.} Based on the above discussions, designing an ORSE is essential to ensure the effectiveness of the estimator. According to our understanding of the existing literature, no existing research has addressed this issue for semi-Markov switching RDNNs, which constitutes one of the primary motivations for this study."(The fourth paragraph in the introduction)\\
+%
+% {\color{red} [3] H.~Sang, J.~Zhao, Exponential {{Synchronization}} and {{L}}\_2 -{{Gain
+% 			Analysis}} of {{Delayed Chaotic Neural Networks Via Intermittent Control With
+% 			Actuator Saturation}}, IEEE Trans. Neural Netw. Learn. Syst. 30~(12) (2019)
+% 	3722--3734.}\\
+% 	
+% {\color{red} [12] H.~Sang, J.~Zhao, Sampled-{{Data-Based H}}{$\infty$} {{Synchronization}} of
+% 	{{Switched Coupled Neural Networks}}, IEEE Trans. Cybern. 51~(4) (2021)
+% 	1968--1980.}\\
+% 	
+% Thank you for pointing out the deficiencies in the introduction section of the paper. We greatly appreciate your valuable feedback. We have made revisions to the manuscript, hoping that these changes will enhance the logical flow and coherence of the paper, and clarify the connection between key concepts and related work. Your suggestions will undoubtedly help strengthen the presentation of the research.
 
-``{\color{red}Compared with time-dependent switching mechanisms [12] and MJP, the semi-MJP exhibits higher randomness and generality, enabling a more accurate characterization of the stochastic and memory-dependent switching behaviors in practical systems [13, 14]."}(The second paragraph in the introduction)\\
-
-``{\color{red}Therefore, investigating the design of outlier-resistant estimators to mitigate the impact of outliers on estimation performance is of significant importance. Although numerous results have been reported on estimator designs addressing outliers or gain perturbations, these approaches fail to simultaneously suppress the adverse effects of measurement outliers and probabilistic parameter fluctuations.} Based on the above discussions, designing an ORSE is essential to ensure the effectiveness of the estimator. According to our understanding of the existing literature, no existing research has addressed this issue for semi-Markov switching RDNNs, which constitutes one of the primary motivations for this study."(The fourth paragraph in the introduction)\\
-
-{\color{red} [3] H.~Sang, J.~Zhao, Exponential {{Synchronization}} and {{L}}\_2 -{{Gain
-			Analysis}} of {{Delayed Chaotic Neural Networks Via Intermittent Control With
-			Actuator Saturation}}, IEEE Trans. Neural Netw. Learn. Syst. 30~(12) (2019)
-	3722--3734.}\\
-	
-{\color{red} [12] H.~Sang, J.~Zhao, Sampled-{{Data-Based H}}{$\infty$} {{Synchronization}} of
-	{{Switched Coupled Neural Networks}}, IEEE Trans. Cybern. 51~(4) (2021)
-	1968--1980.}\\
-	
-Thank you for pointing out the deficiencies in the introduction section of the paper. We greatly appreciate your valuable feedback. We have made revisions to the manuscript, hoping that these changes will enhance the logical flow and coherence of the paper, and clarify the connection between key concepts and related work. Your suggestions will undoubtedly help strengthen the presentation of the research.
-
+\begin{samepage}
 Special thanks to you for your good comments. All your suggestions are very important, they have important guiding significance to my thesis writing and scientific research work.\\
 
 
-Thank you for this constructive suggestion again!
+Thank you for this constructive suggestion again!\par
+\end{samepage}
 
 ~\\
 \\
@@ -321,79 +360,134 @@ Thank you for this constructive suggestion again!
 ~\\
 \textbf{1.} Most of the cited works in the manuscript are from earlier studies, with relatively few references to recent advances. It is suggested that the authors include more relevant works from the past three years.
 \\[10pt]
-\indent \textbf{Reply 1:} Thank you very much for your comment. In response to your suggestion, we have enriched the introduction to highlight the innovation and significance of our work, and have included relevant references.\\
+\indent \textbf{Reply 1:}
+% Matching working draft; verify its manuscript edits and locations before use.
+% Thank you for this comment. We have expanded the comparison immediately before the contribution list. Two directly relevant studies have been added: Liu, Ling, and Zhang (2025), on torus-event-based sliding-mode control of discrete-time IT-2 fuzzy systems under deception attacks, and Chandrasekar et al. (2026), on adaptive event-triggered asynchronous control of uncertain IT-2 fuzzy Markov jump systems with deception attacks. Their publication details and the methodological descriptions were checked against the publishers’ article pages. The comparison also explicitly cites the existing work by Chen et al. (2023) on probabilistic event-triggered control under cyberattacks and actuator failures. We distinguish the present continuous-time formulation, Markov-type actuator effectiveness, and derivative-sign-based regional synthesis. We also state that joint attack/failure modeling and adaptive event triggering are not, by themselves, claimed as new. The additions therefore strengthen positioning through concrete connections and distinctions, rather than citation count alone.
+%
+%
+% \textbf{Revision location.} Clean manuscript p. 2. Marked manuscript p. 2. Revision items M08.
+% Previous template example.
+% \indent \textbf{Reply 1:} Thank you very much for your comment. In response to your suggestion, we have enriched the introduction to highlight the innovation and significance of our work, and have included relevant references.\\
+%
+% ``{\color{red}Compared with time-dependent switching mechanisms [12] and MJP, the semi-MJP exhibits higher randomness and generality, enabling a more accurate characterization of the stochastic and memory-dependent switching behaviors in practical systems [13, 14]."}(The second paragraph in the introduction)\\
+%
+% ``{\color{red}Therefore, investigating the design of outlier-resistant estimators to mitigate the impact of outliers on estimation performance is of significant importance. Although numerous results have been reported on estimator designs addressing outliers or gain perturbations, these approaches fail to simultaneously suppress the adverse effects of measurement outliers and probabilistic parameter fluctuations.} Based on the above discussions, designing an ORSE is essential to ensure the effectiveness of the estimator. According to our understanding of the existing literature, no existing research has addressed this issue for semi-Markov switching RDNNs, which constitutes one of the primary motivations for this study."(The fourth paragraph in the introduction)\\
+%
+% {\color{red} [3] H.~Sang, J.~Zhao, Exponential {{Synchronization}} and {{L}}\_2 -{{Gain
+% 			Analysis}} of {{Delayed Chaotic Neural Networks Via Intermittent Control With
+% 			Actuator Saturation}}, IEEE Trans. Neural Netw. Learn. Syst. 30~(12) (2019)
+% 	3722--3734.}\\
+% 	
+% {\color{red} [12] H.~Sang, J.~Zhao, Sampled-{{Data-Based H}}{$\infty$} {{Synchronization}} of
+% 	{{Switched Coupled Neural Networks}}, IEEE Trans. Cybern. 51~(4) (2021)
+% 	1968--1980.}\\
+% 	
+% Thank you for pointing out the deficiencies in the introduction section of the paper. We greatly appreciate your valuable feedback. We have made revisions to the manuscript, hoping that these changes will enhance the logical flow and coherence of the paper, and clarify the connection between key concepts and related work. Your suggestions will undoubtedly help strengthen the presentation of the research.
 
-``{\color{red}Compared with time-dependent switching mechanisms [12] and MJP, the semi-MJP exhibits higher randomness and generality, enabling a more accurate characterization of the stochastic and memory-dependent switching behaviors in practical systems [13, 14]."}(The second paragraph in the introduction)\\
-
-``{\color{red}Therefore, investigating the design of outlier-resistant estimators to mitigate the impact of outliers on estimation performance is of significant importance. Although numerous results have been reported on estimator designs addressing outliers or gain perturbations, these approaches fail to simultaneously suppress the adverse effects of measurement outliers and probabilistic parameter fluctuations.} Based on the above discussions, designing an ORSE is essential to ensure the effectiveness of the estimator. According to our understanding of the existing literature, no existing research has addressed this issue for semi-Markov switching RDNNs, which constitutes one of the primary motivations for this study."(The fourth paragraph in the introduction)\\
-
-{\color{red} [3] H.~Sang, J.~Zhao, Exponential {{Synchronization}} and {{L}}\_2 -{{Gain
-			Analysis}} of {{Delayed Chaotic Neural Networks Via Intermittent Control With
-			Actuator Saturation}}, IEEE Trans. Neural Netw. Learn. Syst. 30~(12) (2019)
-	3722--3734.}\\
-	
-{\color{red} [12] H.~Sang, J.~Zhao, Sampled-{{Data-Based H}}{$\infty$} {{Synchronization}} of
-	{{Switched Coupled Neural Networks}}, IEEE Trans. Cybern. 51~(4) (2021)
-	1968--1980.}\\
-	
-Thank you for pointing out the deficiencies in the introduction section of the paper. We greatly appreciate your valuable feedback. We have made revisions to the manuscript, hoping that these changes will enhance the logical flow and coherence of the paper, and clarify the connection between key concepts and related work. Your suggestions will undoubtedly help strengthen the presentation of the research.
 
 ~\\
 \\
-\textbf{2.} \textcolor{red}{Sections} 2.3 and 2.4 introduce the deception signal and actuator-failure model separately. Could the authors clarify how the corrupted sampled state and actuator mode enter the control loop? Please add a concise bridging paragraph before the substitution leading to the closed-loop dynamics in Eq. (15).
+\textbf{2.} \textcolor{red}{Sections} 2.3 and 2.4 introduce the deception signal and actuator-failure model separately. Could the authors clarify how the corrupted sampled state and actuator mode enter the control loop? Please add a concise bridging paragraph before the substitution leading to the closed-loop dynamics in Eq. (15). \textcolor{red}{Complete}
 \\[10pt]
-\indent \textbf{Reply 2:} Thank you for suggesting that we clarify the signal path. We added one sentence before Eq.~(15) in Section 2.4. The revised paragraph reads as follows.\\[4pt]
-\textcolor{red}{A successful deception attack replaces $x(t_kh)$ with $f(x(t_kh))$ in the feedback law, and the actuator multiplies the resulting command by its effectiveness matrix $F_{r(t)}$.} By substituting the controller (12) into the system (4), and considering the stochastic deception attack model (8), the closed-loop system for $t \in [t_k h + jh, t_k h + (j+1)h)$ is formulated as:
+\indent \textbf{Reply 2:} Thank you for this suggestion. A successful deception attack changes the sample used by the controller to compute its command. The actuator mode then determines how that command is scaled before it reaches the plant. We have clarified this sequence in Section~2.4, immediately before Eq.~(15).\\[4pt]
+\textcolor{red}{A successful deception attack replaces $x(t_kh)$ with $f(x(t_kh))$ in the feedback law, and the actuator multiplies the resulting command by its effectiveness matrix $F_{r(t)}$.} \mbox{(Section~2.4, before Eq.~(15))}
 
 ~\\
 \\
-\textbf{3.} A two-sided membership-dependent looped functional is adopted for stability analysis. Please explain how the integral terms with sampling-interval distances capture the inter-trigger state evolutions, and clarify the unique advantages of the looped structure and membership-related matrices in reducing the conservatism of the obtained stability criteria.
+\textbf{3.} \textcolor{red}{A} two-sided membership-dependent looped functional is adopted for stability analysis. Please explain how the integral terms with sampling-interval distances capture the inter-trigger state evolutions, and clarify the unique advantages of the looped structure and membership-related matrices in reducing the conservatism of the obtained stability criteria. \textcolor{red}{Complete}
 \\[10pt]
-\indent \textbf{Reply 3:} Thank you for this valuable suggestion. In response to this suggestion, we have provided a clear description of the algorithm for minimizing the H$\infty$ performance index $\gamma$ in Remark 3.4.\\
+\indent \textbf{Reply 3:} Thank you for this question.\par
+{\setlength{\parskip}{5pt}\indent An interval between successive transmissions consists of one or more sampling periods. In each period, the two integrals in Eq.~(29) use the state derivative before and after the current time $t$. The first is weighted by the remaining time $d_2(t)$. The second enters with weight $-d_1(t)$, where $d_1(t)$ is the elapsed time. Thus $V_3$ captures variation along the trajectory inside each sampling period and vanishes at both endpoints.\par
+\indent For each integral, choosing the same matrix for every fuzzy rule recovers a constant weight. Allowing rule-specific matrices lets $R_{1h}$ and $R_{2h}$ vary with the current memberships. Within the active region, the matrix orderings following Eq.~(47) ensure that the terms involving $\dot R_{1h}$ and $\dot R_{2h}$ in Eq.~(34) are both nonpositive. This flexibility in weighting the state variation may reduce conservatism in the stability estimate.\par}
 
-\textbf{Remark 3.4.}  {\color{red} The lower value of $\gamma$ indicates better capability in suppressing external disturbances and maintaining system stability. Therefore, minimizing the H$\infty$ performance index $\gamma$ is crucial in practical systems. Based on the results in Theorem 3.1, the optimization problem for minimizing the H$\infty$ performance index can be formulated as follows:
-\begin{align*}
-	\min \gamma \ \text{subject to} \, \Theta_{1}\textgreater 0,\, \Theta_{2u} \textgreater 0,\,  T \textgreater 0,\,  N D_k \textgreater 0, \, \hat{\Xi}_u  \textless 0
-\end{align*}}
+% Previous template example.
+% \indent \textbf{Reply 3:} Thank you for this valuable suggestion. In response to this suggestion, we have provided a clear description of the algorithm for minimizing the H$\infty$ performance index $\gamma$ in Remark 3.4.\\
+%
+% \textbf{Remark 3.4.}  {\color{red} The lower value of $\gamma$ indicates better capability in suppressing external disturbances and maintaining system stability. Therefore, minimizing the H$\infty$ performance index $\gamma$ is crucial in practical systems. Based on the results in Theorem 3.1, the optimization problem for minimizing the H$\infty$ performance index can be formulated as follows:
+% \begin{align*}
+% 	\min \gamma \ \text{subject to} \, \Theta_{1}\textgreater 0,\, \Theta_{2u} \textgreater 0,\,  T \textgreater 0,\,  N D_k \textgreater 0, \, \hat{\Xi}_u  \textless 0
+% \end{align*}}
+%
+% We believe that this addition enhances the readability and practical applicability of the paper by clarifying how to implement the proposed control and estimation framework in practice.
 
-We believe that this addition enhances the readability and practical applicability of the paper by clarifying how to implement the proposed control and estimation framework in practice.
 
 ~\\
 \\
 \textbf{4.} The manuscript needs careful language revision to improve grammar and logical flow. Please review sentence transitions, abbreviation consistency, and isolated grammar errors.
 \\[10pt]
-\indent \textbf{Reply 4:} Thank you very much for your comment.  Regarding the physical interpretation of the nonlinear activation functions discussed in our paper, we provide the following explanation:\\
+\indent \textbf{Reply 4:}
+% Matching working draft; verify its manuscript edits and locations before use.
+% Thank you for this suggestion. We have revised the Abstract, Introduction, problem formulation, explanatory text in Section 3, numerical discussion, and Conclusion. The Abstract now proceeds from the attack/failure setting to the adaptive transmission and regional design, then to the sufficient conditions and numerical illustrations. We have corrected subject–verb agreement, removed a duplicated full stop and an unnecessary comma, clarified transitions, and made the terminology and abbreviations more consistent. In particular, the controller-gain description now refers to the gain for an individual fuzzy rule, and the distinction between an initial state in Example 2 and that of Example 1 is explicit. The detailed companion document records every implemented replacement, including punctuation and whitespace, rather than providing only selected examples. These changes improve exposition without modifying the displayed mathematical conditions or the numerical data.
+%
+%
+% \textbf{Revision location.} Clean manuscript pp. 1–5, 7, 10–11, 13–14, 17–18. Marked manuscript pp. 1–8, 11–12, 14–15, 18–20. Revision items M01, M02, M03, M04, M05, M06, M09, M10, M11, M12, M13, M14, M16, M19, M20, M21, M22, M27, M28, M29, M30, M31, M34, M37, M38, M47, M53, M54, M56, M57, M58.
+% Previous template example.
+% \indent \textbf{Reply 4:} Thank you very much for your comment.  Regarding the physical interpretation of the nonlinear activation functions discussed in our paper, we provide the following explanation:\\
+%
+% \textbf{Remark 2.5.}  {\color{red}The nonlinear functions are physically realized as input-output response circuits in hardware, where electronic components inherently exhibit nonlinear saturation characteristics [36]. For example, the activation function $f(\cdot)=\tanh(\cdot)$ exploits the natural saturation behavior of differential transistor pairs, causing the output voltage to smoothly saturate to the drain voltage. The saturation function (4) can be implemented by incorporating clamping diodes into the operational amplifier, which strictly restricts its output voltage to a specific saturation level within the power supply rails.}\\
+%
+% We believe that these additional explanations provide a clearer physical and engineering interpretation of the nonlinearities in the proposed model, enhancing both the practical relevance and readability of this paper.
 
-\textbf{Remark 2.5.}  {\color{red}The nonlinear functions are physically realized as input-output response circuits in hardware, where electronic components inherently exhibit nonlinear saturation characteristics [36]. For example, the activation function $f(\cdot)=\tanh(\cdot)$ exploits the natural saturation behavior of differential transistor pairs, causing the output voltage to smoothly saturate to the drain voltage. The saturation function (4) can be implemented by incorporating clamping diodes into the operational amplifier, which strictly restricts its output voltage to a specific saturation level within the power supply rails.}\\
-
-We believe that these additional explanations provide a clearer physical and engineering interpretation of the nonlinearities in the proposed model, enhancing both the practical relevance and readability of this paper.
 
 ~\\
 \\
-\textbf{5.} \textcolor{red}{The} framework involves both membership-derivative-dependent regional selection and Markov-type actuator-failure switching. Could the authors clarify the distinct roles of these two mechanisms and explain how they are jointly accounted for in the stability analysis?
+\textbf{5.} \textcolor{red}{The} framework involves both membership-derivative-dependent regional selection and Markov-type actuator-failure switching. Could the authors clarify the distinct roles of these two mechanisms and explain how they are jointly accounted for in the stability analysis? \textcolor{red}{Complete}
 \\[10pt]
-\indent \textbf{Reply 5:} Thank you for this comment. We address the two parts of your question below.\\
+\indent \textbf{Reply 5:} Thank you for this comment.\\
 
-1) The signs of the membership-function derivatives determine the region $l$, which selects the feedback gain $K_n^l$ in Eq.~(17) and the triggering weight $S^l$ in Eq.~(18). The Markov mode $i$ determines the actuator effectiveness matrix $F_i$. In Eq.~(17), $F_i$ scales the command computed with $K_n^l$.\\
+1) The signs of the membership-function derivatives determine the active region $l$, which selects the controller gain $K_n^l$ in (17) and the triggering weight $S^l$ in (18). The Markov mode $i$ determines the actuator effectiveness matrix $F_i$. Thus, in (17), $K_n^l$ determines the feedback command and $F_i$ scales the command applied to the plant.\\
 
-2) In Eq.~(32), the regional constraints in Eqs.~(47)--(48) ensure that $x^{\mathrm T}\dot P_{ih}x$ is nonpositive. The term $x^{\mathrm T}(\sum_{j=1}^{J}\lambda_{ij}P_{jh})x$ accounts for transitions between actuator modes. Theorem~3.1 requires the LMIs to hold for each pair $(i,l)$ with storage matrices shared across regions. Using separate storage matrices would also require checking the change in storage at region crossings.
+2) The two mechanisms enter the stability analysis through different terms in (32). Within the active region, the matrix ordering associated with the signs of the membership-function derivatives ensures that $x^{\mathrm T}\dot P_{ih}x\leq 0$. Transitions between actuator modes enter through $x^{\mathrm T}(\sum_{j=1}^{J}\lambda_{ij}P_{jh})x$. Both terms appear in the stability conditions for each actuator mode $i$ and region $l$.
 
 ~\\
 \\
-\textbf{6.} The Conclusion should be organized more clearly so that the obtained results are distinguished from the future research directions. Please separate the established conclusions from the open problems to be investigated in future work.
+\textbf{6.} \textcolor{red}{The} Conclusion should be organized more clearly so that the obtained results are distinguished from the future research directions. Please separate the established conclusions from the open problems to be investigated in future work. \textcolor{red}{Complete}
 \\[10pt]
-\indent \textbf{Reply 6:} Thanks to you for your good comment. In response, we have expanded the conclusion section to discuss the future directions of this research. The specific points are as follows: \\
+\begingroup
+\setlength{\parskip}{6pt}
+\indent \textbf{Reply 6:} Thank you for this suggestion. We moved the summary of the two examples to the end of the first paragraph of the Conclusion, following the controller design results. The second paragraph now outlines future work on semi-Markov switching between actuator failure modes and distributed event-triggered control of multi-agent systems.\par
+\noindent The controller gains and adaptive event-triggering weight matrices have been jointly determined through tractable LMIs, while a bounding technique has been employed to address the norm-bounded uncertainty induced by Markov-type actuator failures. \textcolor{red}{An engineering-motivated PMSM example and a numerical IT-2 fuzzy example have demonstrated the effectiveness and applicability of the developed method.}\par
+\begingroup
+\interlinepenalty=10000
+\noindent \textcolor{red}{In future work, we will consider semi-Markov switching between actuator failure modes and extend the proposed adaptive event-triggered design to distributed control of multi-agent systems.} \mbox{(Conclusion, paragraphs 1 and 2)}\par
+\endgroup
+\endgroup
+% Matching working draft; verify its manuscript edits and locations before use.
+% Thank you for this suggestion. We have rewritten the final paragraph of the Conclusion to separate the scope of the current results from open directions. The current formulation is explicitly described as state feedback with Bernoulli-modeled deception attacks satisfying the stated signal bound and Markov-type actuator failures with known transition rates. The conclusions are qualified by these assumptions. Observer-based output feedback is identified as a future extension for applications without complete state measurements. DoS attacks and partially unknown transition rates are also identified as requiring additional modeling and analysis. These directions are not presented as results already established in this manuscript.
+%
+%
+% \textbf{Revision location.} Clean manuscript p. 18. Marked manuscript p. 20. Revision items M58.
+% Previous template example.
+% \indent \textbf{Reply 6:} Thanks to you for your good comment. In response, we have expanded the conclusion section to discuss the future directions of this research. The specific points are as follows: \\
+%
+%
+% ``Eventually, two numerical examples are presented to verify the effectiveness of the proposed theoretical methodology. {\color{red}In the future, we will consider the case of asynchronous switching between the estimator and system modes. Additionally, to further improve the estimation performance of outlier-resistant estimator, it will be necessary to enhance the estimator structure, such as by adopting a saturation function with dynamic thresholds.}"(In the conclusion)\\
 
-
-``Eventually, two numerical examples are presented to verify the effectiveness of the proposed theoretical methodology. {\color{red}In the future, we will consider the case of asynchronous switching between the estimator and system modes. Additionally, to further improve the estimation performance of outlier-resistant estimator, it will be necessary to enhance the estimator structure, such as by adopting a saturation function with dynamic thresholds.}"(In the conclusion)\\
 
 ~\\
 \\
-\textbf{7.} Please check the presentation of the simulation figures, including axis labels, units, caption terminology, and the spacing between adjacent figures. The plotted quantities should be clearly identified, and their descriptions should be consistent throughout the manuscript.
+\textbf{7.} \textcolor{red}{Please} check the presentation of the simulation figures, including axis labels, units, caption terminology, and the spacing between adjacent figures. The plotted quantities should be clearly identified, and their descriptions should be consistent throughout the manuscript. \textcolor{red}{Complete}
 \\[10pt]
-\indent \textbf{Reply 7:} Thank you very much for this constructive suggestion. We have revisited Fig. 1 and made the necessary revisions. A detailed explanation of Fig. 1 is as follows:\\
+\indent \textbf{Reply 7:} Thank you for this comment. We added the unit \textcolor{red}{$\mathrm{s}^{-1}$} to the vertical axis in Fig.~5 and checked the figure captions and spacing in both examples. The vertical axes in the two figures below are now labeled ``\textcolor{red}{Actuator fault mode}'' (Fig.~7) and ``\textcolor{red}{Inter-event interval (s)}'' (Fig.~9). Figures~13 and~15 use the same labels, respectively.\par\nobreak\vspace{14pt}
+\noindent\begin{minipage}{\linewidth}
+  \centering
+  \includegraphics[width=\linewidth]{figs/actuator_fault.pdf}\par
+  \smallskip
+  {\small \textbf{Fig.~7.} Evolution of the actuator fault mode $r(t)$.\par}
+\end{minipage}\par
+\addvspace{\baselineskip}
+\noindent\begin{minipage}{\linewidth}
+  \centering
+  \includegraphics[width=\linewidth]{figs/event_tri_time.pdf}\par
+  \smallskip
+  {\small \textbf{Fig.~9.} Release instants and release intervals.\par}
+\end{minipage}\par
+\par\addvspace{\baselineskip}
+% Previous template example.
+% \indent \textbf{Reply 7:} Thank you very much for this constructive suggestion. We have revisited Fig. 1 and made the necessary revisions. A detailed explanation of Fig. 1 is as follows:\\
+%
+% The framework illustrated in Fig. 1 corresponds to the model described in Section 2. The output $y(t,\eth)$ of the observed system (1) is measured by sensors and transmitted to the remote state estimator through a wireless network. The estimator then obtains the estimation error $B_{r(t)}\vartheta(t,\eth)$ between the estimator output $\bar{y}(t,\eth)$ and the measured data of the estimated system (1) output $y(t,\eth)$. It is worth noting that abnormal disturbances, such as sensor faults or network attacks, may cause the measured data $y(t,\eth)$ to become outliers that deviate significantly from their true values, thereby leading to abnormal estimation errors. The error signal is processed by a saturation function (4), which suppresses these outliers to the saturation boundary. Subsequently, the adjusted signal, combined with the probabilistically fluctuating estimator gain, is fed back into the estimator, enabling it to update the estimated state based on the processed error information.
 
-The framework illustrated in Fig. 1 corresponds to the model described in Section 2. The output $y(t,\eth)$ of the observed system (1) is measured by sensors and transmitted to the remote state estimator through a wireless network. The estimator then obtains the estimation error $B_{r(t)}\vartheta(t,\eth)$ between the estimator output $\bar{y}(t,\eth)$ and the measured data of the estimated system (1) output $y(t,\eth)$. It is worth noting that abnormal disturbances, such as sensor faults or network attacks, may cause the measured data $y(t,\eth)$ to become outliers that deviate significantly from their true values, thereby leading to abnormal estimation errors. The error signal is processed by a saturation function (4), which suppresses these outliers to the saturation boundary. Subsequently, the adjusted signal, combined with the probabilistically fluctuating estimator gain, is fed back into the estimator, enabling it to update the estimated state based on the processed error information.
 Special thanks to you for your good comments. All your suggestions are very important, they have important guiding significance to my thesis writing and scientific research work.\\
 
 

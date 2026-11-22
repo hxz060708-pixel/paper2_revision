@@ -22,17 +22,17 @@ D.~Ding, Q.-L. Han, Z.~Wang, X.~Ge, A {{Survey}} on {{Model-Based Distributed
   Control}} and {{Filtering}} for {{Industrial Cyber-Physical Systems}}, IEEE
   Transactions on Industrial Informatics~(5) (2019) 2483--2499.
 
-\bibitem{chenRobustAdaptiveControl2024}
-L.~Chen, X.~Liu, L.~Zou, M.~Zhang, Robust {{Adaptive Control}} for {{Robotic
-  Manipulator}} with {{Output Constraints}}, in: 2024 {{IEEE}} 13th {{Data
-  Driven Control}} and {{Learning Systems Conference}} ({{DDCLS}}), 2024, pp.
-  1087--1092.
-
 \bibitem{yuanAdaptiveControlNonlinear2024}
 G.~Yuan, Z.~Zhang, C.~Qin, S.~S. Ge, Adaptive {{Control}} for {{Nonlinear
   Time-Varying Systems With Unknown Control Coefficients}} and {{External
   Disturbances}}, IEEE Transactions on Systems, Man, and Cybernetics:
   Systems~(1) (2024) 119--130.
+
+\bibitem{yanUnifiedApproachInput2026}
+Z.~Yan, J.~Zhang, G.~Hu, Z.~Gao, A {{Unified Approach}} for {{Input}}--{{Output
+  Finite-Time Mean Square Stabilization}} of {{Nonlinear Stochastic Markovian
+  Jump Systems With Poisson Noise}}, IEEE Transactions on Automatic Control~(8)
+  (2026) 5588--5595.
 
 \bibitem{biAdaptiveDecentralizedFiniteTime2023}
 Y.~Bi, T.~Wang, J.~Qiu, M.~Li, C.~Wei, L.~Yuan, Adaptive {{Decentralized
@@ -40,10 +40,13 @@ Y.~Bi, T.~Wang, J.~Qiu, M.~Li, C.~Wei, L.~Yuan, Adaptive {{Decentralized
   Deception Attacks}}, IEEE Transactions on Fuzzy Systems~(8) (2023)
   2568--2580.
 
-\bibitem{wangStabilityStabilizationTS2021}
-G.~Wang, L.~Jia, H.~Zhang, Stability and {{Stabilization}} of {{T}}--{{S Fuzzy
-  Time-Delay System}} via {{Relaxed Integral Inequality}} and {{Dynamic Delay
-  Partition}}, IEEE Transactions on Fuzzy Systems~(10) (2021) 2829--2843.
+\bibitem{sunDelayDependentHInfinityGuaranteed2021}
+S.~Sun, H.~Zhang, Z.~Qin, R.~Xi, Delay-dependent {$H_\infty$} guaranteed cost
+  control for uncertain switched {T--S} fuzzy systems with multiple interval
+  time-varying delays, IEEE Transactions on Fuzzy Systems 29~(5) (2021)
+  1065--1080.
+\newblock \href {https://doi.org/10.1109/TFUZZ.2020.2968877}
+  {\path{doi:10.1109/TFUZZ.2020.2968877}}.
 
 \bibitem{wangSwitchingAsynchronousControl2024}
 L.~Wang, Y.~Zhao, X.~Xie, H.-K. Lam, A {{Switching Asynchronous Control
@@ -151,21 +154,17 @@ H.~Chen, G.~Zong, F.~Gao, Y.~Shi, Probabilistic {{Event-Triggered Policy}} for
   {{Cyber-Attacks}} and {{Actuator Failures}}, IEEE Transactions on Automatic
   Control~(12) (2023) 7803--7810.
 
-\bibitem{caiAdaptiveFaulttolerantControl2025}
-J.~Cai, D.~Guo, W.~Wang, Adaptive fault-tolerant control of uncertain systems
-  with unknown actuator failures and input delay, Measurement and Control~(7)
-  (2025) 923--934.
+\bibitem{yanAnnularFiniteTimeStability2026}
+Z.~Yan, G.~Chang, Z.~Xing, R.~Xu, J.~Cheng, Annular {{Finite-Time Stability}}
+  and {{Stabilization}} in {{Probability}} for {{Nonlinear Stochastic Markov
+  Jump Systems With Impulsive Effects}}, International Journal of Robust and
+  Nonlinear Control~(1) (2026) 245--255.
 
 \bibitem{yaoMultiSensorBasedSwitchingEventTriggered2024}
 L.~Yao, X.~Huang, Z.~Wang, H.~Shen, A {{Multi-Sensor-Based Switching
   Event-Triggered Mechanism}} for {{Synchronization Control}} of {{Markovian
   Jump Neural Networks Under DoS Attacks}}, IEEE Transactions on Information
   Forensics and Security (2024) 7548--7559.
-
-\bibitem{xuAsynchronousEventTriggeredControl2024}
-Z.~Xu, Y.~Yu, Z.-G. Wu, Y.~Shen, Asynchronous {{Event-Triggered}}
-  {{{\emph{H}}}} {$\infty$} {{Control}} for {{Continuous-Time Markov Jump
-  Systems}}, IEEE Control Systems Letters (2024) 3386--3391.
 
 \bibitem{lianNewResultsStability2020}
 H.-H. Lian, P.~Deng, S.-P. Xiao, H.-Q. Xiao, New {{Results}} on {{Stability
