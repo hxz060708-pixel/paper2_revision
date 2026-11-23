@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.11.11)  22 NOV 2026 12:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.11.11)  23 NOV 2026 10:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -415,20 +415,20 @@ LaTeX Warning: Unused global option(s):
 (./Response-EAAI.aux)
 \openout1 = `Response-EAAI.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: threeparttable package is loaded.
@@ -448,75 +448,65 @@ Package caption Info: End \AtBeginDocument code.
 \makeMPintoPDFobject=\count302
 \everyMPtoPDFconversion=\toks37
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 58
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 59
 .
  (e:/Latex/texlive/2025/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 58
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 59
 .
 
 (e:/Latex/texlive/2025/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 58.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 59.
 
 
 (e:/Latex/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 58.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 59.
 
 
 (e:/Latex/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+stmry on input line 5
-8.
+9.
 
 (e:/Latex/texlive/2025/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
-Underfull \hbox (badness 10000) in paragraph at lines 59--81
+Underfull \hbox (badness 10000) in paragraph at lines 60--83
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--81
+Underfull \hbox (badness 10000) in paragraph at lines 60--83
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--81
+Underfull \hbox (badness 10000) in paragraph at lines 60--83
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--81
+Underfull \hbox (badness 10000) in paragraph at lines 60--83
 
  []
 
 
-Overfull \hbox (1.1382pt too wide) in paragraph at lines 59--81
+Overfull \hbox (1.1382pt too wide) in paragraph at lines 60--83
 \OT1/cmr/m/n/10 ***************************************************************
 ************************** 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--81
+Underfull \hbox (badness 10000) in paragraph at lines 60--83
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--81
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 82--87
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 82--87
+Underfull \hbox (badness 10000) in paragraph at lines 60--83
 
  []
 
@@ -525,265 +515,276 @@ Underfull \hbox (badness 10000) in paragraph at lines 82--87
 [1
 
 {e:/Latex/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 90--95
+Underfull \hbox (badness 10000) in paragraph at lines 88--93
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--101
+Underfull \hbox (badness 10000) in paragraph at lines 88--93
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--101
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 102--103
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 104--105
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--114
+Underfull \hbox (badness 10000) in paragraph at lines 96--102
 
  []
 
 
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 166--172
+Underfull \hbox (badness 10000) in paragraph at lines 109--114
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 186--192
+Underfull \hbox (badness 10000) in paragraph at lines 109--114
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--118
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--127
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--180
 
  []
 
 
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 207--213
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 220--221
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 225--235
-
- []
-
-
-Overfull \hbox (1.1382pt too wide) in paragraph at lines 225--235
-\OT1/cmr/m/n/10 ***************************************************************
-************************** 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 225--235
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 225--235
+Underfull \hbox (badness 10000) in paragraph at lines 194--200
 
  []
 
 
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 236--241
+Underfull \hbox (badness 10000) in paragraph at lines 215--221
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 236--241
+Underfull \hbox (badness 10000) in paragraph at lines 226--227
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 244--250
+Underfull \hbox (badness 10000) in paragraph at lines 231--242
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 268--272
+Overfull \hbox (1.1382pt too wide) in paragraph at lines 231--242
+\OT1/cmr/m/n/10 ***************************************************************
+************************** 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 231--242
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 231--242
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 247--252
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 247--252
 
  []
 
 
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 276--282
+Underfull \hbox (badness 10000) in paragraph at lines 255--261
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 301--307
+Underfull \hbox (badness 10000) in paragraph at lines 279--283
 
  []
 
 
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 316--323
+Underfull \hbox (badness 10000) in paragraph at lines 288--294
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 348--349
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 354--386
-
- []
-
-
-Overfull \hbox (1.1382pt too wide) in paragraph at lines 354--386
-\OT1/cmr/m/n/10 ***************************************************************
-************************** 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 354--386
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 354--386
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 388--394
+Underfull \hbox (badness 10000) in paragraph at lines 313--319
 
  []
 
 
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 395--399
+Underfull \hbox (badness 10000) in paragraph at lines 325--331
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 414--430
+Underfull \hbox (badness 10000) in paragraph at lines 356--357
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 432--437
+Underfull \hbox (badness 10000) in paragraph at lines 362--373
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 432--437
+Overfull \hbox (1.1382pt too wide) in paragraph at lines 362--373
+\OT1/cmr/m/n/10 ***************************************************************
+************************** 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 362--373
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 438--439
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 442--448
+Underfull \hbox (badness 10000) in paragraph at lines 362--373
 
  []
 
 
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 467--471
+Underfull \hbox (badness 10000) in paragraph at lines 404--411
 
  []
 
-<figs/actuator_fault.pdf, id=38, 704.6325pt x 459.7175pt>
-File: figs/actuator_fault.pdf Graphic file (type pdf)
-<use figs/actuator_fault.pdf>
-Package pdftex.def Info: figs/actuator_fault.pdf  used on input line 474.
-(pdftex.def)             Requested size: 443.86316pt x 289.58147pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 412--416
+
+ []
+
 
 
 [9]
-<figs/event_tri_time.pdf, id=42, 712.6625pt x 459.7175pt>
+Underfull \hbox (badness 10000) in paragraph at lines 432--438
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 456--461
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 456--461
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 462--463
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 466--472
+
+ []
+
+
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 491--495
+
+ []
+
+<figs/actuator_fault.pdf, id=44, 704.6325pt x 459.7175pt>
+File: figs/actuator_fault.pdf Graphic file (type pdf)
+<use figs/actuator_fault.pdf>
+Package pdftex.def Info: figs/actuator_fault.pdf  used on input line 498.
+(pdftex.def)             Requested size: 301.82368pt x 196.91707pt.
+<figs/event_tri_time.pdf, id=45, 712.6625pt x 459.7175pt>
 File: figs/event_tri_time.pdf Graphic file (type pdf)
 <use figs/event_tri_time.pdf>
-Package pdftex.def Info: figs/event_tri_time.pdf  used on input line 481.
-(pdftex.def)             Requested size: 443.86316pt x 286.31963pt.
+Package pdftex.def Info: figs/event_tri_time.pdf  used on input line 505.
+(pdftex.def)             Requested size: 301.82368pt x 194.6934pt.
 
 
-[10 <./figs/actuator_fault.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 491--492
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 494--495
+[11 <./figs/actuator_fault.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 515--516
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 497--498
+Underfull \hbox (badness 10000) in paragraph at lines 518--519
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 499--501
+Underfull \hbox (badness 10000) in paragraph at lines 521--522
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 502--503
+Underfull \hbox (badness 10000) in paragraph at lines 523--525
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 504--505
+Underfull \hbox (badness 10000) in paragraph at lines 526--527
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 506--507
+Underfull \hbox (badness 10000) in paragraph at lines 528--529
 
  []
 
 
-Package caption Warning: Unused \captionsetup[table] on input line 46.
+Underfull \hbox (badness 10000) in paragraph at lines 530--531
+
+ []
+
+
+Package caption Warning: Unused \captionsetup[table] on input line 47.
 See the caption package documentation for explanation.
 
 
-Package caption Warning: Unused \captionsetup[figure] on input line 53.
+Package caption Warning: Unused \captionsetup[figure] on input line 54.
 See the caption package documentation for explanation.
 
 
 
-[11 <./figs/event_tri_time.pdf>] (./Response-EAAI.aux)
+[12 <./figs/event_tri_time.pdf>] (./Response-EAAI.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 7396 strings out of 473190
- 121250 string characters out of 5716852
+ 7398 strings out of 473190
+ 121267 string characters out of 5716852
  508570 words of memory out of 5000000
- 30466 multiletter control sequences out of 15000+600000
+ 30467 multiletter control sequences out of 15000+600000
  572308 words of font info for 96 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 58i,6n,65p,1389b,250s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 1142 hyphenation exceptions out of 8191
+ 58i,6n,65p,1398b,252s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <e:/Latex/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
 e:/Latex/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><e:/
 Latex/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><e:/Late
@@ -797,10 +798,10 @@ st/fonts/type1/public/amsfonts/cm/cmr9.pfb><e:/Latex/texlive/2025/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmsy10.pfb><e:/Latex/texlive/2025/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmsy7.pfb><e:/Latex/texlive/2025/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmti10.pfb>
-Output written on Response-EAAI.pdf (11 pages, 286960 bytes).
+Output written on Response-EAAI.pdf (12 pages, 301145 bytes).
 PDF statistics:
- 135 PDF objects out of 1000 (max. 8388607)
- 83 compressed objects within 1 object stream
+ 138 PDF objects out of 1000 (max. 8388607)
+ 85 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

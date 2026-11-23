@@ -24,6 +24,7 @@
 \usepackage{mathrsfs}
 \setlength{\parskip}{-1.5ex}
 \pagenumbering{arabic}
+\hyphenation{Complete}
 \renewcommand{\baselinestretch}{1.2}
 \usepackage{latexsym}
 \usepackage{graphicx}
@@ -75,23 +76,35 @@
 \hspace*{-0.5cm}\indent\textbf{Reviewer $\sharp$ 1:} This manuscript investigates adaptive event-triggered control for interval type-2 (IT-2) fuzzy cyber-physical systems subject to stochastic deception attacks and Markov-type actuator failures. The combination of adaptive transmission and membership-function-derivative-dependent regional control is relevant to secure networked control. The numerical examples provide an initial illustration of the proposed framework. After reading, the primary features and contributions of this article are sound compared to some existing publications. However, the following aspects should be seriously considered to improve the presentation quality of this investigation.
 \\
 ~\\
-\textbf{1.} It is noted that your manuscript needs careful editing, such as the English grammar and sentence structure so that the goals and results in your work are friendly to the weak in English.
+\textbf{1.} \textcolor{red}{It} is noted that your manuscript needs careful editing, such as the English grammar and sentence structure so that the goals and results in your work are friendly to the weak in English. \textcolor{red}{Complete}
 \\[10pt]
-\indent \textbf{Reply 1:}
+\begingroup
+\setlength{\parskip}{6pt}
+\indent \textbf{Reply 1:} Thank you for this suggestion. We corrected grammatical errors and clarified the discussion of the numerical results. In the fifth paragraph of the Introduction, we revised the description of how measurement corruption and actuator degradation affect the input applied to the plant. In Example~1, we explain the increase in packet transmissions in Table~1 in terms of the triggering threshold.\par
+1) \textcolor{red}{In a degraded mode, the actuator may deliver only part of the commanded input~[30]. The command itself may be based on a falsified measurement that the controller continues to use until the next update. Controller design must therefore account for these factors jointly to ensure that the closed-loop system remains stable and achieves the prescribed level of disturbance attenuation under such operating conditions.} (The fifth paragraph in the introduction)\par
+2) Table~1 compares the proposed AETM with the time-triggered mechanism, which transmits all 400 samples. \textcolor{red}{Increasing $\sigma$ from 4 to 20 lowers the equilibrium value $1/\sigma$ of the adaptive threshold from 0.25 to 0.05. For a given sampled state and weighting matrix, a lower threshold $\delta(t)$ allows a smaller sampling error to trigger transmission under (5). This is consistent with the higher packet counts and lower saving rates observed in Table~1.} (The paragraph introducing Table~1 in Example~1)\par
+\endgroup
 
 ~\\
 \\
-\textbf{2.} \textcolor{red}{The} motivation for jointly considering deception attacks, actuator failures, and communication limitations needs clarification. Could the authors clarify why these factors require simultaneous consideration and how their combined effects influence closed-loop stability and $\mathrm{H}_{\infty}$ performance? \textcolor{red}{Complete}
+\textbf{2.} The motivation for jointly considering deception attacks, actuator failures, and communication limitations needs clarification. Could the authors clarify why these factors require simultaneous consideration and how their combined effects influence closed-loop stability and $\mathrm{H}_{\infty}$ performance?
 \\[10pt]
-\indent \textbf{Reply 2:} Thank you for this comment. In Eq.~(15), the actuator scales a command based on the most recently released sample. If that sample was falsified, the feedback may continue to use incorrect data while an actuator fault reduces the effectiveness of the command. This can impair the controller's ability both to drive the state back to equilibrium and to attenuate external disturbances. The two revised sentences are quoted below.\\
+\indent \textbf{Reply 2:} Thank you for this comment. In Eq.~(15), the controller uses the most recently transmitted measurement until the next update. If that measurement is falsified, the controller computes its commands from incorrect data throughout the interval, while the actuator's effectiveness determines how much of each command reaches the plant. Section~3 accounts for these effects jointly and gives sufficient conditions for asymptotic stability in the absence of disturbances and for the prescribed $\mathrm{H}_\infty$ bound from the disturbance to the output under zero initial conditions. We have clarified in the Introduction why these factors need to be considered together.\\
 
-\textcolor{red}{With event-triggered transmission, the controller may continue to use a falsified sample until the next release, while an actuator fault may weaken the command computed from that sample. These effects must therefore be considered together when assessing whether the feedback can stabilize the plant and achieve the prescribed $\mathrm{H}_\infty$ disturbance attenuation.} (The fifth paragraph in the introduction)
+\textcolor{red}{In a degraded mode, the actuator may deliver only part of the commanded input~[30]. The command itself may be based on a falsified measurement that the controller continues to use until the next update. Controller design must therefore account for these factors jointly to ensure that the closed-loop system remains stable and achieves the prescribed level of disturbance attenuation under such operating conditions.} (The fifth paragraph in the introduction)
 
 ~\\
 \\
-\textbf{3.} The author should check the References carefully throughout this paper, there are many references which not fit our style need some modification and there is something wrong with the formatting of the Reference.
+\textbf{3.} \textcolor{red}{The} author should check the References carefully throughout this paper, there are many references which not fit our style need some modification and there is something wrong with the formatting of the Reference. \textcolor{red}{Complete}
 \\[10pt]
-\indent \textbf{Reply 3:}
+\begingroup
+\setlength{\parskip}{6pt}
+\indent \textbf{Reply 3:} Thank you for pointing out the formatting issues in the reference list. We have standardized the formatting, supplied missing volume numbers, and checked the page ranges and article numbers. Four examples of the corrected entries are given below.\par
+1) [1] Z.~Wang, D.~Sun, L.~Wang, and M.~Zhao, Mixed vehicle group merging control in the vicinity of traffic signals: A cyber-physical perspective, \emph{IEEE Transactions on Intelligent Transportation Systems} \textbf{\textcolor{red}{25}} (2024), no.~6, 5328--5341.\par
+2) [23] J.~Chen, W.~Wang, K.~Ding, G.~Wu, X.~Wu, Y.~Liu, and J.~Cao, Finite-time stability of nonlinear time-varying systems with event-triggered mechanism, \emph{Journal of the Franklin Institute} \textbf{\textcolor{red}{363}} (2026), no.~1, 108260.\par
+3) [24] X.~Yang, Y.~Long, T.~Li, H.~Yang, and H.~Liang, Adaptive event-triggered secure control for attacked cyber--physical systems based on resilient observer, \emph{IEEE Transactions on Systems, Man, and Cybernetics: Systems} \textbf{\textcolor{red}{55}} (2025), no.~2, 936--947.\par
+4) [26] J.-W.~Xing, C.~Peng, and X.~Xie, Switched fuzzy control for nonlinear systems via a fuzzy-rule-dependent adaptive event-triggered mechanism, \emph{IEEE Transactions on Fuzzy Systems} \textbf{\textcolor{red}{32}} (2024), no.~3, 870--882.\par
+\endgroup
 
 ~\\
 \\
@@ -107,18 +120,13 @@
 
 ~\\
 \\
-\textbf{5.} \textcolor{red}{The} operational regions are determined by the signs of the membership-function derivatives. For readers unfamiliar with this construction, the link between a derivative sign pattern and the associated matrix constraints may not be immediately apparent. Could the authors explain how the signs of the membership-function derivatives determine the regional constraints and how these constraints are incorporated into controller synthesis? \textcolor{red}{Complete} 
+\textbf{5.} The operational regions are determined by the signs of the membership-function derivatives. For readers unfamiliar with this construction, the link between a derivative sign pattern and the associated matrix constraints may not be immediately apparent. Could the authors explain how the signs of the membership-function derivatives determine the regional constraints and how these constraints are incorporated into controller synthesis? 
 \\[10pt]
 \begingroup
 \setlength{\parskip}{6pt}
-\indent \textbf{Reply 5:} Thank you for raising this point. The two-rule system in Example~1 illustrates how the derivative sign determines a regional constraint. Since $h_1+h_2=1$, we have $\dot P_{ih}=\dot h_1(P_{i1}-P_{i2})$. To ensure $\dot P_{ih}\preceq 0$, we impose $P_{i1}-P_{i2}\succeq 0$ when $\dot h_1\leq 0$ and $P_{i1}-P_{i2}\preceq 0$ when $\dot h_1>0$. Applying the same reasoning to the other matrix derivatives, according to their required signs, gives the two constraint sets $\mathcal C_1$ and $\mathcal C_2$. We then solve the LMIs of Theorem~3.3 under the corresponding constraint set to obtain the controller gains and triggering weight matrix for each region.\par
-\noindent \textbf{Remark 2.4.} Lemma 2.1 indicates that the state space can be partitioned into $2^{r-1}$ operational regions, denoted by $\mathcal{V}_l$ ($l = 1,2,\dots,2^{r-1}$), according to the sign combinations of $\dot{h}_v$. \textcolor{red}{Taking rule $r$ as the reference, Eq.~(16) ensures that each term $\dot h_v(G_v-G_r)$ is negative semidefinite by requiring $G_v-G_r\succeq 0$ when $\dot h_v\leq 0$ and $G_v-G_r\preceq 0$ when $\dot h_v>0$. For each region $\mathcal V_l$, the inequalities obtained according to the required sign of each matrix derivative form the constraint set $\mathcal C_l$. We impose $\mathcal C_l$ when solving the LMIs of Theorem~3.3 to obtain the controller gains $K_n^l$ and the triggering weight matrix $S^l$ for that region.} (Remark 2.4)\par
+\indent \textbf{Reply 5:} Thank you for raising this point. The two-rule system in Example~1 illustrates how the derivative sign determines a regional constraint. Since $h_1+h_2=1$, we have $\dot P_{ih}=\dot h_1(P_{i1}-P_{i2})$. To ensure $\dot P_{ih}\preceq 0$, we impose $P_{i1}-P_{i2}\succeq 0$ when $\dot h_1\leq 0$ and $P_{i1}-P_{i2}\preceq 0$ when $\dot h_1>0$. Applying the same reasoning to the other matrix derivatives, according to their required signs, gives the two constraint sets $\mathcal C_1$ and $\mathcal C_2$. We then solve the LMIs of Theorem~3.3 under the corresponding constraint set to obtain the controller gains and triggering weight matrix for each region. We have clarified in Remark~2.4 how these regional constraints are used in controller synthesis.\par
+\noindent \textbf{Remark 2.4.} The state space can be partitioned into $2^{r-1}$ operational regions $\mathcal{V}_l$ ($l = 1,\ldots,2^{r-1}$) according to the \textcolor{red}{signs of the membership-function derivatives} $\dot{h}_v$. \textcolor{red}{With rule $r$ as the reference, Eq.~(16) imposes $G_v-G_r\succeq 0$ when $\dot h_v\leq 0$, so the contribution $\dot h_v(G_v-G_r)$ to $\dot G_h$ is negative semidefinite. For each region $\mathcal V_l$, the constraint set $\mathcal C_l$ consists of the matrix inequalities that ensure the required sign of each matrix derivative. We impose $\mathcal C_l$ when solving the LMIs of Theorem~3.3 to obtain the controller gains $K_n^l$ and the triggering weight matrix $S^l$ for that region.} (Remark 2.4)\par
 \endgroup
-% Matching working draft; verify its manuscript edits and locations before use.
-% Thank you for this comment. We have added an explanation after the regional-controller and triggering definitions in Section 2.4. Each derivative-sign pattern selects the matrix inequalities collected in its regional constraint set, and those inequalities are imposed together with the synthesis LMIs. The text gives a concrete example: a nonpositive membership derivative combined with a positive-semidefinite difference of the corresponding P matrices produces a negative-semidefinite derivative contribution; reversing both signs preserves this result. It separately explains why the R2 difference has the opposite orientation, in accordance with the existing nonnegative derivative requirement. The same choices are carried into the transformed synthesis conditions, after which the active sign pattern selects the regional gains and triggering matrix. No theorem condition, displayed equation, or mathematical derivation has been changed.
-%
-%
-% \textbf{Revision location.} Clean manuscript p. 6. Marked manuscript p. 7. Revision items M26.
 % Previous template example.
 % \indent \textbf{Reply 5:} Thanks to you for your good comment.\\
 %
@@ -189,9 +197,9 @@
 \\[10pt]
 \begingroup
 \setlength{\parskip}{6pt}
-\indent \textbf{Reply 7:} Thank you for asking how these parameters enter the design and how their values are chosen. The scalars $\xi_1$ and $\xi_2$ fix the proportions among the slack matrices in Theorem~3.2. In Theorem~3.3, $\tau$ sets the relative weights of the two terms used to bound the actuator uncertainty. We prescribe the three scalars before solving the LMIs and use feasibility in both regions as the selection criterion. The nominal choices $(0.01,0.01,0.8)$ in Example~1 and $(2,4,2)$ in Example~2 both admit a solution in each region at $h=0.05$ and $\gamma=2$. We also checked sensitivity by re-solving the two regional problems after changing one scalar at a time by $-10\%$ or $+10\%$. All 24 perturbed regional problems were feasible. We have added the parameter interpretation to Remark~3.2 and the sensitivity results to the opening paragraph of Section~4.\par
-\noindent \textbf{Remark 3.2.} \textcolor{red}{In Theorem~3.2, the relations $Q_2=\xi_1Q_1$ and $Q_3=\xi_2Q_1$ allow a common change of variables under which the gains enter the LMIs linearly through $\widetilde K_n=K_nQ_1^{-1}$.} In Theorem~3.3, the scaling parameter $\tau > 0$ is introduced to handle the norm-bounded uncertainty matrix $V_i$ resulting from stochastic actuator failures. \textcolor{red}{Young's inequality bounds the resulting cross term by two quadratic terms, with weight $\tau$ on the term involving $B_mF_{i1}$ and weight $1/\tau$ on the term involving $\widetilde K_n$.} (Remark~3.2)\par
-\noindent This section considers an engineering-motivated example and a numerical simulation study to assess the effectiveness and applicability of the developed control scheme. \textcolor{red}{In each example, we prescribe $(\xi_1,\xi_2,\tau)$ and check that the LMIs of Theorem~3.3 are feasible separately under $\mathcal C_1$ and $\mathcal C_2$ at $h=0.05$ and $\gamma=2$. To assess sensitivity, we increased and decreased each scalar by $10\%$ in turn, holding the other two at their reported values. Both regional LMI problems remained feasible at all six perturbed settings in each example.} (The opening paragraph of Section~4)\par
+\indent \textbf{Reply 7:} Thank you for asking how these parameters enter the design and how their values are chosen. The scalars $\xi_1$ and $\xi_2$ fix the proportions among the slack matrices in Theorem~3.2. In Theorem~3.3, $\tau$ sets the relative weights of the two terms used to bound the actuator uncertainty. In Example~1, we varied $\xi_1$ and $\xi_2$ in steps of 0.01 and $\tau$ in steps of 0.1. For each parameter set, we checked the LMIs of Theorem~3.3 separately under $\mathcal C_1$ and $\mathcal C_2$ at $h=0.05$ and $\gamma=2$. Among the feasible sets, we favored those that combined rapid state convergence with a high communication saving rate. We selected $\xi_1=0.01$, $\xi_2=0.01$, and $\tau=0.8$. Figure~4 shows the resulting closed-loop state trajectories. At $\sigma=4$, only 85 of the 400 samples were transmitted, a saving of $78.75\%$ relative to time-triggered transmission, as shown in Table~1. In Example~2, $\xi_1=2$, $\xi_2=4$, and $\tau=2$ also yielded feasible LMIs in both regions at the same $h$ and $\gamma$. We also checked sensitivity by re-solving the two regional problems after changing one scalar at a time by $-10\%$ or $+10\%$. All 24 perturbed regional problems were feasible. We have added the parameter interpretation to Remark~3.2 and the sensitivity results to the opening paragraph of Section~4.\par
+1) \textbf{Remark 3.2.} \textcolor{red}{In Theorem~3.2, the relations $Q_2=\xi_1Q_1$ and $Q_3=\xi_2Q_1$ allow a common change of variables under which the gains enter the LMIs linearly through $\widetilde K_n=K_nQ_1^{-1}$.} In Theorem~3.3, the scaling parameter $\tau > 0$ is introduced to handle the norm-bounded uncertainty matrix $V_i$ resulting from stochastic actuator failures. \textcolor{red}{Young's inequality bounds the resulting cross term by two quadratic terms, with weight $\tau$ on the term involving $B_mF_{i1}$ and weight $1/\tau$ on the term involving $\widetilde K_n$.} (Remark~3.2)\par
+2) This section considers an engineering-motivated example and a numerical simulation study to assess the effectiveness and applicability of the developed control scheme. \textcolor{red}{In each example, we prescribe $(\xi_1,\xi_2,\tau)$ and check that the LMIs of Theorem~3.3 are feasible separately under $\mathcal C_1$ and $\mathcal C_2$ at $h=0.05$ and $\gamma=2$. To assess sensitivity, we increased and decreased each scalar by $10\%$ in turn, holding the other two at their reported values. Both regional LMI problems remained feasible at all six perturbed settings in each example.} (The opening paragraph of Section~4)\par
 \endgroup
 % Previous template example.
 % \indent \textbf{Reply 7:} Thank you for this valuable suggestion. In response to this suggestion, we have provided a clear description of the algorithm for minimizing the H$\infty$ performance index $\gamma$ in Remark 3.4.\\
@@ -210,11 +218,9 @@
 \\[10pt]
 \begingroup
 \setlength{\parskip}{6pt}
-\indent \textbf{Reply 8:} Thank you for pointing out these errors.\par
-\noindent 1) In Example~2, 65 transmissions occurred over 400 candidate sampling instants, giving a saving rate of $(400-65)/400=0.8375=83.75\%$. We have corrected the reported percentage.\par\nopagebreak
-\noindent Under this fixed setting, only 65 transmissions are triggered out of 400 candidate sampling instants, yielding a communication saving rate of \textcolor{red}{$83.75\%$}. (Example~2)\par
-\noindent 2) We corrected the verb in the proof of Theorem~3.1 and a similar subject--verb agreement error in the description of $K_n$ in Section~2.4.\par\nopagebreak
-\noindent condition (22) \textcolor{red}{guarantees} the negativity of the corresponding fuzzy-weighted double-sum terms. (Proof of Theorem~3.1)\par
+\indent \textbf{Reply 8:} Thank you for pointing out these errors. In Example~2, 65 transmissions occurred over 400 candidate sampling instants, giving a saving rate of $(400-65)/400=0.8375=83.75\%$. We have corrected the reported percentage. We corrected the verb in the proof of Theorem~3.1 and a similar subject--verb agreement error in the description of $K_n$ in Section~2.4.\par
+1) Under this fixed setting, only 65 transmissions are triggered out of 400 candidate sampling instants, yielding a communication saving rate of \textcolor{red}{$83.75\%$}. (Example~2)\par
+2) condition (22) \textcolor{red}{guarantees} the negativity of the corresponding fuzzy-weighted double-sum terms. (Proof of Theorem~3.1)\par
 \endgroup\vspace{6pt}
 
 Special thanks to you for your good comments. All your suggestions are very important, they have important guiding significance to my thesis writing and scientific research work.\\
@@ -231,7 +237,12 @@ Thank you for this constructive suggestion again!
 ~\\
 \textbf{1.} The manuscript requires further editing to improve English grammar, sentence structure, and readability. Some expressions are informal or awkwardly phrased. Careful language polishing is recommended to ensure clear and consistent academic expression.
 \\[10pt]
-\indent \textbf{Reply 1:} We appreciate the your careful reading and kind reminder. The entire manuscript has been thoroughly proofread to eliminate typographical and grammatical errors. Minor language corrections and formatting adjustments have been made throughout the paper to ensure accuracy and clarity.
+\begingroup
+\setlength{\parskip}{6pt}
+\indent \textbf{Reply 1:} We appreciate your careful reading. We revised the opening of Section~2.2 to explain more clearly why we use an AETM to reduce transmissions while maintaining the desired control performance. We also corrected the subject--verb agreement in the sentence defining $K_n$ in Section~2.4.\par
+1) In networked control systems (NCSs), continuous data transmission \textcolor{red}{can strain the available bandwidth and lead to} network congestion. \textcolor{red}{We therefore use} an AETM \textcolor{red}{on the sensor-to-controller link to reduce} unnecessary transmissions \textcolor{red}{while maintaining} the desired control performance. (The opening paragraph of Section~2.2)\par
+2) where $K_n$ \textcolor{red}{denotes} the controller \textcolor{red}{gain for rule $n$}. (Section~2.4)\par
+\endgroup
 
 ~\\
 \\
@@ -239,16 +250,16 @@ Thank you for this constructive suggestion again!
 \\[10pt]
 \indent \textbf{Reply 2:} Thank you for raising this point. When bandwidth is limited, transmitting every sample may be impractical. The design question is whether event-triggered feedback can still stabilize the plant when a transmitted measurement may be falsified and the actuator may deliver only part of the commanded input. We have clarified this motivation in the Introduction.\\
 
-\textcolor{red}{With event-triggered transmission, the controller may continue to use a falsified sample until the next release, while an actuator fault may weaken the command computed from that sample. These effects must therefore be considered together when assessing whether the feedback can stabilize the plant and achieve the prescribed $\mathrm{H}_\infty$ disturbance attenuation.} (The fifth paragraph in the introduction)
+\textcolor{red}{In a degraded mode, the actuator may deliver only part of the commanded input~[30]. The command itself may be based on a falsified measurement that the controller continues to use until the next update. Controller design must therefore account for these factors jointly to ensure that the closed-loop system remains stable and achieves the prescribed level of disturbance attenuation under such operating conditions.} (The fifth paragraph in the introduction)
 
 ~\\
 \\
-\textbf{3.} \textcolor{red}{The} interpretation of the adaptive-threshold parameter in Remark 2.2 is not sufficiently clear. Please explain its relationship with the equilibrium threshold and how the threshold evolves from different initial values under the influence of the sampling error. \textcolor{red}{Complete}
+\textbf{3.} The interpretation of the adaptive-threshold parameter in Remark 2.2 is not sufficiently clear. Please explain its relationship with the equilibrium threshold and how the threshold evolves from different initial values under the influence of the sampling error.
 \\[10pt]
 \begingroup
 \setlength{\parskip}{6pt}
 \indent \textbf{Reply 3:} Thank you for this question. In (5), $\delta(t)$ sets the relative tolerance for the sampling error, and $\sigma$ determines its equilibrium value $1/\sigma$ in (6). When the sampling error is nonzero, a threshold above $1/\sigma$ decreases toward it, whereas a threshold below $1/\sigma$ increases toward it. At a given threshold away from equilibrium, a larger weighted sampling error makes the adjustment faster. If the sampling error is zero, the threshold has zero update rate. We have clarified this behavior in Remark~2.2.\par
-\noindent \textcolor{red}{The equilibrium threshold is $1/\sigma$, since the factor $1/\delta(t)-\sigma$ vanishes at this value. When the sampling error is nonzero, $\delta(t)$ decreases toward $1/\sigma$ if it starts above this value and increases toward it if it starts below. For example, when $\delta(t)>1/\sigma$, a larger weighted sampling error drives the threshold down more rapidly, making the triggering condition in (5) easier to satisfy. When the current sample is close to the last transmitted sample, the threshold changes only gradually.} \mbox{(Remark~2.2)}\par
+\noindent \textcolor{red}{In (6), the parameter $\sigma$ determines the equilibrium threshold $1/\sigma$. When the sampling error is nonzero, $\delta(t)$ decreases toward $1/\sigma$ if it starts above this value and increases toward it if it starts below. At a given value of $\delta(t)$ away from equilibrium, the rate of adjustment is proportional to the weighted sampling error $e^{\mathrm{T}}Se$. For example, when $\delta(t)>1/\sigma$, a larger weighted error drives the threshold down more rapidly, making the triggering condition in (5) easier to satisfy for the same sampled state. As the system approaches equilibrium and the sampling error tends to zero, the threshold varies more slowly. When the sampling error vanishes, (6) gives $\dot{\delta}(t)=0$, so the threshold no longer changes.} \mbox{(Remark~2.2)}\par
 \endgroup
 % Matching working draft; verify its manuscript edits and locations before use.
 % Thank you for this question. We have clarified the interpretation of the existing adaptation law in Remark 2.2. For a positive threshold and nonzero sampling error, the threshold increases when it is below 1/sigma and decreases when it is above 1/sigma. Its derivative is zero when the error is zero or the threshold equals 1/sigma. The weighted error magnitude scales the rate of adjustment. For fixed sampled state, error, and weighting matrix, a larger threshold makes the triggering inequality harder to satisfy. We also explain that actual transmission times depend on the joint evolution of these quantities, so the equilibrium alone does not imply the same trajectory or communication savings for every initial condition.
@@ -267,20 +278,21 @@ Thank you for this constructive suggestion again!
 
 ~\\
 \\
-\textbf{4.} \textcolor{red}{The} manuscript employs a two-sided looped functional incorporating fuzzy membership information. Could the authors explain how the looped structure captures inter-sample dynamics and what additional benefits the membership-dependent terms bring to the stability analysis? \textcolor{red}{Complete}
+\textbf{4.} The manuscript employs a two-sided looped functional incorporating fuzzy membership information. Could the authors explain how the looped structure captures inter-sample dynamics and what additional benefits the membership-dependent terms bring to the stability analysis?
 \\[10pt]
 \indent \textbf{Reply 4:} Thank you for raising these two points.\par
 {\setlength{\parskip}{5pt}\indent In Eq.~(29), the two integrals in $V_3$ use the state derivative over the two parts of the sampling interval, before and after the current time $t$. At either sampling endpoint, one integration interval has zero length and the other integral has zero weight. Thus, $V_3$ captures the inter-sample dynamics while vanishing at both endpoints.\par
-\indent The membership-dependent matrices allow the integral weights to vary with the current rule memberships. For example, for two rules, Eq.~(45) gives $\dot R_{1h}=\dot h_1(R_{11}-R_{12})$. Within the active region, the matrix orderings specified after Eq.~(47) give $\dot R_{1h}\preceq 0$ and $\dot R_{2h}\succeq 0$, so both membership-dependent derivative terms in Eq.~(34) are nonpositive. This flexibility in choosing the integral weights may reduce the conservatism of the stability criterion.\par}
+\indent The membership-dependent matrices allow the integral weights to vary with the current rule memberships. For example, for two rules, Eq.~(45) gives $\dot R_{1h}=\dot h_1(R_{11}-R_{12})$. Within the active region, the matrix orderings specified after Eq.~(47) give $\dot R_{1h}\preceq 0$ and $\dot R_{2h}\succeq 0$, so both membership-dependent derivative terms in Eq.~(34) are nonpositive. This flexibility in choosing the integral weights may reduce the conservatism of the stability criterion. Remark~3.1 now explains how $V_3$ uses information from both parts of each sampling period.\par
+\noindent The two-sided FMF-dependent looped functional in (26) \textcolor{red}{uses} the augmented vectors $\zeta_i(t)$, $i=1,2,3$, \textcolor{red}{to capture state information over each sampling interval} $[t_k^j,t_k^{j+1})$. \textcolor{red}{The distances $d_1(t)$ and $d_2(t)$ denote the elapsed and remaining times within that interval.} \textcolor{red}{In $V_3$, the two time factors weight the integrals of the state derivative on either side of $t$, with the weighting matrices determined by the current rule memberships.} \textcolor{red}{These membership-dependent weights may yield a less conservative stability criterion.} \mbox{(Remark~3.1)}\par}
 
 ~\\
 \\
-\textbf{5.} \textcolor{red}{The} connection between the membership-function derivatives and the regional matrix constraints needs further explanation. How do the derivative signs determine the directions of the matrix inequalities? A representative example would help readers understand the regional controller design. \textcolor{red}{Complete}
+\textbf{5.} The connection between the membership-function derivatives and the regional matrix constraints needs further explanation. How do the derivative signs determine the directions of the matrix inequalities? A representative example would help readers understand the regional controller design.
 \\[10pt]
 \begingroup
 \setlength{\parskip}{6pt}
 \indent \textbf{Reply 5:} Thank you for suggesting a concrete example. In Example~1, the two membership functions satisfy $h_1+h_2=1$, so $\dot h_2=-\dot h_1$. Hence $\dot{\widetilde P}_{ih}=\dot h_1(\widetilde P_{i1}-\widetilde P_{i2})$ and $\dot{\widetilde R}_{2h}=\dot h_1(\widetilde R_{21}-\widetilde R_{22})$. The stability conditions require the first derivative to be negative semidefinite and the second to be positive semidefinite. Thus, in the region where $\dot h_1\leq 0$, we impose $\widetilde P_{i1}-\widetilde P_{i2}\succeq 0$ and $\widetilde R_{21}-\widetilde R_{22}\preceq 0$. When $\dot h_1>0$, both inequalities are reversed so that the two derivatives retain their required signs. Example~1 uses the resulting constraint sets $\mathcal C_1$ and $\mathcal C_2$ to compute the gains for the respective regions. The general rule is explained in the revised Remark~2.4.\par
-\noindent \textbf{Remark 2.4.} Lemma 2.1 indicates that the state space can be partitioned into $2^{r-1}$ operational regions, denoted by $\mathcal{V}_l$ ($l = 1,2,\dots,2^{r-1}$), according to the sign combinations of $\dot{h}_v$. \textcolor{red}{Taking rule $r$ as the reference, Eq.~(16) ensures that each term $\dot h_v(G_v-G_r)$ is negative semidefinite by requiring $G_v-G_r\succeq 0$ when $\dot h_v\leq 0$ and $G_v-G_r\preceq 0$ when $\dot h_v>0$. For each region $\mathcal V_l$, the inequalities obtained according to the required sign of each matrix derivative form the constraint set $\mathcal C_l$. We impose $\mathcal C_l$ when solving the LMIs of Theorem~3.3 to obtain the controller gains $K_n^l$ and the triggering weight matrix $S^l$ for that region.} (Remark 2.4)\par
+\noindent \textbf{Remark 2.4.} The state space can be partitioned into $2^{r-1}$ operational regions $\mathcal{V}_l$ ($l = 1,\ldots,2^{r-1}$) according to the \textcolor{red}{signs of the membership-function derivatives} $\dot{h}_v$. \textcolor{red}{With rule $r$ as the reference, Eq.~(16) imposes $G_v-G_r\succeq 0$ when $\dot h_v\leq 0$, so the contribution $\dot h_v(G_v-G_r)$ to $\dot G_h$ is negative semidefinite. For each region $\mathcal V_l$, the constraint set $\mathcal C_l$ consists of the matrix inequalities that ensure the required sign of each matrix derivative. We impose $\mathcal C_l$ when solving the LMIs of Theorem~3.3 to obtain the controller gains $K_n^l$ and the triggering weight matrix $S^l$ for that region.} (Remark 2.4)\par
 \endgroup
 % Matching working draft; verify its manuscript edits and locations before use.
 % Thank you for this suggestion. We have added an explanation after the regional controller and triggering definitions in Remark 2.4. For example, a nonpositive membership-function derivative multiplied by a positive semidefinite matrix difference gives a negative semidefinite term; for a positive derivative, reversing the matrix inequality produces the same sign. We also explain why the R2-related inequality has the opposite orientation, as the analysis requires a nonnegative derivative for that weighted matrix. Collecting these choices gives the constraint set for each region, which is imposed together with the synthesis LMIs. This addition explains the existing constraints without altering the theorem or proof.
@@ -304,24 +316,20 @@ Thank you for this constructive suggestion again!
 \\[10pt]
 \begingroup
 \setlength{\parskip}{6pt}
-\indent \textbf{Reply 6:} Thank you for identifying these three errors.\par
-\noindent 1) We have corrected the saving rate in Example~2 to $83.75\%$, since 335 of the 400 possible transmissions were avoided. We also recalculated all four saving rates in Table~1 from the reported packet counts and confirmed that each percentage is correct.\par\nopagebreak
-\noindent Under this fixed setting, only 65 transmissions are triggered out of 400 candidate sampling instants, yielding a communication saving rate of \textcolor{red}{$83.75\%$}. (Example~2)\par
-\noindent 2) Section~2.4 now identifies $K_n$ as the gain for rule $n$.\par\nopagebreak
-\noindent where $K_n$ \textcolor{red}{denotes} the controller \textcolor{red}{gain for rule $n$}. (Section~2.4)\par
-\noindent 3) The proof of Theorem~3.1 now uses \emph{guarantees} to agree with the singular subject \emph{condition (22)}.\par\nopagebreak
-\noindent condition (22) \textcolor{red}{guarantees} the negativity of the corresponding fuzzy-weighted double-sum terms. (Proof of Theorem~3.1)\par
+\indent \textbf{Reply 6:} Thank you for identifying these three errors. We have corrected the saving rate in Example~2 to $83.75\%$, since 335 of the 400 possible transmissions were avoided. We also recalculated all four saving rates in Table~1 from the reported packet counts and confirmed that each percentage is correct. Section~2.4 now identifies $K_n$ as the gain for rule $n$. The proof of Theorem~3.1 now uses \emph{guarantees} to agree with the singular subject \emph{condition (22)}.\par
+1) Under this fixed setting, only 65 transmissions are triggered out of 400 candidate sampling instants, yielding a communication saving rate of \textcolor{red}{$83.75\%$}. (Example~2)\par
+2) where $K_n$ \textcolor{red}{denotes} the controller \textcolor{red}{gain for rule $n$}. (Section~2.4)\par
+3) condition (22) \textcolor{red}{guarantees} the negativity of the corresponding fuzzy-weighted double-sum terms. (Proof of Theorem~3.1)\par
 \endgroup
 
 ~\\
 \\
-\textbf{7.} \textcolor{red}{The} literature review would benefit from broader coverage of recent advances in secure IT-2 fuzzy control and event-triggered control. The authors are encouraged to include more relevant studies published within the past three years to strengthen the research motivation and clarify the distinctions and connections between this work and existing methods. \textcolor{red}{Complete}
-% R2.7: Method comparison addressed. Review recent literature during the planned reference update.
+\textbf{7.} The literature review would benefit from broader coverage of recent advances in secure IT-2 fuzzy control and event-triggered control. The authors are encouraged to include more relevant studies published within the past three years to strengthen the research motivation and clarify the distinctions and connections between this work and existing methods.
 \\[10pt]
 \begingroup
 \setlength{\parskip}{6pt}
-\indent \textbf{Reply 7:} Thank you for this suggestion. We have revised the fourth paragraph of the Introduction to clarify how our switching rule differs from that in [24]. Our work also shares with [27] the problem of control under cyberattacks and actuator failures. Reference [27] uses a probabilistic triggering policy. In our design, the sampling error governs how the triggering threshold evolves.\par
-\noindent Adaptive event-triggered mechanisms (AETMs) [24, 25] and dynamic triggering strategies [26] adjust triggering parameters according to real-time or historical state information. \textcolor{red}{In [24], the membership grades determine which fuzzy controller is active. In our design, the signs of the membership-function derivatives define the operating regions, and the controller gains and triggering weight matrix are designed jointly for each region.} (The fourth paragraph in the introduction)\par
+\indent \textbf{Reply 7:} Thank you for this suggestion. We have expanded the fourth paragraph of the Introduction to discuss recent work on adaptive event triggering. We now cite Yang et al.~[24] on secure control of cyber--physical systems and Chandrasekar et al.~[25] on asynchronous control of IT-2 fuzzy Markov jump systems under deception attacks. We have also clarified how our design relates to the fuzzy-rule-dependent mechanism of Xing et al.~[26]. In our design, the sampling error drives the threshold update, and the signs of the membership-function derivatives define the regions for which the triggering weight matrices are designed.\par
+\noindent \textcolor{red}{In recent years,} adaptive event-triggered mechanisms (AETMs) \textcolor{red}{have attracted increasing attention in the control of networked fuzzy systems. These mechanisms can adjust their triggering parameters using current or past state information~[24]. For example, Chandrasekar et al.~[25] used adaptive event triggering for asynchronous control of IT-2 fuzzy Markov jump systems under deception attacks. Xing et al.~[26] proposed an adaptive triggering mechanism that depends on the fuzzy rules. In our approach, the sampling error drives the threshold update. We use the signs of the membership-function derivatives to define the operating regions and design a triggering weight matrix for each region to reduce unnecessary transmissions more effectively.} (The fourth paragraph in the introduction)\par
 \endgroup\vspace{\baselineskip}
 % Earlier wording retained for comparison.
 % \noindent \textcolor[rgb]{0,0.50,0}{The threshold update and the regional design are given in Sections 2.2 and 2.4, respectively.}\par
@@ -358,9 +366,17 @@ Thank you for this constructive suggestion again!\par
 \hspace*{-0.5cm}\indent\textbf{Reviewer $\sharp$ 3:} The paper develops an adaptive event-triggered control strategy for IT-2 fuzzy CPSs in which the feedback channel may be subject to deception attacks and the actuators may switch among failure modes. This setting is relevant to networked implementations where information corruption, control-channel degradation, and communication limits may coexist. The manuscript is organized around a clear mathematical framework. The topic investigated in this manuscript is of interest, and the proposed control framework offers useful insights into the considered problem. However, several aspects require further clarification and discussion to strengthen the presentation of the results.
 \\
 ~\\
-\textbf{1.} Most of the cited works in the manuscript are from earlier studies, with relatively few references to recent advances. It is suggested that the authors include more relevant works from the past three years.
+\textbf{1.} \textcolor{red}{Most} of the cited works in the manuscript are from earlier studies, with relatively few references to recent advances. It is suggested that the authors include more relevant works from the past three years. \textcolor{red}{Complete}
 \\[10pt]
-\indent \textbf{Reply 1:}
+\begingroup
+\setlength{\parskip}{6pt}
+\indent \textbf{Reply 1:} Thank you for this suggestion. We have expanded the literature review in the first, second, and fifth paragraphs of the Introduction. Three of the studies added were published within the past three years. The five references added to these paragraphs are [4, 5, 7, 28, 30].\par
+1) \textcolor{red}{[4] Z.~Yan, J.~Zhang, G.~Hu, and Z.~Gao, A {{Unified Approach}} for {{Input}}--{{Output Finite-Time Mean Square Stabilization}} of {{Nonlinear Stochastic Markovian Jump Systems With Poisson Noise}}, IEEE Transactions on Automatic Control 71 (2026), no.~8, 5588--5595.}\par
+2) \textcolor{red}{[5] S.~Sun, H.~Zhang, J.~Zhang, L.~Yu, and J.~Sun, Multiple {{Delay-Dependent Robust}} {$\mathrm{H}_\infty$} {{Finite-Time Filtering}} for {{Uncertain It\^o Stochastic Takagi}}--{{Sugeno Fuzzy Semi-Markovian Jump Systems With State Constraints}}, IEEE Transactions on Fuzzy Systems 30 (2022), no.~2, 321--331.}\par
+3) \textcolor{red}{[7] S.~Sun, H.~Zhang, Z.~Qin, and R.~Xi, Delay-{{Dependent}} {$\mathrm{H}_\infty$} {{Guaranteed Cost Control}} for {{Uncertain Switched T}}--{{S Fuzzy Systems With Multiple Interval Time-Varying Delays}}, IEEE Transactions on Fuzzy Systems 29 (2021), no.~5, 1065--1080.}\par
+4) \textcolor{red}{[28] Z.~Yan, G.~Chang, Z.~Xing, R.~Xu, and J.~Cheng, Annular {{Finite-Time Stability}} and {{Stabilization}} in {{Probability}} for {{Nonlinear Stochastic Markov Jump Systems With Impulsive Effects}}, International Journal of Robust and Nonlinear Control 36 (2026), no.~1, 245--255.}\par
+5) \textcolor{red}{[30] W.~Ao, H.~Yin, S.~Sun, P.~Liu, and P.~Shi, Fixed-{{Time Fault-Tolerant Trajectory Tracking Control}} for a {{Wheeled Mobile Robot}}, IEEE Transactions on Automation Science and Engineering 23 (2026), 811--819.}\par
+\endgroup
 % Matching working draft; verify its manuscript edits and locations before use.
 % Thank you for this comment. We have expanded the comparison immediately before the contribution list. Two directly relevant studies have been added: Liu, Ling, and Zhang (2025), on torus-event-based sliding-mode control of discrete-time IT-2 fuzzy systems under deception attacks, and Chandrasekar et al. (2026), on adaptive event-triggered asynchronous control of uncertain IT-2 fuzzy Markov jump systems with deception attacks. Their publication details and the methodological descriptions were checked against the publishers’ article pages. The comparison also explicitly cites the existing work by Chen et al. (2023) on probabilistic event-triggered control under cyberattacks and actuator failures. We distinguish the present continuous-time formulation, Markov-type actuator effectiveness, and derivative-sign-based regional synthesis. We also state that joint attack/failure modeling and adaptive event triggering are not, by themselves, claimed as new. The additions therefore strengthen positioning through concrete connections and distinctions, rather than citation count alone.
 %
@@ -387,18 +403,20 @@ Thank you for this constructive suggestion again!\par
 
 ~\\
 \\
-\textbf{2.} \textcolor{red}{Sections} 2.3 and 2.4 introduce the deception signal and actuator-failure model separately. Could the authors clarify how the corrupted sampled state and actuator mode enter the control loop? Please add a concise bridging paragraph before the substitution leading to the closed-loop dynamics in Eq. (15). \textcolor{red}{Complete}
+\textbf{2.} Sections 2.3 and 2.4 introduce the deception signal and actuator-failure model separately. Could the authors clarify how the corrupted sampled state and actuator mode enter the control loop? Please add a concise bridging paragraph before the substitution leading to the closed-loop dynamics in Eq. (15).
 \\[10pt]
 \indent \textbf{Reply 2:} Thank you for this suggestion. A successful deception attack changes the sample used by the controller to compute its command. The actuator mode then determines how that command is scaled before it reaches the plant. We have clarified this sequence in Section~2.4, immediately before Eq.~(15).\\[4pt]
-\textcolor{red}{A successful deception attack replaces $x(t_kh)$ with $f(x(t_kh))$ in the feedback law, and the actuator multiplies the resulting command by its effectiveness matrix $F_{r(t)}$.} \mbox{(Section~2.4, before Eq.~(15))}
+\hspace*{\parindent}\textcolor{red}{A successful deception attack replaces $x(t_kh)$ with $f(x(t_kh))$ in the feedback law, and the actuator multiplies the resulting command by its effectiveness matrix $F_{r(t)}$.}
+By substituting the controller~(12) into the system~(4), and considering the stochastic deception attack model~(8), the closed-loop system for $t \in [t_k h + jh, t_k h + (j+1)h)$ is formulated as: \mbox{Section~2.4, before Eq.~(15)}
 
 ~\\
 \\
-\textbf{3.} \textcolor{red}{A} two-sided membership-dependent looped functional is adopted for stability analysis. Please explain how the integral terms with sampling-interval distances capture the inter-trigger state evolutions, and clarify the unique advantages of the looped structure and membership-related matrices in reducing the conservatism of the obtained stability criteria. \textcolor{red}{Complete}
+\textbf{3.} A two-sided membership-dependent looped functional is adopted for stability analysis. Please explain how the integral terms with sampling-interval distances capture the inter-trigger state evolutions, and clarify the unique advantages of the looped structure and membership-related matrices in reducing the conservatism of the obtained stability criteria.
 \\[10pt]
 \indent \textbf{Reply 3:} Thank you for this question.\par
 {\setlength{\parskip}{5pt}\indent An interval between successive transmissions consists of one or more sampling periods. In each period, the two integrals in Eq.~(29) use the state derivative before and after the current time $t$. The first is weighted by the remaining time $d_2(t)$. The second enters with weight $-d_1(t)$, where $d_1(t)$ is the elapsed time. Thus $V_3$ captures variation along the trajectory inside each sampling period and vanishes at both endpoints.\par
-\indent For each integral, choosing the same matrix for every fuzzy rule recovers a constant weight. Allowing rule-specific matrices lets $R_{1h}$ and $R_{2h}$ vary with the current memberships. Within the active region, the matrix orderings following Eq.~(47) ensure that the terms involving $\dot R_{1h}$ and $\dot R_{2h}$ in Eq.~(34) are both nonpositive. This flexibility in weighting the state variation may reduce conservatism in the stability estimate.\par}
+\indent For each integral, choosing the same matrix for every fuzzy rule recovers a constant weight. Allowing rule-specific matrices lets $R_{1h}$ and $R_{2h}$ vary with the current memberships. Within the active region, the matrix orderings following Eq.~(47) ensure that the terms involving $\dot R_{1h}$ and $\dot R_{2h}$ in Eq.~(34) are both nonpositive. This flexibility in weighting the state variation may reduce conservatism in the stability estimate. We have revised Remark~3.1 to clarify the roles of the two integrals and their membership-dependent weights.\par
+\noindent The two-sided FMF-dependent looped functional in (26) \textcolor{red}{uses} the augmented vectors $\zeta_i(t)$, $i=1,2,3$, \textcolor{red}{to capture state information over each sampling interval} $[t_k^j,t_k^{j+1})$. \textcolor{red}{The distances $d_1(t)$ and $d_2(t)$ denote the elapsed and remaining times within that interval.} \textcolor{red}{In $V_3$, the two time factors weight the integrals of the state derivative on either side of $t$, with the weighting matrices determined by the current rule memberships.} \textcolor{red}{These membership-dependent weights may yield a less conservative stability criterion.} \mbox{(Remark~3.1)}\par}
 
 % Previous template example.
 % \indent \textbf{Reply 3:} Thank you for this valuable suggestion. In response to this suggestion, we have provided a clear description of the algorithm for minimizing the H$\infty$ performance index $\gamma$ in Remark 3.4.\\
@@ -413,9 +431,15 @@ Thank you for this constructive suggestion again!\par
 
 ~\\
 \\
-\textbf{4.} The manuscript needs careful language revision to improve grammar and logical flow. Please review sentence transitions, abbreviation consistency, and isolated grammar errors.
+\textbf{4.} \textcolor{red}{The} manuscript needs careful language revision to improve grammar and logical flow. Please review sentence transitions, abbreviation consistency, and isolated grammar errors. \textcolor{red}{Complete}
 \\[10pt]
-\indent \textbf{Reply 4:}
+\begingroup
+\setlength{\parskip}{6pt}
+\indent \textbf{Reply 4:} Thank you for pointing this out. We added a sentence before Eq.~(15) that links the attack and actuator models. It explains how a corrupted sample enters the feedback law and how the actuator then scales the resulting command. We also made the abbreviation for Takagi--Sugeno consistent between the Introduction and Example~1 and corrected the use of the singular CPS when referring to the single closed-loop system in Eq.~(15).\par
+1) \textcolor{red}{A successful deception attack replaces $x(t_kh)$ with $f(x(t_kh))$ in the feedback law, and the actuator multiplies the resulting command by its effectiveness matrix $F_{r(t)}$.} \mbox{(Section~2.4, before Eq.~(15))}\par
+2) In this example, the resulting IT-2 T\textcolor{red}{--}S fuzzy representation serves as the basis for evaluating the developed control scheme. (The opening paragraph of Example~1)\par
+3) Thus, the closed-loop IT-2 fuzzy \textcolor{red}{CPS in} (15) is asymptotically stable. (Proof of Theorem~3.1)\par
+\endgroup
 % Matching working draft; verify its manuscript edits and locations before use.
 % Thank you for this suggestion. We have revised the Abstract, Introduction, problem formulation, explanatory text in Section 3, numerical discussion, and Conclusion. The Abstract now proceeds from the attack/failure setting to the adaptive transmission and regional design, then to the sufficient conditions and numerical illustrations. We have corrected subject–verb agreement, removed a duplicated full stop and an unnecessary comma, clarified transitions, and made the terminology and abbreviations more consistent. In particular, the controller-gain description now refers to the gain for an individual fuzzy rule, and the distinction between an initial state in Example 2 and that of Example 1 is explicit. The detailed companion document records every implemented replacement, including punctuation and whitespace, rather than providing only selected examples. These changes improve exposition without modifying the displayed mathematical conditions or the numerical data.
 %
@@ -446,10 +470,10 @@ Thank you for this constructive suggestion again!\par
 \begingroup
 \setlength{\parskip}{6pt}
 \indent \textbf{Reply 6:} Thank you for this suggestion. We moved the summary of the two examples to the end of the first paragraph of the Conclusion, following the controller design results. The second paragraph now outlines future work on semi-Markov switching between actuator failure modes and distributed event-triggered control of multi-agent systems.\par
-\noindent The controller gains and adaptive event-triggering weight matrices have been jointly determined through tractable LMIs, while a bounding technique has been employed to address the norm-bounded uncertainty induced by Markov-type actuator failures. \textcolor{red}{An engineering-motivated PMSM example and a numerical IT-2 fuzzy example have demonstrated the effectiveness and applicability of the developed method.}\par
+1) The controller gains and adaptive event-triggering weight matrices have been jointly determined through tractable LMIs, while a bounding technique has been employed to address the norm-bounded uncertainty induced by Markov-type actuator failures. \textcolor{red}{An engineering-motivated PMSM example and a numerical IT-2 fuzzy example have demonstrated the effectiveness and applicability of the developed method.}\par
 \begingroup
 \interlinepenalty=10000
-\noindent \textcolor{red}{In future work, we will consider semi-Markov switching between actuator failure modes and extend the proposed adaptive event-triggered design to distributed control of multi-agent systems.} \mbox{(Conclusion, paragraphs 1 and 2)}\par
+2) \textcolor{red}{In future work, we will consider semi-Markov switching between actuator failure modes and extend the proposed adaptive event-triggered design to distributed control of multi-agent systems.} \mbox{(Conclusion, paragraphs 1 and 2)}\par
 \endgroup
 \endgroup
 % Matching working draft; verify its manuscript edits and locations before use.
@@ -468,17 +492,17 @@ Thank you for this constructive suggestion again!\par
 \\
 \textbf{7.} \textcolor{red}{Please} check the presentation of the simulation figures, including axis labels, units, caption terminology, and the spacing between adjacent figures. The plotted quantities should be clearly identified, and their descriptions should be consistent throughout the manuscript. \textcolor{red}{Complete}
 \\[10pt]
-\indent \textbf{Reply 7:} Thank you for this comment. We added the unit \textcolor{red}{$\mathrm{s}^{-1}$} to the vertical axis in Fig.~5 and checked the figure captions and spacing in both examples. The vertical axes in the two figures below are now labeled ``\textcolor{red}{Actuator fault mode}'' (Fig.~7) and ``\textcolor{red}{Inter-event interval (s)}'' (Fig.~9). Figures~13 and~15 use the same labels, respectively.\par\nobreak\vspace{14pt}
+\indent \textbf{Reply 7:} Thank you for this comment. We added the unit \textcolor{red}{$\mathrm{s}^{-1}$} to the vertical axis in Fig.~5 and checked the figure captions and spacing in both examples. The vertical axes in the two figures below are now labeled ``\textcolor{red}{Actuator fault mode}'' (Fig.~7) and ``\textcolor{red}{Inter-event interval (s)}'' (Fig.~9). Figures~13 and~15 use the same labels, respectively.\par\smallskip
 \noindent\begin{minipage}{\linewidth}
   \centering
-  \includegraphics[width=\linewidth]{figs/actuator_fault.pdf}\par
+  \includegraphics[width=0.68\linewidth]{figs/actuator_fault.pdf}\par
   \smallskip
   {\small \textbf{Fig.~7.} Evolution of the actuator fault mode $r(t)$.\par}
 \end{minipage}\par
 \addvspace{\baselineskip}
 \noindent\begin{minipage}{\linewidth}
   \centering
-  \includegraphics[width=\linewidth]{figs/event_tri_time.pdf}\par
+  \includegraphics[width=0.68\linewidth]{figs/event_tri_time.pdf}\par
   \smallskip
   {\small \textbf{Fig.~9.} Release instants and release intervals.\par}
 \end{minipage}\par

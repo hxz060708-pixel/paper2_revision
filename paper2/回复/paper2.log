@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.11.11)  22 NOV 2026 14:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.11.11)  23 NOV 2026 10:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -729,10 +729,10 @@ exlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
 Excluding 'comment' comment. Excluding 'comment' comment.
 
 [2]
-<figs/system_big.pdf, id=136, 466.20595pt x 391.04495pt>
+<figs/system_big.pdf, id=137, 466.20595pt x 391.04495pt>
 File: figs/system_big.pdf Graphic file (type pdf)
 <use figs/system_big.pdf>
-Package pdftex.def Info: figs/system_big.pdf  used on input line 276.
+Package pdftex.def Info: figs/system_big.pdf  used on input line 265.
 (pdftex.def)             Requested size: 289.07999pt x 242.48116pt.
 
 
@@ -758,40 +758,40 @@ Package pdftex.def Info: figs/system_big.pdf  used on input line 276.
 <figs/pmsm_model.pdf, id=354, 348.8232pt x 261.61742pt>
 File: figs/pmsm_model.pdf Graphic file (type pdf)
 <use figs/pmsm_model.pdf>
-Package pdftex.def Info: figs/pmsm_model.pdf  used on input line 1491.
+Package pdftex.def Info: figs/pmsm_model.pdf  used on input line 1479.
 (pdftex.def)             Requested size: 335.17084pt x 251.38138pt.
-<figs/x(t)_not_u(t).pdf, id=356, 716.6775pt x 462.72874pt>
-File: figs/x(t)_not_u(t).pdf Graphic file (type pdf)
-<use figs/x(t)_not_u(t).pdf>
-Package pdftex.def Info: figs/x(t)_not_u(t).pdf  used on input line 1528.
-(pdftex.def)             Requested size: 218.94098pt x 141.36153pt.
-<figs/x(t).pdf, id=357, 716.6775pt x 462.72874pt>
-File: figs/x(t).pdf Graphic file (type pdf)
-<use figs/x(t).pdf>
-Package pdftex.def Info: figs/x(t).pdf  used on input line 1534.
-(pdftex.def)             Requested size: 218.94098pt x 141.36153pt.
 
 
 [13 <./figs/pmsm_model.pdf>]
+<figs/x(t)_not_u(t).pdf, id=369, 716.6775pt x 462.72874pt>
+File: figs/x(t)_not_u(t).pdf Graphic file (type pdf)
+<use figs/x(t)_not_u(t).pdf>
+Package pdftex.def Info: figs/x(t)_not_u(t).pdf  used on input line 1516.
+(pdftex.def)             Requested size: 218.94098pt x 141.36153pt.
+<figs/x(t).pdf, id=370, 716.6775pt x 462.72874pt>
+File: figs/x(t).pdf Graphic file (type pdf)
+<use figs/x(t).pdf>
+Package pdftex.def Info: figs/x(t).pdf  used on input line 1522.
+(pdftex.def)             Requested size: 218.94098pt x 141.36153pt.
 <figs/h_1_dot.pdf, id=372, 718.685pt x 462.72874pt>
 File: figs/h_1_dot.pdf Graphic file (type pdf)
 <use figs/h_1_dot.pdf>
-Package pdftex.def Info: figs/h_1_dot.pdf  used on input line 1608.
+Package pdftex.def Info: figs/h_1_dot.pdf  used on input line 1596.
 (pdftex.def)             Requested size: 218.94098pt x 140.96613pt.
 <figs/u(t).pdf, id=373, 718.685pt x 462.72874pt>
 File: figs/u(t).pdf Graphic file (type pdf)
 <use figs/u(t).pdf>
-Package pdftex.def Info: figs/u(t).pdf  used on input line 1614.
+Package pdftex.def Info: figs/u(t).pdf  used on input line 1602.
 (pdftex.def)             Requested size: 218.94098pt x 140.96613pt.
 <figs/actuator_fault.pdf, id=374, 704.6325pt x 459.7175pt>
 File: figs/actuator_fault.pdf Graphic file (type pdf)
 <use figs/actuator_fault.pdf>
-Package pdftex.def Info: figs/actuator_fault.pdf  used on input line 1624.
+Package pdftex.def Info: figs/actuator_fault.pdf  used on input line 1612.
 (pdftex.def)             Requested size: 218.94098pt x 142.84064pt.
 <figs/AETM_law.pdf, id=375, 720.6925pt x 459.7175pt>
 File: figs/AETM_law.pdf Graphic file (type pdf)
 <use figs/AETM_law.pdf>
-Package pdftex.def Info: figs/AETM_law.pdf  used on input line 1630.
+Package pdftex.def Info: figs/AETM_law.pdf  used on input line 1618.
 (pdftex.def)             Requested size: 218.94098pt x 139.65596pt.
 
 
@@ -800,7 +800,7 @@ Package pdftex.def Info: figs/AETM_law.pdf  used on input line 1630.
 <figs/event_tri_time.pdf, id=500, 712.6625pt x 459.7175pt>
 File: figs/event_tri_time.pdf Graphic file (type pdf)
 <use figs/event_tri_time.pdf>
-Package pdftex.def Info: figs/event_tri_time.pdf  used on input line 1640.
+Package pdftex.def Info: figs/event_tri_time.pdf  used on input line 1628.
 (pdftex.def)             Requested size: 233.53656pt x 150.64801pt.
 
 
@@ -809,32 +809,32 @@ f>]
 <figs/2_x(t)_not_u(t).pdf, id=586, 725.71124pt x 462.72874pt>
 File: figs/2_x(t)_not_u(t).pdf Graphic file (type pdf)
 <use figs/2_x(t)_not_u(t).pdf>
-Package pdftex.def Info: figs/2_x(t)_not_u(t).pdf  used on input line 1729.
+Package pdftex.def Info: figs/2_x(t)_not_u(t).pdf  used on input line 1717.
 (pdftex.def)             Requested size: 218.94098pt x 139.59636pt.
 <figs/2_x(t).pdf, id=587, 716.6775pt x 462.72874pt>
 File: figs/2_x(t).pdf Graphic file (type pdf)
 <use figs/2_x(t).pdf>
-Package pdftex.def Info: figs/2_x(t).pdf  used on input line 1735.
+Package pdftex.def Info: figs/2_x(t).pdf  used on input line 1723.
 (pdftex.def)             Requested size: 218.94098pt x 141.36153pt.
 <figs/2_h1_dot_and_ut.pdf, id=589, 693.59125pt x 462.72874pt>
 File: figs/2_h1_dot_and_ut.pdf Graphic file (type pdf)
 <use figs/2_h1_dot_and_ut.pdf>
-Package pdftex.def Info: figs/2_h1_dot_and_ut.pdf  used on input line 1801.
+Package pdftex.def Info: figs/2_h1_dot_and_ut.pdf  used on input line 1789.
 (pdftex.def)             Requested size: 218.94098pt x 146.06393pt.
 <figs/2_actuator_fault.pdf, id=590, 704.6325pt x 459.7175pt>
 File: figs/2_actuator_fault.pdf Graphic file (type pdf)
 <use figs/2_actuator_fault.pdf>
-Package pdftex.def Info: figs/2_actuator_fault.pdf  used on input line 1807.
+Package pdftex.def Info: figs/2_actuator_fault.pdf  used on input line 1795.
 (pdftex.def)             Requested size: 218.94098pt x 142.84064pt.
 <figs/2_AETM_law.pdf, id=591, 720.6925pt x 462.72874pt>
 File: figs/2_AETM_law.pdf Graphic file (type pdf)
 <use figs/2_AETM_law.pdf>
-Package pdftex.def Info: figs/2_AETM_law.pdf  used on input line 1816.
+Package pdftex.def Info: figs/2_AETM_law.pdf  used on input line 1804.
 (pdftex.def)             Requested size: 218.94098pt x 140.57074pt.
 <figs/2_event_tri_time.pdf, id=592, 718.685pt x 462.72874pt>
 File: figs/2_event_tri_time.pdf Graphic file (type pdf)
 <use figs/2_event_tri_time.pdf>
-Package pdftex.def Info: figs/2_event_tri_time.pdf  used on input line 1822.
+Package pdftex.def Info: figs/2_event_tri_time.pdf  used on input line 1810.
 (pdftex.def)             Requested size: 218.94098pt x 140.96613pt.
 
 
@@ -856,11 +856,11 @@ Package rerunfilecheck Info: File `paper2.out' has not changed.
 (rerunfilecheck)             Checksum: CA68A4BBC731D7ED0F8F39F1FB8D2449;1548.
  ) 
 Here is how much of TeX's memory you used:
- 15473 strings out of 473190
- 249115 string characters out of 5716852
- 671433 words of memory out of 5000000
- 38276 multiletter control sequences out of 15000+600000
- 577704 words of font info for 85 fonts, out of 8000000 for 9000
+ 15476 strings out of 473190
+ 249249 string characters out of 5716852
+ 671449 words of memory out of 5000000
+ 38279 multiletter control sequences out of 15000+600000
+ 577391 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,14n,117p,1567b,744s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <e:/Latex/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
@@ -888,12 +888,11 @@ sfrm0800.pfb><e:/Latex/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm
 .pfb><e:/Latex/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb
 ><e:/Latex/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti0600.pfb><e:
 /Latex/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti0800.pfb><e:/Lat
-ex/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb><e:/Latex/t
-exlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on paper2.pdf (20 pages, 1168351 bytes).
+ex/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
+Output written on paper2.pdf (20 pages, 1148136 bytes).
 PDF statistics:
- 919 PDF objects out of 1000 (max. 8388607)
- 696 compressed objects within 7 object streams
- 165 named destinations out of 1000 (max. 500000)
+ 913 PDF objects out of 1000 (max. 8388607)
+ 692 compressed objects within 7 object streams
+ 166 named destinations out of 1000 (max. 500000)
  148 words of extra memory for PDF output out of 10000 (max. 10000000)
 

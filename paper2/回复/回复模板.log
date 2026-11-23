@@ -1,6 +1,7 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.11.11)  22 NOV 2026 12:15
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.11.11)  22 NOV 2026 16:56
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
 **回复模板.tex
 (./回复模板.tex
@@ -434,10 +435,10 @@ L3 programming layer <2025-01-18>
 Here is how much of TeX's memory you used:
  5179 strings out of 473832
  130103 string characters out of 5730403
- 576998 words of memory out of 5000000
+ 577998 words of memory out of 5000000
  28207 multiletter control sequences out of 15000+600000
  563571 words of font info for 75 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 79i,6n,93p,1101b,239s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 79i,6n,93p,1353b,239s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on 回复模板.pdf (14 pages).
