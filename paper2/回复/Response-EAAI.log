@@ -1,7 +1,6 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.11.11)  23 NOV 2026 13:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.11.11)  23 NOV 2026 19:20
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
 **Response-EAAI.tex
 (./Response-EAAI.tex
@@ -649,12 +648,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 466--472
  []
 
 
-Overfull \hbox (54.76744pt too wide) in paragraph at lines 476--476
-\OT1/cmr/m/n/10 the pro-posed trig-ger-ing mech-a-nism for dis-tributed con-tro
-l of multi-agent sys-tems.[] [] 
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 491--495
 
  []
@@ -663,15 +656,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 491--495
 File: figs/actuator_fault.pdf Graphic file (type pdf)
 <use figs/actuator_fault.pdf>
 Package pdftex.def Info: figs/actuator_fault.pdf  used on input line 498.
-(pdftex.def)             Requested size: 301.82368pt x 196.91707pt.
+(pdftex.def)             Requested size: 213.05241pt x 138.99657pt.
 <figs/event_tri_time.pdf, id=45, 712.6625pt x 459.7175pt>
 File: figs/event_tri_time.pdf Graphic file (type pdf)
 <use figs/event_tri_time.pdf>
-Package pdftex.def Info: figs/event_tri_time.pdf  used on input line 505.
-(pdftex.def)             Requested size: 301.82368pt x 194.6934pt.
+Package pdftex.def Info: figs/event_tri_time.pdf  used on input line 503.
+(pdftex.def)             Requested size: 213.05241pt x 137.4323pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 512--513
+
+ []
 
 
-[11 <./figs/actuator_fault.pdf>]
+
+[11 <./figs/actuator_fault.pdf> <./figs/event_tri_time.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 515--516
 
  []
@@ -682,27 +680,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 518--519
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 521--522
+Underfull \hbox (badness 10000) in paragraph at lines 520--522
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 523--525
+Underfull \hbox (badness 10000) in paragraph at lines 523--524
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 526--527
+Underfull \hbox (badness 10000) in paragraph at lines 525--526
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 528--529
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 530--531
+Underfull \hbox (badness 10000) in paragraph at lines 527--528
 
  []
 
@@ -716,7 +709,7 @@ See the caption package documentation for explanation.
 
 
 
-[12 <./figs/event_tri_time.pdf>] (./Response-EAAI.aux)
+[12] (./Response-EAAI.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -729,7 +722,7 @@ Here is how much of TeX's memory you used:
  30467 multiletter control sequences out of 15000+600000
  572308 words of font info for 96 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
- 58i,6n,65p,1398b,252s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 58i,6n,65p,1398b,260s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <e:/Latex/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
 e:/Latex/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><e:/
 Latex/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><e:/Late
@@ -743,7 +736,7 @@ st/fonts/type1/public/amsfonts/cm/cmr9.pfb><e:/Latex/texlive/2025/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmsy10.pfb><e:/Latex/texlive/2025/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmsy7.pfb><e:/Latex/texlive/2025/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmti10.pfb>
-Output written on Response-EAAI.pdf (12 pages, 301174 bytes).
+Output written on Response-EAAI.pdf (12 pages, 301111 bytes).
 PDF statistics:
  138 PDF objects out of 1000 (max. 8388607)
  85 compressed objects within 1 object stream
