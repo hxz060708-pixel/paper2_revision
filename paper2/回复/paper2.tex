@@ -329,7 +329,7 @@ hyperindex=true
 	\begin{equation} 
 		u(t) = K_{n} x_c(t_{k} h), \quad n = 1, 2, \ldots, r
 	\end{equation}
-	where $K_n$ \textcolor{red}{denotes} the controller \textcolor{red}{gain for rule $n$}. \textcolor{red}{[R2.6]} Through fuzzy blending, the resulting control law takes the form
+	where $K_n$ \textcolor{red}{denotes} the controller \textcolor{red}{gain for rule $n$}. Through fuzzy blending, the resulting control law takes the form
 	\begin{equation} 
 		u(t) = \sum_{n=1}^{r} h_n(x(t)) K_{n} x_c(t_k h).
 	\end{equation}
@@ -854,7 +854,7 @@ hyperindex=true
 				\end{align}
 \end{comment}
 			
-			Based on the Schur complement, condition \eqref{shucr1} \textcolor{red}{guarantees} the negativity of the corresponding fuzzy-weighted double-sum terms. \textcolor{red}{[R1.8, R2.6]} By exploiting the convex combination property of the membership functions, i.e., $h_m \ge 0$ and $\sum_{m=1}^{r} h_m = 1$, one can obtain
+			Based on the Schur complement, condition \eqref{shucr1} \textcolor{red}{guarantees} the negativity of the corresponding fuzzy-weighted double-sum terms. By exploiting the convex combination property of the membership functions, i.e., $h_m \ge 0$ and $\sum_{m=1}^{r} h_m = 1$, one can obtain
 			\begin{equation}
 				\mathbb{E}\{\mathcal{L}V(t)\}
 				\leq
@@ -1643,7 +1643,7 @@ hyperindex=true
 		The corresponding release instants and inter-event intervals are shown in Fig.~\ref{fig8}.
 		
 		Table~\ref{tab:sigma_effect} compares the proposed AETM with the time-triggered mechanism, which transmits all 400 samples.
-		\textcolor{red}{Increasing $\sigma$ from 4 to 20 lowers the equilibrium value $1/\sigma$ of the adaptive threshold from 0.25 to 0.05. For a given sampled state and weighting matrix, a lower threshold $\delta(t)$ allows a smaller sampling error to trigger transmission under \eqref{eq:Event_TR_1}. This is consistent with the higher packet counts and lower saving rates observed in Table~\ref{tab:sigma_effect}. [R1.1, R1.6]}\par
+		\textcolor{red}{Increasing $\sigma$ from 4 to 20 lowers the equilibrium value $1/\sigma$ of the adaptive threshold from 0.25 to 0.05. For a given sampled state and weighting matrix, a lower threshold $\delta(t)$ allows a smaller sampling error to trigger transmission under \eqref{eq:Event_TR_1}. This is consistent with the higher packet counts and lower saving rates observed in Table~\ref{tab:sigma_effect}. [R1.1]}\par
 		\begin{table}[htbp]
 			\centering
 			\caption{Comparison of communication burden under different values of $\sigma$}
@@ -1816,14 +1816,14 @@ hyperindex=true
 		For the same initial state $x(0) = \begin{bmatrix} -3, 0.5, -2 \end{bmatrix}^{\mathrm{T}}$, Figs.~\ref{fig10} and \ref{fig11} compare the responses under open-loop and closed-loop conditions. The open-loop system exhibits a clear divergent behavior, whereas the proposed controller maintains system stability despite deception attacks and Markov-type actuator failures.
 		
 		Figs.~\ref{fig12} and \ref{fig13} further show the control input, the derivative $\dot{h}_1(t)$, and the stochastic switching of the actuator-failure mode. The control signal remains bounded, and $\dot{h}_1(t)$ approaches zero as the state trajectories converge, which is consistent with the stabilization objective.
-		Fig.~\ref{fig14} shows that the adaptive threshold $\delta(t)$ again converges to the equilibrium value $1/\sigma = 0.1$, and Fig.~\ref{fig15} records the release instants and inter-event intervals. Under this fixed setting, only 65 transmissions are triggered out of 400 candidate sampling instants, yielding a communication saving rate of \textcolor{red}{$83.75\%$}. \textcolor{red}{[R1.8, R2.6]} These results demonstrate that the proposed co-design remains effective for a different IT-2 fuzzy model and offers the same communication-efficiency advantage.
+		Fig.~\ref{fig14} shows that the adaptive threshold $\delta(t)$ again converges to the equilibrium value $1/\sigma = 0.1$, and Fig.~\ref{fig15} records the release instants and inter-event intervals. Under this fixed setting, only 65 transmissions are triggered out of 400 candidate sampling instants, yielding a communication saving rate of \textcolor{red}{$83.75\%$}. These results demonstrate that the proposed co-design remains effective for a different IT-2 fuzzy model and offers the same communication-efficiency advantage.
 		
 	\end{example}
 	
 	\section{Conclusion} \label{sec5}
-	This study has addressed adaptive event-triggered $\mathrm{H}_{\infty}$ control of IT-2 fuzzy CPSs affected simultaneously by stochastic deception attacks and Markov-type actuator failures. An AETM has been employed to limit unnecessary data transmissions by updating the triggering threshold online using real-time state-error information. In addition, a region-dependent piecewise fuzzy control strategy has been developed by incorporating derivative information from the membership functions. Based on an FMF-dependent and time-dependent looped functional, stability criteria have been obtained to guarantee closed-loop asymptotic stability while achieving a prescribed $\mathrm{H}_{\infty}$ disturbance attenuation level. The controller gains and adaptive event-triggering weight matrices have been jointly determined through tractable LMIs, while a bounding technique has been employed to address the norm-bounded uncertainty induced by Markov-type actuator failures. \textcolor{red}{An engineering-motivated PMSM example and a numerical IT-2 fuzzy example have demonstrated the effectiveness and applicability of the developed method. [R3.6]}
+	This study has addressed adaptive event-triggered $\mathrm{H}_{\infty}$ control of IT-2 fuzzy CPSs affected simultaneously by stochastic deception attacks and Markov-type actuator failures. An AETM has been employed to limit unnecessary data transmissions by updating the triggering threshold online using real-time state-error information. In addition, a region-dependent piecewise fuzzy control strategy has been developed by incorporating derivative information from the membership functions. Based on an FMF-dependent and time-dependent looped functional, stability criteria have been obtained to guarantee closed-loop asymptotic stability while achieving a prescribed $\mathrm{H}_{\infty}$ disturbance attenuation level. The controller gains and adaptive event-triggering weight matrices have been jointly determined through tractable LMIs, while a bounding technique has been employed to address the norm-bounded uncertainty induced by Markov-type actuator failures. \textcolor{red}{An engineering-motivated PMSM example and a numerical IT-2 fuzzy example have demonstrated the effectiveness and applicability of the developed method.}
 	
-	\textcolor{red}{In future work, we will consider semi-Markov switching between actuator failure modes and extend the proposed adaptive event-triggered design to distributed control of multi-agent systems. [R3.6]}
+	\textcolor{red}{Future work could extend the actuator-failure model to include semi-Markov switching and adapt the proposed triggering mechanism for distributed control of multi-agent systems.}
 	
 	
 	\section*{CRediT authorship contribution statement}

@@ -108,7 +108,7 @@
 
 ~\\
 \\
-\textbf{4.} \textcolor{red}{Please} clarify the physical meaning of the actuator-failure parameters $F_{i0}$, $F_{i1}$ and the Markov transition-rate matrix used in the simulation. How are the failure-level bounds and the transition rates chosen, and does the closed-loop system remain stable under more severe failure modes? \textcolor{red}{Complete}
+\textbf{4.} Please clarify the physical meaning of the actuator-failure parameters $F_{i0}$, $F_{i1}$ and the Markov transition-rate matrix used in the simulation. How are the failure-level bounds and the transition rates chosen, and does the closed-loop system remain stable under more severe failure modes?
 \\[10pt]
 \indent \textbf{Reply 4:} Thank you for this comment.\\
 
@@ -116,7 +116,7 @@
 
 2) We used illustrative transition rates of $\lambda_{12}=0.6$ and $\lambda_{21}=1.2$ per unit time to model switching between the two failure modes. With these values, the mean residence time in the more degraded mode is half that in the less degraded mode.\\
 
-3) Under the conditions of Theorem~3.3, the controller designed in Example~1 guarantees closed-loop stability as the actuator switches between the two specified failure modes. This guarantee includes the more severe case in mode~2, where the actuator can deliver as little as $60\%$ of the commanded input. For a wider failure interval, the same controller retains this guarantee provided that the stability conditions hold over the enlarged interval with its gains fixed.
+3) The controller in Example~1 guarantees closed-loop stability for the two specified failure modes, including actuator effectiveness as low as $60\%$ in mode~2. If the LMIs in Theorem~3.3 are feasible for a wider interval that includes lower effectiveness levels, the controller obtained from that solution guarantees closed-loop stability throughout the wider interval.
 
 ~\\
 \\
@@ -173,11 +173,11 @@
 
 ~\\
 \\
-\textbf{6.} \textcolor{red}{Table} 1 reports packet counts and saving rates for several values of $\sigma$, but the implications of the trend could be discussed more explicitly. The reported packet count increases from 85 to 164 as $\sigma$ rises from 4 to 20, while the saving rate decreases from 78.75\% to 59.00\%. Could the authors explain why the packet count increases and the saving rate decreases as $\sigma$ rises, and how this trend relates to the adaptive threshold and triggering condition under the tested settings? \textcolor{red}{Complete}
+\textbf{6.} Table 1 reports packet counts and saving rates for several values of $\sigma$, but the implications of the trend could be discussed more explicitly. The reported packet count increases from 85 to 164 as $\sigma$ rises from 4 to 20, while the saving rate decreases from 78.75\% to 59.00\%. Could the authors explain why the packet count increases and the saving rate decreases as $\sigma$ rises, and how this trend relates to the adaptive threshold and triggering condition under the tested settings?
 \\[10pt]
 \begingroup
 \setlength{\parskip}{6pt}
-\indent \textbf{Reply 6:} Thank you for this suggestion. Equation~(6) shows that a larger $\sigma$ lowers the equilibrium threshold $1/\sigma$. A lower threshold in (5) means that a smaller change from the last transmitted sample can trigger a new transmission. In Table~1, the number of packets transmitted over the same 400 sampling instants rose from 85 to 164, so the saving rate fell from $78.75\%$ to $59.00\%$. We have added this explanation to the paragraph introducing Table~1.\par
+\indent \textbf{Reply 6:} Thank you for this suggestion. Equation~(6) shows that a larger $\sigma$ lowers the equilibrium threshold $1/\sigma$. For a given sampled state and weighting matrix, a lower value of $\delta(t)$ in (5) allows a smaller weighted sampling error to trigger transmission. In Table~1, the number of packets transmitted over the same 400 sampling instants rose from 85 to 164, so the saving rate fell from $78.75\%$ to $59.00\%$. We have added this explanation to the paragraph introducing Table~1.\par
 \noindent Table~1 compares the proposed AETM with the time-triggered mechanism, which transmits all 400 samples. \textcolor{red}{Increasing $\sigma$ from 4 to 20 lowers the equilibrium value $1/\sigma$ of the adaptive threshold from 0.25 to 0.05. For a given sampled state and weighting matrix, a lower threshold $\delta(t)$ allows a smaller sampling error to trigger transmission under (5). This is consistent with the higher packet counts and lower saving rates observed in Table~1.} (The paragraph introducing Table~1 in Example~1)\par
 \endgroup
 % Matching working draft; verify its manuscript edits and locations before use.
@@ -214,7 +214,7 @@
 
 ~\\
 \\
-\textbf{8.} \textcolor{red}{There} are several minor numerical and grammatical errors that should be corrected. First, the communication saving rate in Example 2 should be 83.75\% rather than 83.79\%. Second, in the proof of Theorem 3.1, ``condition (22) guarantee'' should read ``condition (22) guarantees''. Please check the manuscript for similar issues elsewhere. \textcolor{red}{Complete}
+\textbf{8.} There are several minor numerical and grammatical errors that should be corrected. First, the communication saving rate in Example 2 should be 83.75\% rather than 83.79\%. Second, in the proof of Theorem 3.1, ``condition (22) guarantee'' should read ``condition (22) guarantees''. Please check the manuscript for similar issues elsewhere.
 \\[10pt]
 \begingroup
 \setlength{\parskip}{6pt}
@@ -259,7 +259,7 @@ Thank you for this constructive suggestion again!
 \begingroup
 \setlength{\parskip}{6pt}
 \indent \textbf{Reply 3:} Thank you for this question. In (5), $\delta(t)$ sets the relative tolerance for the sampling error, and $\sigma$ determines its equilibrium value $1/\sigma$ in (6). When the sampling error is nonzero, a threshold above $1/\sigma$ decreases toward it, whereas a threshold below $1/\sigma$ increases toward it. At a given threshold away from equilibrium, a larger weighted sampling error makes the adjustment faster. If the sampling error is zero, the threshold has zero update rate. We have clarified this behavior in Remark~2.2.\par
-\noindent \textcolor{red}{In (6), the parameter $\sigma$ determines the equilibrium threshold $1/\sigma$. When the sampling error is nonzero, $\delta(t)$ decreases toward $1/\sigma$ if it starts above this value and increases toward it if it starts below. At a given value of $\delta(t)$ away from equilibrium, the rate of adjustment is proportional to the weighted sampling error $e^{\mathrm{T}}Se$. For example, when $\delta(t)>1/\sigma$, a larger weighted error drives the threshold down more rapidly, making the triggering condition in (5) easier to satisfy for the same sampled state. As the system approaches equilibrium and the sampling error tends to zero, the threshold varies more slowly. When the sampling error vanishes, (6) gives $\dot{\delta}(t)=0$, so the threshold no longer changes.} \mbox{(Remark~2.2)}\par
+\noindent \textbf{Remark 2.2.} \textcolor{red}{In (6), the parameter $\sigma$ determines the equilibrium threshold $1/\sigma$. When the sampling error is nonzero, $\delta(t)$ decreases toward $1/\sigma$ if it starts above this value and increases toward it if it starts below. At a given value of $\delta(t)$ away from equilibrium, the rate of adjustment is proportional to the weighted sampling error $e^{\mathrm{T}}Se$. For example, when $\delta(t)>1/\sigma$, a larger weighted error drives the threshold down more rapidly, making the triggering condition in (5) easier to satisfy for the same sampled state. As the system approaches equilibrium and the sampling error tends to zero, the threshold varies more slowly. When the sampling error vanishes, (6) gives $\dot{\delta}(t)=0$, so the threshold no longer changes.} \mbox{(Remark~2.2)}\par
 \endgroup
 % Matching working draft; verify its manuscript edits and locations before use.
 % Thank you for this question. We have clarified the interpretation of the existing adaptation law in Remark 2.2. For a positive threshold and nonzero sampling error, the threshold increases when it is below 1/sigma and decreases when it is above 1/sigma. Its derivative is zero when the error is zero or the threshold equals 1/sigma. The weighted error magnitude scales the rate of adjustment. For fixed sampled state, error, and weighting matrix, a larger threshold makes the triggering inequality harder to satisfy. We also explain that actual transmission times depend on the joint evolution of these quantities, so the equilibrium alone does not imply the same trajectory or communication savings for every initial condition.
@@ -283,7 +283,7 @@ Thank you for this constructive suggestion again!
 \indent \textbf{Reply 4:} Thank you for raising these two points.\par
 {\setlength{\parskip}{5pt}\indent In Eq.~(29), the two integrals in $V_3$ use the state derivative over the two parts of the sampling interval, before and after the current time $t$. At either sampling endpoint, one integration interval has zero length and the other integral has zero weight. Thus, $V_3$ captures the inter-sample dynamics while vanishing at both endpoints.\par
 \indent The membership-dependent matrices allow the integral weights to vary with the current rule memberships. For example, for two rules, Eq.~(45) gives $\dot R_{1h}=\dot h_1(R_{11}-R_{12})$. Within the active region, the matrix orderings specified after Eq.~(47) give $\dot R_{1h}\preceq 0$ and $\dot R_{2h}\succeq 0$, so both membership-dependent derivative terms in Eq.~(34) are nonpositive. This flexibility in choosing the integral weights may reduce the conservatism of the stability criterion. Remark~3.1 now explains how $V_3$ uses information from both parts of each sampling period.\par
-\noindent The two-sided FMF-dependent looped functional in (26) \textcolor{red}{uses} the augmented vectors $\zeta_i(t)$, $i=1,2,3$, \textcolor{red}{to capture state information over each sampling interval} $[t_k^j,t_k^{j+1})$. \textcolor{red}{The distances $d_1(t)$ and $d_2(t)$ denote the elapsed and remaining times within that interval.} \textcolor{red}{In $V_3$, the two time factors weight the integrals of the state derivative on either side of $t$, with the weighting matrices determined by the current rule memberships.} \textcolor{red}{These membership-dependent weights may yield a less conservative stability criterion.} \mbox{(Remark~3.1)}\par}
+\noindent \textbf{Remark 3.1.} The two-sided FMF-dependent looped functional in (26) \textcolor{red}{uses} the augmented vectors $\zeta_i(t)$, $i=1,2,3$, \textcolor{red}{to capture state information over each sampling interval} $[t_k^j,t_k^{j+1})$. \textcolor{red}{The distances $d_1(t)$ and $d_2(t)$ denote the elapsed and remaining times within that interval.} \textcolor{red}{In $V_3$, the two time factors weight the integrals of the state derivative on either side of $t$, with the weighting matrices determined by the current rule memberships.} \textcolor{red}{These membership-dependent weights may yield a less conservative stability criterion.} \mbox{(Remark~3.1)}\par}
 
 ~\\
 \\
@@ -312,7 +312,7 @@ Thank you for this constructive suggestion again!
 
 ~\\
 \\
-\textbf{6.} \textcolor{red}{There} are several minor numerical and grammatical errors in the manuscript. First, the saving rate in Example 2 should be 83.75\%, rather than 83.79\%, based on 65 transmissions out of 400 candidate sampling instants. Second, in Section 2.4, ``where $K_n$ denote the controller gains'' should be revised to ``where $K_n$ denotes the controller gain for rule n''. Third, ``condition \ldots{} guarantee'' in the proof of Theorem 3.1 should read ``condition \ldots{} guarantees''. Please correct these errors and check the manuscript for similar issues. \textcolor{red}{Complete}
+\textbf{6.} There are several minor numerical and grammatical errors in the manuscript. First, the saving rate in Example 2 should be 83.75\%, rather than 83.79\%, based on 65 transmissions out of 400 candidate sampling instants. Second, in Section 2.4, ``where $K_n$ denote the controller gains'' should be revised to ``where $K_n$ denotes the controller gain for rule n''. Third, ``condition \ldots{} guarantee'' in the proof of Theorem 3.1 should read ``condition \ldots{} guarantees''. Please correct these errors and check the manuscript for similar issues.
 \\[10pt]
 \begingroup
 \setlength{\parskip}{6pt}
@@ -416,7 +416,7 @@ By substituting the controller~(12) into the system~(4), and considering the sto
 \indent \textbf{Reply 3:} Thank you for this question.\par
 {\setlength{\parskip}{5pt}\indent An interval between successive transmissions consists of one or more sampling periods. In each period, the two integrals in Eq.~(29) use the state derivative before and after the current time $t$. The first is weighted by the remaining time $d_2(t)$. The second enters with weight $-d_1(t)$, where $d_1(t)$ is the elapsed time. Thus $V_3$ captures variation along the trajectory inside each sampling period and vanishes at both endpoints.\par
 \indent For each integral, choosing the same matrix for every fuzzy rule recovers a constant weight. Allowing rule-specific matrices lets $R_{1h}$ and $R_{2h}$ vary with the current memberships. Within the active region, the matrix orderings following Eq.~(47) ensure that the terms involving $\dot R_{1h}$ and $\dot R_{2h}$ in Eq.~(34) are both nonpositive. This flexibility in weighting the state variation may reduce conservatism in the stability estimate. We have revised Remark~3.1 to clarify the roles of the two integrals and their membership-dependent weights.\par
-\noindent The two-sided FMF-dependent looped functional in (26) \textcolor{red}{uses} the augmented vectors $\zeta_i(t)$, $i=1,2,3$, \textcolor{red}{to capture state information over each sampling interval} $[t_k^j,t_k^{j+1})$. \textcolor{red}{The distances $d_1(t)$ and $d_2(t)$ denote the elapsed and remaining times within that interval.} \textcolor{red}{In $V_3$, the two time factors weight the integrals of the state derivative on either side of $t$, with the weighting matrices determined by the current rule memberships.} \textcolor{red}{These membership-dependent weights may yield a less conservative stability criterion.} \mbox{(Remark~3.1)}\par}
+\noindent \textbf{Remark 3.1.} The two-sided FMF-dependent looped functional in (26) \textcolor{red}{uses} the augmented vectors $\zeta_i(t)$, $i=1,2,3$, \textcolor{red}{to capture state information over each sampling interval} $[t_k^j,t_k^{j+1})$. \textcolor{red}{The distances $d_1(t)$ and $d_2(t)$ denote the elapsed and remaining times within that interval.} \textcolor{red}{In $V_3$, the two time factors weight the integrals of the state derivative on either side of $t$, with the weighting matrices determined by the current rule memberships.} \textcolor{red}{These membership-dependent weights may yield a less conservative stability criterion.} \mbox{(Remark~3.1)}\par}
 
 % Previous template example.
 % \indent \textbf{Reply 3:} Thank you for this valuable suggestion. In response to this suggestion, we have provided a clear description of the algorithm for minimizing the H$\infty$ performance index $\gamma$ in Remark 3.4.\\
@@ -455,17 +455,17 @@ By substituting the controller~(12) into the system~(4), and considering the sto
 
 ~\\
 \\
-\textbf{5.} \textcolor{red}{The} framework involves both membership-derivative-dependent regional selection and Markov-type actuator-failure switching. Could the authors clarify the distinct roles of these two mechanisms and explain how they are jointly accounted for in the stability analysis? \textcolor{red}{Complete}
+\textbf{5.} The framework involves both membership-derivative-dependent regional selection and Markov-type actuator-failure switching. Could the authors clarify the distinct roles of these two mechanisms and explain how they are jointly accounted for in the stability analysis?
 \\[10pt]
 \indent \textbf{Reply 5:} Thank you for this comment.\\
 
-1) The signs of the membership-function derivatives determine the active region $l$, which selects the controller gain $K_n^l$ in (17) and the triggering weight $S^l$ in (18). The Markov mode $i$ determines the actuator effectiveness matrix $F_i$. Thus, in (17), $K_n^l$ determines the feedback command and $F_i$ scales the command applied to the plant.\\
+1) The signs of the membership-function derivatives determine the active region $l$, which selects the controller gain $K_n^l$ in (17) and the triggering weight $S^l$ in (18). The Markov chain $r(t)$ describes switching between actuator fault modes, with $i=r(t)$ denoting the current mode. As shown in (17), the controller computes the command using the gains for region $l$, and the actuator in mode $i$ applies that command with effectiveness $F_i$.\\
 
-2) The two mechanisms enter the stability analysis through different terms in (32). Within the active region, the matrix ordering associated with the signs of the membership-function derivatives ensures that $x^{\mathrm T}\dot P_{ih}x\leq 0$. Transitions between actuator modes enter through $x^{\mathrm T}(\sum_{j=1}^{J}\lambda_{ij}P_{jh})x$. Both terms appear in the stability conditions for each actuator mode $i$ and region $l$.
+2) The two mechanisms enter the stability analysis through different terms in (32). Within the active region, the matrix ordering associated with the signs of the membership-function derivatives ensures that $x^{\mathrm T}\dot P_{ih}x\leq 0$. Transitions between actuator modes enter through $x^{\mathrm T}(\sum_{j=1}^{J}\lambda_{ij}P_{jh})x$. Thus, for each actuator mode, the stability analysis applies the constraints of the active region and accounts for transitions to other modes through the Markov transition rates.
 
 ~\\
 \\
-\textbf{6.} \textcolor{red}{The} Conclusion should be organized more clearly so that the obtained results are distinguished from the future research directions. Please separate the established conclusions from the open problems to be investigated in future work. \textcolor{red}{Complete}
+\textbf{6.} The Conclusion should be organized more clearly so that the obtained results are distinguished from the future research directions. Please separate the established conclusions from the open problems to be investigated in future work.
 \\[10pt]
 \begingroup
 \setlength{\parskip}{6pt}
@@ -473,7 +473,7 @@ By substituting the controller~(12) into the system~(4), and considering the sto
 1) The controller gains and adaptive event-triggering weight matrices have been jointly determined through tractable LMIs, while a bounding technique has been employed to address the norm-bounded uncertainty induced by Markov-type actuator failures. \textcolor{red}{An engineering-motivated PMSM example and a numerical IT-2 fuzzy example have demonstrated the effectiveness and applicability of the developed method.}\par
 \begingroup
 \interlinepenalty=10000
-2) \textcolor{red}{In future work, we will consider semi-Markov switching between actuator failure modes and extend the proposed adaptive event-triggered design to distributed control of multi-agent systems.} \mbox{(Conclusion, paragraphs 1 and 2)}\par
+2) \textcolor{red}{Future work could extend the actuator-failure model to include semi-Markov switching and adapt the proposed triggering mechanism for distributed control of multi-agent systems.} \mbox{(Conclusion, paragraphs 1 and 2)}\par
 \endgroup
 \endgroup
 % Matching working draft; verify its manuscript edits and locations before use.
