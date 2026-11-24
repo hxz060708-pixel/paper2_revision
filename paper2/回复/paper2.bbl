@@ -15,120 +15,120 @@ Z.~Wang, D.~Sun, L.~Wang, and M.~Zhao, Mixed {{Vehicle Group Merging Control}}
 \bibitem{liuFalseDataInjectionAttack2023}
 K.~Liu, H.~Zhang, Y.~Zhang, and C.~Sun, False {{Data-Injection Attack
   Detection}} in {{Cyber}}--{{Physical Systems With Unknown Parameters}}: {{A
-  Deep Reinforcement Learning Approach}}, IEEE Transactions on Cybernetics
+  Deep Reinforcement Learning Approach}}, IEEE Transactions on Cybernetics 53
   (2023), no.~11, 7115--7125.
 
 \bibitem{dingSurveyModelBasedDistributed2019}
 D.~Ding, Q.-L. Han, Z.~Wang, and X.~Ge, A {{Survey}} on {{Model-Based
   Distributed Control}} and {{Filtering}} for {{Industrial Cyber-Physical
-  Systems}}, IEEE Transactions on Industrial Informatics  (2019), no.~5,
+  Systems}}, IEEE Transactions on Industrial Informatics 15 (2019), no.~5,
   2483--2499.
 
 \bibitem{yanUnifiedApproachInput2026}
 Z.~Yan, J.~Zhang, G.~Hu, and Z.~Gao, A {{Unified Approach}} for
   {{Input}}--{{Output Finite-Time Mean Square Stabilization}} of {{Nonlinear
   Stochastic Markovian Jump Systems With Poisson Noise}}, IEEE Transactions on
-  Automatic Control  (2026), no.~8, 5588--5595.
+  Automatic Control 71 (2026), no.~8, 5588--5595.
 
 \bibitem{sunMultipleDelayDependentRobust2022}
 S.~Sun, H.~Zhang, J.~Zhang, L.~Yu, and J.~Sun, Multiple {{Delay-Dependent
-  Robust}} \${{H}}\_\textbackslash infty\$ {{Finite-Time Filtering}} for
-  {{Uncertain It\^o Stochastic Takagi}}--{{Sugeno Fuzzy Semi-Markovian Jump
-  Systems With State Constraints}}, IEEE Transactions on Fuzzy Systems  (2022),
-  no.~2, 321--331.
+  Robust}} {$\mathrm{H}_\infty$} {{Finite-Time Filtering}} for {{Uncertain
+  It\^o Stochastic Takagi}}--{{Sugeno Fuzzy Semi-Markovian Jump Systems With
+  State Constraints}}, IEEE Transactions on Fuzzy Systems 30 (2022), no.~2,
+  321--331.
 
 \bibitem{biAdaptiveDecentralizedFiniteTime2023}
 Y.~Bi, T.~Wang, J.~Qiu, M.~Li, C.~Wei, and L.~Yuan, Adaptive {{Decentralized
   Finite-Time Fuzzy Secure Control}} for {{Uncertain Nonlinear CPSs Under
-  Deception Attacks}}, IEEE Transactions on Fuzzy Systems  (2023), no.~8,
+  Deception Attacks}}, IEEE Transactions on Fuzzy Systems 31 (2023), no.~8,
   2568--2580.
 
 \bibitem{sunDelayDependent$H_infty$Guaranteed2021}
-S.~Sun, H.~Zhang, Z.~Qin, and R.~Xi, Delay-{{Dependent}}
-  \${{H}}\_\textbackslash infty\$ {{Guaranteed Cost Control}} for {{Uncertain
-  Switched T}}--{{S Fuzzy Systems With Multiple Interval Time-Varying Delays}},
-  IEEE Transactions on Fuzzy Systems  (2021), no.~5, 1065--1080.
+S.~Sun, H.~Zhang, Z.~Qin, and R.~Xi, Delay-{{Dependent}} {$\mathrm{H}_\infty$}
+  {{Guaranteed Cost Control}} for {{Uncertain Switched T}}--{{S Fuzzy Systems
+  With Multiple Interval Time-Varying Delays}}, IEEE Transactions on Fuzzy
+  Systems 29 (2021), no.~5, 1065--1080.
 
 \bibitem{wangSwitchingAsynchronousControl2024}
 L.~Wang, Y.~Zhao, X.~Xie, and H.-K. Lam, A {{Switching Asynchronous Control
   Approach}} for {{Takagi-Sugeno Fuzzy Markov Jump Systems With Time-Varying
-  Delay}}, IEEE Transactions on Fuzzy Systems  (2024), no.~2, 595--606.
+  Delay}}, IEEE Transactions on Fuzzy Systems 32 (2024), no.~2, 595--606.
 
 \bibitem{shengAperiodicSamplingDependentEventTriggeredControl2024}
 Z.~Sheng and S.~Xu, An {{Aperiodic-Sampling-Dependent Event-Triggered Control
   Strategy}} for {{Interval Type-2 Fuzzy Systems}}: {{New Communication
   Scheme}} and {{Discontinuous Functional}}, IEEE Transactions on Cybernetics
-  (2024), no.~11, 6436--6447.
+  54 (2024), no.~11, 6436--6447.
 
 \bibitem{liFiniteTimeDynamicEventTriggered2022}
 X.~Li, W.~Song, Y.~Li, and S.~Tong, Finite-{{Time Dynamic Event-Triggered Fuzzy
   Output Fault-Tolerant Control}} for {{Interval Type-2 Fuzzy Systems}}, IEEE
-  Transactions on Fuzzy Systems  (2022), no.~11, 4926--4938.
+  Transactions on Fuzzy Systems 30 (2022), no.~11, 4926--4938.
 
 \bibitem{liuObserverBasedAdaptiveEventTriggered2024}
 Y.~Liu, P.~Zhang, S.~Lee, and X.~Xie, Observer-{{Based Adaptive Event-Triggered
   Control}} for {{Interval Type-2 Fuzzy Systems Under Multiple Cyber-Attacks}},
-  IEEE Transactions on Fuzzy Systems  (2024), no.~4, 2438--2447.
+  IEEE Transactions on Fuzzy Systems 32 (2024), no.~4, 2438--2447.
 
 \bibitem{zhangNovelApproachVehicular2025}
 J.~Zhang, Z.~Zhang, D.~Zhang, C.~Ni, T.~Zhang, and X.~Jiang, Novel {{Approach}}
   of {{Vehicular Cooperative Communication Based}} on {{Strategy}} of
   {{Interval Type-2 Fuzzy Logic}} and {{Cooperative Game}}, IEEE Transactions
-  on Sustainable Computing  (2025), no.~3, 588--600.
+  on Sustainable Computing 10 (2025), no.~3, 588--600.
 
 \bibitem{duIntervalType2Fuzzy2025}
 Z.~Du, X.~Xie, Y.~Kao, and X.~Zhao, Interval {{Type-2 Fuzzy Dynamic
-  Event-Triggered H}} {$\infty$} {{Consensus}} of {{Multiagent Systems}}, IEEE
-  Transactions on Systems, Man, and Cybernetics: Systems  (2025), no.~6,
+  Event-Triggered}} {$H_\infty$} {{Consensus}} of {{Multiagent Systems}}, IEEE
+  Transactions on Systems, Man, and Cybernetics: Systems 55 (2025), no.~6,
   3954--3963.
 
 \bibitem{zhangNetworkedControlSystems2020}
 X.-M. Zhang, Q.-L. Han, X.~Ge, D.~Ding, L.~Ding, D.~Yue, and C.~Peng, Networked
   control systems: A survey of trends and techniques, IEEE/CAA Journal of
-  Automatica Sinica  (2020), no.~1, 1--17.
+  Automatica Sinica 7 (2020), no.~1, 1--17.
 
 \bibitem{pangNetworkedPredictiveControl2026}
 Z.-H. Pang, T.~Mu, Y.~Yu, H.~Guo, G.-P. Liu, and Q.-L. Han, Networked
   {{Predictive Control}}: {{A Survey}}, IEEE/CAA Journal of Automatica Sinica
-  (2026), no.~1, 3--20.
+  13 (2026), no.~1, 3--20.
 
 \bibitem{yaoSecureControlMarkovian2023c}
 L.~Yao, X.~Huang, Z.~Wang, and K.~Liu, Secure {{Control}} of {{Markovian
   Jumping Systems Under Deception Attacks}}: {{An Attack-Probability-Dependent
   Adaptive Event-Triggered Mechanism}}, IEEE Transactions on Control of Network
-  Systems  (2023), no.~4, 1818--1830.
+  Systems 10 (2023), no.~4, 1818--1830.
 
 \bibitem{lianSwitchingLikeEventTriggeredControl2021}
 J.~Lian and Y.~Han, Switching-{{Like Event-Triggered Control}} for {{Networked
   Markovian Jump Systems Under Deception Attack}}, IEEE Transactions on
-  Circuits and Systems II: Express Briefs  (2021), no.~10, 3271--3275.
+  Circuits and Systems II: Express Briefs 68 (2021), no.~10, 3271--3275.
 
 \bibitem{zhaDynamicEventTriggeredOutput2022}
 L.~Zha, R.~Liao, J.~Liu, X.~Xie, E.~Tian, and J.~Cao, Dynamic {{Event-Triggered
   Output Feedback Control}} for {{Networked Systems Subject}} to {{Multiple
-  Cyber Attacks}}, IEEE Transactions on Cybernetics  (2022), no.~12,
+  Cyber Attacks}}, IEEE Transactions on Cybernetics 52 (2022), no.~12,
   13800--13808.
 
 \bibitem{buEventTriggeredDataDrivenControl2023}
 X.~Bu, W.~Yu, Y.~Yin, and Z.~Hou, Event-{{Triggered Data-Driven Control}} for
   {{Nonlinear Systems Under Frequency-Duration-Constrained DoS Attacks}}, IEEE
-  Transactions on Information Forensics and Security  (2023), 1449--1460.
+  Transactions on Information Forensics and Security 18 (2023), 1449--1460.
 
 \bibitem{wangResilientAdaptiveIntermittent2024}
 X.~Wang, Y.~Cao, G.~Zong, H.~Wang, and B.~Niu, Resilient {{Adaptive
   Intermittent Control}} of {{Nonlinear Systems Under Deception Attacks}}, IEEE
-  Transactions on Systems, Man, and Cybernetics: Systems  (2024), no.~4,
+  Transactions on Systems, Man, and Cybernetics: Systems 54 (2024), no.~4,
   2171--2180.
 
 \bibitem{wangResilientAdaptiveStabilization2025}
 X.~Wang, Y.~Cao, B.~Niu, H.~Wang, G.~Zong, and X.~Zhao, Resilient {{Adaptive
   Stabilization}} for {{Nonlinear CPSs Dealing With Deception Attacks}}, IEEE
-  Transactions on Control of Network Systems  (2025), no.~1, 135--143.
+  Transactions on Control of Network Systems 12 (2025), no.~1, 135--143.
 
 \bibitem{postoyanFrameworkEventTriggeredStabilization2015}
 R.~Postoyan, P.~Tabuada, D.~Ne{\v s}i{\'c}, and A.~Anta, A {{Framework}} for
   the {{Event-Triggered Stabilization}} of {{Nonlinear Systems}}, IEEE
-  Transactions on Automatic Control  (2015), no.~4, 982--996.
+  Transactions on Automatic Control 60 (2015), no.~4, 982--996.
 
 \bibitem{chenFinitetimeStabilityNonlinear2026}
 J.~Chen, W.~Wang, K.~Ding, G.~Wu, X.~Wu, Y.~Liu, and J.~Cao, Finite-time
@@ -156,56 +156,56 @@ J.-W. Xing, C.~Peng, and X.~Xie, Switched {{Fuzzy Control}} for {{Nonlinear
 H.~Chen, G.~Zong, F.~Gao, and Y.~Shi, Probabilistic {{Event-Triggered Policy}}
   for {{Extended Dissipative Finite-Time Control}} of {{MJSs}} under
   {{Cyber-Attacks}} and {{Actuator Failures}}, IEEE Transactions on Automatic
-  Control  (2023), no.~12, 7803--7810.
+  Control 68 (2023), no.~12, 7803--7810.
 
 \bibitem{yanAnnularFiniteTimeStability2026}
 Z.~Yan, G.~Chang, Z.~Xing, R.~Xu, and J.~Cheng, Annular {{Finite-Time
   Stability}} and {{Stabilization}} in {{Probability}} for {{Nonlinear
   Stochastic Markov Jump Systems With Impulsive Effects}}, International
-  Journal of Robust and Nonlinear Control  (2026), no.~1, 245--255.
+  Journal of Robust and Nonlinear Control 36 (2026), no.~1, 245--255.
 
 \bibitem{yaoMultiSensorBasedSwitchingEventTriggered2024}
 L.~Yao, X.~Huang, Z.~Wang, and H.~Shen, A {{Multi-Sensor-Based Switching
   Event-Triggered Mechanism}} for {{Synchronization Control}} of {{Markovian
   Jump Neural Networks Under DoS Attacks}}, IEEE Transactions on Information
-  Forensics and Security  (2024), 7548--7559.
+  Forensics and Security 19 (2024), 7548--7559.
 
 \bibitem{aoFixedTimeFaultTolerantTrajectory2026}
 W.~Ao, H.~Yin, S.~Sun, P.~Liu, and P.~Shi, Fixed-{{Time Fault-Tolerant
   Trajectory Tracking Control}} for a {{Wheeled Mobile Robot}}, IEEE
-  Transactions on Automation Science and Engineering  (2026), 811--819.
+  Transactions on Automation Science and Engineering 23 (2026), 811--819.
 
 \bibitem{lianNewResultsStability2020}
 H.-H. Lian, P.~Deng, S.-P. Xiao, and H.-Q. Xiao, New {{Results}} on {{Stability
   Analysis}} for {{Sampled-Data Control Systems With Nonuniform Sampling}} and
-  {{Communication Delays}}, IEEE Access  (2020), 86696--86705.
+  {{Communication Delays}}, IEEE Access 8 (2020), 86696--86705.
 
 \bibitem{zhangMixedDelayBasedAugmentedFunctional2024}
 Y.~Zhang, Y.~He, F.~Long, and C.-K. Zhang, Mixed-{{Delay-Based Augmented
   Functional}} for {{Sampled-Data Synchronization}} of {{Delayed Neural
   Networks With Communication Delay}}, IEEE Transactions on Neural Networks and
-  Learning Systems  (2024), no.~2, 1847--1856.
+  Learning Systems 35 (2024), no.~2, 1847--1856.
 
 \bibitem{ganesanSynchronizationStochasticNeural2024}
 B.~Ganesan, P.~Mani, L.~Shanmugam, and M.~Annamalai, Synchronization of
   {{Stochastic Neural Networks Using Looped-Lyapunov Functional}} and {{Its
   Application}} to {{Secure Communication}}, IEEE Transactions on Neural
-  Networks and Learning Systems  (2024), no.~4, 5198--5210.
+  Networks and Learning Systems 35 (2024), no.~4, 5198--5210.
 
 \bibitem{wangNewApproachStability2018}
 L.~Wang and H.-K. Lam, A {{New Approach}} to {{Stability}} and {{Stabilization
   Analysis}} for {{Continuous-Time Takagi}}--{{Sugeno Fuzzy Systems With Time
-  Delay}}, IEEE Transactions on Fuzzy Systems  (2018), no.~4, 2460--2465.
+  Delay}}, IEEE Transactions on Fuzzy Systems 26 (2018), no.~4, 2460--2465.
 
 \bibitem{guanModifiedLoopedFunctional2021a}
 C.~Guan, Z.~Fei, and P.~Park, Modified {{Looped Functional}} for {{Sampled-Data
   Control}} of {{T}}--{{S Fuzzy Markovian Jump Systems}}, IEEE Transactions on
-  Fuzzy Systems  (2021), no.~9, 2543--2552.
+  Fuzzy Systems 29 (2021), no.~9, 2543--2552.
 
 \bibitem{samySampledDataControlIT22024}
 S.~A. Samy, M.~M. Arjunan, and Y.~H. Joo, Sampled-{{Data Control}} for {{IT-2
   Fuzzy Systems With Packet Losses}}: {{Fragmentation-Based Integral Inequality
-  Technique}}, IEEE Transactions on Systems, Man, and Cybernetics: Systems
+  Technique}}, IEEE Transactions on Systems, Man, and Cybernetics: Systems 54
   (2024), no.~4, 2354--2367.
 
 \end{thebibliography}

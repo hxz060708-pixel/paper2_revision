@@ -1,4 +1,4 @@
-\documentclass[14pt,fleqn]{article}
+\documentclass[10pt,fleqn]{article}
 \usepackage{mathrsfs}
 \usepackage{latexsym,amsmath,amssymb}
 \usepackage{bbm}
@@ -24,7 +24,6 @@
 \usepackage{mathrsfs}
 \setlength{\parskip}{-1.5ex}
 \pagenumbering{arabic}
-\hyphenation{Complete}
 \renewcommand{\baselinestretch}{1.2}
 \usepackage{latexsym}
 \usepackage{graphicx}
@@ -36,22 +35,12 @@
 \usepackage{array, caption, threeparttable}
 \usepackage[font=small,labelfont=bf,labelsep=none]{caption}
 %表格编号Table 1 可以加粗显示
-\captionsetup[table]{
-	labelfont = bf,    % "Table X" 加粗
-	%textfont = it,     % 标题文本斜体（根据期刊要求调整）
-	%labelsep=newline,%换行
-	justification = centering,
-	singlelinecheck = false, % 允许换行
-	labelsep = period,  % 编号和标题间空格sapce,period加点,不加space、period这两个就是冒号
-	skip = 6pt         % 标题与表格间距
-}
 \textheight=22cm\textwidth=15.6cm \oddsidemargin=0.25in
 \evensidemargin=0.25in
 \date{}
 \renewcommand\baselinestretch{1.0}
  \linespread{1.15}
 \begin{document}
-\captionsetup[figure]{labelfont={bf},labelformat={default},labelsep=period,name={Fig.}}
 
 \title{\bf Response Letter for 9418778}
 \author{}
@@ -71,17 +60,17 @@
 ~\\
 \\
 \textbf{Response to  Editor in Chief:}\\[10pt]
-*****************************************************************************************\\
+\makebox[\linewidth][l]{*****************************************************************************************}\\
 \\
 \hspace*{-0.5cm}\indent\textbf{Reviewer $\sharp$ 1:} This manuscript investigates adaptive event-triggered control for interval type-2 (IT-2) fuzzy cyber-physical systems subject to stochastic deception attacks and Markov-type actuator failures. The combination of adaptive transmission and membership-function-derivative-dependent regional control is relevant to secure networked control. The numerical examples provide an initial illustration of the proposed framework. After reading, the primary features and contributions of this article are sound compared to some existing publications. However, the following aspects should be seriously considered to improve the presentation quality of this investigation.
 \\
 ~\\
-\textbf{1.} \textcolor{red}{It} is noted that your manuscript needs careful editing, such as the English grammar and sentence structure so that the goals and results in your work are friendly to the weak in English. \textcolor{red}{Complete}
+\textbf{1.} It is noted that your manuscript needs careful editing, such as the English grammar and sentence structure so that the goals and results in your work are friendly to the weak in English.
 \\[10pt]
 \begingroup
 \setlength{\parskip}{6pt}
 \indent \textbf{Reply 1:} Thank you for this suggestion. We corrected grammatical errors and clarified the discussion of the numerical results. In the fifth paragraph of the Introduction, we revised the description of how measurement corruption and actuator degradation affect the input applied to the plant. In Example~1, we explain the increase in packet transmissions in Table~1 in terms of the triggering threshold.\par
-1) \textcolor{red}{In a degraded mode, the actuator may deliver only part of the commanded input~[30]. The command itself may be based on a falsified measurement that the controller continues to use until the next update. Controller design must therefore account for these factors jointly to ensure that the closed-loop system remains stable and achieves the prescribed level of disturbance attenuation under such operating conditions.} (The fifth paragraph in the introduction)\par
+1) \textcolor{red}{In a degraded mode, the actuator may deliver only part of the commanded input~\textcolor{black}{[30]}. The command itself may be based on a falsified measurement that the controller continues to use until the next update. Controller design must therefore account for these factors jointly to ensure that the closed-loop system remains stable and achieves the prescribed level of disturbance attenuation under such operating conditions.} (The fifth paragraph in the introduction)\par
 2) Table~1 compares the proposed AETM with the time-triggered mechanism, which transmits all 400 samples. \textcolor{red}{Increasing $\sigma$ from 4 to 20 lowers the equilibrium value $1/\sigma$ of the adaptive threshold from 0.25 to 0.05. For a given sampled state and weighting matrix, a lower threshold $\delta(t)$ allows a smaller sampling error to trigger transmission under (5). This is consistent with the higher packet counts and lower saving rates observed in Table~1.} (The paragraph introducing Table~1 in Example~1)\par
 \endgroup
 
@@ -91,19 +80,20 @@
 \\[10pt]
 \indent \textbf{Reply 2:} Thank you for this comment. In Eq.~(15), the controller uses the most recently transmitted measurement until the next update. If that measurement is falsified, the controller computes its commands from incorrect data throughout the interval, while the actuator's effectiveness determines how much of each command reaches the plant. Section~3 accounts for these effects jointly and gives sufficient conditions for asymptotic stability in the absence of disturbances and for the prescribed $\mathrm{H}_\infty$ bound from the disturbance to the output under zero initial conditions. We have clarified in the Introduction why these factors need to be considered together.\\
 
-\textcolor{red}{In a degraded mode, the actuator may deliver only part of the commanded input~[30]. The command itself may be based on a falsified measurement that the controller continues to use until the next update. Controller design must therefore account for these factors jointly to ensure that the closed-loop system remains stable and achieves the prescribed level of disturbance attenuation under such operating conditions.} (The fifth paragraph in the introduction)
+\textcolor{red}{In a degraded mode, the actuator may deliver only part of the commanded input~\textcolor{black}{[30]}. The command itself may be based on a falsified measurement that the controller continues to use until the next update. Controller design must therefore account for these factors jointly to ensure that the closed-loop system remains stable and achieves the prescribed level of disturbance attenuation under such operating conditions.} (The fifth paragraph in the introduction)
 
 ~\\
 \\
-\textbf{3.} \textcolor{red}{The} author should check the References carefully throughout this paper, there are many references which not fit our style need some modification and there is something wrong with the formatting of the Reference. \textcolor{red}{Complete}
+\textbf{3.} The author should check the References carefully throughout this paper, there are many references which not fit our style need some modification and there is something wrong with the formatting of the Reference.
 \\[10pt]
 \begingroup
 \setlength{\parskip}{6pt}
-\indent \textbf{Reply 3:} Thank you for pointing out the formatting issues in the reference list. We have standardized the formatting, supplied missing volume numbers, and checked the page ranges and article numbers. Four examples of the corrected entries are given below.\par
-1) [1] Z.~Wang, D.~Sun, L.~Wang, and M.~Zhao, Mixed vehicle group merging control in the vicinity of traffic signals: A cyber-physical perspective, \emph{IEEE Transactions on Intelligent Transportation Systems} \textbf{\textcolor{red}{25}} (2024), no.~6, 5328--5341.\par
-2) [23] J.~Chen, W.~Wang, K.~Ding, G.~Wu, X.~Wu, Y.~Liu, and J.~Cao, Finite-time stability of nonlinear time-varying systems with event-triggered mechanism, \emph{Journal of the Franklin Institute} \textbf{\textcolor{red}{363}} (2026), no.~1, 108260.\par
-3) [24] X.~Yang, Y.~Long, T.~Li, H.~Yang, and H.~Liang, Adaptive event-triggered secure control for attacked cyber--physical systems based on resilient observer, \emph{IEEE Transactions on Systems, Man, and Cybernetics: Systems} \textbf{\textcolor{red}{55}} (2025), no.~2, 936--947.\par
-4) [26] J.-W.~Xing, C.~Peng, and X.~Xie, Switched fuzzy control for nonlinear systems via a fuzzy-rule-dependent adaptive event-triggered mechanism, \emph{IEEE Transactions on Fuzzy Systems} \textbf{\textcolor{red}{32}} (2024), no.~3, 870--882.\par
+\indent \textbf{Reply 3:} Thank you for pointing this out. We have supplied the missing volume numbers in references [4], [5], [7], [28], and [30] and corrected the typesetting of $\mathrm{H}_\infty$ in the titles of references [5] and [7]. The five corrected entries are listed below.\par
+{\interlinepenalty=10000 \textcolor{red}{[4] Z.~Yan, J.~Zhang, G.~Hu, and Z.~Gao, A {{Unified Approach}} for {{Input}}--{{Output Finite-Time Mean Square Stabilization}} of {{Nonlinear Stochastic Markovian Jump Systems With Poisson Noise}}, IEEE Transactions on Automatic Control 71~(8) (2026) 5588--5595.}\par}
+{\interlinepenalty=10000 \textcolor{red}{[5] S.~Sun, H.~Zhang, J.~Zhang, L.~Yu, and J.~Sun, Multiple {{Delay-Dependent Robust}} {$\mathrm{H}_\infty$} {{Finite-Time Filtering}} for {{Uncertain It\^o Stochastic Takagi}}--{{Sugeno Fuzzy Semi-Markovian Jump Systems With State Constraints}}, IEEE Transactions on Fuzzy Systems 30~(2) (2022) 321--331.}\par}
+{\interlinepenalty=10000 \textcolor{red}{[7] S.~Sun, H.~Zhang, Z.~Qin, and R.~Xi, Delay-{{Dependent}} {$\mathrm{H}_\infty$} {{Guaranteed Cost Control}} for {{Uncertain Switched T}}--{{S Fuzzy Systems With Multiple Interval Time-Varying Delays}}, IEEE Transactions on Fuzzy Systems 29~(5) (2021) 1065--1080.}\par}
+{\interlinepenalty=10000 \textcolor{red}{[28] Z.~Yan, G.~Chang, Z.~Xing, R.~Xu, and J.~Cheng, Annular {{Finite-Time Stability}} and {{Stabilization}} in {{Probability}} for {{Nonlinear Stochastic Markov Jump Systems With Impulsive Effects}}, International Journal of Robust and Nonlinear Control 36~(1) (2026) 245--255.}\par}
+{\interlinepenalty=10000 \textcolor{red}{[30] W.~Ao, H.~Yin, S.~Sun, P.~Liu, and P.~Shi, Fixed-{{Time Fault-Tolerant Trajectory Tracking Control}} for a {{Wheeled Mobile Robot}}, IEEE Transactions on Automation Science and Engineering 23 (2026) 811--819.}\par}
 \endgroup
 
 ~\\
@@ -193,13 +183,13 @@
 
 ~\\
 \\
-\textbf{7.} \textcolor{red}{The} parameters $\xi_1$, $\xi_2$, and $\tau$ introduced in Theorems 3.2 and 3.3 are not explained. Please clarify their role in the LMI transformation, how they are chosen in the simulation, and whether the feasibility of the conditions is sensitive to their values. \textcolor{red}{Complete}
+\textbf{7.} The parameters $\xi_1$, $\xi_2$, and $\tau$ introduced in Theorems 3.2 and 3.3 are not explained. Please clarify their role in the LMI transformation, how they are chosen in the simulation, and whether the feasibility of the conditions is sensitive to their values.
 \\[10pt]
 \begingroup
 \setlength{\parskip}{6pt}
-\indent \textbf{Reply 7:} Thank you for asking how these parameters enter the design and how their values are chosen. The scalars $\xi_1$ and $\xi_2$ fix the proportions among the slack matrices in Theorem~3.2. In Theorem~3.3, $\tau$ sets the relative weights of the two terms used to bound the actuator uncertainty. In Example~1, we varied $\xi_1$ and $\xi_2$ in steps of 0.01 and $\tau$ in steps of 0.1. For each parameter set, we checked the LMIs of Theorem~3.3 separately under $\mathcal C_1$ and $\mathcal C_2$ at $h=0.05$ and $\gamma=2$. Among the feasible sets, we favored those that combined rapid state convergence with a high communication saving rate. We selected $\xi_1=0.01$, $\xi_2=0.01$, and $\tau=0.8$. Figure~4 shows the resulting closed-loop state trajectories. At $\sigma=4$, only 85 of the 400 samples were transmitted, a saving of $78.75\%$ relative to time-triggered transmission, as shown in Table~1. In Example~2, $\xi_1=2$, $\xi_2=4$, and $\tau=2$ also yielded feasible LMIs in both regions at the same $h$ and $\gamma$. We also checked sensitivity by re-solving the two regional problems after changing one scalar at a time by $-10\%$ or $+10\%$. All 24 perturbed regional problems were feasible. We have added the parameter interpretation to Remark~3.2 and the sensitivity results to the opening paragraph of Section~4.\par
-1) \textbf{Remark 3.2.} \textcolor{red}{In Theorem~3.2, the relations $Q_2=\xi_1Q_1$ and $Q_3=\xi_2Q_1$ allow a common change of variables under which the gains enter the LMIs linearly through $\widetilde K_n=K_nQ_1^{-1}$.} In Theorem~3.3, the scaling parameter $\tau > 0$ is introduced to handle the norm-bounded uncertainty matrix $V_i$ resulting from stochastic actuator failures. \textcolor{red}{Young's inequality bounds the resulting cross term by two quadratic terms, with weight $\tau$ on the term involving $B_mF_{i1}$ and weight $1/\tau$ on the term involving $\widetilde K_n$.} (Remark~3.2)\par
-2) This section considers an engineering-motivated example and a numerical simulation study to assess the effectiveness and applicability of the developed control scheme. \textcolor{red}{In each example, we prescribe $(\xi_1,\xi_2,\tau)$ and check that the LMIs of Theorem~3.3 are feasible separately under $\mathcal C_1$ and $\mathcal C_2$ at $h=0.05$ and $\gamma=2$. To assess sensitivity, we increased and decreased each scalar by $10\%$ in turn, holding the other two at their reported values. Both regional LMI problems remained feasible at all six perturbed settings in each example.} (The opening paragraph of Section~4)\par
+\indent \textbf{Reply 7:} Thank you for asking how these parameters enter the design and how their values are chosen. The scalars $\xi_1$ and $\xi_2$ fix the proportions among the slack matrices in Theorem~3.2. In Theorem~3.3, $\tau$ sets the relative weights of the two terms used to bound the actuator uncertainty. In Example~1, we varied $\xi_1$ and $\xi_2$ in steps of 0.01 and $\tau$ in steps of 0.1. For each parameter set, we checked the LMIs of Theorem~3.3 separately under $\mathcal C_1$ and $\mathcal C_2$ at $h=0.05$ and $\gamma=2$. Among the feasible sets, we favored those that combined rapid state convergence with a high communication saving rate. We selected $\xi_1=0.01$, $\xi_2=0.01$, and $\tau=0.8$. Figure~4 shows the resulting closed-loop state trajectories. At $\sigma=4$, only 85 of the 400 samples were transmitted, a saving of $78.75\%$ relative to time-triggered transmission, as shown in Table~1. In Example~2, $\xi_1=2$, $\xi_2=4$, and $\tau=2$ also yielded feasible LMIs in both regions at the same $h$ and $\gamma$. We also checked sensitivity by re-solving the two regional problems after changing one scalar at a time by $-10\%$ or $+10\%$. All 24 perturbed regional problems were feasible. We have added the parameter interpretation to Remark~3.2 and the parameter selection procedure to Example~1.\par
+1) \textbf{Remark 3.2.} \textcolor{red}{In Theorem~3.2, $\xi_1$ and $\xi_2$ specify the scaling of the slack matrices $Q_2$ and $Q_3$ relative to $Q_1$, respectively. This choice allows the controller gains to enter the LMIs linearly through the change of variables $\widetilde K_n=K_nQ_1^{-1}$.} In Theorem~3.3, the scaling parameter $\tau > 0$ is introduced to handle the norm-bounded uncertainty matrix $V_i$ resulting from stochastic actuator failures. \textcolor{red}{By Young's inequality, the resulting cross term is bounded above by the sum of two quadratic terms, one involving $B_mF_{i1}$ with weight $\tau$ and the other involving $\widetilde K_n$ with weight $1/\tau$. This bound yields deterministic LMIs that can be solved numerically in MATLAB.} (Remark~3.2)\par
+2) \textcolor{red}{We varied $\xi_1$ and $\xi_2$ in steps of 0.01 and $\tau$ in steps of 0.1. For each combination, we checked the feasibility of the LMIs in Theorem~3.3 separately under $\mathcal C_1$ and $\mathcal C_2$. Among the feasible combinations, we selected $\xi_1=0.01$, $\xi_2=0.01$, and $\tau=0.8$ because this choice gave both rapid state convergence and a high communication saving rate in simulation.} (The parameter selection in Example~1)\par
 \endgroup
 % Previous template example.
 % \indent \textbf{Reply 7:} Thank you for this valuable suggestion. In response to this suggestion, we have provided a clear description of the algorithm for minimizing the H$\infty$ performance index $\gamma$ in Remark 3.4.\\
@@ -223,14 +213,11 @@
 2) condition (22) \textcolor{red}{guarantees} the negativity of the corresponding fuzzy-weighted double-sum terms. (Proof of Theorem~3.1)\par
 \endgroup\vspace{6pt}
 
-Special thanks to you for your good comments. All your suggestions are very important, they have important guiding significance to my thesis writing and scientific research work.\\
-
-
-Thank you for this constructive suggestion again!
+We thank the reviewer for these helpful comments.
 
 ~\\
 \\
-*****************************************************************************************\\
+\makebox[\linewidth][l]{*****************************************************************************************}\\
 \\
 \hspace*{-0.5cm}\indent\textbf{Reviewer $\sharp$ 2:} This study addresses adaptive event-triggered control for IT-2 fuzzy CPSs affected by stochastic deception attacks and actuator failures. Its technical route combines an adaptive triggering law, regional conditions based on membership-function derivatives, and LMI-based analysis. The numerical section contains a PMSM case and a second fuzzy-system example. I find the topic of this study interesting, and the addressed problem carries a certain academic value. Overall, the work shows potential, but it requires further refinement and improvement. I encourage the authors to make the following revisions and additions.
 \\
@@ -239,18 +226,18 @@ Thank you for this constructive suggestion again!
 \\[10pt]
 \begingroup
 \setlength{\parskip}{6pt}
-\indent \textbf{Reply 1:} We appreciate your careful reading. We revised the opening of Section~2.2 to explain more clearly why we use an AETM to reduce transmissions while maintaining the desired control performance. We also corrected the subject--verb agreement in the sentence defining $K_n$ in Section~2.4.\par
+\indent \textbf{Reply 1:} We appreciate your careful reading. We revised the opening of Section~2.2 to explain more clearly why we use an AETM to reduce transmissions while maintaining the desired control performance. In Example~2, we replaced the phrase ``exhibits a clear divergent behavior'' with the more direct wording ``the open-loop state trajectories in Fig.~10 diverge.''\par
 1) In networked control systems (NCSs), continuous data transmission \textcolor{red}{can strain the available bandwidth and lead to} network congestion. \textcolor{red}{We therefore use} an AETM \textcolor{red}{on the sensor-to-controller link to reduce} unnecessary transmissions \textcolor{red}{while maintaining} the desired control performance. (The opening paragraph of Section~2.2)\par
-2) where $K_n$ \textcolor{red}{denotes} the controller \textcolor{red}{gain for rule $n$}. (Section~2.4)\par
+2) For the same initial state $x(0) = \begin{bmatrix} -3, 0.5, -2 \end{bmatrix}^{\mathrm{T}}$, \textcolor{red}{the open-loop state trajectories in Fig.~10 diverge. Figure~11 shows that the proposed controller stabilizes the system} despite deception attacks and Markov-type actuator failures. (Example~2, discussion of Figs.~10 and~11)\par
 \endgroup
 
 ~\\
 \\
-\textbf{2.} \textcolor{red}{Why} is it necessary to consider deception attacks, actuator failures, and communication limitations together? The Introduction should explain their interaction in the feedback loop more clearly and strengthen the practical motivation for the proposed framework. \textcolor{red}{Complete}
+\textbf{2.} Why is it necessary to consider deception attacks, actuator failures, and communication limitations together? The Introduction should explain their interaction in the feedback loop more clearly and strengthen the practical motivation for the proposed framework.
 \\[10pt]
 \indent \textbf{Reply 2:} Thank you for raising this point. When bandwidth is limited, transmitting every sample may be impractical. The design question is whether event-triggered feedback can still stabilize the plant when a transmitted measurement may be falsified and the actuator may deliver only part of the commanded input. We have clarified this motivation in the Introduction.\\
 
-\textcolor{red}{In a degraded mode, the actuator may deliver only part of the commanded input~[30]. The command itself may be based on a falsified measurement that the controller continues to use until the next update. Controller design must therefore account for these factors jointly to ensure that the closed-loop system remains stable and achieves the prescribed level of disturbance attenuation under such operating conditions.} (The fifth paragraph in the introduction)
+\textcolor{red}{In a degraded mode, the actuator may deliver only part of the commanded input~\textcolor{black}{[30]}. The command itself may be based on a falsified measurement that the controller continues to use until the next update. Controller design must therefore account for these factors jointly to ensure that the closed-loop system remains stable and achieves the prescribed level of disturbance attenuation under such operating conditions.} (The fifth paragraph in the introduction)
 
 ~\\
 \\
@@ -329,7 +316,7 @@ Thank you for this constructive suggestion again!
 \begingroup
 \setlength{\parskip}{6pt}
 \indent \textbf{Reply 7:} Thank you for this suggestion. We have expanded the fourth paragraph of the Introduction to discuss recent work on adaptive event triggering. We now cite Yang et al.~[24] on secure control of cyber--physical systems and Chandrasekar et al.~[25] on asynchronous control of IT-2 fuzzy Markov jump systems under deception attacks. We have also clarified how our design relates to the fuzzy-rule-dependent mechanism of Xing et al.~[26]. In our design, the sampling error drives the threshold update, and the signs of the membership-function derivatives define the regions for which the triggering weight matrices are designed.\par
-\noindent \textcolor{red}{In recent years,} adaptive event-triggered mechanisms (AETMs) \textcolor{red}{have attracted increasing attention in the control of networked fuzzy systems. These mechanisms can adjust their triggering parameters using current or past state information~[24]. For example, Chandrasekar et al.~[25] used adaptive event triggering for asynchronous control of IT-2 fuzzy Markov jump systems under deception attacks. Xing et al.~[26] proposed an adaptive triggering mechanism that depends on the fuzzy rules. In our approach, the sampling error drives the threshold update. We use the signs of the membership-function derivatives to define the operating regions and design a triggering weight matrix for each region to reduce unnecessary transmissions more effectively.} (The fourth paragraph in the introduction)\par
+\noindent \textcolor{red}{In recent years,} adaptive event-triggered mechanisms (AETMs) \textcolor{red}{have attracted increasing attention in the control of networked fuzzy systems. These mechanisms can adjust their triggering parameters using current or past state information~\textcolor{black}{[24]}. For example, Chandrasekar et al.~\textcolor{black}{[25]} used adaptive event triggering for asynchronous control of IT-2 fuzzy Markov jump systems under deception attacks. Xing et al.~\textcolor{black}{[26]} proposed an adaptive triggering mechanism that depends on the fuzzy rules. In our approach, the sampling error drives the threshold update. We use the signs of the membership-function derivatives to define the operating regions and design a triggering weight matrix for each region to reduce unnecessary transmissions more effectively.} (The fourth paragraph in the introduction)\par
 \endgroup\vspace{\baselineskip}
 % Earlier wording retained for comparison.
 % \noindent \textcolor[rgb]{0,0.50,0}{The threshold update and the regional design are given in Sections 2.2 and 2.4, respectively.}\par
@@ -353,29 +340,26 @@ Thank you for this constructive suggestion again!
 % Thank you for pointing out the deficiencies in the introduction section of the paper. We greatly appreciate your valuable feedback. We have made revisions to the manuscript, hoping that these changes will enhance the logical flow and coherence of the paper, and clarify the connection between key concepts and related work. Your suggestions will undoubtedly help strengthen the presentation of the research.
 
 \begin{samepage}
-Special thanks to you for your good comments. All your suggestions are very important, they have important guiding significance to my thesis writing and scientific research work.\\
-
-
-Thank you for this constructive suggestion again!\par
+We thank the reviewer for these helpful comments.\par
 \end{samepage}
 
 ~\\
 \\
-*****************************************************************************************\\
+\makebox[\linewidth][l]{*****************************************************************************************}\\
 \\
 \hspace*{-0.5cm}\indent\textbf{Reviewer $\sharp$ 3:} The paper develops an adaptive event-triggered control strategy for IT-2 fuzzy CPSs in which the feedback channel may be subject to deception attacks and the actuators may switch among failure modes. This setting is relevant to networked implementations where information corruption, control-channel degradation, and communication limits may coexist. The manuscript is organized around a clear mathematical framework. The topic investigated in this manuscript is of interest, and the proposed control framework offers useful insights into the considered problem. However, several aspects require further clarification and discussion to strengthen the presentation of the results.
 \\
 ~\\
-\textbf{1.} \textcolor{red}{Most} of the cited works in the manuscript are from earlier studies, with relatively few references to recent advances. It is suggested that the authors include more relevant works from the past three years. \textcolor{red}{Complete}
+\textbf{1.} Most of the cited works in the manuscript are from earlier studies, with relatively few references to recent advances. It is suggested that the authors include more relevant works from the past three years.
 \\[10pt]
 \begingroup
 \setlength{\parskip}{6pt}
 \indent \textbf{Reply 1:} Thank you for this suggestion. We have expanded the literature review in the first, second, and fifth paragraphs of the Introduction. Three of the studies added were published within the past three years. The five references added to these paragraphs are [4, 5, 7, 28, 30].\par
-1) \textcolor{red}{[4] Z.~Yan, J.~Zhang, G.~Hu, and Z.~Gao, A {{Unified Approach}} for {{Input}}--{{Output Finite-Time Mean Square Stabilization}} of {{Nonlinear Stochastic Markovian Jump Systems With Poisson Noise}}, IEEE Transactions on Automatic Control 71 (2026), no.~8, 5588--5595.}\par
-2) \textcolor{red}{[5] S.~Sun, H.~Zhang, J.~Zhang, L.~Yu, and J.~Sun, Multiple {{Delay-Dependent Robust}} {$\mathrm{H}_\infty$} {{Finite-Time Filtering}} for {{Uncertain It\^o Stochastic Takagi}}--{{Sugeno Fuzzy Semi-Markovian Jump Systems With State Constraints}}, IEEE Transactions on Fuzzy Systems 30 (2022), no.~2, 321--331.}\par
-3) \textcolor{red}{[7] S.~Sun, H.~Zhang, Z.~Qin, and R.~Xi, Delay-{{Dependent}} {$\mathrm{H}_\infty$} {{Guaranteed Cost Control}} for {{Uncertain Switched T}}--{{S Fuzzy Systems With Multiple Interval Time-Varying Delays}}, IEEE Transactions on Fuzzy Systems 29 (2021), no.~5, 1065--1080.}\par
-4) \textcolor{red}{[28] Z.~Yan, G.~Chang, Z.~Xing, R.~Xu, and J.~Cheng, Annular {{Finite-Time Stability}} and {{Stabilization}} in {{Probability}} for {{Nonlinear Stochastic Markov Jump Systems With Impulsive Effects}}, International Journal of Robust and Nonlinear Control 36 (2026), no.~1, 245--255.}\par
-5) \textcolor{red}{[30] W.~Ao, H.~Yin, S.~Sun, P.~Liu, and P.~Shi, Fixed-{{Time Fault-Tolerant Trajectory Tracking Control}} for a {{Wheeled Mobile Robot}}, IEEE Transactions on Automation Science and Engineering 23 (2026), 811--819.}\par
+{\interlinepenalty=10000 \textcolor{red}{[4] Z.~Yan, J.~Zhang, G.~Hu, and Z.~Gao, A {{Unified Approach}} for {{Input}}--{{Output Finite-Time Mean Square Stabilization}} of {{Nonlinear Stochastic Markovian Jump Systems With Poisson Noise}}, IEEE Transactions on Automatic Control 71~(8) (2026) 5588--5595.}\par}
+{\interlinepenalty=10000 \textcolor{red}{[5] S.~Sun, H.~Zhang, J.~Zhang, L.~Yu, and J.~Sun, Multiple {{Delay-Dependent Robust}} {$\mathrm{H}_\infty$} {{Finite-Time Filtering}} for {{Uncertain It\^o Stochastic Takagi}}--{{Sugeno Fuzzy Semi-Markovian Jump Systems With State Constraints}}, IEEE Transactions on Fuzzy Systems 30~(2) (2022) 321--331.}\par}
+{\interlinepenalty=10000 \textcolor{red}{[7] S.~Sun, H.~Zhang, Z.~Qin, and R.~Xi, Delay-{{Dependent}} {$\mathrm{H}_\infty$} {{Guaranteed Cost Control}} for {{Uncertain Switched T}}--{{S Fuzzy Systems With Multiple Interval Time-Varying Delays}}, IEEE Transactions on Fuzzy Systems 29~(5) (2021) 1065--1080.}\par}
+{\interlinepenalty=10000 \textcolor{red}{[28] Z.~Yan, G.~Chang, Z.~Xing, R.~Xu, and J.~Cheng, Annular {{Finite-Time Stability}} and {{Stabilization}} in {{Probability}} for {{Nonlinear Stochastic Markov Jump Systems With Impulsive Effects}}, International Journal of Robust and Nonlinear Control 36~(1) (2026) 245--255.}\par}
+{\interlinepenalty=10000 \textcolor{red}{[30] W.~Ao, H.~Yin, S.~Sun, P.~Liu, and P.~Shi, Fixed-{{Time Fault-Tolerant Trajectory Tracking Control}} for a {{Wheeled Mobile Robot}}, IEEE Transactions on Automation Science and Engineering 23 (2026) 811--819.}\par}
 \endgroup
 % Matching working draft; verify its manuscript edits and locations before use.
 % Thank you for this comment. We have expanded the comparison immediately before the contribution list. Two directly relevant studies have been added: Liu, Ling, and Zhang (2025), on torus-event-based sliding-mode control of discrete-time IT-2 fuzzy systems under deception attacks, and Chandrasekar et al. (2026), on adaptive event-triggered asynchronous control of uncertain IT-2 fuzzy Markov jump systems with deception attacks. Their publication details and the methodological descriptions were checked against the publishers’ article pages. The comparison also explicitly cites the existing work by Chen et al. (2023) on probabilistic event-triggered control under cyberattacks and actuator failures. We distinguish the present continuous-time formulation, Markov-type actuator effectiveness, and derivative-sign-based regional synthesis. We also state that joint attack/failure modeling and adaptive event triggering are not, by themselves, claimed as new. The additions therefore strengthen positioning through concrete connections and distinctions, rather than citation count alone.
@@ -431,14 +415,14 @@ By substituting the controller~(12) into the system~(4), and considering the sto
 
 ~\\
 \\
-\textbf{4.} \textcolor{red}{The} manuscript needs careful language revision to improve grammar and logical flow. Please review sentence transitions, abbreviation consistency, and isolated grammar errors. \textcolor{red}{Complete}
+\textbf{4.} The manuscript needs careful language revision to improve grammar and logical flow. Please review sentence transitions, abbreviation consistency, and isolated grammar errors.
 \\[10pt]
 \begingroup
 \setlength{\parskip}{6pt}
-\indent \textbf{Reply 4:} Thank you for pointing this out. We added a sentence before Eq.~(15) that links the attack and actuator models. It explains how a corrupted sample enters the feedback law and how the actuator then scales the resulting command. We also made the abbreviation for Takagi--Sugeno consistent between the Introduction and Example~1 and corrected the use of the singular CPS when referring to the single closed-loop system in Eq.~(15).\par
+\indent \textbf{Reply 4:} Thank you for pointing this out. We added a sentence before Eq.~(15) that links the attack and actuator models. It explains how a corrupted sample enters the feedback law and how the actuator then scales the resulting command. We use CPSs for the class of systems and CPS for the system shown in Fig.~1 and its closed-loop model in Eq.~(15). In Example~1, we clarified that the control input in Fig.~6 remains bounded throughout the simulation.\par
 1) \textcolor{red}{A successful deception attack replaces $x(t_kh)$ with $f(x(t_kh))$ in the feedback law, and the actuator multiplies the resulting command by its effectiveness matrix $F_{r(t)}$.} \mbox{(Section~2.4, before Eq.~(15))}\par
-2) In this example, the resulting IT-2 T\textcolor{red}{--}S fuzzy representation serves as the basis for evaluating the developed control scheme. (The opening paragraph of Example~1)\par
-3) Thus, the closed-loop IT-2 fuzzy \textcolor{red}{CPS in} (15) is asymptotically stable. (Proof of Theorem~3.1)\par
+2) Thus, the closed-loop IT-2 fuzzy \textcolor{red}{CPS in} (15) is asymptotically stable. (Proof of Theorem~3.1)\par
+3) \textcolor{red}{Figure}~6 \textcolor{red}{shows that} the control \textcolor{red}{input} $u(t)$ remains bounded throughout the simulation. (Example~1, discussion of Fig.~6)\par
 \endgroup
 % Matching working draft; verify its manuscript edits and locations before use.
 % Thank you for this suggestion. We have revised the Abstract, Introduction, problem formulation, explanatory text in Section 3, numerical discussion, and Conclusion. The Abstract now proceeds from the attack/failure setting to the adaptive transmission and regional design, then to the sufficient conditions and numerical illustrations. We have corrected subject–verb agreement, removed a duplicated full stop and an unnecessary comma, clarified transitions, and made the terminology and abbreviations more consistent. In particular, the controller-gain description now refers to the gain for an individual fuzzy rule, and the distinction between an initial state in Example 2 and that of Example 1 is explicit. The detailed companion document records every implemented replacement, including punctuation and whitespace, rather than providing only selected examples. These changes improve exposition without modifying the displayed mathematical conditions or the numerical data.
@@ -509,11 +493,7 @@ By substituting the controller~(12) into the system~(4), and considering the sto
 %
 % The framework illustrated in Fig. 1 corresponds to the model described in Section 2. The output $y(t,\eth)$ of the observed system (1) is measured by sensors and transmitted to the remote state estimator through a wireless network. The estimator then obtains the estimation error $B_{r(t)}\vartheta(t,\eth)$ between the estimator output $\bar{y}(t,\eth)$ and the measured data of the estimated system (1) output $y(t,\eth)$. It is worth noting that abnormal disturbances, such as sensor faults or network attacks, may cause the measured data $y(t,\eth)$ to become outliers that deviate significantly from their true values, thereby leading to abnormal estimation errors. The error signal is processed by a saturation function (4), which suppresses these outliers to the saturation boundary. Subsequently, the adjusted signal, combined with the probabilistically fluctuating estimator gain, is fed back into the estimator, enabling it to update the estimated state based on the processed error information.
 
-Special thanks to you for your good comments. All your suggestions are very important, they have important guiding significance to my thesis writing and scientific research work.\\
-
-
-Thank you for this constructive suggestion again!\\
-
+We thank the reviewer for these helpful comments.\\
 
 I wish you every success in your work!\\
 
