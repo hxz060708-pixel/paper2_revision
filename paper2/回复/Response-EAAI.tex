@@ -69,8 +69,8 @@
 \\[10pt]
 \begingroup
 \setlength{\parskip}{6pt}
-\indent \textbf{Reply 1:} Thank you for this suggestion. We corrected grammatical errors and clarified the discussion of the numerical results. In the fifth paragraph of the Introduction, we revised the description of how measurement corruption and actuator degradation affect the input applied to the plant. In Example~1, we explain the increase in packet transmissions in Table~1 in terms of the triggering threshold.\par
-1) \textcolor{red}{In a degraded mode, the actuator may deliver only part of the commanded input~\textcolor{black}{[30]}. The command itself may be based on a falsified measurement that the controller continues to use until the next update. Controller design must therefore account for these factors jointly to ensure that the closed-loop system remains stable and achieves the prescribed level of disturbance attenuation under such operating conditions.} (The fifth paragraph in the introduction)\par
+\indent \textbf{Reply 1:} Thank you for this suggestion. In Section~2.2, we rewrote a long passive sentence in the active voice to clarify why we use an adaptive event-triggered mechanism. In Example~1, we explain the increase in packet transmissions in Table~1 in terms of the triggering threshold.\par
+1) \textcolor{red}{We therefore use} an AETM \textcolor{red}{on the sensor-to-controller link to reduce} unnecessary transmissions \textcolor{red}{while maintaining} the desired control performance. (The opening paragraph of Section~2.2)\par
 2) Table~1 compares the proposed AETM with the time-triggered mechanism, which transmits all 400 samples. \textcolor{red}{Increasing $\sigma$ from 4 to 20 lowers the equilibrium value $1/\sigma$ of the adaptive threshold from 0.25 to 0.05. For a given sampled state and weighting matrix, a lower threshold $\delta(t)$ allows a smaller sampling error to trigger transmission under (5). This is consistent with the higher packet counts and lower saving rates observed in Table~1.} (The paragraph introducing Table~1 in Example~1)\par
 \endgroup
 
